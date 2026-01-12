@@ -1,0 +1,237 @@
+[gd_scene load_steps=3 format=3 uid="uid://cps7uyr47jyfk"]
+
+[ext_resource type="Script" uid="uid://c37m37iv8ougd" path="res://scripts/ui/main_ui.gd" id="1_iuonh"]
+[ext_resource type="ButtonGroup" uid="uid://crkje58rlpu3l" path="res://scenes/main/main_buttom_nav_btngroup.tres" id="2_k2fmo"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_iuonh")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+custom_minimum_size = Vector2(1024, 576)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1024.0
+offset_bottom = 576.0
+mouse_filter = 1
+
+[node name="BottonWindowLayer" type="Control" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="MiddleWindowLayer" type="Control" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="MainPanel" type="Control" parent="CanvasLayer/Control/MiddleWindowLayer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="MainContent" type="Control" parent="CanvasLayer/Control/MiddleWindowLayer/MainPanel"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 511.0
+grow_horizontal = 2
+mouse_filter = 2
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/Control/MiddleWindowLayer/MainPanel/MainContent"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0.17254902)
+
+[node name="BottomNav" type="Control" parent="CanvasLayer/Control/MiddleWindowLayer/MainPanel"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -64.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+
+[node name="Panel" type="Panel" parent="CanvasLayer/Control/MiddleWindowLayer/MainPanel/BottomNav"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Control/MiddleWindowLayer/MainPanel/BottomNav"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="MealBtn" type="Control" parent="CanvasLayer/Control/MiddleWindowLayer/MainPanel/BottomNav/HBoxContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+
+[node name="CheckButton" type="CheckButton" parent="CanvasLayer/Control/MiddleWindowLayer/MainPanel/BottomNav/HBoxContainer/MealBtn"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+button_group = ExtResource("2_k2fmo")
+
+[node name="Label" type="Label" parent="CanvasLayer/Control/MiddleWindowLayer/MainPanel/BottomNav/HBoxContainer/MealBtn"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "点餐"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TaskBtn" type="Control" parent="CanvasLayer/Control/MiddleWindowLayer/MainPanel/BottomNav/HBoxContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+
+[node name="CheckButton" type="CheckButton" parent="CanvasLayer/Control/MiddleWindowLayer/MainPanel/BottomNav/HBoxContainer/TaskBtn"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+button_group = ExtResource("2_k2fmo")
+
+[node name="Label" type="Label" parent="CanvasLayer/Control/MiddleWindowLayer/MainPanel/BottomNav/HBoxContainer/TaskBtn"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "日常任务"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RecipeBtn" type="Control" parent="CanvasLayer/Control/MiddleWindowLayer/MainPanel/BottomNav/HBoxContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+
+[node name="CheckButton" type="CheckButton" parent="CanvasLayer/Control/MiddleWindowLayer/MainPanel/BottomNav/HBoxContainer/RecipeBtn"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+button_group = ExtResource("2_k2fmo")
+
+[node name="Label" type="Label" parent="CanvasLayer/Control/MiddleWindowLayer/MainPanel/BottomNav/HBoxContainer/RecipeBtn"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "菜谱"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="InventoryBtn" type="Control" parent="CanvasLayer/Control/MiddleWindowLayer/MainPanel/BottomNav/HBoxContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+
+[node name="CheckButton" type="CheckButton" parent="CanvasLayer/Control/MiddleWindowLayer/MainPanel/BottomNav/HBoxContainer/InventoryBtn"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+button_group = ExtResource("2_k2fmo")
+
+[node name="Label" type="Label" parent="CanvasLayer/Control/MiddleWindowLayer/MainPanel/BottomNav/HBoxContainer/InventoryBtn"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "库存"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ProfileBtn" type="Control" parent="CanvasLayer/Control/MiddleWindowLayer/MainPanel/BottomNav/HBoxContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+
+[node name="CheckButton" type="CheckButton" parent="CanvasLayer/Control/MiddleWindowLayer/MainPanel/BottomNav/HBoxContainer/ProfileBtn"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+button_group = ExtResource("2_k2fmo")
+
+[node name="Label" type="Label" parent="CanvasLayer/Control/MiddleWindowLayer/MainPanel/BottomNav/HBoxContainer/ProfileBtn"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "我的"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TopWindowLayer" type="Control" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="TipsWindowLayer" type="Control" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2

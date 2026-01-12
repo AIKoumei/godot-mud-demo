@@ -1,0 +1,232 @@
+[gd_scene load_steps=2 format=3 uid="uid://cxvjjk6t3teo5"]
+
+[ext_resource type="Script" uid="uid://b8igva5685yux" path="res://scenes/main/task/task_edit_panel.gd" id="1_y4ttk"]
+
+[node name="TaskEditScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_y4ttk")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="ToolsBar" type="Control" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 64)
+layout_mode = 2
+
+[node name="Background" type="ColorRect" parent="VBoxContainer/ToolsBar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0.16862746)
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/ToolsBar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="HSplitContainer" type="HSplitContainer" parent="VBoxContainer/ToolsBar/MarginContainer"]
+layout_mode = 2
+split_offset = 944
+drag_area_margin_end = 960
+drag_area_highlight_in_editor = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/ToolsBar/MarginContainer/HSplitContainer"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="VBoxContainer/ToolsBar/MarginContainer/HSplitContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+text = "日常任务编辑界面"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VSeparator" type="VSeparator" parent="VBoxContainer/ToolsBar/MarginContainer/HSplitContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="SearchLineEdit" type="LineEdit" parent="VBoxContainer/ToolsBar/MarginContainer/HSplitContainer/HBoxContainer"]
+custom_minimum_size = Vector2(128, 0)
+layout_mode = 2
+
+[node name="FilterButton" type="Button" parent="VBoxContainer/ToolsBar/MarginContainer/HSplitContainer/HBoxContainer"]
+custom_minimum_size = Vector2(64, 0)
+layout_mode = 2
+text = "筛选"
+
+[node name="VSeparator2" type="VSeparator" parent="VBoxContainer/ToolsBar/MarginContainer/HSplitContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="AddButton" type="Button" parent="VBoxContainer/ToolsBar/MarginContainer/HSplitContainer/HBoxContainer"]
+custom_minimum_size = Vector2(64, 0)
+layout_mode = 2
+text = "新增"
+
+[node name="DeleteButton" type="Button" parent="VBoxContainer/ToolsBar/MarginContainer/HSplitContainer/HBoxContainer"]
+custom_minimum_size = Vector2(64, 0)
+layout_mode = 2
+text = "删除"
+
+[node name="ReturnButton" type="Button" parent="VBoxContainer/ToolsBar/MarginContainer/HSplitContainer"]
+custom_minimum_size = Vector2(64, 0)
+layout_direction = 2
+layout_mode = 2
+text = "返回"
+
+[node name="MainContent" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Background" type="ColorRect" parent="VBoxContainer/MainContent"]
+layout_mode = 0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.99999994, 0.7955241, 0.9954422, 0.16862746)
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/MainContent"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/MainContent/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ItemCloner" type="Control" parent="VBoxContainer/MainContent/ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 64)
+layout_mode = 2
+
+[node name="Background" type="ColorRect" parent="VBoxContainer/MainContent/ScrollContainer/VBoxContainer/ItemCloner"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 0, 0, 0.16862746)
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/MainContent/ScrollContainer/VBoxContainer/ItemCloner"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_right = 8
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/MainContent/ScrollContainer/VBoxContainer/ItemCloner/MarginContainer"]
+layout_mode = 2
+
+[node name="TaskDoneCheckBox" type="CenterContainer" parent="VBoxContainer/MainContent/ScrollContainer/VBoxContainer/ItemCloner/MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(48, 0)
+layout_mode = 2
+
+[node name="CheckBox" type="CheckBox" parent="VBoxContainer/MainContent/ScrollContainer/VBoxContainer/ItemCloner/MarginContainer/HBoxContainer/TaskDoneCheckBox"]
+layout_mode = 2
+
+[node name="TaskSelectCheckBox2" type="CenterContainer" parent="VBoxContainer/MainContent/ScrollContainer/VBoxContainer/ItemCloner/MarginContainer/HBoxContainer"]
+visible = false
+custom_minimum_size = Vector2(64, 0)
+layout_mode = 2
+
+[node name="CheckBox" type="CheckBox" parent="VBoxContainer/MainContent/ScrollContainer/VBoxContainer/ItemCloner/MarginContainer/HBoxContainer/TaskSelectCheckBox2"]
+layout_mode = 2
+
+[node name="ImportanceColor" type="MarginContainer" parent="VBoxContainer/MainContent/ScrollContainer/VBoxContainer/ItemCloner/MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(56, 0)
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 8
+
+[node name="ImportanceColor" type="ColorRect" parent="VBoxContainer/MainContent/ScrollContainer/VBoxContainer/ItemCloner/MarginContainer/HBoxContainer/ImportanceColor"]
+layout_mode = 2
+color = Color(1, 0, 0, 1)
+
+[node name="TaskTag" type="Control" parent="VBoxContainer/MainContent/ScrollContainer/VBoxContainer/ItemCloner/MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(56, 0)
+layout_mode = 2
+
+[node name="Background" type="MarginContainer" parent="VBoxContainer/MainContent/ScrollContainer/VBoxContainer/ItemCloner/MarginContainer/HBoxContainer/TaskTag"]
+custom_minimum_size = Vector2(56, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 8
+
+[node name="Background" type="ColorRect" parent="VBoxContainer/MainContent/ScrollContainer/VBoxContainer/ItemCloner/MarginContainer/HBoxContainer/TaskTag/Background"]
+layout_mode = 2
+color = Color(1, 0, 0, 1)
+
+[node name="TaskTag" type="Label" parent="VBoxContainer/MainContent/ScrollContainer/VBoxContainer/ItemCloner/MarginContainer/HBoxContainer/TaskTag"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+text = "家务"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TaskTime" type="Label" parent="VBoxContainer/MainContent/ScrollContainer/VBoxContainer/ItemCloner/MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(176, 0)
+layout_mode = 2
+text = "2025-11-01 00:50:00"
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="VBoxContainer/MainContent/ScrollContainer/VBoxContainer/ItemCloner/MarginContainer/HBoxContainer/TaskTime"]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -8.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "V"
+
+[node name="TaskTitle" type="LineEdit" parent="VBoxContainer/MainContent/ScrollContainer/VBoxContainer/ItemCloner/MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(0, 46)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+text = "测试任务"
+
+[node name="DeleteButton" type="Button" parent="VBoxContainer/MainContent/ScrollContainer/VBoxContainer/ItemCloner/MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(64, 48)
+layout_mode = 2
+size_flags_vertical = 4
+text = "删除"

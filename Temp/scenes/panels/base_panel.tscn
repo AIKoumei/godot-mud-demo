@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://ds4v6w6r0fcyg"]
+
+[ext_resource type="Script" uid="uid://c6b3hr7lwb6ey" path="res://scripts/ui/panels/base_panel.gd" id="1_dsf5i"]
+
+[node name="BasePanel" type="MarginContainer"]
+offset_right = 64.0
+offset_bottom = 64.0
+mouse_filter = 2
+script = ExtResource("1_dsf5i")
+
+[node name="Background" type="ColorRect" parent="."]
+self_modulate = Color(0.33288068, 0.3328807, 0.3328806, 1)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="MainContent" type="MarginContainer" parent="."]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4

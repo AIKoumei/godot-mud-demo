@@ -1,0 +1,276 @@
+[gd_scene load_steps=3 format=3 uid="uid://doufy20tr8paj"]
+
+[ext_resource type="Script" uid="uid://pqvn6hy2vj6r" path="res://scripts/ui/windows/year_picker_window.gd" id="1_n8sfq"]
+[ext_resource type="PackedScene" uid="uid://c2xso0fxgvs6e" path="res://scenes/panels/window_top_bar_panel.tscn" id="2_qrkee"]
+
+[node name="YearPickerWindow" type="Control"]
+custom_minimum_size = Vector2(172, 312)
+layout_mode = 3
+anchors_preset = 0
+offset_left = 426.0
+offset_top = 132.0
+offset_right = 598.0
+offset_bottom = 444.0
+mouse_filter = 2
+script = ExtResource("1_n8sfq")
+
+[node name="CloseTouchPanel" type="Panel" parent="."]
+custom_minimum_size = Vector2(2048, 1152)
+layout_mode = 0
+offset_right = 2048.0
+offset_bottom = 1152.0
+mouse_filter = 1
+
+[node name="ColorRect" type="ColorRect" parent="CloseTouchPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="WindowContent" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="Background" type="ColorRect" parent="WindowContent"]
+layout_mode = 2
+mouse_filter = 2
+color = Color(0.47788018, 0.47788012, 0.47788012, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="WindowContent"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 0
+
+[node name="TopBar" parent="WindowContent/VBoxContainer" instance=ExtResource("2_qrkee")]
+visible = false
+layout_mode = 2
+
+[node name="MainContent" type="MarginContainer" parent="WindowContent/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="WindowContent/VBoxContainer/MainContent"]
+layout_mode = 2
+
+[node name="YearButtons" type="MarginContainer" parent="WindowContent/VBoxContainer/MainContent/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+
+[node name="CenterContainer" type="CenterContainer" parent="WindowContent/VBoxContainer/MainContent/VBoxContainer/YearButtons"]
+layout_mode = 2
+
+[node name="Container" type="GridContainer" parent="WindowContent/VBoxContainer/MainContent/VBoxContainer/YearButtons/CenterContainer"]
+layout_mode = 2
+mouse_filter = 2
+columns = 2
+
+[node name="Year_0" type="Button" parent="WindowContent/VBoxContainer/MainContent/VBoxContainer/YearButtons/CenterContainer/Container"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+text = "2010"
+
+[node name="Selected" type="ColorRect" parent="WindowContent/VBoxContainer/MainContent/VBoxContainer/YearButtons/CenterContainer/Container/Year_0"]
+visible = false
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Year_1" type="Button" parent="WindowContent/VBoxContainer/MainContent/VBoxContainer/YearButtons/CenterContainer/Container"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+text = "2011"
+
+[node name="Selected" type="ColorRect" parent="WindowContent/VBoxContainer/MainContent/VBoxContainer/YearButtons/CenterContainer/Container/Year_1"]
+visible = false
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Year_2" type="Button" parent="WindowContent/VBoxContainer/MainContent/VBoxContainer/YearButtons/CenterContainer/Container"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+text = "2025"
+
+[node name="Selected" type="ColorRect" parent="WindowContent/VBoxContainer/MainContent/VBoxContainer/YearButtons/CenterContainer/Container/Year_2"]
+visible = false
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Year_3" type="Button" parent="WindowContent/VBoxContainer/MainContent/VBoxContainer/YearButtons/CenterContainer/Container"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+text = "2025"
+
+[node name="Selected" type="ColorRect" parent="WindowContent/VBoxContainer/MainContent/VBoxContainer/YearButtons/CenterContainer/Container/Year_3"]
+visible = false
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Year_4" type="Button" parent="WindowContent/VBoxContainer/MainContent/VBoxContainer/YearButtons/CenterContainer/Container"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+text = "2025"
+
+[node name="Selected" type="ColorRect" parent="WindowContent/VBoxContainer/MainContent/VBoxContainer/YearButtons/CenterContainer/Container/Year_4"]
+visible = false
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Year_5" type="Button" parent="WindowContent/VBoxContainer/MainContent/VBoxContainer/YearButtons/CenterContainer/Container"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+text = "2025"
+
+[node name="Selected" type="ColorRect" parent="WindowContent/VBoxContainer/MainContent/VBoxContainer/YearButtons/CenterContainer/Container/Year_5"]
+visible = false
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Year_6" type="Button" parent="WindowContent/VBoxContainer/MainContent/VBoxContainer/YearButtons/CenterContainer/Container"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+text = "2025"
+
+[node name="Selected" type="ColorRect" parent="WindowContent/VBoxContainer/MainContent/VBoxContainer/YearButtons/CenterContainer/Container/Year_6"]
+visible = false
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Year_7" type="Button" parent="WindowContent/VBoxContainer/MainContent/VBoxContainer/YearButtons/CenterContainer/Container"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+text = "2025"
+
+[node name="Selected" type="ColorRect" parent="WindowContent/VBoxContainer/MainContent/VBoxContainer/YearButtons/CenterContainer/Container/Year_7"]
+visible = false
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Year_8" type="Button" parent="WindowContent/VBoxContainer/MainContent/VBoxContainer/YearButtons/CenterContainer/Container"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+text = "2025"
+
+[node name="Selected" type="ColorRect" parent="WindowContent/VBoxContainer/MainContent/VBoxContainer/YearButtons/CenterContainer/Container/Year_8"]
+visible = false
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Year_9" type="Button" parent="WindowContent/VBoxContainer/MainContent/VBoxContainer/YearButtons/CenterContainer/Container"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+text = "2025"
+
+[node name="JumpBar" type="MarginContainer" parent="WindowContent/VBoxContainer/MainContent/VBoxContainer"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="HBoxContainer" type="HBoxContainer" parent="WindowContent/VBoxContainer/MainContent/VBoxContainer/JumpBar"]
+layout_mode = 2
+
+[node name="PreYear50" type="Button" parent="WindowContent/VBoxContainer/MainContent/VBoxContainer/JumpBar/HBoxContainer"]
+custom_minimum_size = Vector2(36, 36)
+layout_mode = 2
+focus_mode = 0
+text = "-50"
+
+[node name="PreYear10" type="Button" parent="WindowContent/VBoxContainer/MainContent/VBoxContainer/JumpBar/HBoxContainer"]
+custom_minimum_size = Vector2(36, 36)
+layout_mode = 2
+focus_mode = 0
+text = "-10"
+
+[node name="NextYear10" type="Button" parent="WindowContent/VBoxContainer/MainContent/VBoxContainer/JumpBar/HBoxContainer"]
+custom_minimum_size = Vector2(36, 36)
+layout_mode = 2
+focus_mode = 0
+text = "+10"
+
+[node name="NextYear50" type="Button" parent="WindowContent/VBoxContainer/MainContent/VBoxContainer/JumpBar/HBoxContainer"]
+custom_minimum_size = Vector2(36, 36)
+layout_mode = 2
+focus_mode = 0
+text = "+50"
+
+[connection signal="gui_input" from="CloseTouchPanel" to="." method="_on_close_touch_panel_gui_input"]
+[connection signal="pressed" from="WindowContent/VBoxContainer/MainContent/VBoxContainer/YearButtons/CenterContainer/Container/Year_0" to="." method="_on_year_0_pressed"]
+[connection signal="pressed" from="WindowContent/VBoxContainer/MainContent/VBoxContainer/YearButtons/CenterContainer/Container/Year_1" to="." method="_on_year_1_pressed"]
+[connection signal="pressed" from="WindowContent/VBoxContainer/MainContent/VBoxContainer/YearButtons/CenterContainer/Container/Year_2" to="." method="_on_year_2_pressed"]
+[connection signal="pressed" from="WindowContent/VBoxContainer/MainContent/VBoxContainer/YearButtons/CenterContainer/Container/Year_3" to="." method="_on_year_3_pressed"]
+[connection signal="pressed" from="WindowContent/VBoxContainer/MainContent/VBoxContainer/YearButtons/CenterContainer/Container/Year_4" to="." method="_on_year_4_pressed"]
+[connection signal="pressed" from="WindowContent/VBoxContainer/MainContent/VBoxContainer/YearButtons/CenterContainer/Container/Year_5" to="." method="_on_year_5_pressed"]
+[connection signal="pressed" from="WindowContent/VBoxContainer/MainContent/VBoxContainer/YearButtons/CenterContainer/Container/Year_6" to="." method="_on_year_6_pressed"]
+[connection signal="pressed" from="WindowContent/VBoxContainer/MainContent/VBoxContainer/YearButtons/CenterContainer/Container/Year_7" to="." method="_on_year_7_pressed"]
+[connection signal="pressed" from="WindowContent/VBoxContainer/MainContent/VBoxContainer/YearButtons/CenterContainer/Container/Year_8" to="." method="_on_year_8_pressed"]
+[connection signal="pressed" from="WindowContent/VBoxContainer/MainContent/VBoxContainer/YearButtons/CenterContainer/Container/Year_9" to="." method="_on_year_9_pressed"]
+[connection signal="pressed" from="WindowContent/VBoxContainer/MainContent/VBoxContainer/JumpBar/HBoxContainer/PreYear50" to="." method="_on_pre_year_50_pressed"]
+[connection signal="pressed" from="WindowContent/VBoxContainer/MainContent/VBoxContainer/JumpBar/HBoxContainer/PreYear10" to="." method="_on_pre_year_10_pressed"]
+[connection signal="pressed" from="WindowContent/VBoxContainer/MainContent/VBoxContainer/JumpBar/HBoxContainer/NextYear10" to="." method="_on_next_year_10_pressed"]
+[connection signal="pressed" from="WindowContent/VBoxContainer/MainContent/VBoxContainer/JumpBar/HBoxContainer/NextYear50" to="." method="_on_next_year_50_pressed"]

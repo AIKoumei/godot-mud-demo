@@ -1,0 +1,72 @@
+[gd_scene load_steps=3 format=3 uid="uid://f1utoos0c7u1"]
+
+[ext_resource type="Script" uid="uid://b8o7mejtp3i7y" path="res://scripts/ui/windows/base_window.gd" id="1_3hsxb"]
+[ext_resource type="PackedScene" uid="uid://c2xso0fxgvs6e" path="res://scenes/panels/window_top_bar_panel.tscn" id="2_2b4go"]
+
+[node name="BaseWindow" type="Control"]
+custom_minimum_size = Vector2(172, 312)
+layout_mode = 3
+anchors_preset = 0
+offset_left = 426.0
+offset_top = 132.0
+offset_right = 598.0
+offset_bottom = 444.0
+mouse_filter = 2
+script = ExtResource("1_3hsxb")
+
+[node name="CloseTouchPanel" type="Panel" parent="."]
+custom_minimum_size = Vector2(2048, 1152)
+layout_mode = 0
+offset_right = 2048.0
+offset_bottom = 1152.0
+mouse_filter = 1
+
+[node name="ColorRect" type="ColorRect" parent="CloseTouchPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="WindowContent" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="Background" type="ColorRect" parent="WindowContent"]
+layout_mode = 2
+mouse_filter = 2
+color = Color(0.47788018, 0.47788012, 0.47788012, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="WindowContent"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 0
+
+[node name="TopBar" parent="WindowContent/VBoxContainer" instance=ExtResource("2_2b4go")]
+layout_mode = 2
+
+[node name="MainContent" type="MarginContainer" parent="WindowContent/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="Test_HFlowContainer" type="HFlowContainer" parent="WindowContent/VBoxContainer/MainContent"]
+layout_mode = 2
+mouse_filter = 2
+
+[connection signal="gui_input" from="CloseTouchPanel" to="." method="_on_close_touch_panel_gui_input"]

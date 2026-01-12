@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=3 uid="uid://b8vqf37l6a14p"]
+
+[ext_resource type="Script" uid="uid://kvuap5bg4ykc" path="res://scripts/ui/panels/ingredient_item.gd" id="1_btxqg"]
+
+[node name="IngredientItem" type="HBoxContainer"]
+script = ExtResource("1_btxqg")
+
+[node name="StatusIcon" type="TextureRect" parent="."]
+layout_mode = 2
+
+[node name="NameLabel" type="Label" parent="."]
+layout_mode = 2
+text = "食材名称"
+
+[node name="QtyLabel" type="Label" parent="."]
+layout_mode = 2
+text = "500g"
+
+[node name="ExpiryLabel" type="Label" parent="."]
+layout_mode = 2
+text = "2024-07-10"
+
+[node name="LocLabel" type="Label" parent="."]
+layout_mode = 2
+text = "冷藏"
+
+[node name="EditBtn" type="Button" parent="."]
+layout_mode = 2
+text = "🖊️"
+
+[node name="DeleteBtn" type="Button" parent="."]
+layout_mode = 2
+text = "🗑️"

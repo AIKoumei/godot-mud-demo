@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://7210577lo50e"]
+
+[ext_resource type="Script" uid="uid://biad8m244wmdt" path="res://scenes/base_components/date_picker/date_pick_button.old.gd" id="1_58dkf"]
+[ext_resource type="PackedScene" uid="uid://b8wtsey64k7rl" path="res://scenes/base_components/date_picker/DatePicker.tscn" id="2_al2sr"]
+
+[node name="DatePickButton" type="Button"]
+offset_right = 32.0
+offset_bottom = 32.0
+focus_mode = 0
+text = "📅"
+script = ExtResource("1_58dkf")
+
+[node name="Buttom" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="DatePicker" parent="Buttom" instance=ExtResource("2_al2sr")]
+visible = false
+layout_mode = 1
+
+[node name="Top" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

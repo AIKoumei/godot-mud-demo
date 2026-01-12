@@ -1,0 +1,87 @@
+[gd_scene load_steps=5 format=3 uid="uid://vtx3qqkqt0rm"]
+
+[ext_resource type="Script" uid="uid://bqwqumipf6x0s" path="res://scripts/ui/windows/date_picker_window.gd" id="1_8qnel"]
+[ext_resource type="PackedScene" uid="uid://b8wtsey64k7rl" path="res://scenes/base_components/date_picker/DatePicker.tscn" id="2_8qnel"]
+[ext_resource type="PackedScene" uid="uid://c2xso0fxgvs6e" path="res://scenes/panels/window_top_bar_panel.tscn" id="2_711ft"]
+[ext_resource type="PackedScene" uid="uid://bdix1ww2xwd76" path="res://scenes/panels/confirm_panel.tscn" id="4_5ndpd"]
+
+[node name="DatePickerWindow" type="Control"]
+custom_minimum_size = Vector2(280, 282)
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -140.0
+offset_top = -156.0
+offset_right = 140.0
+offset_bottom = 126.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_8qnel")
+
+[node name="CloseTouchPanel" type="Panel" parent="."]
+custom_minimum_size = Vector2(2048, 1152)
+layout_mode = 0
+offset_right = 2048.0
+offset_bottom = 1152.0
+mouse_filter = 1
+
+[node name="ColorRect" type="ColorRect" parent="CloseTouchPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="WindowContent" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 280.0
+offset_bottom = 338.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="Background" type="ColorRect" parent="WindowContent"]
+layout_mode = 2
+mouse_filter = 2
+color = Color(0.47788018, 0.47788012, 0.47788012, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="WindowContent"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 0
+
+[node name="TopBar" parent="WindowContent/VBoxContainer" instance=ExtResource("2_711ft")]
+visible = false
+layout_mode = 2
+
+[node name="MainContent" type="MarginContainer" parent="WindowContent/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="DatePicker" parent="WindowContent/VBoxContainer/MainContent" instance=ExtResource("2_8qnel")]
+layout_mode = 2
+
+[node name="ButtomContent" parent="WindowContent/VBoxContainer" instance=ExtResource("4_5ndpd")]
+layout_mode = 2
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
+
+[connection signal="gui_input" from="CloseTouchPanel" to="." method="_on_close_touch_panel_gui_input"]
+[connection signal="on_date_pick" from="WindowContent/VBoxContainer/MainContent/DatePicker" to="." method="_on_date_picker_on_date_pick"]

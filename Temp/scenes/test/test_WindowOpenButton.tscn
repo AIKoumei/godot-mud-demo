@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://1lhhaj8vlesq"]
+
+[ext_resource type="Script" uid="uid://diqmuba3n17cy" path="res://scenes/test/test_window_open_button.gd" id="1_yk1na"]
+
+[node name="test_WindowOpenButton" type="Button"]
+offset_right = 32.0
+offset_bottom = 32.0
+focus_mode = 0
+text = "📅"
+script = ExtResource("1_yk1na")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

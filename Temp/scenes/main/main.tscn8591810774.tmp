@@ -1,0 +1,186 @@
+[gd_scene load_steps=3 format=3 uid="uid://cps7uyr47jyfk"]
+
+[ext_resource type="Script" uid="uid://c37m37iv8ougd" path="res://scripts/ui/main_ui.gd" id="1_iuonh"]
+[ext_resource type="ButtonGroup" uid="uid://crkje58rlpu3l" path="res://scenes/main/main_buttom_nav_btngroup.tres" id="2_k2fmo"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_iuonh")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1024.0
+offset_bottom = 576.0
+
+[node name="MainContent" type="Control" parent="Control"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 511.0
+grow_horizontal = 2
+
+[node name="ColorRect" type="ColorRect" parent="Control/MainContent"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0.17254902)
+
+[node name="BottomNav" type="Control" parent="Control"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -64.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Panel" type="Panel" parent="Control/BottomNav"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/BottomNav"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="MealBtn" type="Control" parent="Control/BottomNav/HBoxContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+
+[node name="CheckButton" type="CheckButton" parent="Control/BottomNav/HBoxContainer/MealBtn"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+button_group = ExtResource("2_k2fmo")
+
+[node name="Label" type="Label" parent="Control/BottomNav/HBoxContainer/MealBtn"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "点餐"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TaskBtn" type="Control" parent="Control/BottomNav/HBoxContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+
+[node name="CheckButton" type="CheckButton" parent="Control/BottomNav/HBoxContainer/TaskBtn"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+button_group = ExtResource("2_k2fmo")
+
+[node name="Label" type="Label" parent="Control/BottomNav/HBoxContainer/TaskBtn"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "日常任务"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RecipeBtn" type="Control" parent="Control/BottomNav/HBoxContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+
+[node name="CheckButton" type="CheckButton" parent="Control/BottomNav/HBoxContainer/RecipeBtn"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+button_group = ExtResource("2_k2fmo")
+
+[node name="Label" type="Label" parent="Control/BottomNav/HBoxContainer/RecipeBtn"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "菜谱"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="InventoryBtn" type="Control" parent="Control/BottomNav/HBoxContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+
+[node name="CheckButton" type="CheckButton" parent="Control/BottomNav/HBoxContainer/InventoryBtn"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+button_group = ExtResource("2_k2fmo")
+
+[node name="Label" type="Label" parent="Control/BottomNav/HBoxContainer/InventoryBtn"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "库存"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ProfileBtn" type="Control" parent="Control/BottomNav/HBoxContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+
+[node name="CheckButton" type="CheckButton" parent="Control/BottomNav/HBoxContainer/ProfileBtn"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+button_group = ExtResource("2_k2fmo")
+
+[node name="Label" type="Label" parent="Control/BottomNav/HBoxContainer/ProfileBtn"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "我的"
+horizontal_alignment = 1
+vertical_alignment = 1

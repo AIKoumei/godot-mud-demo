@@ -1,0 +1,138 @@
+[gd_scene load_steps=5 format=3 uid="uid://bp46fnvkrwtdm"]
+
+[ext_resource type="Script" uid="uid://m346nd8b80t2" path="res://scripts/ui/windows/date_picker_simple_window.gd" id="1_umxok"]
+[ext_resource type="PackedScene" uid="uid://c2xso0fxgvs6e" path="res://scenes/panels/window_top_bar_panel.tscn" id="2_umxok"]
+[ext_resource type="Script" uid="uid://bypko28asfye6" path="res://scripts/ui/components/containers/cyclable_container.gd" id="3_umxok"]
+
+[sub_resource type="GDScript" id="GDScript_umxok"]
+script/source = "extends MarginContainer
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func set_data(data) -> void:
+	$Button.set_text(str(data))
+"
+
+[node name="DatePickerSimpleWindow" type="Control"]
+custom_minimum_size = Vector2(172, 312)
+layout_mode = 3
+anchors_preset = 0
+offset_left = 426.0
+offset_top = 132.0
+offset_right = 598.0
+offset_bottom = 444.0
+mouse_filter = 2
+script = ExtResource("1_umxok")
+
+[node name="CloseTouchPanel" type="Panel" parent="."]
+custom_minimum_size = Vector2(2048, 1152)
+layout_mode = 0
+offset_right = 2048.0
+offset_bottom = 1152.0
+mouse_filter = 1
+
+[node name="ColorRect" type="ColorRect" parent="CloseTouchPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="WindowContent" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="Background" type="ColorRect" parent="WindowContent"]
+layout_mode = 2
+mouse_filter = 2
+color = Color(0.47788018, 0.47788012, 0.47788012, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="WindowContent"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 0
+
+[node name="TopBar" parent="WindowContent/VBoxContainer" instance=ExtResource("2_umxok")]
+visible = false
+layout_mode = 2
+
+[node name="MainContent" type="MarginContainer" parent="WindowContent/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="WindowContent/VBoxContainer/MainContent"]
+layout_mode = 2
+alignment = 1
+
+[node name="YearContainer" type="VBoxContainer" parent="WindowContent/VBoxContainer/MainContent/HBoxContainer"]
+layout_mode = 2
+
+[node name="MonthContainer" type="VBoxContainer" parent="WindowContent/VBoxContainer/MainContent/HBoxContainer"]
+layout_mode = 2
+
+[node name="DayContainer" type="VBoxContainer" parent="WindowContent/VBoxContainer/MainContent/HBoxContainer"]
+layout_mode = 2
+
+[node name="HourContainer" type="ScrollContainer" parent="WindowContent/VBoxContainer/MainContent/HBoxContainer"]
+layout_mode = 2
+
+[node name="CyclableContainer" type="VBoxContainer" parent="WindowContent/VBoxContainer/MainContent/HBoxContainer/HourContainer"]
+layout_mode = 2
+script = ExtResource("3_umxok")
+display_type = null
+is_cyclable = null
+data_list = null
+selected_index = null
+_items = null
+max_item = null
+enable_drag_scroll = null
+metadata/_custom_type_script = "uid://bypko28asfye6"
+
+[node name="ItemScene" type="MarginContainer" parent="WindowContent/VBoxContainer/MainContent/HBoxContainer/HourContainer/CyclableContainer"]
+visible = false
+custom_minimum_size = Vector2(48, 32)
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+script = SubResource("GDScript_umxok")
+
+[node name="Button" type="Button" parent="WindowContent/VBoxContainer/MainContent/HBoxContainer/HourContainer/CyclableContainer/ItemScene"]
+layout_mode = 2
+text = "1"
+
+[node name="MinuteContainer" type="VBoxContainer" parent="WindowContent/VBoxContainer/MainContent/HBoxContainer"]
+layout_mode = 2
+
+[node name="SecondContainer" type="VBoxContainer" parent="WindowContent/VBoxContainer/MainContent/HBoxContainer"]
+layout_mode = 2
+
+[connection signal="gui_input" from="CloseTouchPanel" to="." method="_on_close_touch_panel_gui_input"]

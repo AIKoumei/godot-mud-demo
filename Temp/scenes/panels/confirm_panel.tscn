@@ -1,0 +1,43 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdix1ww2xwd76"]
+
+[ext_resource type="Script" uid="uid://b6blv6cetrwif" path="res://scripts/ui/panels/confirm_panel.gd" id="1_gjujq"]
+
+[node name="ConfirmPanel" type="MarginContainer"]
+mouse_filter = 2
+script = ExtResource("1_gjujq")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+self_modulate = Color(0.33288068, 0.3328807, 0.3328806, 1)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Margin" type="MarginContainer" parent="."]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Margin"]
+layout_mode = 2
+mouse_filter = 2
+alignment = 2
+
+[node name="CancelButton" type="Button" parent="Margin/HBoxContainer"]
+custom_minimum_size = Vector2(64, 48)
+layout_mode = 2
+focus_mode = 0
+theme_override_font_sizes/font_size = 24
+text = "🗶"
+
+[node name="ConfirmButton" type="Button" parent="Margin/HBoxContainer"]
+custom_minimum_size = Vector2(64, 48)
+layout_mode = 2
+focus_mode = 0
+theme_override_font_sizes/font_size = 24
+text = "🗸"
+
+[connection signal="pressed" from="Margin/HBoxContainer/CancelButton" to="." method="_on_cancel_button_pressed"]
+[connection signal="pressed" from="Margin/HBoxContainer/ConfirmButton" to="." method="_on_confirm_button_pressed"]

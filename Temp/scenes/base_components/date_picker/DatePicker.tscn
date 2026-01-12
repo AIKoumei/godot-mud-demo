@@ -1,0 +1,1165 @@
+[gd_scene load_steps=4 format=3 uid="uid://b8wtsey64k7rl"]
+
+[ext_resource type="Script" uid="uid://dppk7xw2yxp4i" path="res://scenes/base_components/date_picker/DatePicker.gd" id="1_7iyuh"]
+[ext_resource type="Shader" uid="uid://vxmi21807l5t" path="res://scenes/base_components/date_picker/DatePicker.gdshader" id="2_0xom2"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_splqy"]
+shader = ExtResource("2_0xom2")
+shader_parameter/outline_width = 16.0
+shader_parameter/outline_color = Color(1, 0, 0, 1)
+
+[node name="DatePicker" type="MarginContainer"]
+custom_minimum_size = Vector2(276, 282)
+offset_right = 276.0
+offset_bottom = 282.0
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
+script = ExtResource("1_7iyuh")
+
+[node name="Panel" type="Panel" parent="."]
+visible = false
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(2048, 1152)
+layout_mode = 2
+
+[node name="Panel2" type="ColorRect" parent="."]
+self_modulate = Color(0.33333334, 0.33333334, 0.33333334, 1)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+material = SubResource("ShaderMaterial_splqy")
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="YearMonthBar" type="MarginContainer" parent="HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
+
+[node name="YearMonthBar" type="HBoxContainer" parent="HBoxContainer/VBoxContainer/YearMonthBar"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+
+[node name="LastYearButton" type="Button" parent="HBoxContainer/VBoxContainer/YearMonthBar/YearMonthBar"]
+custom_minimum_size = Vector2(32, 0)
+layout_mode = 2
+focus_mode = 0
+text = "⏪︎"
+
+[node name="LastMonthButton" type="Button" parent="HBoxContainer/VBoxContainer/YearMonthBar/YearMonthBar"]
+custom_minimum_size = Vector2(32, 0)
+layout_mode = 2
+focus_mode = 0
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/YearMonthBar/YearMonthBar/LastMonthButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(-1, 1)
+pivot_offset = Vector2(16, 0)
+text = "▶︎"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Year" type="Label" parent="HBoxContainer/VBoxContainer/YearMonthBar/YearMonthBar"]
+custom_minimum_size = Vector2(86, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "2025年"
+vertical_alignment = 1
+
+[node name="YearButton" type="Button" parent="HBoxContainer/VBoxContainer/YearMonthBar/YearMonthBar/Year"]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -16.0
+grow_horizontal = 0
+grow_vertical = 2
+focus_mode = 0
+text = "🔽"
+
+[node name="Month" type="Label" parent="HBoxContainer/VBoxContainer/YearMonthBar/YearMonthBar"]
+custom_minimum_size = Vector2(66, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "11月"
+vertical_alignment = 1
+
+[node name="MonthButton" type="Button" parent="HBoxContainer/VBoxContainer/YearMonthBar/YearMonthBar/Month"]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -16.0
+grow_horizontal = 0
+grow_vertical = 2
+focus_mode = 0
+text = "🔽"
+
+[node name="NextMonthButton" type="Button" parent="HBoxContainer/VBoxContainer/YearMonthBar/YearMonthBar"]
+custom_minimum_size = Vector2(32, 0)
+layout_mode = 2
+focus_mode = 0
+text = "▶"
+
+[node name="NextYearButton" type="Button" parent="HBoxContainer/VBoxContainer/YearMonthBar/YearMonthBar"]
+custom_minimum_size = Vector2(32, 0)
+layout_mode = 2
+focus_mode = 0
+text = "⏩︎"
+
+[node name="HSeparator" type="HSeparator" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Week" type="MarginContainer" parent="HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 28)
+layout_mode = 2
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
+
+[node name="Week" type="HBoxContainer" parent="HBoxContainer/VBoxContainer/Week"]
+custom_minimum_size = Vector2(224, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 12
+
+[node name="Sunday" type="Label" parent="HBoxContainer/VBoxContainer/Week/Week"]
+custom_minimum_size = Vector2(24, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "日"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Monday" type="Label" parent="HBoxContainer/VBoxContainer/Week/Week"]
+custom_minimum_size = Vector2(24, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "一"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Tuesday" type="Label" parent="HBoxContainer/VBoxContainer/Week/Week"]
+custom_minimum_size = Vector2(24, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "二"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Wednesday" type="Label" parent="HBoxContainer/VBoxContainer/Week/Week"]
+custom_minimum_size = Vector2(24, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "三"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Thursday" type="Label" parent="HBoxContainer/VBoxContainer/Week/Week"]
+custom_minimum_size = Vector2(24, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "四"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Friday" type="Label" parent="HBoxContainer/VBoxContainer/Week/Week"]
+custom_minimum_size = Vector2(24, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "五"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Saturday" type="Label" parent="HBoxContainer/VBoxContainer/Week/Week"]
+custom_minimum_size = Vector2(24, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "六"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Days" type="MarginContainer" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
+
+[node name="GridContainer" type="GridContainer" parent="HBoxContainer/VBoxContainer/Days"]
+custom_minimum_size = Vector2(240, 204)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/h_separation = 12
+theme_override_constants/v_separation = 12
+columns = 7
+
+[node name="Day_1" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Selected" type="ColorRect" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_1"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_1"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_2" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Selected" type="ColorRect" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_2"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "2"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_3" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Selected" type="ColorRect" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_3"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "3"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_4" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Selected" type="ColorRect" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_4"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_4"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "4"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_5" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Selected" type="ColorRect" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_5"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_5"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "5"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_6" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Selected" type="ColorRect" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_6"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_6"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "6"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_7" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Selected" type="ColorRect" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_7"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_7"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "7"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_8" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Selected" type="ColorRect" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_8"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_8"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "8"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_9" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Selected" type="ColorRect" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_9"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_9"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "9"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_10" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Selected" type="ColorRect" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_10"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_10"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "10"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_11" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Selected" type="ColorRect" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_11"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_11"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "11"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_12" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Selected" type="ColorRect" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_12"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_12"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "12"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_13" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Selected" type="ColorRect" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_13"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_13"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "13"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_14" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Selected" type="ColorRect" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_14"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_14"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "14"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_15" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Selected" type="ColorRect" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_15"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_15"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "15"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_16" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Selected" type="ColorRect" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_16"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_16"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "16"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_17" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Selected" type="ColorRect" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_17"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_17"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "17"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_18" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Selected" type="ColorRect" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_18"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_18"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "18"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_19" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Selected" type="ColorRect" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_19"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_19"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "19"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_20" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Selected" type="ColorRect" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_20"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_20"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "20"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_21" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Selected" type="ColorRect" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_21"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_21"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "21"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_22" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Selected" type="ColorRect" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_22"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_22"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "22"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_23" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Selected" type="ColorRect" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_23"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_23"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "23"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_24" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Selected" type="ColorRect" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_24"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_24"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "24"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_25" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Selected" type="ColorRect" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_25"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_25"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "25"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_26" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Selected" type="ColorRect" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_26"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_26"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "26"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_27" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Selected" type="ColorRect" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_27"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_27"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "27"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_28" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Selected" type="ColorRect" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_28"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_28"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "28"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_29" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Selected" type="ColorRect" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_29"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_29"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "29"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_30" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Selected" type="ColorRect" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_30"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_30"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "30"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_31" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Selected" type="ColorRect" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_31"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_31"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_Empty_1" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+focus_mode = 0
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_Empty_1"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_Empty_2" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+focus_mode = 0
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_Empty_2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_Empty_3" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+focus_mode = 0
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_Empty_3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_Empty_4" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+focus_mode = 0
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_Empty_4"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_Empty_5" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+focus_mode = 0
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_Empty_5"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_Empty_6" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+focus_mode = 0
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_Empty_6"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_Empty_7" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+focus_mode = 0
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_Empty_7"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_Empty_8" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+focus_mode = 0
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_Empty_8"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_Empty_9" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+focus_mode = 0
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_Empty_9"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_Empty_10" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+focus_mode = 0
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_Empty_10"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day_Empty_11" type="Button" parent="HBoxContainer/VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+focus_mode = 0
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/Days/GridContainer/Day_Empty_11"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Clocker" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/Clocker"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[connection signal="gui_input" from="Panel" to="." method="_on_panel_gui_input"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/YearMonthBar/YearMonthBar/Year/YearButton" to="." method="_on_year_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/YearMonthBar/YearMonthBar/Month/MonthButton" to="." method="_on_month_button_pressed"]

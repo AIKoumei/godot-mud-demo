@@ -1,0 +1,127 @@
+[gd_scene load_steps=3 format=3 uid="uid://dro04pgbw7rj3"]
+
+[ext_resource type="Script" uid="uid://bmpydw4y4awkm" path="res://scenes/main/task/task_edit_item.gd" id="1_aocsh"]
+[ext_resource type="PackedScene" uid="uid://bhp5k0max0yro" path="res://scenes/base_components/date_picker/DatePickButton.tscn" id="2_4561a"]
+
+[node name="TaskEditItem" type="Control"]
+custom_minimum_size = Vector2(0, 64)
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_aocsh")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 0, 0, 0.16862746)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_right = 8
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="TaskSekectCheckBox" type="CenterContainer" parent="MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(48, 0)
+layout_mode = 2
+
+[node name="CheckBox" type="CheckBox" parent="MarginContainer/HBoxContainer/TaskSekectCheckBox"]
+layout_mode = 2
+
+[node name="TaskSelectCheckBox2" type="CenterContainer" parent="MarginContainer/HBoxContainer"]
+visible = false
+custom_minimum_size = Vector2(64, 0)
+layout_mode = 2
+
+[node name="CheckBox" type="CheckBox" parent="MarginContainer/HBoxContainer/TaskSelectCheckBox2"]
+layout_mode = 2
+
+[node name="ImportanceColor" type="MarginContainer" parent="MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(56, 0)
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 8
+
+[node name="ImportanceColor" type="ColorRect" parent="MarginContainer/HBoxContainer/ImportanceColor"]
+layout_mode = 2
+color = Color(1, 0, 0, 1)
+
+[node name="TaskTag" type="Control" parent="MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(56, 0)
+layout_mode = 2
+
+[node name="Background" type="MarginContainer" parent="MarginContainer/HBoxContainer/TaskTag"]
+custom_minimum_size = Vector2(56, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 8
+
+[node name="Background" type="ColorRect" parent="MarginContainer/HBoxContainer/TaskTag/Background"]
+layout_mode = 2
+color = Color(1, 0, 0, 1)
+
+[node name="TaskTag" type="Label" parent="MarginContainer/HBoxContainer/TaskTag"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+text = "家务"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TaskTime" type="Label" parent="MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(192, 0)
+layout_mode = 2
+text = "2025-11-01 00:50:00"
+vertical_alignment = 1
+
+[node name="Button" parent="MarginContainer/HBoxContainer/TaskTime" instance=ExtResource("2_4561a")]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -32.0
+offset_top = -16.0
+offset_right = 0.0
+offset_bottom = 16.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="TaskTitle" type="LineEdit" parent="MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(0, 46)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+text = "测试任务"
+
+[node name="DeleteButton" type="Button" parent="MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(64, 48)
+layout_mode = 2
+size_flags_vertical = 4
+text = "删除"
+
+[connection signal="pressed" from="MarginContainer/HBoxContainer/TaskTime/Button" to="." method="_on_button_pressed"]

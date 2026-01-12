@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://chut2bdl26dx"]
+
+[ext_resource type="Script" uid="uid://ua8f0l87mgas" path="res://scripts/ui/panels/meal_slot.gd" id="1_btxqg"]
+
+[node name="MealSlot" type="Panel"]
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_btxqg")
+
+[node name="MealTypeLabel" type="Label" parent="."]
+layout_mode = 0
+text = "早餐"
+
+[node name="DishLabel" type="Label" parent="."]
+layout_mode = 0
+text = "未安排"

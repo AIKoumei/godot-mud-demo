@@ -1,0 +1,159 @@
+[gd_scene load_steps=2 format=3 uid="uid://j4iq4xkq0sb6"]
+
+[ext_resource type="Script" uid="uid://hclcwpnedbbr" path="res://scenes/base_components/year_picker.gd" id="1_2ak33"]
+
+[node name="YearPicker" type="Control"]
+custom_minimum_size = Vector2(172, 312)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 172.0
+offset_bottom = 312.0
+script = ExtResource("1_2ak33")
+
+[node name="Panel" type="Panel" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(2048, 1152)
+layout_mode = 0
+offset_left = -1024.0
+offset_top = -576.0
+offset_right = 1024.0
+offset_bottom = 576.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 172.0
+offset_bottom = 312.0
+color = Color(0.47788018, 0.47788012, 0.47788012, 1)
+
+[node name="Panel2" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0.3137255)
+
+[node name="YearButtons" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -58.0
+offset_right = 58.0
+offset_bottom = 264.0
+grow_horizontal = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+
+[node name="VBoxContainer" type="GridContainer" parent="YearButtons"]
+layout_mode = 2
+columns = 2
+
+[node name="Year_0" type="Button" parent="YearButtons/VBoxContainer"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+focus_mode = 0
+text = "2010"
+
+[node name="Year_1" type="Button" parent="YearButtons/VBoxContainer"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+focus_mode = 0
+text = "2011
+"
+
+[node name="Year_2" type="Button" parent="YearButtons/VBoxContainer"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+focus_mode = 0
+text = "2025"
+
+[node name="Year_3" type="Button" parent="YearButtons/VBoxContainer"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+focus_mode = 0
+text = "2025"
+
+[node name="Year_4" type="Button" parent="YearButtons/VBoxContainer"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+focus_mode = 0
+text = "2025"
+
+[node name="Year_5" type="Button" parent="YearButtons/VBoxContainer"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+focus_mode = 0
+text = "2025"
+
+[node name="Year_6" type="Button" parent="YearButtons/VBoxContainer"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+focus_mode = 0
+text = "2025"
+
+[node name="Year_7" type="Button" parent="YearButtons/VBoxContainer"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+focus_mode = 0
+text = "2025"
+
+[node name="Year_8" type="Button" parent="YearButtons/VBoxContainer"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+focus_mode = 0
+text = "2025"
+
+[node name="Year_9" type="Button" parent="YearButtons/VBoxContainer"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+focus_mode = 0
+text = "2025"
+
+[node name="JumpBar" type="MarginContainer" parent="."]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -48.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="HBoxContainer" type="HBoxContainer" parent="JumpBar"]
+layout_mode = 2
+
+[node name="PreYear50" type="Button" parent="JumpBar/HBoxContainer"]
+custom_minimum_size = Vector2(36, 36)
+layout_mode = 2
+focus_mode = 0
+text = "-50"
+
+[node name="PreYear10" type="Button" parent="JumpBar/HBoxContainer"]
+custom_minimum_size = Vector2(36, 36)
+layout_mode = 2
+focus_mode = 0
+text = "-10"
+
+[node name="NextYear10" type="Button" parent="JumpBar/HBoxContainer"]
+custom_minimum_size = Vector2(36, 36)
+layout_mode = 2
+focus_mode = 0
+text = "+10"
+
+[node name="NextYear50" type="Button" parent="JumpBar/HBoxContainer"]
+custom_minimum_size = Vector2(36, 36)
+layout_mode = 2
+focus_mode = 0
+text = "+50"
+
+[connection signal="gui_input" from="Panel" to="." method="_on_panel_gui_input"]

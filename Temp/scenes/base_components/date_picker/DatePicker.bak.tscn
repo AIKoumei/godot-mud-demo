@@ -1,0 +1,835 @@
+[gd_scene load_steps=4 format=3 uid="uid://br7wj4khhkuxr"]
+
+[ext_resource type="Script" uid="uid://dppk7xw2yxp4i" path="res://scenes/base_components/date_picker/DatePicker.gd" id="1_8dptv"]
+[ext_resource type="Shader" uid="uid://vxmi21807l5t" path="res://scenes/base_components/date_picker/DatePicker.gdshader" id="2_otg5b"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_splqy"]
+shader = ExtResource("2_otg5b")
+shader_parameter/outline_width = 16.0
+shader_parameter/outline_color = Color(1, 0, 0, 1)
+
+[node name="DatePicker" type="Control"]
+custom_minimum_size = Vector2(276, 282)
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_8dptv")
+
+[node name="Panel" type="Panel" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(2048, 1152)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel2" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0.3137255)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+material = SubResource("ShaderMaterial_splqy")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="YearMonthBar" type="MarginContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
+
+[node name="YearMonthBar" type="HBoxContainer" parent="VBoxContainer/YearMonthBar"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+
+[node name="LastYearButton" type="Button" parent="VBoxContainer/YearMonthBar/YearMonthBar"]
+custom_minimum_size = Vector2(32, 0)
+layout_mode = 2
+text = "《"
+
+[node name="LastMonthButton" type="Button" parent="VBoxContainer/YearMonthBar/YearMonthBar"]
+custom_minimum_size = Vector2(32, 0)
+layout_mode = 2
+text = "<"
+
+[node name="Year" type="Label" parent="VBoxContainer/YearMonthBar/YearMonthBar"]
+custom_minimum_size = Vector2(72, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "2025年"
+vertical_alignment = 1
+
+[node name="YearButton" type="Button" parent="VBoxContainer/YearMonthBar/YearMonthBar/Year"]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -16.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "V"
+
+[node name="Month" type="Label" parent="VBoxContainer/YearMonthBar/YearMonthBar"]
+custom_minimum_size = Vector2(52, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "11月"
+vertical_alignment = 1
+
+[node name="MonthButton" type="Button" parent="VBoxContainer/YearMonthBar/YearMonthBar/Month"]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -16.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "V"
+
+[node name="NextMonthButton" type="Button" parent="VBoxContainer/YearMonthBar/YearMonthBar"]
+custom_minimum_size = Vector2(32, 0)
+layout_mode = 2
+text = ">"
+
+[node name="NextYearButton" type="Button" parent="VBoxContainer/YearMonthBar/YearMonthBar"]
+custom_minimum_size = Vector2(32, 0)
+layout_mode = 2
+text = "》"
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Week" type="MarginContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 28)
+layout_mode = 2
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
+
+[node name="Week" type="HBoxContainer" parent="VBoxContainer/Week"]
+custom_minimum_size = Vector2(224, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 12
+
+[node name="Sunday" type="Label" parent="VBoxContainer/Week/Week"]
+custom_minimum_size = Vector2(24, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "日"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Monday" type="Label" parent="VBoxContainer/Week/Week"]
+custom_minimum_size = Vector2(24, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "一"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Tuesday" type="Label" parent="VBoxContainer/Week/Week"]
+custom_minimum_size = Vector2(24, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "二"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Wednesday" type="Label" parent="VBoxContainer/Week/Week"]
+custom_minimum_size = Vector2(24, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "三"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Thursday" type="Label" parent="VBoxContainer/Week/Week"]
+custom_minimum_size = Vector2(24, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "四"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Friday" type="Label" parent="VBoxContainer/Week/Week"]
+custom_minimum_size = Vector2(24, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "五"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Saturday" type="Label" parent="VBoxContainer/Week/Week"]
+custom_minimum_size = Vector2(24, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "六"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Days" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/Days"]
+custom_minimum_size = Vector2(240, 204)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/h_separation = 12
+theme_override_constants/v_separation = 12
+columns = 7
+
+[node name="Button" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button2" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button3" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button4" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button4"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button5" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button5"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button6" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button6"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button7" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button7"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button8" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button8"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button9" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button9"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button10" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button10"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button11" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button11"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button12" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button12"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button13" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button13"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button14" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button14"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button15" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button15"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button16" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button16"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button17" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button17"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button18" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button18"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button19" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button19"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button20" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button20"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button21" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button21"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button22" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button22"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button23" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button23"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button24" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button24"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button25" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button25"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button26" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button26"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button27" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button27"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button28" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button28"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button29" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button29"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button30" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button30"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button31" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button31"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button32" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button32"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button33" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button33"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button34" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button34"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button35" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button35"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button36" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button36"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button37" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button37"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button38" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button38"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button39" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button39"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button40" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button40"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button41" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button41"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button42" type="Button" parent="VBoxContainer/Days/GridContainer"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Days/GridContainer/Button42"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "31"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="gui_input" from="Panel" to="." method="_on_panel_gui_input"]
+[connection signal="pressed" from="VBoxContainer/YearMonthBar/YearMonthBar/Year/YearButton" to="." method="_on_year_button_pressed"]

@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=3 uid="uid://c7vqf37l6a14p"]
+
+[ext_resource type="Script" uid="uid://bu5ncr1kj3dhx" path="res://scripts/ui/panels/recipe_item.gd" id="1_btxqg"]
+
+[node name="RecipeItem" type="VBoxContainer"]
+script = ExtResource("1_btxqg")
+
+[node name="TopHBox" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="NameLabel" type="Label" parent="TopHBox"]
+layout_mode = 2
+text = "菜名"
+
+[node name="CuisineLabel" type="Label" parent="TopHBox"]
+layout_mode = 2
+text = "中餐"
+
+[node name="DifficultyLabel" type="Label" parent="TopHBox"]
+layout_mode = 2
+text = "★★★"
+
+[node name="TimeLabel" type="Label" parent="TopHBox"]
+layout_mode = 2
+text = "30分钟"
+
+[node name="AvailLabel" type="Label" parent="TopHBox"]
+layout_mode = 2
+text = "✅可用"
+
+[node name="ViewBtn" type="Button" parent="."]
+layout_mode = 2
+text = "查看详情"

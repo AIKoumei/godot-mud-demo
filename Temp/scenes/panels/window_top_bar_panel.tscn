@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://c2xso0fxgvs6e"]
+
+[node name="TopBar" type="MarginContainer"]
+offset_right = 156.0
+offset_bottom = 52.0
+mouse_filter = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+self_modulate = Color(0.33288068, 0.3328807, 0.3328806, 1)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Margin" type="MarginContainer" parent="."]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Margin"]
+layout_mode = 2
+mouse_filter = 2
+alignment = 2
+
+[node name="MinimizeButton" type="Button" parent="Margin/HBoxContainer"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+focus_mode = 0
+text = "🗕"
+
+[node name="MaximizeButton" type="Button" parent="Margin/HBoxContainer"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+focus_mode = 0
+text = "🗖"
+
+[node name="RestoreButton" type="Button" parent="Margin/HBoxContainer"]
+visible = false
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+focus_mode = 0
+text = "🗗"
+
+[node name="CloseButton" type="Button" parent="Margin/HBoxContainer"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+focus_mode = 0
+text = "🗙"

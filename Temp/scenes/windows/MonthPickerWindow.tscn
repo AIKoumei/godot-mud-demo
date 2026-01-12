@@ -1,0 +1,271 @@
+[gd_scene load_steps=3 format=3 uid="uid://cd7o6klbajsax"]
+
+[ext_resource type="Script" uid="uid://bwom1st3qgdyr" path="res://scripts/ui/windows/month_picker_window.gd" id="1_2apkq"]
+[ext_resource type="PackedScene" uid="uid://c2xso0fxgvs6e" path="res://scenes/panels/window_top_bar_panel.tscn" id="2_d6ai3"]
+
+[node name="MonthPickerWindow" type="Control"]
+custom_minimum_size = Vector2(172, 312)
+layout_mode = 3
+anchors_preset = 0
+offset_left = 426.0
+offset_top = 132.0
+offset_right = 598.0
+offset_bottom = 444.0
+mouse_filter = 2
+script = ExtResource("1_2apkq")
+
+[node name="CloseTouchPanel" type="Panel" parent="."]
+custom_minimum_size = Vector2(2048, 1152)
+layout_mode = 0
+offset_right = 2048.0
+offset_bottom = 1152.0
+mouse_filter = 1
+
+[node name="ColorRect" type="ColorRect" parent="CloseTouchPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="WindowContent" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="Background" type="ColorRect" parent="WindowContent"]
+layout_mode = 2
+mouse_filter = 2
+color = Color(0.47788018, 0.47788012, 0.47788012, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="WindowContent"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 0
+
+[node name="TopBar" parent="WindowContent/VBoxContainer" instance=ExtResource("2_d6ai3")]
+visible = false
+layout_mode = 2
+
+[node name="MainContent" type="MarginContainer" parent="WindowContent/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="MonthButtons" type="MarginContainer" parent="WindowContent/VBoxContainer/MainContent"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+
+[node name="Container" type="GridContainer" parent="WindowContent/VBoxContainer/MainContent/MonthButtons"]
+layout_mode = 2
+columns = 3
+
+[node name="Month_1" type="Button" parent="WindowContent/VBoxContainer/MainContent/MonthButtons/Container"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+text = "1"
+
+[node name="Selected" type="ColorRect" parent="WindowContent/VBoxContainer/MainContent/MonthButtons/Container/Month_1"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Month_2" type="Button" parent="WindowContent/VBoxContainer/MainContent/MonthButtons/Container"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+text = "2"
+
+[node name="Selected" type="ColorRect" parent="WindowContent/VBoxContainer/MainContent/MonthButtons/Container/Month_2"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Month_3" type="Button" parent="WindowContent/VBoxContainer/MainContent/MonthButtons/Container"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+text = "3"
+
+[node name="Selected" type="ColorRect" parent="WindowContent/VBoxContainer/MainContent/MonthButtons/Container/Month_3"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Month_4" type="Button" parent="WindowContent/VBoxContainer/MainContent/MonthButtons/Container"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+text = "4"
+
+[node name="Selected" type="ColorRect" parent="WindowContent/VBoxContainer/MainContent/MonthButtons/Container/Month_4"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Month_5" type="Button" parent="WindowContent/VBoxContainer/MainContent/MonthButtons/Container"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+text = "5"
+
+[node name="Selected" type="ColorRect" parent="WindowContent/VBoxContainer/MainContent/MonthButtons/Container/Month_5"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Month_6" type="Button" parent="WindowContent/VBoxContainer/MainContent/MonthButtons/Container"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+text = "6"
+
+[node name="Selected" type="ColorRect" parent="WindowContent/VBoxContainer/MainContent/MonthButtons/Container/Month_6"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Month_7" type="Button" parent="WindowContent/VBoxContainer/MainContent/MonthButtons/Container"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+text = "7"
+
+[node name="Selected" type="ColorRect" parent="WindowContent/VBoxContainer/MainContent/MonthButtons/Container/Month_7"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Month_8" type="Button" parent="WindowContent/VBoxContainer/MainContent/MonthButtons/Container"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+text = "8"
+
+[node name="Selected" type="ColorRect" parent="WindowContent/VBoxContainer/MainContent/MonthButtons/Container/Month_8"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Month_9" type="Button" parent="WindowContent/VBoxContainer/MainContent/MonthButtons/Container"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+text = "9"
+
+[node name="Selected" type="ColorRect" parent="WindowContent/VBoxContainer/MainContent/MonthButtons/Container/Month_9"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Month_10" type="Button" parent="WindowContent/VBoxContainer/MainContent/MonthButtons/Container"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+text = "10"
+
+[node name="Selected" type="ColorRect" parent="WindowContent/VBoxContainer/MainContent/MonthButtons/Container/Month_10"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Month_11" type="Button" parent="WindowContent/VBoxContainer/MainContent/MonthButtons/Container"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+text = "11"
+
+[node name="Selected" type="ColorRect" parent="WindowContent/VBoxContainer/MainContent/MonthButtons/Container/Month_11"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[node name="Month_12" type="Button" parent="WindowContent/VBoxContainer/MainContent/MonthButtons/Container"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+text = "12"
+
+[node name="Selected" type="ColorRect" parent="WindowContent/VBoxContainer/MainContent/MonthButtons/Container/Month_12"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39999986, 1, 0, 0.5019608)
+
+[connection signal="gui_input" from="CloseTouchPanel" to="." method="_on_close_touch_panel_gui_input"]
+[connection signal="pressed" from="WindowContent/VBoxContainer/MainContent/MonthButtons/Container/Month_1" to="." method="_on_month_button_pressed" binds= [1]]
+[connection signal="pressed" from="WindowContent/VBoxContainer/MainContent/MonthButtons/Container/Month_2" to="." method="_on_month_button_pressed" binds= [2]]
+[connection signal="pressed" from="WindowContent/VBoxContainer/MainContent/MonthButtons/Container/Month_3" to="." method="_on_month_button_pressed" binds= [3]]
+[connection signal="pressed" from="WindowContent/VBoxContainer/MainContent/MonthButtons/Container/Month_4" to="." method="_on_month_button_pressed" binds= [4]]
+[connection signal="pressed" from="WindowContent/VBoxContainer/MainContent/MonthButtons/Container/Month_5" to="." method="_on_month_button_pressed" binds= [5]]
+[connection signal="pressed" from="WindowContent/VBoxContainer/MainContent/MonthButtons/Container/Month_6" to="." method="_on_month_button_pressed" binds= [6]]
+[connection signal="pressed" from="WindowContent/VBoxContainer/MainContent/MonthButtons/Container/Month_7" to="." method="_on_month_button_pressed" binds= [7]]
+[connection signal="pressed" from="WindowContent/VBoxContainer/MainContent/MonthButtons/Container/Month_8" to="." method="_on_month_button_pressed" binds= [8]]
+[connection signal="pressed" from="WindowContent/VBoxContainer/MainContent/MonthButtons/Container/Month_9" to="." method="_on_month_button_pressed" binds= [9]]
+[connection signal="pressed" from="WindowContent/VBoxContainer/MainContent/MonthButtons/Container/Month_10" to="." method="_on_month_button_pressed" binds= [10]]
+[connection signal="pressed" from="WindowContent/VBoxContainer/MainContent/MonthButtons/Container/Month_11" to="." method="_on_month_button_pressed" binds= [11]]
+[connection signal="pressed" from="WindowContent/VBoxContainer/MainContent/MonthButtons/Container/Month_12" to="." method="_on_month_button_pressed" binds= [12]]

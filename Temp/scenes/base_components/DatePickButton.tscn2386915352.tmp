@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://bhp5k0max0yro"]
+
+[ext_resource type="Script" uid="uid://biad8m244wmdt" path="res://scenes/base_components/date_pick_button.gd" id="1_h5b8d"]
+[ext_resource type="PackedScene" uid="uid://b8wtsey64k7rl" path="res://scenes/base_components/DatePicker.tscn" id="2_1dt4k"]
+
+[node name="DatePickButton" type="Button"]
+script = ExtResource("1_h5b8d")
+
+[node name="Buttom" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="DatePicker" parent="Buttom" instance=ExtResource("2_1dt4k")]
+layout_mode = 1
+offset_right = 276.0
+offset_bottom = 282.0
+
+[node name="Top" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
