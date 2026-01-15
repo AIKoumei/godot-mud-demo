@@ -1,0 +1,49 @@
+[gd_scene load_steps=2 format=3 uid="uid://08ram6gh0yu3"]
+
+[ext_resource type="Theme" uid="uid://8c5j2xptwq82" path="res://res/core/UI/Theme/SproutLands/sprout_lands_theme.tres" id="1_pxsya"]
+
+[node name="StartMenuScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_pxsya")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -4.0
+offset_right = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 12
+alignment = 1
+
+[node name="NewGame" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(192, 64)
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "NewGame"
+
+[node name="LoadGame" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(192, 64)
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "LoadGame"
+
+[node name="Settings" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(192, 64)
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "Settings"
+
+[node name="ExitGame" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(192, 64)
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "Exit"

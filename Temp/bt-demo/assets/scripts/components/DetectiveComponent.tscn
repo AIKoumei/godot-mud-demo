@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://burqjb4ecks87"]
+
+[ext_resource type="Script" uid="uid://cvnehtbhjg3y8" path="res://demos/assets/scripts/components/DetectiveComponent.gd" id="1_olnsw"]
+
+[node name="DetectiveComponent" type="Node"]
+script = ExtResource("1_olnsw")
+
+[connection signal="ready" from="." to="." method="_on_ready"]

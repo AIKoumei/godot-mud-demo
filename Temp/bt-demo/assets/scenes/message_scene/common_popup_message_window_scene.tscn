@@ -1,0 +1,41 @@
+[gd_scene load_steps=2 format=3 uid="uid://d2008n41ojd3a"]
+
+[ext_resource type="Script" uid="uid://cscc0k5u0jd02" path="res://assets/scenes/message_scene/common_popup_message_window_scene.gd" id="1_0gx3f"]
+
+[node name="CommonPopupMessageWindowScene" type="Control"]
+custom_minimum_size = Vector2(320, 90)
+layout_mode = 3
+anchors_preset = 0
+mouse_filter = 2
+script = ExtResource("1_0gx3f")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+custom_minimum_size = Vector2(320, 90)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="TextEdit" type="TextEdit" parent="PanelContainer/MarginContainer"]
+layout_mode = 2
+mouse_filter = 2
+text = "测试文本"
+editable = false
+context_menu_enabled = false
+shortcut_keys_enabled = false
+selecting_enabled = false
+drag_and_drop_selection_enabled = false
+virtual_keyboard_enabled = false
+virtual_keyboard_show_on_focus = false
+middle_mouse_paste_enabled = false
+wrap_mode = 1
+tab_input_mode = false
+scroll_smooth = true

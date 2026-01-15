@@ -1,0 +1,100 @@
+[gd_resource type="BehaviorTree" load_steps=37 format=3 uid="uid://b2rkjsbpwg6ae"]
+
+[ext_resource type="Script" uid="uid://b037i5hutxbs2" path="res://demos/assets/ai/tasks/check_actor_is_in_battle.gd" id="1_nu2o4"]
+[ext_resource type="Script" uid="uid://dtnn6av12ufd2" path="res://demos/assets/ai/tasks/detect_attack.gd" id="2_2e1b5"]
+[ext_resource type="Script" uid="uid://dujlr6y42dye6" path="res://demos/assets/ai/tasks/check_actor_is_in_home.gd" id="2_q42ce"]
+[ext_resource type="Script" uid="uid://dp0rbyqdtsc4g" path="res://demos/assets/ai/tasks/stop_current_movement.gd" id="3_1bqkl"]
+[ext_resource type="Script" uid="uid://8r64l2ouc4r0" path="res://demos/assets/ai/tasks/check_actor_is_in_adventure.gd" id="3_wj5n6"]
+[ext_resource type="Script" uid="uid://dbkh24vydhcq5" path="res://demos/assets/ai/tasks/do_avoid_attack.gd" id="4_d2p17"]
+[ext_resource type="Script" uid="uid://ce6qt8n3a210u" path="res://demos/assets/ai/tasks/detect_enemy.gd" id="5_gfmkg"]
+[ext_resource type="Script" uid="uid://bbtdghrjd51ah" path="res://demos/assets/ai/tasks/check_normal_attack_cooldown.gd" id="7_gewmv"]
+[ext_resource type="Script" uid="uid://4ro0ygp7a4qe" path="res://demos/assets/ai/tasks/target_enemy.gd" id="7_gfmkg"]
+[ext_resource type="Script" uid="uid://cj8slcuyaj1bs" path="res://demos/assets/ai/tasks/use_normal_attack.gd" id="7_qjpb3"]
+[ext_resource type="Script" uid="uid://ddmwoxeqxf6wf" path="res://demos/assets/ai/tasks/keey_enemy_in_distance.gd" id="8_gfmkg"]
+
+[sub_resource type="BlackboardPlan" id="BlackboardPlan_vap66"]
+
+[sub_resource type="BTAction" id="BTAction_tq8ag"]
+script = ExtResource("1_nu2o4")
+
+[sub_resource type="BTAction" id="BTAction_gewmv"]
+script = ExtResource("2_2e1b5")
+
+[sub_resource type="BTAction" id="BTAction_qjpb3"]
+script = ExtResource("3_1bqkl")
+
+[sub_resource type="BTAction" id="BTAction_w3jry"]
+script = ExtResource("4_d2p17")
+
+[sub_resource type="BTSequence" id="BTSequence_4lf14"]
+custom_name = "SeeAttack"
+children = [SubResource("BTAction_gewmv"), SubResource("BTAction_qjpb3"), SubResource("BTAction_w3jry")]
+
+[sub_resource type="BTAction" id="BTAction_uhxos"]
+script = ExtResource("5_gfmkg")
+
+[sub_resource type="BTAction" id="BTAction_b4j8t"]
+script = ExtResource("7_gewmv")
+
+[sub_resource type="BTAction" id="BTAction_4lf14"]
+script = ExtResource("7_qjpb3")
+
+[sub_resource type="BTSequence" id="BTSequence_gfmkg"]
+custom_name = "NormalAttack"
+children = [SubResource("BTAction_b4j8t"), SubResource("BTAction_4lf14")]
+
+[sub_resource type="BTAction" id="BTAction_gfmkg"]
+script = ExtResource("7_gewmv")
+
+[sub_resource type="BTSequence" id="BTSequence_qjpb3"]
+custom_name = "SpecialAttack"
+children = [SubResource("BTAction_gfmkg")]
+
+[sub_resource type="BTSelector" id="BTSelector_eho8e"]
+children = [SubResource("BTSequence_gfmkg"), SubResource("BTSequence_qjpb3")]
+
+[sub_resource type="BTAction" id="BTAction_eho8e"]
+script = ExtResource("7_gfmkg")
+
+[sub_resource type="BTAction" id="BTAction_gheb8"]
+script = ExtResource("8_gfmkg")
+
+[sub_resource type="BTSequence" id="BTSequence_gewmv"]
+custom_name = "KeepEnemyInDistance"
+children = [SubResource("BTAction_eho8e"), SubResource("BTAction_gheb8")]
+
+[sub_resource type="BTSelector" id="BTSelector_ir7p3"]
+children = [SubResource("BTSelector_eho8e"), SubResource("BTSequence_gewmv")]
+
+[sub_resource type="BTSequence" id="BTSequence_gheb8"]
+custom_name = "SeeEnemy"
+children = [SubResource("BTAction_uhxos"), SubResource("BTSelector_ir7p3")]
+
+[sub_resource type="BTParallel" id="BTParallel_eho8e"]
+children = [SubResource("BTSequence_4lf14"), SubResource("BTSequence_gheb8")]
+
+[sub_resource type="BTSequence" id="BTSequence_7ux1d"]
+custom_name = "IfInBattle"
+children = [SubResource("BTAction_tq8ag"), SubResource("BTParallel_eho8e")]
+
+[sub_resource type="BTAction" id="BTAction_nfxxp"]
+script = ExtResource("2_q42ce")
+
+[sub_resource type="BTSequence" id="BTSequence_nu2o4"]
+custom_name = "IfInHome"
+children = [SubResource("BTAction_nfxxp")]
+
+[sub_resource type="BTAction" id="BTAction_2e1b5"]
+script = ExtResource("3_wj5n6")
+
+[sub_resource type="BTSequence" id="BTSequence_x505a"]
+custom_name = "IfInAdventure"
+children = [SubResource("BTAction_2e1b5")]
+
+[sub_resource type="BTSelector" id="BTSelector_q42ce"]
+custom_name = "Root"
+children = [SubResource("BTSequence_7ux1d"), SubResource("BTSequence_nu2o4"), SubResource("BTSequence_x505a")]
+
+[resource]
+blackboard_plan = SubResource("BlackboardPlan_vap66")
+root_task = SubResource("BTSelector_q42ce")

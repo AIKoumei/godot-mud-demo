@@ -3,14 +3,14 @@
 importer="codeandweb.texturepacker_import_spritesheet"
 type="Resource"
 uid="uid://d3ytax32fqqov"
-path="res://.godot/imported/os_icon_set.tpsheet-8ec6b5ea8409b98f75baf0a706485bcb.res"
+path="res://.godot/imported/os_icon_set.tpsheet-5366b09c2b53ba5d6246f34f3e810724.res"
 
 [deps]
 
-files=["res://assets/icons/os_icon_set.sprites/calculator.tres", "res://assets/icons/os_icon_set.sprites/computer.tres", "res://assets/icons/os_icon_set.sprites/file_explorer.tres", "res://assets/icons/os_icon_set.sprites/note_pad.tres", "res://assets/icons/os_icon_set.sprites/trash_can.tres", "res://assets/icons/os_icon_set.sprites/unknow.tres", "res://assets/icons/os_icon_set.sprites/website_explorer.tres"]
+files=["res://Temp/assets/icons/os_icon_set.sprites/calculator.tres", "res://Temp/assets/icons/os_icon_set.sprites/computer.tres", "res://Temp/assets/icons/os_icon_set.sprites/file_explorer.tres", "res://Temp/assets/icons/os_icon_set.sprites/note_pad.tres", "res://Temp/assets/icons/os_icon_set.sprites/trash_can.tres", "res://Temp/assets/icons/os_icon_set.sprites/unknow.tres", "res://Temp/assets/icons/os_icon_set.sprites/website_explorer.tres"]
 
-source_file="res://assets/icons/os_icon_set.tpsheet"
-dest_files=["res://.godot/imported/os_icon_set.tpsheet-8ec6b5ea8409b98f75baf0a706485bcb.res", "res://assets/icons/os_icon_set.sprites/calculator.tres", "res://assets/icons/os_icon_set.sprites/computer.tres", "res://assets/icons/os_icon_set.sprites/file_explorer.tres", "res://assets/icons/os_icon_set.sprites/note_pad.tres", "res://assets/icons/os_icon_set.sprites/trash_can.tres", "res://assets/icons/os_icon_set.sprites/unknow.tres", "res://assets/icons/os_icon_set.sprites/website_explorer.tres"]
+source_file="res://Temp/assets/icons/os_icon_set.tpsheet"
+dest_files=["res://.godot/imported/os_icon_set.tpsheet-5366b09c2b53ba5d6246f34f3e810724.res", "res://Temp/assets/icons/os_icon_set.sprites/calculator.tres", "res://Temp/assets/icons/os_icon_set.sprites/computer.tres", "res://Temp/assets/icons/os_icon_set.sprites/file_explorer.tres", "res://Temp/assets/icons/os_icon_set.sprites/note_pad.tres", "res://Temp/assets/icons/os_icon_set.sprites/trash_can.tres", "res://Temp/assets/icons/os_icon_set.sprites/unknow.tres", "res://Temp/assets/icons/os_icon_set.sprites/website_explorer.tres"]
 
 [params]
 

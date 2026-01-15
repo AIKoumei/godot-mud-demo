@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dnwu3qv335i1b"
-path="res://.godot/imported/8-bit Arcade.png-2c86b40678400b8f3fdec66d043411b0.ctex"
+path="res://.godot/imported/8-bit Arcade.png-3308d4021085bbaf8370f9359d5604ae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/fonts/8-bit Arcade.png"
-dest_files=["res://.godot/imported/8-bit Arcade.png-2c86b40678400b8f3fdec66d043411b0.ctex"]
+source_file="res://Temp/assets/fonts/8-bit Arcade.png"
+dest_files=["res://.godot/imported/8-bit Arcade.png-3308d4021085bbaf8370f9359d5604ae.ctex"]
 
 [params]
 

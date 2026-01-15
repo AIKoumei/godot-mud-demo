@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://drrrxjiu2fvhv"
+path="res://.godot/imported/Digimon World Championship OST #8 Fight in a Hostile Terrain.mp3-cd34a856c9547520ee824d8c1a63fb31.mp3str"
+
+[deps]
+
+source_file="res://Temp/bt-demo/assets/audio/bgm/base/Digimon World Championship OST #8 Fight in a Hostile Terrain.mp3"
+dest_files=["res://.godot/imported/Digimon World Championship OST #8 Fight in a Hostile Terrain.mp3-cd34a856c9547520ee824d8c1a63fb31.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://cps7uyr47jyfk"]
+[gd_scene load_steps=3 format=3 uid="uid://cumb1li5dhtq1"]
 
-[ext_resource type="Script" uid="uid://c37m37iv8ougd" path="res://scripts/ui/main_ui.gd" id="1_iuonh"]
-[ext_resource type="ButtonGroup" uid="uid://crkje58rlpu3l" path="res://scenes/main/main_buttom_nav_btngroup.tres" id="2_k2fmo"]
+[ext_resource type="Script" uid="uid://c37m37iv8ougd" path="res://Temp/scripts/ui/main_ui.gd" id="1_iuonh"]
+[ext_resource type="ButtonGroup" uid="uid://crkje58rlpu3l" path="res://Temp/scenes/main/main_buttom_nav_btngroup.tres" id="2_k2fmo"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_iuonh")
@@ -227,6 +227,104 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
+[node name="MessageLayer" type="Control" parent="CanvasLayer/Control/TopWindowLayer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="LeftTopLayer" type="VBoxContainer" parent="CanvasLayer/Control/TopWindowLayer/MessageLayer"]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="LeftCenterLayer" type="VBoxContainer" parent="CanvasLayer/Control/TopWindowLayer/MessageLayer"]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+grow_vertical = 2
+mouse_filter = 2
+alignment = 1
+
+[node name="LeftBottomLayer" type="VBoxContainer" parent="CanvasLayer/Control/TopWindowLayer/MessageLayer"]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+grow_vertical = 2
+mouse_filter = 2
+alignment = 2
+
+[node name="CenterTopLayer" type="VBoxContainer" parent="CanvasLayer/Control/TopWindowLayer/MessageLayer"]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="CenterCenterLayer" type="VBoxContainer" parent="CanvasLayer/Control/TopWindowLayer/MessageLayer"]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+alignment = 1
+
+[node name="CenterBottomLayer" type="VBoxContainer" parent="CanvasLayer/Control/TopWindowLayer/MessageLayer"]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+alignment = 2
+
+[node name="RightTopLayer" type="VBoxContainer" parent="CanvasLayer/Control/TopWindowLayer/MessageLayer"]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="RightCenterLayer" type="VBoxContainer" parent="CanvasLayer/Control/TopWindowLayer/MessageLayer"]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 2.0
+offset_bottom = 2.0
+grow_horizontal = 0
+grow_vertical = 2
+mouse_filter = 2
+alignment = 1
+
+[node name="RightBottomLayer" type="VBoxContainer" parent="CanvasLayer/Control/TopWindowLayer/MessageLayer"]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 2
+mouse_filter = 2
+alignment = 2
+
 [node name="TipsWindowLayer" type="Control" parent="CanvasLayer/Control"]
 layout_mode = 1
 anchors_preset = 15
@@ -235,3 +333,101 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
+
+[node name="MessageLayer" type="Control" parent="CanvasLayer/Control/TipsWindowLayer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="LeftTopLayer" type="VBoxContainer" parent="CanvasLayer/Control/TipsWindowLayer/MessageLayer"]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="LeftCenterLayer" type="VBoxContainer" parent="CanvasLayer/Control/TipsWindowLayer/MessageLayer"]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+grow_vertical = 2
+mouse_filter = 2
+alignment = 1
+
+[node name="LeftBottomLayer" type="VBoxContainer" parent="CanvasLayer/Control/TipsWindowLayer/MessageLayer"]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+grow_vertical = 2
+mouse_filter = 2
+alignment = 2
+
+[node name="CenterTopLayer" type="VBoxContainer" parent="CanvasLayer/Control/TipsWindowLayer/MessageLayer"]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="CenterCenterLayer" type="VBoxContainer" parent="CanvasLayer/Control/TipsWindowLayer/MessageLayer"]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+alignment = 1
+
+[node name="CenterBottomLayer" type="VBoxContainer" parent="CanvasLayer/Control/TipsWindowLayer/MessageLayer"]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+alignment = 2
+
+[node name="RightTopLayer" type="VBoxContainer" parent="CanvasLayer/Control/TipsWindowLayer/MessageLayer"]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="RightCenterLayer" type="VBoxContainer" parent="CanvasLayer/Control/TipsWindowLayer/MessageLayer"]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 2.0
+offset_bottom = 2.0
+grow_horizontal = 0
+grow_vertical = 2
+mouse_filter = 2
+alignment = 1
+
+[node name="RightBottomLayer" type="VBoxContainer" parent="CanvasLayer/Control/TipsWindowLayer/MessageLayer"]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 2
+mouse_filter = 2
+alignment = 2

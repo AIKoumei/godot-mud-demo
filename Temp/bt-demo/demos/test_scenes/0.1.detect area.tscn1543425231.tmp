@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://buu64cubl55tq"]
+
+[ext_resource type="PackedScene" uid="uid://dq8le46ientq1" path="res://demos/assets/actors/NPC.tscn" id="1_4s5mu"]
+
+[node name="0_1_detectArea" type="Node2D"]
+
+[node name="Npc" parent="." instance=ExtResource("1_4s5mu")]
+
+[node name="Npc2" parent="." instance=ExtResource("1_4s5mu")]
+position = Vector2(1136, 391)

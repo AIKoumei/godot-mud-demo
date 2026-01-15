@@ -1,0 +1,31 @@
+[gd_scene load_steps=7 format=3 uid="uid://dq8le46ientq1"]
+
+[ext_resource type="Script" uid="uid://bamrrc35lxxb7" path="res://demos/assets/actors/npc.gd" id="1_eeobh"]
+[ext_resource type="Texture2D" uid="uid://2uyxh7sy8qny" path="res://demos/limboai/assets/weapon_ninja_star.png" id="1_vap66"]
+[ext_resource type="BehaviorTree" uid="uid://b2rkjsbpwg6ae" path="res://demos/assets/ai/trees/NPC.tres" id="2_5na6a"]
+[ext_resource type="PackedScene" uid="uid://burqjb4ecks87" path="res://demos/assets/scripts/components/DetectiveComponent.tscn" id="3_bjdfy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ufj7s"]
+size = Vector2(66, 66)
+
+[sub_resource type="BlackboardPlan" id="BlackboardPlan_bjdfy"]
+
+[node name="Npc" type="CharacterBody2D"]
+script = ExtResource("1_eeobh")
+team = null
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_vap66")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ufj7s")
+
+[node name="BTPlayer" type="BTPlayer" parent="."]
+behavior_tree = ExtResource("2_5na6a")
+blackboard_plan = SubResource("BlackboardPlan_bjdfy")
+
+[node name="Components" type="Node" parent="."]
+
+[node name="DetectiveComponent" parent="Components" instance=ExtResource("3_bjdfy")]
+
+[connection signal="ready" from="." to="." method="_on_ready"]

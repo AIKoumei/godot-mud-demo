@@ -1,0 +1,48 @@
+[gd_scene load_steps=11 format=3 uid="uid://dacop5w1lp172"]
+
+[ext_resource type="Script" uid="uid://cwbp1140l4meb" path="res://assets/actors/player.gd" id="1_8j0v4"]
+[ext_resource type="Texture2D" uid="uid://2uyxh7sy8qny" path="res://demos/limboai/assets/weapon_ninja_star.png" id="2_wna1s"]
+[ext_resource type="BehaviorTree" uid="uid://b2rkjsbpwg6ae" path="res://assets/ai/trees/NPC.tres" id="3_dxqd2"]
+[ext_resource type="PackedScene" uid="uid://burqjb4ecks87" path="res://assets/scripts/components/DetectiveComponent.tscn" id="4_j27ak"]
+[ext_resource type="PackedScene" uid="uid://ds7dldau3k1d1" path="res://assets/scripts/components/ActorComponent.tscn" id="4_o7ta1"]
+[ext_resource type="PackedScene" uid="uid://cvg3s1iijyj8p" path="res://assets/scripts/components/TeamComponent.tscn" id="4_wna1s"]
+[ext_resource type="PackedScene" uid="uid://q01e2x4krhmf" path="res://assets/scripts/components/AttackableComponent.tscn" id="7_hf2v6"]
+[ext_resource type="PackedScene" uid="uid://xcihfw051wn6" path="res://assets/scripts/components/HealthComponent.tscn" id="8_kyeki"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ufj7s"]
+size = Vector2(66, 66)
+
+[sub_resource type="BlackboardPlan" id="BlackboardPlan_bjdfy"]
+
+[node name="Player" type="CharacterBody2D"]
+collision_layer = 0
+collision_mask = 0
+script = ExtResource("1_8j0v4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_wna1s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ufj7s")
+
+[node name="BTPlayer" type="BTPlayer" parent="."]
+behavior_tree = ExtResource("3_dxqd2")
+active = false
+blackboard_plan = SubResource("BlackboardPlan_bjdfy")
+
+[node name="Components" type="Node" parent="."]
+
+[node name="ActorComponent" parent="Components" instance=ExtResource("4_o7ta1")]
+
+[node name="TeamComponent" parent="Components" instance=ExtResource("4_wna1s")]
+team = 1
+
+[node name="DetectiveComponent" parent="Components" instance=ExtResource("4_j27ak")]
+
+[node name="AttackableComponent" parent="Components" instance=ExtResource("7_hf2v6")]
+
+[node name="HealthComponent" parent="Components" instance=ExtResource("8_kyeki")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[connection signal="ready" from="." to="." method="_on_ready"]

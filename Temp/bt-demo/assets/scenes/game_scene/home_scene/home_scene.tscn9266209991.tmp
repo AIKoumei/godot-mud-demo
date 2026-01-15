@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://bahpkxm6k5b73"]
+
+[ext_resource type="Script" uid="uid://bya3wn5gxl5w6" path="res://assets/scenes/game_scene/home_scene/home_scene.gd" id="1_hx0em"]
+[ext_resource type="Script" uid="uid://dvr1e3vxw12w8" path="res://assets/scenes/game_scene/home_scene/home_scene_tile_map_layer.gd" id="2_hx0em"]
+[ext_resource type="TileSet" uid="uid://wv8uy8qir5h4" path="res://assets/scenes/home_cage_scene/home_cage_tile_set.tres" id="3_00n7e"]
+[ext_resource type="PackedScene" uid="uid://dacop5w1lp172" path="res://assets/actors/player.tscn" id="3_p5q17"]
+[ext_resource type="PackedScene" uid="uid://ctnolqxsl1jpu" path="res://assets/scenes/home_cage_scene/home_rest_cage.tscn" id="4_hx0em"]
+
+[node name="HomeScene" type="Node2D"]
+script = ExtResource("1_hx0em")
+
+[node name="HomeRestCage" parent="." instance=ExtResource("4_hx0em")]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+y_sort_enabled = true
+position = Vector2(-64, -32)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 60, 0, 0, 0, 0, 0, 0, 0)
+tile_set = ExtResource("3_00n7e")
+script = ExtResource("2_hx0em")
+
+[node name="Player" parent="." instance=ExtResource("3_p5q17")]
+position = Vector2(271, 195)
+collision_layer = 2
+collision_mask = 1
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.0
+offset_top = -64.0
+offset_right = 32.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[connection signal="changed" from="TileMapLayer" to="TileMapLayer" method="_on_changed"]

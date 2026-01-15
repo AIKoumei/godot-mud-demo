@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bbe68yui18hlm"
+path="res://.godot/imported/Digimon World Championship OST #14 Let s Hunt 1.mp3-95b33b44d3ec74768a226b8590e101ea.mp3str"
+
+[deps]
+
+source_file="res://Temp/bt-demo/assets/audio/bgm/base/Digimon World Championship OST #14 Let s Hunt 1.mp3"
+dest_files=["res://.godot/imported/Digimon World Championship OST #14 Let s Hunt 1.mp3-95b33b44d3ec74768a226b8590e101ea.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

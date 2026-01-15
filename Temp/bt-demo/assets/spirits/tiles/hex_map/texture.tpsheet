@@ -1,0 +1,3664 @@
+{
+	"textures": [
+		{
+			"image": "texture.png",
+			"size": {
+				"w": 4008,
+				"h": 4064
+			},
+			"sprites": [
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Aqua&#x2F;HSI_aqua_012.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 176,
+						"h": 207
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 34,
+						"h": 3
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Blood and Gore&#x2F;HSI - Blood&#x2F;HSI_blood_009.png",
+					"region": {
+						"x": 0,
+						"y": 207,
+						"w": 178,
+						"h": 203
+					},
+					"margin": {
+						"x": 15,
+						"y": 3,
+						"w": 32,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Green&#x2F;HSI_green_004.png",
+					"region": {
+						"x": 176,
+						"y": 0,
+						"w": 178,
+						"h": 203
+					},
+					"margin": {
+						"x": 15,
+						"y": 3,
+						"w": 32,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Lime&#x2F;HSI_lime_001.png",
+					"region": {
+						"x": 0,
+						"y": 410,
+						"w": 178,
+						"h": 203
+					},
+					"margin": {
+						"x": 15,
+						"y": 3,
+						"w": 32,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Orange&#x2F;HSI_orange_006.png",
+					"region": {
+						"x": 0,
+						"y": 613,
+						"w": 175,
+						"h": 203
+					},
+					"margin": {
+						"x": 18,
+						"y": 3,
+						"w": 35,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Aqua&#x2F;HSI_aqua_001.png",
+					"region": {
+						"x": 0,
+						"y": 816,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Aqua&#x2F;HSI_aqua_002.png",
+					"region": {
+						"x": 0,
+						"y": 1019,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Aqua&#x2F;HSI_aqua_003.png",
+					"region": {
+						"x": 0,
+						"y": 1222,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Aqua&#x2F;HSI_aqua_004.png",
+					"region": {
+						"x": 0,
+						"y": 1425,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Aqua&#x2F;HSI_aqua_005.png",
+					"region": {
+						"x": 0,
+						"y": 1628,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Aqua&#x2F;HSI_aqua_006.png",
+					"region": {
+						"x": 0,
+						"y": 1831,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Aqua&#x2F;HSI_aqua_007.png",
+					"region": {
+						"x": 0,
+						"y": 2034,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Aqua&#x2F;HSI_aqua_009.png",
+					"region": {
+						"x": 0,
+						"y": 2237,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Blood and Gore&#x2F;HSI - Blood&#x2F;HSI_blood_001.png",
+					"region": {
+						"x": 0,
+						"y": 2440,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Blood and Gore&#x2F;HSI - Blood&#x2F;HSI_blood_002.png",
+					"region": {
+						"x": 0,
+						"y": 2643,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Blood and Gore&#x2F;HSI - Blood&#x2F;HSI_blood_003.png",
+					"region": {
+						"x": 0,
+						"y": 2846,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Blood and Gore&#x2F;HSI - Blood&#x2F;HSI_blood_004.png",
+					"region": {
+						"x": 0,
+						"y": 3049,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Blood and Gore&#x2F;HSI - Blood&#x2F;HSI_blood_005.png",
+					"region": {
+						"x": 0,
+						"y": 3252,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Blood and Gore&#x2F;HSI - Blood&#x2F;HSI_blood_006.png",
+					"region": {
+						"x": 0,
+						"y": 3455,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Blood and Gore&#x2F;HSI - Blood&#x2F;HSI_blood_007.png",
+					"region": {
+						"x": 0,
+						"y": 3658,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Blood and Gore&#x2F;HSI - Blood&#x2F;HSI_blood_008.png",
+					"region": {
+						"x": 0,
+						"y": 3861,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Blood and Gore&#x2F;HSI - Blood&#x2F;HSI_blood_010.png",
+					"region": {
+						"x": 174,
+						"y": 816,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Blood and Gore&#x2F;HSI - Blood&#x2F;HSI_blood_011.png",
+					"region": {
+						"x": 175,
+						"y": 613,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Blood and Gore&#x2F;HSI - Blood&#x2F;HSI_blood_012.png",
+					"region": {
+						"x": 348,
+						"y": 203,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Blood and Gore&#x2F;HSI - Gore&#x2F;HSI_gore_001.png",
+					"region": {
+						"x": 354,
+						"y": 0,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Blood and Gore&#x2F;HSI - Gore&#x2F;HSI_gore_002.png",
+					"region": {
+						"x": 528,
+						"y": 0,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Blood and Gore&#x2F;HSI - Gore&#x2F;HSI_gore_003.png",
+					"region": {
+						"x": 178,
+						"y": 406,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Blood and Gore&#x2F;HSI - Gore&#x2F;HSI_gore_004.png",
+					"region": {
+						"x": 174,
+						"y": 1019,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Blood and Gore&#x2F;HSI - Gore&#x2F;HSI_gore_005.png",
+					"region": {
+						"x": 174,
+						"y": 1222,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Blood and Gore&#x2F;HSI - Gore&#x2F;HSI_gore_006.png",
+					"region": {
+						"x": 174,
+						"y": 1425,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Blood and Gore&#x2F;HSI - Gore&#x2F;HSI_gore_007.png",
+					"region": {
+						"x": 174,
+						"y": 1628,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Blood and Gore&#x2F;HSI - Gore&#x2F;HSI_gore_008.png",
+					"region": {
+						"x": 174,
+						"y": 1831,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Blood and Gore&#x2F;HSI - Gore&#x2F;HSI_gore_009.png",
+					"region": {
+						"x": 174,
+						"y": 2034,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Blood and Gore&#x2F;HSI - Gore&#x2F;HSI_gore_010.png",
+					"region": {
+						"x": 174,
+						"y": 2237,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Blood and Gore&#x2F;HSI - Gore&#x2F;HSI_gore_011.png",
+					"region": {
+						"x": 174,
+						"y": 2440,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Blood and Gore&#x2F;HSI - Gore&#x2F;HSI_gore_012.png",
+					"region": {
+						"x": 174,
+						"y": 2643,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Deep&#x2F;HSI_deep_001.png",
+					"region": {
+						"x": 174,
+						"y": 2846,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Deep&#x2F;HSI_deep_002.png",
+					"region": {
+						"x": 174,
+						"y": 3049,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Deep&#x2F;HSI_deep_003.png",
+					"region": {
+						"x": 174,
+						"y": 3252,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Deep&#x2F;HSI_deep_004.png",
+					"region": {
+						"x": 174,
+						"y": 3455,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Deep&#x2F;HSI_deep_005.png",
+					"region": {
+						"x": 174,
+						"y": 3658,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Deep&#x2F;HSI_deep_006.png",
+					"region": {
+						"x": 174,
+						"y": 3861,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Deep&#x2F;HSI_deep_007.png",
+					"region": {
+						"x": 348,
+						"y": 816,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Deep&#x2F;HSI_deep_008.png",
+					"region": {
+						"x": 349,
+						"y": 609,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Deep&#x2F;HSI_deep_009.png",
+					"region": {
+						"x": 352,
+						"y": 406,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Deep&#x2F;HSI_deep_010.png",
+					"region": {
+						"x": 522,
+						"y": 203,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Deep&#x2F;HSI_deep_011.png",
+					"region": {
+						"x": 348,
+						"y": 1019,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Deep&#x2F;HSI_deep_012.png",
+					"region": {
+						"x": 348,
+						"y": 1222,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Evergreen&#x2F;HSI_evergreen_001.png",
+					"region": {
+						"x": 348,
+						"y": 1425,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Evergreen&#x2F;HSI_evergreen_002.png",
+					"region": {
+						"x": 348,
+						"y": 1628,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Evergreen&#x2F;HSI_evergreen_003.png",
+					"region": {
+						"x": 348,
+						"y": 1831,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Evergreen&#x2F;HSI_evergreen_004.png",
+					"region": {
+						"x": 348,
+						"y": 2034,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Evergreen&#x2F;HSI_evergreen_005.png",
+					"region": {
+						"x": 348,
+						"y": 2237,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Evergreen&#x2F;HSI_evergreen_006.png",
+					"region": {
+						"x": 348,
+						"y": 2440,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Evergreen&#x2F;HSI_evergreen_007.png",
+					"region": {
+						"x": 348,
+						"y": 2643,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Evergreen&#x2F;HSI_evergreen_008.png",
+					"region": {
+						"x": 348,
+						"y": 2846,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Evergreen&#x2F;HSI_evergreen_009.png",
+					"region": {
+						"x": 348,
+						"y": 3049,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Evergreen&#x2F;HSI_evergreen_010.png",
+					"region": {
+						"x": 348,
+						"y": 3252,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Evergreen&#x2F;HSI_evergreen_011.png",
+					"region": {
+						"x": 348,
+						"y": 3455,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Evergreen&#x2F;HSI_evergreen_012.png",
+					"region": {
+						"x": 348,
+						"y": 3658,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Flint&#x2F;HSI_flint_001.png",
+					"region": {
+						"x": 348,
+						"y": 3861,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Flint&#x2F;HSI_flint_002.png",
+					"region": {
+						"x": 522,
+						"y": 812,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Flint&#x2F;HSI_flint_003.png",
+					"region": {
+						"x": 523,
+						"y": 609,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Flint&#x2F;HSI_flint_004.png",
+					"region": {
+						"x": 526,
+						"y": 406,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Flint&#x2F;HSI_flint_005.png",
+					"region": {
+						"x": 696,
+						"y": 203,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Flint&#x2F;HSI_flint_006.png",
+					"region": {
+						"x": 702,
+						"y": 0,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Flint&#x2F;HSI_flint_007.png",
+					"region": {
+						"x": 876,
+						"y": 0,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Flint&#x2F;HSI_flint_008.png",
+					"region": {
+						"x": 1050,
+						"y": 0,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Flint&#x2F;HSI_flint_009.png",
+					"region": {
+						"x": 1224,
+						"y": 0,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Flint&#x2F;HSI_flint_010.png",
+					"region": {
+						"x": 1398,
+						"y": 0,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Flint&#x2F;HSI_flint_011.png",
+					"region": {
+						"x": 1572,
+						"y": 0,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Flint&#x2F;HSI_flint_012.png",
+					"region": {
+						"x": 1746,
+						"y": 0,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Green&#x2F;HSI_green_001.png",
+					"region": {
+						"x": 1920,
+						"y": 0,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Green&#x2F;HSI_green_002.png",
+					"region": {
+						"x": 2094,
+						"y": 0,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Green&#x2F;HSI_green_003.png",
+					"region": {
+						"x": 2268,
+						"y": 0,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Green&#x2F;HSI_green_005.png",
+					"region": {
+						"x": 2442,
+						"y": 0,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Green&#x2F;HSI_green_006.png",
+					"region": {
+						"x": 2616,
+						"y": 0,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Green&#x2F;HSI_green_007.png",
+					"region": {
+						"x": 2790,
+						"y": 0,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Green&#x2F;HSI_green_008.png",
+					"region": {
+						"x": 2964,
+						"y": 0,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Green&#x2F;HSI_green_009.png",
+					"region": {
+						"x": 3138,
+						"y": 0,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Green&#x2F;HSI_green_010.png",
+					"region": {
+						"x": 3312,
+						"y": 0,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Green&#x2F;HSI_green_011.png",
+					"region": {
+						"x": 3486,
+						"y": 0,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Green&#x2F;HSI_green_012.png",
+					"region": {
+						"x": 3660,
+						"y": 0,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Indigo&#x2F;HSI_indigo_001.png",
+					"region": {
+						"x": 3834,
+						"y": 0,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Indigo&#x2F;HSI_indigo_002.png",
+					"region": {
+						"x": 522,
+						"y": 1015,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Indigo&#x2F;HSI_indigo_003.png",
+					"region": {
+						"x": 522,
+						"y": 1218,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Indigo&#x2F;HSI_indigo_004.png",
+					"region": {
+						"x": 522,
+						"y": 1421,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Indigo&#x2F;HSI_indigo_005.png",
+					"region": {
+						"x": 522,
+						"y": 1624,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Indigo&#x2F;HSI_indigo_006.png",
+					"region": {
+						"x": 522,
+						"y": 1827,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Indigo&#x2F;HSI_indigo_007.png",
+					"region": {
+						"x": 522,
+						"y": 2030,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Indigo&#x2F;HSI_indigo_008.png",
+					"region": {
+						"x": 522,
+						"y": 2233,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Indigo&#x2F;HSI_indigo_009.png",
+					"region": {
+						"x": 522,
+						"y": 2436,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Indigo&#x2F;HSI_indigo_010.png",
+					"region": {
+						"x": 522,
+						"y": 2639,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Indigo&#x2F;HSI_indigo_011.png",
+					"region": {
+						"x": 522,
+						"y": 2842,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Indigo&#x2F;HSI_indigo_012.png",
+					"region": {
+						"x": 522,
+						"y": 3045,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Lemon&#x2F;HSI_lemon_001.png",
+					"region": {
+						"x": 522,
+						"y": 3248,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Lemon&#x2F;HSI_lemon_002.png",
+					"region": {
+						"x": 522,
+						"y": 3451,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Lemon&#x2F;HSI_lemon_003.png",
+					"region": {
+						"x": 522,
+						"y": 3654,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Lemon&#x2F;HSI_lemon_004.png",
+					"region": {
+						"x": 522,
+						"y": 3857,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Lemon&#x2F;HSI_lemon_005.png",
+					"region": {
+						"x": 870,
+						"y": 203,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Lemon&#x2F;HSI_lemon_006.png",
+					"region": {
+						"x": 1044,
+						"y": 203,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Lemon&#x2F;HSI_lemon_007.png",
+					"region": {
+						"x": 1218,
+						"y": 203,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Lemon&#x2F;HSI_lemon_008.png",
+					"region": {
+						"x": 1392,
+						"y": 203,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Lemon&#x2F;HSI_lemon_009.png",
+					"region": {
+						"x": 1566,
+						"y": 203,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Lemon&#x2F;HSI_lemon_010.png",
+					"region": {
+						"x": 1740,
+						"y": 203,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Lemon&#x2F;HSI_lemon_011.png",
+					"region": {
+						"x": 1914,
+						"y": 203,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Lemon&#x2F;HSI_lemon_012.png",
+					"region": {
+						"x": 2088,
+						"y": 203,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Lime&#x2F;HSI_lime_002.png",
+					"region": {
+						"x": 2262,
+						"y": 203,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Lime&#x2F;HSI_lime_003.png",
+					"region": {
+						"x": 2436,
+						"y": 203,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Lime&#x2F;HSI_lime_004.png",
+					"region": {
+						"x": 2610,
+						"y": 203,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Lime&#x2F;HSI_lime_005.png",
+					"region": {
+						"x": 2784,
+						"y": 203,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Lime&#x2F;HSI_lime_006.png",
+					"region": {
+						"x": 2958,
+						"y": 203,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Lime&#x2F;HSI_lime_007.png",
+					"region": {
+						"x": 3132,
+						"y": 203,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Lime&#x2F;HSI_lime_008.png",
+					"region": {
+						"x": 3306,
+						"y": 203,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Lime&#x2F;HSI_lime_009.png",
+					"region": {
+						"x": 3480,
+						"y": 203,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Lime&#x2F;HSI_lime_010.png",
+					"region": {
+						"x": 3654,
+						"y": 203,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Lime&#x2F;HSI_lime_011.png",
+					"region": {
+						"x": 3828,
+						"y": 203,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Lime&#x2F;HSI_lime_012.png",
+					"region": {
+						"x": 696,
+						"y": 812,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Magenta&#x2F;HSI_magenta_001.png",
+					"region": {
+						"x": 697,
+						"y": 609,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Magenta&#x2F;HSI_magenta_002.png",
+					"region": {
+						"x": 870,
+						"y": 406,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Magenta&#x2F;HSI_magenta_003.png",
+					"region": {
+						"x": 1044,
+						"y": 406,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Magenta&#x2F;HSI_magenta_004.png",
+					"region": {
+						"x": 1218,
+						"y": 406,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Magenta&#x2F;HSI_magenta_005.png",
+					"region": {
+						"x": 1392,
+						"y": 406,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Magenta&#x2F;HSI_magenta_006.png",
+					"region": {
+						"x": 1566,
+						"y": 406,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Magenta&#x2F;HSI_magenta_007.png",
+					"region": {
+						"x": 1740,
+						"y": 406,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Magenta&#x2F;HSI_magenta_008.png",
+					"region": {
+						"x": 1914,
+						"y": 406,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Magenta&#x2F;HSI_magenta_009.png",
+					"region": {
+						"x": 2088,
+						"y": 406,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Magenta&#x2F;HSI_magenta_010.png",
+					"region": {
+						"x": 2262,
+						"y": 406,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Magenta&#x2F;HSI_magenta_011.png",
+					"region": {
+						"x": 2436,
+						"y": 406,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Magenta&#x2F;HSI_magenta_012.png",
+					"region": {
+						"x": 2610,
+						"y": 406,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Orange&#x2F;HSI_orange_001.png",
+					"region": {
+						"x": 2784,
+						"y": 406,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Orange&#x2F;HSI_orange_002.png",
+					"region": {
+						"x": 2958,
+						"y": 406,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Orange&#x2F;HSI_orange_003.png",
+					"region": {
+						"x": 3132,
+						"y": 406,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Orange&#x2F;HSI_orange_004.png",
+					"region": {
+						"x": 3306,
+						"y": 406,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Orange&#x2F;HSI_orange_005.png",
+					"region": {
+						"x": 3480,
+						"y": 406,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Orange&#x2F;HSI_orange_007.png",
+					"region": {
+						"x": 3654,
+						"y": 406,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Orange&#x2F;HSI_orange_008.png",
+					"region": {
+						"x": 3828,
+						"y": 406,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Orange&#x2F;HSI_orange_009.png",
+					"region": {
+						"x": 696,
+						"y": 1015,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Orange&#x2F;HSI_orange_010.png",
+					"region": {
+						"x": 696,
+						"y": 1218,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Orange&#x2F;HSI_orange_011.png",
+					"region": {
+						"x": 696,
+						"y": 1421,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Orange&#x2F;HSI_orange_012.png",
+					"region": {
+						"x": 696,
+						"y": 1624,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Pink&#x2F;HSI_pink_001.png",
+					"region": {
+						"x": 696,
+						"y": 1827,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Pink&#x2F;HSI_pink_002.png",
+					"region": {
+						"x": 696,
+						"y": 2030,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Pink&#x2F;HSI_pink_003.png",
+					"region": {
+						"x": 696,
+						"y": 2233,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Pink&#x2F;HSI_pink_004.png",
+					"region": {
+						"x": 696,
+						"y": 2436,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Pink&#x2F;HSI_pink_005.png",
+					"region": {
+						"x": 696,
+						"y": 2639,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Pink&#x2F;HSI_pink_006.png",
+					"region": {
+						"x": 696,
+						"y": 2842,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Pink&#x2F;HSI_pink_007.png",
+					"region": {
+						"x": 696,
+						"y": 3045,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Pink&#x2F;HSI_pink_008.png",
+					"region": {
+						"x": 696,
+						"y": 3248,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Pink&#x2F;HSI_pink_009.png",
+					"region": {
+						"x": 696,
+						"y": 3451,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Pink&#x2F;HSI_pink_010.png",
+					"region": {
+						"x": 696,
+						"y": 3654,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Pink&#x2F;HSI_pink_011.png",
+					"region": {
+						"x": 696,
+						"y": 3857,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Pink&#x2F;HSI_pink_012.png",
+					"region": {
+						"x": 871,
+						"y": 609,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Red&#x2F;HSI_red_001.png",
+					"region": {
+						"x": 1045,
+						"y": 609,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Red&#x2F;HSI_red_002.png",
+					"region": {
+						"x": 1219,
+						"y": 609,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Red&#x2F;HSI_red_003.png",
+					"region": {
+						"x": 1393,
+						"y": 609,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Red&#x2F;HSI_red_004.png",
+					"region": {
+						"x": 1567,
+						"y": 609,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Red&#x2F;HSI_red_005.png",
+					"region": {
+						"x": 1741,
+						"y": 609,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Red&#x2F;HSI_red_006.png",
+					"region": {
+						"x": 1915,
+						"y": 609,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Red&#x2F;HSI_red_007.png",
+					"region": {
+						"x": 2089,
+						"y": 609,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Red&#x2F;HSI_red_008.png",
+					"region": {
+						"x": 2263,
+						"y": 609,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Red&#x2F;HSI_red_009.png",
+					"region": {
+						"x": 2437,
+						"y": 609,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Red&#x2F;HSI_red_010.png",
+					"region": {
+						"x": 2611,
+						"y": 609,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Red&#x2F;HSI_red_011.png",
+					"region": {
+						"x": 2785,
+						"y": 609,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Red&#x2F;HSI_red_012.png",
+					"region": {
+						"x": 2959,
+						"y": 609,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Sand&#x2F;HSI_sand_001.png",
+					"region": {
+						"x": 3133,
+						"y": 609,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Sand&#x2F;HSI_sand_002.png",
+					"region": {
+						"x": 3307,
+						"y": 609,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Sand&#x2F;HSI_sand_003.png",
+					"region": {
+						"x": 3481,
+						"y": 609,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Sand&#x2F;HSI_sand_004.png",
+					"region": {
+						"x": 3655,
+						"y": 609,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Sand&#x2F;HSI_sand_005.png",
+					"region": {
+						"x": 3829,
+						"y": 609,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Sand&#x2F;HSI_sand_006.png",
+					"region": {
+						"x": 870,
+						"y": 812,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Sand&#x2F;HSI_sand_007.png",
+					"region": {
+						"x": 870,
+						"y": 1015,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Sand&#x2F;HSI_sand_008.png",
+					"region": {
+						"x": 870,
+						"y": 1218,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Sand&#x2F;HSI_sand_009.png",
+					"region": {
+						"x": 870,
+						"y": 1421,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Sand&#x2F;HSI_sand_010.png",
+					"region": {
+						"x": 870,
+						"y": 1624,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Sand&#x2F;HSI_sand_011.png",
+					"region": {
+						"x": 870,
+						"y": 1827,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Sand&#x2F;HSI_sand_012.png",
+					"region": {
+						"x": 870,
+						"y": 2030,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Sky&#x2F;HSI - Day Sky&#x2F;HSI_sky_001.png",
+					"region": {
+						"x": 870,
+						"y": 2233,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Sky&#x2F;HSI - Day Sky&#x2F;HSI_sky_002.png",
+					"region": {
+						"x": 870,
+						"y": 2436,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Sky&#x2F;HSI - Day Sky&#x2F;HSI_sky_003.png",
+					"region": {
+						"x": 870,
+						"y": 2639,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Sky&#x2F;HSI - Day Sky&#x2F;HSI_sky_004.png",
+					"region": {
+						"x": 870,
+						"y": 2842,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Sky&#x2F;HSI - Day Sky&#x2F;HSI_sky_005.png",
+					"region": {
+						"x": 870,
+						"y": 3045,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Sky&#x2F;HSI - Day Sky&#x2F;HSI_sky_006.png",
+					"region": {
+						"x": 870,
+						"y": 3248,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Sky&#x2F;HSI - Day Sky&#x2F;HSI_sky_007.png",
+					"region": {
+						"x": 870,
+						"y": 3451,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Sky&#x2F;HSI - Day Sky&#x2F;HSI_sky_008.png",
+					"region": {
+						"x": 870,
+						"y": 3654,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Sky&#x2F;HSI - Day Sky&#x2F;HSI_sky_009.png",
+					"region": {
+						"x": 870,
+						"y": 3857,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Sky&#x2F;HSI - Day Sky&#x2F;HSI_sky_010.png",
+					"region": {
+						"x": 1044,
+						"y": 812,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Sky&#x2F;HSI - Day Sky&#x2F;HSI_sky_011.png",
+					"region": {
+						"x": 1218,
+						"y": 812,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Sky&#x2F;HSI - Day Sky&#x2F;HSI_sky_012.png",
+					"region": {
+						"x": 1392,
+						"y": 812,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Sky&#x2F;HSI - Night Sky&#x2F;HSI_nightsky_001.png",
+					"region": {
+						"x": 1566,
+						"y": 812,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Sky&#x2F;HSI - Night Sky&#x2F;HSI_nightsky_002.png",
+					"region": {
+						"x": 1740,
+						"y": 812,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Sky&#x2F;HSI - Night Sky&#x2F;HSI_nightsky_003.png",
+					"region": {
+						"x": 1914,
+						"y": 812,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Sky&#x2F;HSI - Night Sky&#x2F;HSI_nightsky_004.png",
+					"region": {
+						"x": 2088,
+						"y": 812,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Sky&#x2F;HSI - Night Sky&#x2F;HSI_nightsky_005.png",
+					"region": {
+						"x": 2262,
+						"y": 812,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Sky&#x2F;HSI - Night Sky&#x2F;HSI_nightsky_006.png",
+					"region": {
+						"x": 2436,
+						"y": 812,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Sky&#x2F;HSI - Night Sky&#x2F;HSI_nightsky_007.png",
+					"region": {
+						"x": 2610,
+						"y": 812,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Sky&#x2F;HSI - Night Sky&#x2F;HSI_nightsky_008.png",
+					"region": {
+						"x": 2784,
+						"y": 812,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Sky&#x2F;HSI - Night Sky&#x2F;HSI_nightsky_009.png",
+					"region": {
+						"x": 2958,
+						"y": 812,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Sky&#x2F;HSI - Night Sky&#x2F;HSI_nightsky_010.png",
+					"region": {
+						"x": 3132,
+						"y": 812,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Sky&#x2F;HSI - Night Sky&#x2F;HSI_nightsky_011.png",
+					"region": {
+						"x": 3306,
+						"y": 812,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Sky&#x2F;HSI - Night Sky&#x2F;HSI_nightsky_012.png",
+					"region": {
+						"x": 3480,
+						"y": 812,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Steel&#x2F;HSI_steel_001.png",
+					"region": {
+						"x": 3654,
+						"y": 812,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Steel&#x2F;HSI_steel_002.png",
+					"region": {
+						"x": 3828,
+						"y": 812,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Steel&#x2F;HSI_steel_003.png",
+					"region": {
+						"x": 1044,
+						"y": 1015,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Steel&#x2F;HSI_steel_004.png",
+					"region": {
+						"x": 1044,
+						"y": 1218,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Steel&#x2F;HSI_steel_005.png",
+					"region": {
+						"x": 1044,
+						"y": 1421,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Steel&#x2F;HSI_steel_006.png",
+					"region": {
+						"x": 1044,
+						"y": 1624,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Steel&#x2F;HSI_steel_007.png",
+					"region": {
+						"x": 1044,
+						"y": 1827,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Steel&#x2F;HSI_steel_008.png",
+					"region": {
+						"x": 1044,
+						"y": 2030,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Steel&#x2F;HSI_steel_009.png",
+					"region": {
+						"x": 1044,
+						"y": 2233,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Steel&#x2F;HSI_steel_010.png",
+					"region": {
+						"x": 1044,
+						"y": 2436,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Steel&#x2F;HSI_steel_011.png",
+					"region": {
+						"x": 1044,
+						"y": 2639,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Steel&#x2F;HSI_steel_012.png",
+					"region": {
+						"x": 1044,
+						"y": 2842,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Ultra&#x2F;HSI_ultra_001.png",
+					"region": {
+						"x": 1044,
+						"y": 3045,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Ultra&#x2F;HSI_ultra_002.png",
+					"region": {
+						"x": 1044,
+						"y": 3248,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Ultra&#x2F;HSI_ultra_003.png",
+					"region": {
+						"x": 1044,
+						"y": 3451,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Ultra&#x2F;HSI_ultra_004.png",
+					"region": {
+						"x": 1044,
+						"y": 3654,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Ultra&#x2F;HSI_ultra_005.png",
+					"region": {
+						"x": 1044,
+						"y": 3857,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Ultra&#x2F;HSI_ultra_006.png",
+					"region": {
+						"x": 1218,
+						"y": 1015,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Ultra&#x2F;HSI_ultra_007.png",
+					"region": {
+						"x": 1392,
+						"y": 1015,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Ultra&#x2F;HSI_ultra_008.png",
+					"region": {
+						"x": 1566,
+						"y": 1015,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Ultra&#x2F;HSI_ultra_009.png",
+					"region": {
+						"x": 1740,
+						"y": 1015,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Ultra&#x2F;HSI_ultra_010.png",
+					"region": {
+						"x": 1914,
+						"y": 1015,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Ultra&#x2F;HSI_ultra_011.png",
+					"region": {
+						"x": 2088,
+						"y": 1015,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Ultra&#x2F;HSI_ultra_012.png",
+					"region": {
+						"x": 2262,
+						"y": 1015,
+						"w": 174,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 36,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Aqua&#x2F;HSI_aqua_008.png",
+					"region": {
+						"x": 2436,
+						"y": 1015,
+						"w": 172,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 38,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Aqua&#x2F;HSI_aqua_010.png",
+					"region": {
+						"x": 2608,
+						"y": 1015,
+						"w": 172,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 38,
+						"h": 7
+					}
+				},
+				{
+					"filename": "HK-Heightend Sensory Input v2&#x2F;HSI - Aqua&#x2F;HSI_aqua_011.png",
+					"region": {
+						"x": 2780,
+						"y": 1015,
+						"w": 172,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 38,
+						"h": 7
+					}
+				},
+				{
+					"filename": "OSHD - Background&#x2F;OSHD---Background-Badlands.png",
+					"region": {
+						"x": 2952,
+						"y": 1015,
+						"w": 172,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 38,
+						"h": 7
+					}
+				},
+				{
+					"filename": "OSHD - Background&#x2F;OSHD---Background-Broken.png",
+					"region": {
+						"x": 3124,
+						"y": 1015,
+						"w": 172,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 38,
+						"h": 7
+					}
+				},
+				{
+					"filename": "OSHD - Background&#x2F;OSHD---Background-Dead.png",
+					"region": {
+						"x": 3296,
+						"y": 1015,
+						"w": 172,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 38,
+						"h": 7
+					}
+				},
+				{
+					"filename": "OSHD - Background&#x2F;OSHD---Background-Desert.png",
+					"region": {
+						"x": 3468,
+						"y": 1015,
+						"w": 172,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 38,
+						"h": 7
+					}
+				},
+				{
+					"filename": "OSHD - Background&#x2F;OSHD---Background-Evergreen.png",
+					"region": {
+						"x": 3640,
+						"y": 1015,
+						"w": 172,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 38,
+						"h": 7
+					}
+				},
+				{
+					"filename": "OSHD - Background&#x2F;OSHD---Background-Farmland.png",
+					"region": {
+						"x": 3812,
+						"y": 1015,
+						"w": 172,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 38,
+						"h": 7
+					}
+				},
+				{
+					"filename": "OSHD - Background&#x2F;OSHD---Background-Forest.png",
+					"region": {
+						"x": 1218,
+						"y": 1218,
+						"w": 172,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 38,
+						"h": 7
+					}
+				},
+				{
+					"filename": "OSHD - Background&#x2F;OSHD---Background-Grassland.png",
+					"region": {
+						"x": 1218,
+						"y": 1421,
+						"w": 172,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 38,
+						"h": 7
+					}
+				},
+				{
+					"filename": "OSHD - Background&#x2F;OSHD---Background-Hills.png",
+					"region": {
+						"x": 1218,
+						"y": 1624,
+						"w": 172,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 38,
+						"h": 7
+					}
+				},
+				{
+					"filename": "OSHD - Background&#x2F;OSHD---Background-Jungle.png",
+					"region": {
+						"x": 1218,
+						"y": 1827,
+						"w": 172,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 38,
+						"h": 7
+					}
+				},
+				{
+					"filename": "OSHD - Background&#x2F;OSHD---Background-Mountains.png",
+					"region": {
+						"x": 1218,
+						"y": 2030,
+						"w": 172,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 38,
+						"h": 7
+					}
+				},
+				{
+					"filename": "OSHD - Background&#x2F;OSHD---Background-Ocean.png",
+					"region": {
+						"x": 1218,
+						"y": 2233,
+						"w": 172,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 38,
+						"h": 7
+					}
+				},
+				{
+					"filename": "OSHD - Background&#x2F;OSHD---Background-Shallows.png",
+					"region": {
+						"x": 1218,
+						"y": 2436,
+						"w": 172,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 38,
+						"h": 7
+					}
+				},
+				{
+					"filename": "OSHD - Background&#x2F;OSHD---Background-Swamp.png",
+					"region": {
+						"x": 1218,
+						"y": 2639,
+						"w": 172,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 38,
+						"h": 7
+					}
+				},
+				{
+					"filename": "OSHD - Background&#x2F;OSHD---Background-Underdark.png",
+					"region": {
+						"x": 1218,
+						"y": 2842,
+						"w": 172,
+						"h": 203
+					},
+					"margin": {
+						"x": 19,
+						"y": 3,
+						"w": 38,
+						"h": 7
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "http://free-tex-packer.com",
+		"version": "0.6.7",
+		"format": "RGBA8888",
+		"scale": 1
+	}
+}

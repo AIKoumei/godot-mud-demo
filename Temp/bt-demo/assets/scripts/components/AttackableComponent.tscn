@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://q01e2x4krhmf"]
+
+[ext_resource type="Script" uid="uid://bv50jfwj4qyve" path="res://demos/assets/scripts/components/AttackableComponent.gd" id="1_8mi7g"]
+
+[node name="AttackableComponent" type="Node"]
+script = ExtResource("1_8mi7g")
+
+[connection signal="ready" from="." to="." method="_on_ready"]

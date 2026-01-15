@@ -1,0 +1,85 @@
+Shader代码如下：
+
+shader_type canvas_item; 
+// 伪3D 卡牌俯仰效果 // 增加XY锚点变更 
+ 
+// Camera FOV 
+uniform float fov : hint_range(1, 179) = 90; 
+uniform bool cull_back = true; 
+uniform float y_rot : hint_range(-180, 180) = 0.0; 
+uniform float x_rot : hint_range(-180, 180) = 0.0; 
+// At 0, the image retains its size when unrotated. 
+// At 1, the image is resized so that it can do a full 
+// rotation without clipping inside its rect. 
+uniform float inset : hint_range(0, 1) = 0.0; 
+// Consider changing this to a uniform and changing it from code 
+// 更改X轴锚点 
+uniform float uv_pivot_x : hint_range(0, 1.0) = 0.5; 
+uniform float uv_pivot_y : hint_range(0, 1.0) = 0.5; 
+ 
+varying flat vec2 o; 
+varying vec3 p; 
+ 
+// Creates rotation matrix 
+void vertex(){ 
+	// 计算旋转矩阵 
+	float sin_b = sin(y_rot / 180.0 * PI); 
+	float cos_b = cos(y_rot / 180.0 * PI); 
+	float sin_c = sin(x_rot / 180.0 * PI); 
+	float cos_c = cos(x_rot / 180.0 * PI); 
+ 
+	mat3 inv_rot_mat; 
+	inv_rot_mat[0][0] = cos_b; 
+	inv_rot_mat[0][1] = 0.0; 
+	inv_rot_mat[0][2] = -sin_b; 
+ 
+	inv_rot_mat[1][0] = sin_b * sin_c; 
+	inv_rot_mat[1][1] = cos_c; 
+	inv_rot_mat[1][2] = cos_b * sin_c; 
+ 
+	inv_rot_mat[2][0] = sin_b * cos_c; 
+	inv_rot_mat[2][1] = -sin_c; 
+	inv_rot_mat[2][2] = cos_b * cos_c; 
+ 
+	// 计算FOV相关参数 
+	float t = tan(fov / 360.0 * PI); 
+	 
+	// 新增：计算旋转轴偏移（相对于UV中心0.5） 
+	vec2 pivot_offset = vec2(uv_pivot_x - 0.5, uv_pivot_y - 0.5); 
+	 
+	// 将UV坐标平移到以旋转轴为中心，然后应用3D变换 
+	vec2 centered_uv = (UV - 0.5) - pivot_offset; 
+	p = inv_rot_mat * vec3(centered_uv, 0.5 / t); 
+	//p = inv_rot_mat * vec3((UV - 0.5), 0.5 / t); 
+	 
+	// 计算投影参数 
+	float v = (0.5 / t) + 0.5; 
+	p.xy *= v * inv_rot_mat[2].z; 
+	o = v * inv_rot_mat[2].xy; 
+	 
+	// 新增：调整顶点位置以考虑旋转轴偏移 
+	vec2 adjusted_offset = pivot_offset * (1.0 - inset); 
+	VERTEX += (UV - 0.5 - adjusted_offset) / TEXTURE_PIXEL_SIZE * t * (1.0 - inset); 
+	//VERTEX += (UV - 0.5) / TEXTURE_PIXEL_SIZE * t * (1.0 - inset); 
+} 
+ 
+void fragment(){ 
+	if (cull_back && p.z <= 0.0) discard; 
+	 
+	// 计算旋转后的UV坐标 
+	vec2 uv = (p.xy / p.z).xy - o; 
+	 
+	// 将旋转轴偏移加回去，得到正确的UV坐标 
+	vec2 pivot_offset = vec2(uv_pivot_x - 0.5, uv_pivot_y - 0.5); 
+	vec2 uv_offset = uv + 0.5 + pivot_offset; 
+	 
+	COLOR = texture(TEXTURE, uv_offset); 
+	//COLOR = texture(TEXTURE, uv + 0.5); 
+	 
+	// 裁剪超出边界的部分 
+	// 计算相对于旋转中心的偏移 
+	//vec2 offset_from_pivot = (UV - vec2(uv_pivot_x, uv_pivot_y)); 
+	 
+	COLOR.a *= step(max(abs(uv_offset.x), abs(uv_offset.y)), 1); 
+	//COLOR.a *= step(max(abs(uv.x), abs(uv.y)), 0.5); 
+}

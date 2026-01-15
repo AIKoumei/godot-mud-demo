@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bp2qm6i1jb0o6"
+path="res://.godot/imported/Digimon World Championship OST #7 Welcome to the Championships Opening Cinematic.mp3-2c05cbf4d6d80d9b58813762d3565cef.mp3str"
+
+[deps]
+
+source_file="res://Temp/bt-demo/assets/audio/bgm/base/Digimon World Championship OST #7 Welcome to the Championships Opening Cinematic.mp3"
+dest_files=["res://.godot/imported/Digimon World Championship OST #7 Welcome to the Championships Opening Cinematic.mp3-2c05cbf4d6d80d9b58813762d3565cef.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

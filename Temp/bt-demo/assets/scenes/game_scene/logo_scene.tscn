@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://qbgrrfcl8chu"]
+
+[ext_resource type="PackedScene" uid="uid://c777abpqk2db3" path="res://assets/scenes/ui/home_ui_layer.tscn" id="1_axm4b"]
+
+[node name="LogoScene" type="Node2D"]
+
+[node name="UILayer" type="Control" parent="."]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+
+[node name="HomeUILayer" parent="UILayer" instance=ExtResource("1_axm4b")]
+layout_mode = 1

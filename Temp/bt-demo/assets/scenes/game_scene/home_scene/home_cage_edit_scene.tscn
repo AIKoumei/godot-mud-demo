@@ -1,0 +1,100 @@
+[gd_scene load_steps=8 format=4 uid="uid://rducw84qp852"]
+
+[ext_resource type="Script" uid="uid://bs35d3c7x1w7w" path="res://assets/scenes/game_scene/home_scene/home_cage_edit_scene.gd" id="1_fkg8e"]
+[ext_resource type="TileSet" uid="uid://b8m3ew26v1wyk" path="res://assets/scenes/home_cage_scene/home_cage_thumb_tile_set.tres" id="2_fkg8e"]
+[ext_resource type="Script" uid="uid://dvr1e3vxw12w8" path="res://assets/scenes/game_scene/home_scene/home_scene_tile_map_layer.gd" id="4_cgegd"]
+[ext_resource type="Script" uid="uid://couw105c3bde4" path="res://addons/godot_state_charts/state_chart.gd" id="4_meab7"]
+[ext_resource type="Script" uid="uid://jk2jm1g6q853" path="res://addons/godot_state_charts/compound_state.gd" id="5_cgegd"]
+[ext_resource type="Script" uid="uid://cytafq8i1y8qm" path="res://addons/godot_state_charts/atomic_state.gd" id="6_nwprs"]
+[ext_resource type="Script" uid="uid://cf1nsco3w0mf6" path="res://addons/godot_state_charts/transition.gd" id="7_kk122"]
+
+[node name="HomeCageEditScene" type="Node2D"]
+script = ExtResource("1_fkg8e")
+unlocked_cages = null
+state_machine_state = null
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = 289.0
+offset_right = 1280.0
+offset_bottom = 481.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Panel2" type="Panel" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = 69.0
+offset_right = 1280.0
+offset_bottom = 261.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+y_sort_enabled = true
+position = Vector2(-32, -64)
+tile_map_data = PackedByteArray("AAABAAIA5gAAAAAAAAACAAIA5gAAAAAAAAADAAIA5gAAAAAAAAAEAAIA5gAAAAAAAAAFAAIA5gAAAAAAAAAGAAIA5gAAAAAAAAAHAAIA5gAAAAAAAAAIAAIA5gAAAAAAAAAJAAIA5gAAAAAAAAAKAAIA5gAAAAAAAAALAAMA5gAAAAAAAAAKAAMA5gAAAAAAAAAJAAMA5gAAAAAAAAAIAAMA5gAAAAAAAAAHAAMA5gAAAAAAAAAGAAMA5gAAAAAAAAAFAAMA5gAAAAAAAAAEAAMA5gAAAAAAAAADAAMA5gAAAAAAAAACAAMA5gAAAAAAAAAAAAYA5gAAAAAAAAABAAYA5gAAAAAAAAACAAYA5gAAAAAAAAADAAYA5gAAAAAAAAAEAAYA5gAAAAAAAAAFAAYA5gAAAAAAAAAGAAYA5gAAAAAAAAAHAAYA5gAAAAAAAAAIAAYA5gAAAAAAAAAJAAYA5gAAAAAAAAAKAAYA5gAAAAAAAAALAAYA5gAAAAAAAAAMAAYA5gAAAAAAAAAAAAUA5gAAAAAAAAABAAUA5gAAAAAAAAACAAUA5gAAAAAAAAADAAUA5gAAAAAAAAAEAAUA5gAAAAAAAAAFAAUA5gAAAAAAAAAGAAUA5gAAAAAAAAAHAAUA5gAAAAAAAAAIAAUA5gAAAAAAAAAJAAUA5gAAAAAAAAAKAAUA5gAAAAAAAAALAAUA5gAAAAAAAAAMAAUA5gAAAAAAAAANAAUA5gAAAAAAAAANAAYA5gAAAAAAAAD//wYA5gAAAAAAAAA=")
+tile_set = ExtResource("2_fkg8e")
+script = ExtResource("4_cgegd")
+
+[node name="HomeCageContainer" type="Node2D" parent="."]
+
+[node name="UnlockedCageContainer" type="Node2D" parent="."]
+
+[node name="StateChart" type="Node" parent="."]
+script = ExtResource("4_meab7")
+metadata/_custom_type_script = "uid://couw105c3bde4"
+
+[node name="CompoundState" type="Node" parent="StateChart"]
+script = ExtResource("5_cgegd")
+initial_state = NodePath("Initiate")
+
+[node name="Initiate" type="Node" parent="StateChart/CompoundState"]
+script = ExtResource("6_nwprs")
+
+[node name="ToIdle" type="Node" parent="StateChart/CompoundState/Initiate"]
+script = ExtResource("7_kk122")
+to = NodePath("../../Idle")
+event = &"ToIdle"
+delay_in_seconds = "0.0"
+
+[node name="Idle" type="Node" parent="StateChart/CompoundState"]
+script = ExtResource("6_nwprs")
+
+[node name="ToStartDrag" type="Node" parent="StateChart/CompoundState/Idle"]
+script = ExtResource("7_kk122")
+to = NodePath("../../StartDrag")
+event = &"ToStartDrag"
+delay_in_seconds = "0.0"
+
+[node name="StartDrag" type="Node" parent="StateChart/CompoundState"]
+script = ExtResource("6_nwprs")
+
+[node name="ToOnDrag" type="Node" parent="StateChart/CompoundState/StartDrag"]
+script = ExtResource("7_kk122")
+to = NodePath("../../OnDrag")
+event = &"ToOnDrag"
+delay_in_seconds = "0.0"
+
+[node name="OnDrag" type="Node" parent="StateChart/CompoundState"]
+script = ExtResource("6_nwprs")
+
+[node name="ToIdle" type="Node" parent="StateChart/CompoundState/OnDrag"]
+script = ExtResource("7_kk122")
+to = NodePath("../../Idle")
+event = &"ToIdle"
+delay_in_seconds = "0.0"
+
+[connection signal="changed" from="TileMapLayer" to="TileMapLayer" method="_on_changed"]
+[connection signal="state_entered" from="StateChart/CompoundState/Idle" to="." method="_on_idle_state_entered"]
+[connection signal="state_entered" from="StateChart/CompoundState/StartDrag" to="." method="_on_start_drag_state_entered"]
+[connection signal="state_entered" from="StateChart/CompoundState/OnDrag" to="." method="_on_on_drag_state_entered"]

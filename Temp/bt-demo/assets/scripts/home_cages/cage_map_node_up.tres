@@ -1,0 +1,6 @@
+[gd_resource type="Resource" script_class="HomeCageSizeNode" load_steps=2 format=3 uid="uid://cpdgw413ahnnr"]
+
+[ext_resource type="Script" uid="uid://cbquh4umryd14" path="res://assets/scripts/home_cages/home_cage_size_node.gd" id="1_tv7pd"]
+
+[resource]
+script = ExtResource("1_tv7pd")

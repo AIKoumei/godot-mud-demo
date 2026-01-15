@@ -1,0 +1,68 @@
+[gd_scene load_steps=8 format=3 uid="uid://defte5eonvne5"]
+
+[ext_resource type="Script" uid="uid://d4lxaon2pfobq" path="res://assets/scenes/scene_items/map_obj_food.gd" id="1_jfnfc"]
+[ext_resource type="Texture2D" uid="uid://bixymkk3lmkgb" path="res://assets/spirits/scene_items/world_obj_tree_apple_big.tres" id="2_jfnfc"]
+[ext_resource type="Script" uid="uid://couw105c3bde4" path="res://addons/godot_state_charts/state_chart.gd" id="3_c37ee"]
+[ext_resource type="Script" uid="uid://jk2jm1g6q853" path="res://addons/godot_state_charts/compound_state.gd" id="4_owy73"]
+[ext_resource type="Script" uid="uid://cytafq8i1y8qm" path="res://addons/godot_state_charts/atomic_state.gd" id="5_i0apr"]
+[ext_resource type="Script" uid="uid://cf1nsco3w0mf6" path="res://addons/godot_state_charts/transition.gd" id="6_8qaix"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yc82s"]
+
+[node name="MapObjFood" type="Area2D"]
+collision_layer = 0
+collision_mask = 0
+script = ExtResource("1_jfnfc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_yc82s")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_jfnfc")
+
+[node name="StateMachine" type="Node" parent="."]
+script = ExtResource("3_c37ee")
+metadata/_custom_type_script = "uid://couw105c3bde4"
+
+[node name="CompoundState" type="Node" parent="StateMachine"]
+script = ExtResource("4_owy73")
+initial_state = NodePath("Initiating")
+
+[node name="Initiating" type="Node" parent="StateMachine/CompoundState"]
+script = ExtResource("5_i0apr")
+
+[node name="ToOnInitiating" type="Node" parent="StateMachine/CompoundState/Initiating"]
+script = ExtResource("6_8qaix")
+to = NodePath("../../OnInitiating")
+event = &"ToOnInitiating"
+delay_in_seconds = "0.0"
+
+[node name="OnInitiating" type="Node" parent="StateMachine/CompoundState"]
+script = ExtResource("5_i0apr")
+
+[node name="ToReady" type="Node" parent="StateMachine/CompoundState/OnInitiating"]
+script = ExtResource("6_8qaix")
+to = NodePath("../../Ready")
+event = &"ToReady"
+delay_in_seconds = "0.0"
+
+[node name="ToInitiating" type="Node" parent="StateMachine/CompoundState/OnInitiating"]
+script = ExtResource("6_8qaix")
+to = NodePath("../../Initiating")
+event = &"ToInitiating"
+delay_in_seconds = "0.0"
+
+[node name="Ready" type="Node" parent="StateMachine/CompoundState"]
+script = ExtResource("5_i0apr")
+
+[node name="ToInitiating" type="Node" parent="StateMachine/CompoundState/Ready"]
+script = ExtResource("6_8qaix")
+to = NodePath("../../Initiating")
+event = &"ToInitiating"
+delay_in_seconds = "0.0"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="input_event" from="." to="." method="_on_input_event"]
+[connection signal="state_entered" from="StateMachine/CompoundState/Initiating" to="." method="_on_initiating_state_entered"]
+[connection signal="state_entered" from="StateMachine/CompoundState/OnInitiating" to="." method="_on_on_initiating_state_entered"]
+[connection signal="state_entered" from="StateMachine/CompoundState/Ready" to="." method="_on_ready_state_entered"]

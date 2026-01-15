@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://ds7dldau3k1d1"]
+
+[ext_resource type="Script" uid="uid://blbpuspdtj2kn" path="res://demos/assets/scripts/components/ActorComponent.gd" id="1_6hdv5"]
+
+[node name="ActorComponent" type="Node"]
+script = ExtResource("1_6hdv5")
+
+[connection signal="ready" from="." to="." method="_on_ready"]

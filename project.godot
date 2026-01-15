@@ -10,17 +10,15 @@ config_version=5
 
 [application]
 
-config/name="godot-kitchen-management"
+config/name="godot-mud-demo"
 run/main_scene="uid://cps7uyr47jyfk"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
-DataManager="*res://scripts/manager/data_manager.gd"
-ResourceManager="*res://scripts/manager/resource_manager.gd"
-WindowManager="*res://scripts/manager/window_manager.gd"
-CachePoolManager="*res://scripts/manager/cache_pool_manager.gd"
+GameCore="*res://res/core/Scripts/GameCore.gd"
+CommonEnum="*res://res/core/Scripts/Common/CommonEnum.gd"
 
 [display]
 
@@ -31,7 +29,7 @@ window/vsync/vsync_mode=3
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/codeandweb.texturepacker/plugin.cfg")
+enabled=PackedStringArray("res://addons/codeandweb.texturepacker/plugin.cfg", "res://addons/godot_state_charts/plugin.cfg")
 
 [input_devices]
 
@@ -42,3 +40,7 @@ pointing/emulate_mouse_from_touch=false
 
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+
+[sprout_lands_ui]
+
+disable_plugin_dialogues=true

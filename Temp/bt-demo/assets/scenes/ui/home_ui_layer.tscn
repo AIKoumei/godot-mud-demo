@@ -1,0 +1,317 @@
+[gd_scene load_steps=12 format=3 uid="uid://c777abpqk2db3"]
+
+[ext_resource type="Texture2D" uid="uid://d3ukhgbk67ep2" path="res://addons/spirits/FreeUi/FreeUi/ClassicalButtons/3.png" id="1_1rm7a"]
+[ext_resource type="Script" uid="uid://5yod3ey3fovb" path="res://assets/scenes/ui/home_ui_layer.gd" id="1_10qfm"]
+[ext_resource type="Texture2D" uid="uid://cwhk7l04e2oqs" path="res://addons/spirits/FluentUI Emoji Mono/Raised-Back-Of-Hand-Default-icon.png" id="1_uwn4r"]
+[ext_resource type="Texture2D" uid="uid://c0vwu8ob6lt2c" path="res://addons/spirits/FluentUI Emoji Mono/Meat-On-Bone-icon.png" id="2_1rm7a"]
+[ext_resource type="Texture2D" uid="uid://c88emwes7dksi" path="res://addons/spirits/FreeUi/FreeUi/ClassicalButtons/4.png" id="2_wwkte"]
+[ext_resource type="Texture2D" uid="uid://br0a2301vd0p5" path="res://addons/spirits/download/medicine.png" id="3_wwkte"]
+[ext_resource type="Texture2D" uid="uid://dvifgeeu4q8e4" path="res://addons/spirits/FluentUI Emoji Mono/Toilet-icon.png" id="4_10qfm"]
+[ext_resource type="Texture2D" uid="uid://iwgxye82hx8" path="res://addons/spirits/FluentUI Emoji Mono/Adhesive-Bandage-icon.png" id="5_1jufr"]
+[ext_resource type="Texture2D" uid="uid://b1hdmvr3jif6n" path="res://addons/spirits/FluentUI Emoji Mono/Syringe-icon.png" id="6_sbaib"]
+[ext_resource type="Texture2D" uid="uid://cc14ns6ups6qd" path="res://addons/spirits/FluentUI Emoji Mono/Notebook-icon.png" id="7_e0biq"]
+[ext_resource type="Texture2D" uid="uid://dd52bu86qul33" path="res://addons/spirits/download/Door-icon.png" id="8_uwn4r"]
+
+[node name="HomeUILayer" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_10qfm")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(1024, 64)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -512.0
+offset_top = -72.0
+offset_right = 512.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+
+[node name="DragButton" type="TextureButton" parent="HBoxContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+texture_normal = ExtResource("1_1rm7a")
+texture_pressed = ExtResource("2_wwkte")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Icon" type="TextureRect" parent="HBoxContainer/DragButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -21.0
+offset_top = -21.0
+offset_right = 21.0
+offset_bottom = 21.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_uwn4r")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="FoodButton" type="TextureButton" parent="HBoxContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+texture_normal = ExtResource("1_1rm7a")
+texture_pressed = ExtResource("2_wwkte")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Icon" type="TextureRect" parent="HBoxContainer/FoodButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -21.0
+offset_top = -21.0
+offset_right = 21.0
+offset_bottom = 21.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_1rm7a")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="MedicineButton" type="TextureButton" parent="HBoxContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+texture_normal = ExtResource("1_1rm7a")
+texture_pressed = ExtResource("2_wwkte")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Icon" type="TextureRect" parent="HBoxContainer/MedicineButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -21.0
+offset_top = -21.0
+offset_right = 21.0
+offset_bottom = 21.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_wwkte")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="PoopButton" type="TextureButton" parent="HBoxContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+texture_normal = ExtResource("1_1rm7a")
+texture_pressed = ExtResource("2_wwkte")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Icon" type="TextureRect" parent="HBoxContainer/PoopButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -21.0
+offset_top = -21.0
+offset_right = 21.0
+offset_bottom = 21.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_10qfm")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="BandageButton" type="TextureButton" parent="HBoxContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+texture_normal = ExtResource("1_1rm7a")
+texture_pressed = ExtResource("2_wwkte")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Icon" type="TextureRect" parent="HBoxContainer/BandageButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -21.0
+offset_top = -21.0
+offset_right = 21.0
+offset_bottom = 21.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_1jufr")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CureButton" type="TextureButton" parent="HBoxContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+texture_normal = ExtResource("1_1rm7a")
+texture_pressed = ExtResource("2_wwkte")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Icon" type="TextureRect" parent="HBoxContainer/CureButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -21.0
+offset_top = -21.0
+offset_right = 21.0
+offset_bottom = 21.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_sbaib")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="BookButton" type="TextureButton" parent="HBoxContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+texture_normal = ExtResource("1_1rm7a")
+texture_pressed = ExtResource("2_wwkte")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Icon" type="TextureRect" parent="HBoxContainer/BookButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -21.0
+offset_top = -21.0
+offset_right = 21.0
+offset_bottom = 21.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_e0biq")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="DoorButton" type="TextureButton" parent="HBoxContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+texture_normal = ExtResource("1_1rm7a")
+texture_pressed = ExtResource("2_wwkte")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Icon" type="TextureRect" parent="HBoxContainer/DoorButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -21.0
+offset_top = -21.0
+offset_right = 21.0
+offset_bottom = 21.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("8_uwn4r")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="BookPanel" type="Control" parent="."]
+visible = false
+custom_minimum_size = Vector2(1280, 720)
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+
+[node name="BookPanelBackground" type="Panel" parent="BookPanel"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" type="Control" parent="BookPanel"]
+anchors_preset = 0
+offset_left = 786.0
+offset_top = 611.0
+offset_right = 826.0
+offset_bottom = 651.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BookPanel/Control"]
+custom_minimum_size = Vector2(192, 0)
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -64.0
+offset_right = 192.0
+grow_vertical = 0
+alignment = 2
+
+[node name="CaeEditButton" type="Button" parent="BookPanel/Control/VBoxContainer"]
+custom_minimum_size = Vector2(128, 64)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="BookPanel/Control/VBoxContainer/CaeEditButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="HBoxContainer" type="HBoxContainer" parent="BookPanel/Control/VBoxContainer/CaeEditButton/MarginContainer"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="BookPanel/Control/VBoxContainer/CaeEditButton/MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+texture = ExtResource("8_uwn4r")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="BookPanel/Control/VBoxContainer/CaeEditButton/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Cage Edit"
+vertical_alignment = 1
+clip_text = true
+
+[connection signal="pressed" from="HBoxContainer/DragButton" to="." method="_on_drag_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/FoodButton" to="." method="_on_food_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/MedicineButton" to="." method="_on_medicine_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/PoopButton" to="." method="_on_poop_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/BandageButton" to="." method="_on_bandage_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/CureButton" to="." method="_on_cure_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/BookButton" to="." method="_on_book_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/DoorButton" to="." method="_on_door_button_pressed"]
+[connection signal="gui_input" from="BookPanel/BookPanelBackground" to="." method="_on_book_panel_background_gui_input"]
+[connection signal="pressed" from="BookPanel/Control/VBoxContainer/CaeEditButton" to="." method="_on_cae_edit_button_pressed"]

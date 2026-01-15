@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bahpkxm6k5b73"]
+
+[ext_resource type="TileSet" uid="uid://cuc08rr0w2ghg" path="res://assets/spirits/tiles/hex_map_64x64/hex_map_64x64.tres" id="1_ykxnp"]
+[ext_resource type="Script" uid="uid://dvr1e3vxw12w8" path="res://assets/scenes/game_scene/home_scene/home_scene_tile_map_layer.gd" id="2_hx0em"]
+[ext_resource type="PackedScene" uid="uid://dacop5w1lp172" path="res://assets/actors/player.tscn" id="3_p5q17"]
+
+[node name="HomeScene" type="Node2D"]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+y_sort_enabled = true
+tile_map_data = PackedByteArray(0, 0, 255, 255, 0, 0, 60, 0, 0, 0, 0, 0, 0, 0)
+tile_set = ExtResource("1_ykxnp")
+script = ExtResource("2_hx0em")
+
+[node name="Player" parent="." instance=ExtResource("3_p5q17")]
+position = Vector2(271, 195)
+collision_layer = 2
+
+[connection signal="changed" from="TileMapLayer" to="TileMapLayer" method="_on_changed"]

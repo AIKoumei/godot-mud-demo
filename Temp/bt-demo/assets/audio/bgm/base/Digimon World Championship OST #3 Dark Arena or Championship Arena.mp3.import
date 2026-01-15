@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://1g3xu5v6xwg7"
+path="res://.godot/imported/Digimon World Championship OST #3 Dark Arena or Championship Arena.mp3-18c5383d008e3631e994d21042711d85.mp3str"
+
+[deps]
+
+source_file="res://Temp/bt-demo/assets/audio/bgm/base/Digimon World Championship OST #3 Dark Arena or Championship Arena.mp3"
+dest_files=["res://.godot/imported/Digimon World Championship OST #3 Dark Arena or Championship Arena.mp3-18c5383d008e3631e994d21042711d85.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

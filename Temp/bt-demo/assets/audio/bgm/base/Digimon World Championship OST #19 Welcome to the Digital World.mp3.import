@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d1veyti2u14vu"
+path="res://.godot/imported/Digimon World Championship OST #19 Welcome to the Digital World.mp3-13747dcef75fdfd155ef5596ba2e9134.mp3str"
+
+[deps]
+
+source_file="res://Temp/bt-demo/assets/audio/bgm/base/Digimon World Championship OST #19 Welcome to the Digital World.mp3"
+dest_files=["res://.godot/imported/Digimon World Championship OST #19 Welcome to the Digital World.mp3-13747dcef75fdfd155ef5596ba2e9134.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://2gl7lgb83awi"]
+
+[ext_resource type="Texture2D" uid="uid://6rytsubg52vn" path="res://assets/spirits/tachie/cages/Jym.jpg" id="1_18nha"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4d4gq"]
+radius = 180.0
+
+[node name="BaseHomeCageScene" type="Area2D"]
+
+[node name="BackgroundImage" type="TextureRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = -160.0
+offset_right = 160.0
+offset_bottom = 160.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_18nha")
+expand_mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_4d4gq")

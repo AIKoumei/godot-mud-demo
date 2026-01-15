@@ -1,0 +1,334 @@
+[gd_scene load_steps=5 format=3 uid="uid://cps7uyr47jyfk"]
+
+[ext_resource type="Script" uid="uid://couw105c3bde4" path="res://addons/godot_state_charts/state_chart.gd" id="2_qhwku"]
+[ext_resource type="Script" uid="uid://jk2jm1g6q853" path="res://addons/godot_state_charts/compound_state.gd" id="3_s48e8"]
+[ext_resource type="Script" uid="uid://cytafq8i1y8qm" path="res://addons/godot_state_charts/atomic_state.gd" id="4_vhhii"]
+[ext_resource type="Script" uid="uid://cf1nsco3w0mf6" path="res://addons/godot_state_charts/transition.gd" id="5_7ka4w"]
+
+[node name="Main" type="Node"]
+
+[node name="ModsLayer" type="Node2D" parent="."]
+process_mode = 1
+
+[node name="GameSceneLayer" type="Node2D" parent="."]
+process_mode = 1
+
+[node name="PauseSceneLayer" type="Node2D" parent="."]
+process_mode = 2
+visible = false
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+custom_minimum_size = Vector2(1024, 576)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1024.0
+offset_bottom = 576.0
+mouse_filter = 1
+
+[node name="BottonWindowLayer" type="Control" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="MiddleWindowLayer" type="Control" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="TopWindowLayer" type="Control" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="TipsWindowLayer" type="Control" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="SceneStateMachine" type="Node" parent="."]
+script = ExtResource("2_qhwku")
+metadata/_custom_type_script = "uid://couw105c3bde4"
+
+[node name="SceneControlState" type="Node" parent="SceneStateMachine"]
+script = ExtResource("3_s48e8")
+initial_state = NodePath("LogoScene")
+
+[node name="LogoScene" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("4_vhhii")
+
+[node name="ToInitiateGameScene" type="Node" parent="SceneStateMachine/SceneControlState/LogoScene"]
+script = ExtResource("5_7ka4w")
+to = NodePath("../../InitiateGameScene")
+event = &"ToInitiateGameScene"
+delay_in_seconds = "0.0"
+
+[node name="InitiateGameScene" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("4_vhhii")
+
+[node name="ToLoadingGameScene" type="Node" parent="SceneStateMachine/SceneControlState/InitiateGameScene"]
+script = ExtResource("5_7ka4w")
+to = NodePath("../../LoadingGameScene")
+event = &"ToLoadingGameScene"
+delay_in_seconds = "0.0"
+
+[node name="LoadingGameScene" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("4_vhhii")
+
+[node name="ToStartMenuScene" type="Node" parent="SceneStateMachine/SceneControlState/LoadingGameScene"]
+script = ExtResource("5_7ka4w")
+to = NodePath("../../StartMenuScene")
+event = &"ToStartMenuScene"
+delay_in_seconds = "0.0"
+
+[node name="-----Running-----" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("4_vhhii")
+
+[node name="StartMenuScene" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("4_vhhii")
+
+[node name="ToAutoGameSceneAfterLoadGameScene" type="Node" parent="SceneStateMachine/SceneControlState/StartMenuScene"]
+script = ExtResource("5_7ka4w")
+to = NodePath("../../AutoGameSceneAfterLoadGameScene")
+event = &"ToAutoGameSceneAfterLoadGameScene"
+delay_in_seconds = "0.0"
+
+[node name="ToNewGameScene" type="Node" parent="SceneStateMachine/SceneControlState/StartMenuScene"]
+script = ExtResource("5_7ka4w")
+to = NodePath("../../NewGameScene")
+event = &"ToNewGameScene"
+delay_in_seconds = "0.0"
+
+[node name="ToLoadGameScene" type="Node" parent="SceneStateMachine/SceneControlState/StartMenuScene"]
+script = ExtResource("5_7ka4w")
+to = NodePath("../../LoadGameScene")
+event = &"ToLoadGameScene"
+delay_in_seconds = "0.0"
+
+[node name="LoadGameScene" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("4_vhhii")
+
+[node name="ToAutoGameSceneAfterLoadGameScene" type="Node" parent="SceneStateMachine/SceneControlState/LoadGameScene"]
+script = ExtResource("5_7ka4w")
+to = NodePath("../../AutoGameSceneAfterLoadGameScene")
+event = &"ToAutoGameSceneAfterLoadGameScene"
+delay_in_seconds = "0.0"
+
+[node name="ToStartMenuScene" type="Node" parent="SceneStateMachine/SceneControlState/LoadGameScene"]
+script = ExtResource("5_7ka4w")
+to = NodePath("../../StartMenuScene")
+event = &"ToStartMenuScene"
+delay_in_seconds = "0.0"
+
+[node name="-----Game-----" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("4_vhhii")
+
+[node name="NewGameScene" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("4_vhhii")
+
+[node name="ToAutoGameSceneAfterLoadGameScene" type="Node" parent="SceneStateMachine/SceneControlState/NewGameScene"]
+script = ExtResource("5_7ka4w")
+to = NodePath("../../AutoGameSceneAfterLoadGameScene")
+event = &"ToAutoGameSceneAfterLoadGameScene"
+delay_in_seconds = "0.0"
+
+[node name="AutoGameSceneAfterLoadGameScene" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("4_vhhii")
+
+[node name="ToHomeScene" type="Node" parent="SceneStateMachine/SceneControlState/AutoGameSceneAfterLoadGameScene"]
+script = ExtResource("5_7ka4w")
+to = NodePath("../../HomeScene")
+event = &"ToHomeScene"
+delay_in_seconds = "0.0"
+
+[node name="ToBattleScene" type="Node" parent="SceneStateMachine/SceneControlState/AutoGameSceneAfterLoadGameScene"]
+script = ExtResource("5_7ka4w")
+to = NodePath("../../BattleScene")
+event = &"ToBattleScene"
+delay_in_seconds = "0.0"
+
+[node name="ToAdventureScene" type="Node" parent="SceneStateMachine/SceneControlState/AutoGameSceneAfterLoadGameScene"]
+script = ExtResource("5_7ka4w")
+to = NodePath("../../AdventureScene")
+event = &"ToAdventureScene"
+delay_in_seconds = "0.0"
+
+[node name="HomeScene" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("4_vhhii")
+
+[node name="ToBeforeBattleScene" type="Node" parent="SceneStateMachine/SceneControlState/HomeScene"]
+script = ExtResource("5_7ka4w")
+to = NodePath("../../BeforeBattleScene")
+event = &"ToBeforeBattleScene"
+delay_in_seconds = "0.0"
+
+[node name="ToBeforeAdventureScene" type="Node" parent="SceneStateMachine/SceneControlState/HomeScene"]
+script = ExtResource("5_7ka4w")
+to = NodePath("../../BeforeAdventureScene")
+event = &"ToBeforeAdventureScene"
+delay_in_seconds = "0.0"
+
+[node name="ToGamePauseScene" type="Node" parent="SceneStateMachine/SceneControlState/HomeScene"]
+script = ExtResource("5_7ka4w")
+to = NodePath("../../GamePauseScene")
+event = &"ToGamePauseScene"
+delay_in_seconds = "0.0"
+
+[node name="ToCageEditScene" type="Node" parent="SceneStateMachine/SceneControlState/HomeScene"]
+script = ExtResource("5_7ka4w")
+to = NodePath("../../CageEditScene")
+event = &"ToCageEditScene"
+delay_in_seconds = "0.0"
+
+[node name="CageEditScene" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("4_vhhii")
+
+[node name="ToHomeScene" type="Node" parent="SceneStateMachine/SceneControlState/CageEditScene"]
+script = ExtResource("5_7ka4w")
+to = NodePath("../../HomeScene")
+event = &"ToHomeScene"
+delay_in_seconds = "0.0"
+
+[node name="-----Battle-----" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("4_vhhii")
+
+[node name="BeforeBattleScene" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("4_vhhii")
+
+[node name="ToHomeScene" type="Node" parent="SceneStateMachine/SceneControlState/BeforeBattleScene"]
+script = ExtResource("5_7ka4w")
+to = NodePath("../../HomeScene")
+event = &"ToHomeScene"
+delay_in_seconds = "0.0"
+
+[node name="ToBattleScene" type="Node" parent="SceneStateMachine/SceneControlState/BeforeBattleScene"]
+script = ExtResource("5_7ka4w")
+to = NodePath("../../BattleScene")
+event = &"ToBattleScene"
+delay_in_seconds = "0.0"
+
+[node name="BattleScene" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("4_vhhii")
+
+[node name="ToGamePauseScene" type="Node" parent="SceneStateMachine/SceneControlState/BattleScene"]
+script = ExtResource("5_7ka4w")
+to = NodePath("../../GamePauseScene")
+event = &"ToGamePauseScene"
+delay_in_seconds = "0.0"
+
+[node name="ToAfterBattleScene" type="Node" parent="SceneStateMachine/SceneControlState/BattleScene"]
+script = ExtResource("5_7ka4w")
+to = NodePath("../../AfterBattleScene")
+event = &"ToAfterBattleScene"
+delay_in_seconds = "0.0"
+
+[node name="ToGamePassScene" type="Node" parent="SceneStateMachine/SceneControlState/BattleScene"]
+script = ExtResource("5_7ka4w")
+to = NodePath("../../GamePassScene")
+event = &"ToGamePassScene"
+delay_in_seconds = "0.0"
+
+[node name="AfterBattleScene" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("4_vhhii")
+
+[node name="ToHomeScene" type="Node" parent="SceneStateMachine/SceneControlState/AfterBattleScene"]
+script = ExtResource("5_7ka4w")
+to = NodePath("../../HomeScene")
+event = &"ToHomeScene"
+delay_in_seconds = "0.0"
+
+[node name="-----Adventure-----" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("4_vhhii")
+
+[node name="BeforeAdventureScene" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("4_vhhii")
+
+[node name="ToHomeScene" type="Node" parent="SceneStateMachine/SceneControlState/BeforeAdventureScene"]
+script = ExtResource("5_7ka4w")
+to = NodePath("../../HomeScene")
+event = &"ToHomeScene"
+delay_in_seconds = "0.0"
+
+[node name="ToAdventureScene" type="Node" parent="SceneStateMachine/SceneControlState/BeforeAdventureScene"]
+script = ExtResource("5_7ka4w")
+to = NodePath("../../AdventureScene")
+event = &"ToAdventureScene"
+delay_in_seconds = "0.0"
+
+[node name="AdventureScene" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("4_vhhii")
+
+[node name="ToGamePauseScene" type="Node" parent="SceneStateMachine/SceneControlState/AdventureScene"]
+script = ExtResource("5_7ka4w")
+to = NodePath("../../GamePauseScene")
+event = &"ToGamePauseScene"
+delay_in_seconds = "0.0"
+
+[node name="ToAfterAdventureScene" type="Node" parent="SceneStateMachine/SceneControlState/AdventureScene"]
+script = ExtResource("5_7ka4w")
+to = NodePath("../../AfterAdventureScene")
+event = &"ToAfterAdventureScene"
+delay_in_seconds = "0.0"
+
+[node name="AfterAdventureScene" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("4_vhhii")
+
+[node name="ToHomeScene" type="Node" parent="SceneStateMachine/SceneControlState/AfterAdventureScene"]
+script = ExtResource("5_7ka4w")
+to = NodePath("../../HomeScene")
+event = &"ToHomeScene"
+delay_in_seconds = "0.0"
+
+[node name="-----Other-----" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("4_vhhii")
+
+[node name="GamePauseScene" type="Node" parent="SceneStateMachine/SceneControlState"]
+process_mode = 2
+script = ExtResource("4_vhhii")
+
+[node name="ToHomeScene" type="Node" parent="SceneStateMachine/SceneControlState/GamePauseScene"]
+script = ExtResource("5_7ka4w")
+to = NodePath("../../HomeScene")
+event = &"ToHomeScene"
+delay_in_seconds = "0.0"
+
+[node name="ToBattleScene" type="Node" parent="SceneStateMachine/SceneControlState/GamePauseScene"]
+script = ExtResource("5_7ka4w")
+to = NodePath("../../HomeScene")
+event = &"ToBattleScene"
+delay_in_seconds = "0.0"
+
+[node name="ToAdventureScene" type="Node" parent="SceneStateMachine/SceneControlState/GamePauseScene"]
+script = ExtResource("5_7ka4w")
+to = NodePath("../../AdventureScene")
+event = &"ToAdventureScene"
+delay_in_seconds = "0.0"
+
+[node name="GameOverScene" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("4_vhhii")
+
+[node name="GamePassScene" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("4_vhhii")
+
+[node name="ToHomeScene" type="Node" parent="SceneStateMachine/SceneControlState/GamePassScene"]
+script = ExtResource("5_7ka4w")
+to = NodePath("../../HomeScene")
+event = &"ToHomeScene"
+delay_in_seconds = "0.0"

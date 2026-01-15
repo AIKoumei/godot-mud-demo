@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://big6lm3iee04c"]
+
+[ext_resource type="Script" uid="uid://src8elwhynfu" path="res://demos/assets/scripts/components/HitComponent.gd" id="1_r1jc7"]
+
+[node name="HitComponent" type="Node"]
+script = ExtResource("1_r1jc7")
+
+[connection signal="ready" from="." to="." method="_on_ready"]

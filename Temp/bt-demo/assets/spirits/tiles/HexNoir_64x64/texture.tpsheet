@@ -1,0 +1,1264 @@
+{
+	"textures": [
+		{
+			"image": "texture.png",
+			"size": {
+				"w": 2048,
+				"h": 2048
+			},
+			"sprites": [
+				{
+					"filename": "HexNoir 64x64&#x2F;001.png",
+					"region": {
+						"x": 0,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;002.png",
+					"region": {
+						"x": 0,
+						"y": 64,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;003.png",
+					"region": {
+						"x": 0,
+						"y": 128,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;004.png",
+					"region": {
+						"x": 0,
+						"y": 192,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;005.png",
+					"region": {
+						"x": 0,
+						"y": 256,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;006.png",
+					"region": {
+						"x": 0,
+						"y": 320,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;007.png",
+					"region": {
+						"x": 0,
+						"y": 384,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;008.png",
+					"region": {
+						"x": 0,
+						"y": 448,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;009.png",
+					"region": {
+						"x": 0,
+						"y": 512,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;010.png",
+					"region": {
+						"x": 0,
+						"y": 576,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;011.png",
+					"region": {
+						"x": 0,
+						"y": 640,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;012.png",
+					"region": {
+						"x": 0,
+						"y": 704,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;013.png",
+					"region": {
+						"x": 0,
+						"y": 768,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;014.png",
+					"region": {
+						"x": 0,
+						"y": 832,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;015.png",
+					"region": {
+						"x": 0,
+						"y": 896,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;016.png",
+					"region": {
+						"x": 0,
+						"y": 960,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;017.png",
+					"region": {
+						"x": 0,
+						"y": 1024,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;018.png",
+					"region": {
+						"x": 0,
+						"y": 1088,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;019.png",
+					"region": {
+						"x": 0,
+						"y": 1152,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;020.png",
+					"region": {
+						"x": 0,
+						"y": 1216,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;021.png",
+					"region": {
+						"x": 0,
+						"y": 1280,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;022.png",
+					"region": {
+						"x": 0,
+						"y": 1344,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;023.png",
+					"region": {
+						"x": 0,
+						"y": 1408,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;024.png",
+					"region": {
+						"x": 0,
+						"y": 1472,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;025.png",
+					"region": {
+						"x": 0,
+						"y": 1536,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;026.png",
+					"region": {
+						"x": 0,
+						"y": 1600,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;027.png",
+					"region": {
+						"x": 0,
+						"y": 1664,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;028.png",
+					"region": {
+						"x": 0,
+						"y": 1728,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;029.png",
+					"region": {
+						"x": 0,
+						"y": 1792,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;030.png",
+					"region": {
+						"x": 0,
+						"y": 1856,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;031.png",
+					"region": {
+						"x": 0,
+						"y": 1920,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;042.png",
+					"region": {
+						"x": 0,
+						"y": 1984,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;043.png",
+					"region": {
+						"x": 64,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;044.png",
+					"region": {
+						"x": 128,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;045.png",
+					"region": {
+						"x": 192,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;046.png",
+					"region": {
+						"x": 256,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;047.png",
+					"region": {
+						"x": 320,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;048.png",
+					"region": {
+						"x": 384,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;049.png",
+					"region": {
+						"x": 448,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;050.png",
+					"region": {
+						"x": 512,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;051.png",
+					"region": {
+						"x": 576,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;052.png",
+					"region": {
+						"x": 640,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;053.png",
+					"region": {
+						"x": 704,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;054.png",
+					"region": {
+						"x": 768,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;055.png",
+					"region": {
+						"x": 832,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;056.png",
+					"region": {
+						"x": 896,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;057.png",
+					"region": {
+						"x": 960,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;058.png",
+					"region": {
+						"x": 1024,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;059.png",
+					"region": {
+						"x": 1088,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;Harbor  (1).png",
+					"region": {
+						"x": 1152,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;Harbor  (10).png",
+					"region": {
+						"x": 1216,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;Harbor  (11).png",
+					"region": {
+						"x": 1280,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;Harbor  (12).png",
+					"region": {
+						"x": 1344,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;Harbor  (13).png",
+					"region": {
+						"x": 1408,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;Harbor  (14).png",
+					"region": {
+						"x": 1472,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;Harbor  (15).png",
+					"region": {
+						"x": 1536,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;Harbor  (16).png",
+					"region": {
+						"x": 1600,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;Harbor  (17).png",
+					"region": {
+						"x": 1664,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;Harbor  (18).png",
+					"region": {
+						"x": 1728,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;Harbor  (19).png",
+					"region": {
+						"x": 1792,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;Harbor  (2).png",
+					"region": {
+						"x": 1856,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;Harbor  (3).png",
+					"region": {
+						"x": 1920,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;Harbor  (4).png",
+					"region": {
+						"x": 1984,
+						"y": 0,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;Harbor  (5).png",
+					"region": {
+						"x": 64,
+						"y": 64,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;Harbor  (6).png",
+					"region": {
+						"x": 64,
+						"y": 128,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;Harbor  (7).png",
+					"region": {
+						"x": 64,
+						"y": 192,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;Harbor  (8).png",
+					"region": {
+						"x": 64,
+						"y": 256,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;Harbor  (9).png",
+					"region": {
+						"x": 64,
+						"y": 320,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;Outskirts02.png",
+					"region": {
+						"x": 64,
+						"y": 384,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;Outskirts03.png",
+					"region": {
+						"x": 64,
+						"y": 448,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;Outskirts04.png",
+					"region": {
+						"x": 64,
+						"y": 512,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;Outskirts05.png",
+					"region": {
+						"x": 64,
+						"y": 576,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;Outskirts06.png",
+					"region": {
+						"x": 64,
+						"y": 640,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;Outskirts07.png",
+					"region": {
+						"x": 64,
+						"y": 704,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;Outskirts1.png",
+					"region": {
+						"x": 64,
+						"y": 768,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;Park1.png",
+					"region": {
+						"x": 64,
+						"y": 832,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;Park2.png",
+					"region": {
+						"x": 64,
+						"y": 896,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;Park3.png",
+					"region": {
+						"x": 64,
+						"y": 960,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;Park4.png",
+					"region": {
+						"x": 64,
+						"y": 1024,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;Park5.png",
+					"region": {
+						"x": 64,
+						"y": 1088,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;Water (1).png",
+					"region": {
+						"x": 64,
+						"y": 1152,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;Water (2).png",
+					"region": {
+						"x": 64,
+						"y": 1216,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "HexNoir 64x64&#x2F;Water (3).png",
+					"region": {
+						"x": 64,
+						"y": 1280,
+						"w": 64,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "http://free-tex-packer.com",
+		"version": "0.6.7",
+		"format": "RGBA8888",
+		"scale": 1
+	}
+}

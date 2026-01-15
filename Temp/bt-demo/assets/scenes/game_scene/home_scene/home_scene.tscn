@@ -1,0 +1,61 @@
+[gd_scene load_steps=8 format=3 uid="uid://bahpkxm6k5b73"]
+
+[ext_resource type="Script" uid="uid://bya3wn5gxl5w6" path="res://assets/scenes/game_scene/home_scene/home_scene.gd" id="1_hx0em"]
+[ext_resource type="Script" uid="uid://dvr1e3vxw12w8" path="res://assets/scenes/game_scene/home_scene/home_scene_tile_map_layer.gd" id="2_hx0em"]
+[ext_resource type="TileSet" uid="uid://wv8uy8qir5h4" path="res://assets/scenes/home_cage_scene/home_cage_tile_set.tres" id="3_00n7e"]
+[ext_resource type="PackedScene" uid="uid://dacop5w1lp172" path="res://assets/actors/player.tscn" id="3_p5q17"]
+[ext_resource type="PackedScene" uid="uid://ctnolqxsl1jpu" path="res://assets/scenes/home_cage_scene/home_rest_cage.tscn" id="4_hx0em"]
+[ext_resource type="PackedScene" uid="uid://defte5eonvne5" path="res://assets/scenes/scene_items/map_obj_food.tscn" id="6_s3ngh"]
+[ext_resource type="PackedScene" uid="uid://c777abpqk2db3" path="res://assets/scenes/ui/home_ui_layer.tscn" id="7_e335r"]
+
+[node name="HomeScene" type="Node2D"]
+script = ExtResource("1_hx0em")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.0
+offset_top = -64.0
+offset_right = 32.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+y_sort_enabled = true
+position = Vector2(-32, -64)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 60, 0, 0, 0, 0, 0, 0, 0)
+tile_set = ExtResource("3_00n7e")
+script = ExtResource("2_hx0em")
+
+[node name="HomeRestCage" parent="TileMapLayer" instance=ExtResource("4_hx0em")]
+position = Vector2(32, 64)
+
+[node name="MapObjLayer" type="Node2D" parent="."]
+
+[node name="HomeFood" parent="MapObjLayer" instance=ExtResource("6_s3ngh")]
+visible = false
+position = Vector2(486, 291)
+
+[node name="Player" parent="MapObjLayer" instance=ExtResource("3_p5q17")]
+position = Vector2(271, 195)
+collision_layer = 2
+collision_mask = 1
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="UILayer" type="Control" parent="CanvasLayer"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 1
+
+[node name="HomeUILayer" parent="CanvasLayer/UILayer" instance=ExtResource("7_e335r")]
+layout_mode = 1
+
+[connection signal="changed" from="TileMapLayer" to="TileMapLayer" method="_on_changed"]

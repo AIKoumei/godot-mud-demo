@@ -1,0 +1,38 @@
+[gd_scene load_steps=9 format=3 uid="uid://bdjwqw41tgbmd"]
+
+[ext_resource type="Script" uid="uid://c5lqmyiqrfuot" path="res://demos/assets/actors/skill.gd" id="1_j76py"]
+[ext_resource type="Texture2D" uid="uid://2uyxh7sy8qny" path="res://demos/limboai/assets/weapon_ninja_star.png" id="2_ixb45"]
+[ext_resource type="PackedScene" uid="uid://kdro0iuntth7" path="res://demos/assets/scripts/components/SkillComponent.tscn" id="4_ixb45"]
+[ext_resource type="PackedScene" uid="uid://cvg3s1iijyj8p" path="res://demos/assets/scripts/components/TeamComponent.tscn" id="5_a5w77"]
+[ext_resource type="PackedScene" uid="uid://burqjb4ecks87" path="res://demos/assets/scripts/components/DetectiveComponent.tscn" id="6_n4nih"]
+[ext_resource type="PackedScene" uid="uid://big6lm3iee04c" path="res://demos/assets/scripts/components/HitComponent.tscn" id="8_j76py"]
+[ext_resource type="PackedScene" uid="uid://xcihfw051wn6" path="res://demos/assets/scripts/components/HealthComponent.tscn" id="8_tepeg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ufj7s"]
+size = Vector2(66, 66)
+
+[node name="Skill" type="CharacterBody2D"]
+collision_layer = 0
+collision_mask = 0
+script = ExtResource("1_j76py")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_ixb45")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ufj7s")
+
+[node name="Components" type="Node" parent="."]
+
+[node name="SkillComponent" parent="Components" instance=ExtResource("4_ixb45")]
+
+[node name="TeamComponent" parent="Components" instance=ExtResource("5_a5w77")]
+team = 1
+
+[node name="DetectiveComponent" parent="Components" instance=ExtResource("6_n4nih")]
+
+[node name="HealthComponent" parent="Components" instance=ExtResource("8_tepeg")]
+
+[node name="HitComponent" parent="Components" instance=ExtResource("8_j76py")]
+
+[connection signal="ready" from="." to="." method="_on_ready"]

@@ -1,0 +1,231 @@
+[gd_scene load_steps=6 format=3 uid="uid://bgijwtcjk1pox"]
+
+[ext_resource type="Script" uid="uid://eoe8l5i06e52" path="res://assets/scenes/game_scene/load_game_scene.gd" id="1_m1svr"]
+[ext_resource type="Texture2D" uid="uid://d3ukhgbk67ep2" path="res://addons/spirits/FreeUi/FreeUi/ClassicalButtons/3.png" id="2_ulqxe"]
+[ext_resource type="Texture2D" uid="uid://c88emwes7dksi" path="res://addons/spirits/FreeUi/FreeUi/ClassicalButtons/4.png" id="3_vk46h"]
+[ext_resource type="Texture2D" uid="uid://ceppubw7048pk" path="res://addons/spirits/icon - Line Icons/Back-2-2-icon.png" id="4_ulqxe"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_m1svr"]
+font_size = 64
+
+[node name="LoadGameScene" type="Control"]
+custom_minimum_size = Vector2(1280, 720)
+layout_mode = 3
+anchors_preset = 0
+mouse_filter = 2
+script = ExtResource("1_m1svr")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(350, 344)
+mouse_filter = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="VSplitContainer" type="VSplitContainer" parent="MarginContainer"]
+layout_mode = 2
+mouse_filter = 2
+dragging_enabled = false
+
+[node name="PanelContainer2" type="PanelContainer" parent="MarginContainer/VSplitContainer"]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VSplitContainer/PanelContainer2"]
+layout_mode = 2
+size_flags_vertical = 0
+text = "Load Game"
+label_settings = SubResource("LabelSettings_m1svr")
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/VSplitContainer"]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/VSplitContainer/PanelContainer"]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="MarginContainer/VSplitContainer/PanelContainer/ScrollContainer"]
+layout_mode = 2
+columns = 4
+
+[node name="BaseItem" type="TextureButton" parent="MarginContainer/VSplitContainer/PanelContainer/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(309, 309)
+layout_mode = 2
+texture_normal = ExtResource("2_ulqxe")
+texture_pressed = ExtResource("3_vk46h")
+ignore_texture_size = true
+stretch_mode = 6
+
+[node name="BaseItem2" type="TextureButton" parent="MarginContainer/VSplitContainer/PanelContainer/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(309, 309)
+layout_mode = 2
+texture_normal = ExtResource("2_ulqxe")
+texture_pressed = ExtResource("3_vk46h")
+ignore_texture_size = true
+stretch_mode = 6
+
+[node name="BaseItem3" type="TextureButton" parent="MarginContainer/VSplitContainer/PanelContainer/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(309, 309)
+layout_mode = 2
+texture_normal = ExtResource("2_ulqxe")
+texture_pressed = ExtResource("3_vk46h")
+ignore_texture_size = true
+stretch_mode = 6
+
+[node name="BaseItem4" type="TextureButton" parent="MarginContainer/VSplitContainer/PanelContainer/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(309, 309)
+layout_mode = 2
+texture_normal = ExtResource("2_ulqxe")
+texture_pressed = ExtResource("3_vk46h")
+ignore_texture_size = true
+stretch_mode = 6
+
+[node name="BaseItem5" type="TextureButton" parent="MarginContainer/VSplitContainer/PanelContainer/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(309, 309)
+layout_mode = 2
+texture_normal = ExtResource("2_ulqxe")
+texture_pressed = ExtResource("3_vk46h")
+ignore_texture_size = true
+stretch_mode = 6
+
+[node name="BaseItem6" type="TextureButton" parent="MarginContainer/VSplitContainer/PanelContainer/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(309, 309)
+layout_mode = 2
+texture_normal = ExtResource("2_ulqxe")
+texture_pressed = ExtResource("3_vk46h")
+ignore_texture_size = true
+stretch_mode = 6
+
+[node name="BaseItem7" type="TextureButton" parent="MarginContainer/VSplitContainer/PanelContainer/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(309, 309)
+layout_mode = 2
+texture_normal = ExtResource("2_ulqxe")
+texture_pressed = ExtResource("3_vk46h")
+ignore_texture_size = true
+stretch_mode = 6
+
+[node name="BaseItem8" type="TextureButton" parent="MarginContainer/VSplitContainer/PanelContainer/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(309, 309)
+layout_mode = 2
+texture_normal = ExtResource("2_ulqxe")
+texture_pressed = ExtResource("3_vk46h")
+ignore_texture_size = true
+stretch_mode = 6
+
+[node name="BaseItem9" type="TextureButton" parent="MarginContainer/VSplitContainer/PanelContainer/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(309, 309)
+layout_mode = 2
+texture_normal = ExtResource("2_ulqxe")
+texture_pressed = ExtResource("3_vk46h")
+ignore_texture_size = true
+stretch_mode = 6
+
+[node name="BaseItem10" type="TextureButton" parent="MarginContainer/VSplitContainer/PanelContainer/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(309, 309)
+layout_mode = 2
+texture_normal = ExtResource("2_ulqxe")
+texture_pressed = ExtResource("3_vk46h")
+ignore_texture_size = true
+stretch_mode = 6
+
+[node name="BaseItem11" type="TextureButton" parent="MarginContainer/VSplitContainer/PanelContainer/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(309, 309)
+layout_mode = 2
+texture_normal = ExtResource("2_ulqxe")
+texture_pressed = ExtResource("3_vk46h")
+ignore_texture_size = true
+stretch_mode = 6
+
+[node name="BaseItem12" type="TextureButton" parent="MarginContainer/VSplitContainer/PanelContainer/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(309, 309)
+layout_mode = 2
+texture_normal = ExtResource("2_ulqxe")
+texture_pressed = ExtResource("3_vk46h")
+ignore_texture_size = true
+stretch_mode = 6
+
+[node name="BaseItem13" type="TextureButton" parent="MarginContainer/VSplitContainer/PanelContainer/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(309, 309)
+layout_mode = 2
+texture_normal = ExtResource("2_ulqxe")
+texture_pressed = ExtResource("3_vk46h")
+ignore_texture_size = true
+stretch_mode = 6
+
+[node name="BaseItem14" type="TextureButton" parent="MarginContainer/VSplitContainer/PanelContainer/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(309, 309)
+layout_mode = 2
+texture_normal = ExtResource("2_ulqxe")
+texture_pressed = ExtResource("3_vk46h")
+ignore_texture_size = true
+stretch_mode = 6
+
+[node name="BaseItem15" type="TextureButton" parent="MarginContainer/VSplitContainer/PanelContainer/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(309, 309)
+layout_mode = 2
+texture_normal = ExtResource("2_ulqxe")
+texture_pressed = ExtResource("3_vk46h")
+ignore_texture_size = true
+stretch_mode = 6
+
+[node name="BaseItem16" type="TextureButton" parent="MarginContainer/VSplitContainer/PanelContainer/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(309, 309)
+layout_mode = 2
+texture_normal = ExtResource("2_ulqxe")
+texture_pressed = ExtResource("3_vk46h")
+ignore_texture_size = true
+stretch_mode = 6
+
+[node name="BaseItem17" type="TextureButton" parent="MarginContainer/VSplitContainer/PanelContainer/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(309, 309)
+layout_mode = 2
+texture_normal = ExtResource("2_ulqxe")
+texture_pressed = ExtResource("3_vk46h")
+ignore_texture_size = true
+stretch_mode = 6
+
+[node name="BackButton" type="TextureButton" parent="."]
+custom_minimum_size = Vector2(88, 88)
+layout_mode = 0
+offset_left = 1176.0
+offset_top = 16.0
+offset_right = 1264.0
+offset_bottom = 104.0
+pivot_offset = Vector2(78, 63)
+texture_normal = ExtResource("2_ulqxe")
+texture_pressed = ExtResource("3_vk46h")
+ignore_texture_size = true
+stretch_mode = 6
+
+[node name="TextureRect" type="TextureRect" parent="BackButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 13.0
+offset_top = 13.0
+offset_right = -13.0
+offset_bottom = -13.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_ulqxe")
+expand_mode = 1
+stretch_mode = 6
+
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

@@ -1,0 +1,8 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://cjscg5assqmtf"]
+
+[ext_resource type="Texture2D" uid="uid://ccmmvd26otd2f" path="res://Temp/bt-demo/assets/spirits/tiles/hex_map/texture.png" id="1_eunue"]
+
+[resource]
+atlas = ExtResource("1_eunue")
+region = Rect2(2780, 1015, 172, 203)
+margin = Rect2(19, 3, 38, 7)

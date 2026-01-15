@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://7rgahy1lchvu"]
+
+[ext_resource type="PackedScene" uid="uid://c777abpqk2db3" path="res://assets/scenes/ui/home_ui_layer.tscn" id="1_yfkoa"]
+
+[node name="AdventureScene" type="Node2D"]
+
+[node name="UILayer" type="Control" parent="."]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+
+[node name="HomeUILayer" parent="UILayer" instance=ExtResource("1_yfkoa")]
+layout_mode = 1

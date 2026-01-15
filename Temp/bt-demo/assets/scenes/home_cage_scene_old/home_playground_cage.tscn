@@ -1,0 +1,36 @@
+[gd_scene load_steps=7 format=3 uid="uid://sy624ij4wn3e"]
+
+[ext_resource type="Script" uid="uid://c0a2cqjor8e37" path="res://assets/scripts/home_cages/common_home_cage.gd" id="1_mig2m"]
+[ext_resource type="Script" uid="uid://cbquh4umryd14" path="res://assets/scripts/home_cages/home_cage_size_node.gd" id="2_8qdmp"]
+[ext_resource type="Resource" uid="uid://cpdgw413ahnnr" path="res://assets/scripts/home_cages/cage_map_node_up.tres" id="3_xna46"]
+[ext_resource type="Resource" uid="uid://eivbugpqdwhy" path="res://assets/scripts/home_cages/cage_map_node_down.tres" id="4_6un28"]
+[ext_resource type="Texture2D" uid="uid://xchwpvmf36ay" path="res://assets/spirits/tachie/cages/Playground.jpg" id="5_51hmu"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_isx2a"]
+radius = 180.0
+
+[node name="HomePlaygroundCage" type="Area2D"]
+script = ExtResource("1_mig2m")
+cage_type = 5
+size_node_list = Array[ExtResource("2_8qdmp")]([ExtResource("3_xna46"), ExtResource("3_xna46"), ExtResource("4_6un28"), ExtResource("4_6un28"), ExtResource("3_xna46")])
+metadata/_custom_type_script = "uid://c0a2cqjor8e37"
+
+[node name="BackgroundImage" type="TextureRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = -160.0
+offset_right = 160.0
+offset_bottom = 160.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_51hmu")
+expand_mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_isx2a")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

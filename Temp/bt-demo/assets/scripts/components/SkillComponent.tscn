@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://kdro0iuntth7"]
+
+[ext_resource type="Script" uid="uid://bgdw370pu5kf4" path="res://demos/assets/scripts/components/SkillComponent.gd" id="1_gjgpp"]
+
+[node name="SkillComponent" type="Node"]
+script = ExtResource("1_gjgpp")

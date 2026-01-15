@@ -1,0 +1,27 @@
+extends Line2D
+
+@export var tail_width: float = 4.0#拖尾宽度
+@export var tail_max_length: int = 20#拖尾最大长度（顶点数）
+@export var tail_color: Color = Color(1.0, 1.0, 1.0, 1.0)#拖尾颜色
+ 
+ 
+func _ready() -> void:
+	width = tail_width
+	antialiased = false
+	modulate = tail_color
+	points = PackedVector2Array()
+ 
+func _process(delta: float) -> void:
+	#检测最长长度是否小于1小于1就改成1 用的这段别删不然你把tail_max_length这个调成1一下会报错
+	if tail_max_length < 1:
+		tail_max_length = 5   #自己改小于1的长度5应该也够的了
+	if tail_width < 1:
+		tail_width = 4   #自己改小于1的长度5应该也够的了
+	#获取鼠标位置
+	var mouse_pos = Vector2(round(get_global_mouse_position().x), round(get_global_mouse_position().y))
+	#添加新顶点
+	add_point(mouse_pos)
+ 
+	#控制拖尾
+	while get_point_count() > tail_max_length:
+		remove_point(0)

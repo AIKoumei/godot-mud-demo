@@ -1,0 +1,441 @@
+[gd_scene load_steps=8 format=3 uid="uid://2aqjddyhsqt6"]
+
+[ext_resource type="Script" uid="uid://cwymyl2p1cb8" path="res://assets/scenes/main_scene.gd" id="1_4v045"]
+[ext_resource type="PackedScene" uid="uid://c777abpqk2db3" path="res://assets/scenes/ui/home_ui_layer.tscn" id="2_gagv8"]
+[ext_resource type="Script" uid="uid://couw105c3bde4" path="res://addons/godot_state_charts/state_chart.gd" id="4_0ft0v"]
+[ext_resource type="Script" uid="uid://jk2jm1g6q853" path="res://addons/godot_state_charts/compound_state.gd" id="6_yecn6"]
+[ext_resource type="Script" uid="uid://cytafq8i1y8qm" path="res://addons/godot_state_charts/atomic_state.gd" id="7_supws"]
+[ext_resource type="Script" uid="uid://cf1nsco3w0mf6" path="res://addons/godot_state_charts/transition.gd" id="8_0ft0v"]
+[ext_resource type="PackedScene" uid="uid://bcwkugn6v3oy7" path="res://addons/godot_state_charts/utilities/state_chart_debugger.tscn" id="8_702vk"]
+
+[node name="MainScene" type="Node2D"]
+script = ExtResource("1_4v045")
+
+[node name="GameSceneLayer" type="Node2D" parent="."]
+process_mode = 1
+
+[node name="PauseSceneLayer" type="Node2D" parent="."]
+process_mode = 2
+visible = false
+
+[node name="UICanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="UILayer" type="Control" parent="UICanvasLayer"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="HomeUILayer" parent="UICanvasLayer/UILayer" instance=ExtResource("2_gagv8")]
+visible = false
+layout_mode = 1
+
+[node name="MessageLayer" type="Control" parent="UICanvasLayer/UILayer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="LeftTopLayer" type="VBoxContainer" parent="UICanvasLayer/UILayer/MessageLayer"]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="LeftCenterLayer" type="VBoxContainer" parent="UICanvasLayer/UILayer/MessageLayer"]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+grow_vertical = 2
+mouse_filter = 2
+alignment = 1
+
+[node name="LeftBottomLayer" type="VBoxContainer" parent="UICanvasLayer/UILayer/MessageLayer"]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+grow_vertical = 2
+mouse_filter = 2
+alignment = 2
+
+[node name="CenterTopLayer" type="VBoxContainer" parent="UICanvasLayer/UILayer/MessageLayer"]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="CenterCenterLayer" type="VBoxContainer" parent="UICanvasLayer/UILayer/MessageLayer"]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+alignment = 1
+
+[node name="CenterBottomLayer" type="VBoxContainer" parent="UICanvasLayer/UILayer/MessageLayer"]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+alignment = 2
+
+[node name="RightTopLayer" type="VBoxContainer" parent="UICanvasLayer/UILayer/MessageLayer"]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="RightCenterLayer" type="VBoxContainer" parent="UICanvasLayer/UILayer/MessageLayer"]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 2.0
+offset_bottom = 2.0
+grow_horizontal = 0
+grow_vertical = 2
+mouse_filter = 2
+alignment = 1
+
+[node name="RightBottomLayer" type="VBoxContainer" parent="UICanvasLayer/UILayer/MessageLayer"]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 2
+mouse_filter = 2
+alignment = 2
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(640, 360)
+process_callback = 0
+limit_smoothed = true
+position_smoothing_enabled = true
+
+[node name="SceneStateMachine" type="Node" parent="."]
+script = ExtResource("4_0ft0v")
+metadata/_custom_type_script = "uid://couw105c3bde4"
+
+[node name="SceneControlState" type="Node" parent="SceneStateMachine"]
+script = ExtResource("6_yecn6")
+initial_state = NodePath("LogoScene")
+
+[node name="LogoScene" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("7_supws")
+
+[node name="ToStartMenuScene" type="Node" parent="SceneStateMachine/SceneControlState/LogoScene"]
+script = ExtResource("8_0ft0v")
+to = NodePath("../../StartMenuScene")
+event = &"ToStartMenuScene"
+delay_in_seconds = "0.0"
+
+[node name="StartMenuScene" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("7_supws")
+
+[node name="ToAutoGameSceneAfterLoadGameScene" type="Node" parent="SceneStateMachine/SceneControlState/StartMenuScene"]
+script = ExtResource("8_0ft0v")
+to = NodePath("../../AutoGameSceneAfterLoadGameScene")
+event = &"ToAutoGameSceneAfterLoadGameScene"
+delay_in_seconds = "0.0"
+
+[node name="ToNewGameScene" type="Node" parent="SceneStateMachine/SceneControlState/StartMenuScene"]
+script = ExtResource("8_0ft0v")
+to = NodePath("../../NewGameScene")
+event = &"ToNewGameScene"
+delay_in_seconds = "0.0"
+
+[node name="ToLoadGameScene" type="Node" parent="SceneStateMachine/SceneControlState/StartMenuScene"]
+script = ExtResource("8_0ft0v")
+to = NodePath("../../LoadGameScene")
+event = &"ToLoadGameScene"
+delay_in_seconds = "0.0"
+
+[node name="LoadGameScene" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("7_supws")
+
+[node name="ToAutoGameSceneAfterLoadGameScene" type="Node" parent="SceneStateMachine/SceneControlState/LoadGameScene"]
+script = ExtResource("8_0ft0v")
+to = NodePath("../../AutoGameSceneAfterLoadGameScene")
+event = &"ToAutoGameSceneAfterLoadGameScene"
+delay_in_seconds = "0.0"
+
+[node name="ToStartMenuScene" type="Node" parent="SceneStateMachine/SceneControlState/LoadGameScene"]
+script = ExtResource("8_0ft0v")
+to = NodePath("../../StartMenuScene")
+event = &"ToStartMenuScene"
+delay_in_seconds = "0.0"
+
+[node name="-----Game-----" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("7_supws")
+
+[node name="NewGameScene" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("7_supws")
+
+[node name="ToAutoGameSceneAfterLoadGameScene" type="Node" parent="SceneStateMachine/SceneControlState/NewGameScene"]
+script = ExtResource("8_0ft0v")
+to = NodePath("../../AutoGameSceneAfterLoadGameScene")
+event = &"ToAutoGameSceneAfterLoadGameScene"
+delay_in_seconds = "0.0"
+
+[node name="AutoGameSceneAfterLoadGameScene" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("7_supws")
+
+[node name="ToHomeScene" type="Node" parent="SceneStateMachine/SceneControlState/AutoGameSceneAfterLoadGameScene"]
+script = ExtResource("8_0ft0v")
+to = NodePath("../../HomeScene")
+event = &"ToHomeScene"
+delay_in_seconds = "0.0"
+
+[node name="ToBattleScene" type="Node" parent="SceneStateMachine/SceneControlState/AutoGameSceneAfterLoadGameScene"]
+script = ExtResource("8_0ft0v")
+to = NodePath("../../BattleScene")
+event = &"ToBattleScene"
+delay_in_seconds = "0.0"
+
+[node name="ToAdventureScene" type="Node" parent="SceneStateMachine/SceneControlState/AutoGameSceneAfterLoadGameScene"]
+script = ExtResource("8_0ft0v")
+to = NodePath("../../AdventureScene")
+event = &"ToAdventureScene"
+delay_in_seconds = "0.0"
+
+[node name="HomeScene" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("7_supws")
+
+[node name="ToBeforeBattleScene" type="Node" parent="SceneStateMachine/SceneControlState/HomeScene"]
+script = ExtResource("8_0ft0v")
+to = NodePath("../../BeforeBattleScene")
+event = &"ToBeforeBattleScene"
+delay_in_seconds = "0.0"
+
+[node name="ToBeforeAdventureScene" type="Node" parent="SceneStateMachine/SceneControlState/HomeScene"]
+script = ExtResource("8_0ft0v")
+to = NodePath("../../BeforeAdventureScene")
+event = &"ToBeforeAdventureScene"
+delay_in_seconds = "0.0"
+
+[node name="ToGamePauseScene" type="Node" parent="SceneStateMachine/SceneControlState/HomeScene"]
+script = ExtResource("8_0ft0v")
+to = NodePath("../../GamePauseScene")
+event = &"ToGamePauseScene"
+delay_in_seconds = "0.0"
+
+[node name="ToCageEditScene" type="Node" parent="SceneStateMachine/SceneControlState/HomeScene"]
+script = ExtResource("8_0ft0v")
+to = NodePath("../../CageEditScene")
+event = &"ToCageEditScene"
+delay_in_seconds = "0.0"
+
+[node name="CageEditScene" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("7_supws")
+
+[node name="ToHomeScene" type="Node" parent="SceneStateMachine/SceneControlState/CageEditScene"]
+script = ExtResource("8_0ft0v")
+to = NodePath("../../HomeScene")
+event = &"ToHomeScene"
+delay_in_seconds = "0.0"
+
+[node name="-----Battle-----" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("7_supws")
+
+[node name="BeforeBattleScene" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("7_supws")
+
+[node name="ToHomeScene" type="Node" parent="SceneStateMachine/SceneControlState/BeforeBattleScene"]
+script = ExtResource("8_0ft0v")
+to = NodePath("../../HomeScene")
+event = &"ToHomeScene"
+delay_in_seconds = "0.0"
+
+[node name="ToBattleScene" type="Node" parent="SceneStateMachine/SceneControlState/BeforeBattleScene"]
+script = ExtResource("8_0ft0v")
+to = NodePath("../../BattleScene")
+event = &"ToBattleScene"
+delay_in_seconds = "0.0"
+
+[node name="BattleScene" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("7_supws")
+
+[node name="ToGamePauseScene" type="Node" parent="SceneStateMachine/SceneControlState/BattleScene"]
+script = ExtResource("8_0ft0v")
+to = NodePath("../../GamePauseScene")
+event = &"ToGamePauseScene"
+delay_in_seconds = "0.0"
+
+[node name="ToAfterBattleScene" type="Node" parent="SceneStateMachine/SceneControlState/BattleScene"]
+script = ExtResource("8_0ft0v")
+to = NodePath("../../AfterBattleScene")
+event = &"ToAfterBattleScene"
+delay_in_seconds = "0.0"
+
+[node name="ToGamePassScene" type="Node" parent="SceneStateMachine/SceneControlState/BattleScene"]
+script = ExtResource("8_0ft0v")
+to = NodePath("../../GamePassScene")
+event = &"ToGamePassScene"
+delay_in_seconds = "0.0"
+
+[node name="AfterBattleScene" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("7_supws")
+
+[node name="ToHomeScene" type="Node" parent="SceneStateMachine/SceneControlState/AfterBattleScene"]
+script = ExtResource("8_0ft0v")
+to = NodePath("../../HomeScene")
+event = &"ToHomeScene"
+delay_in_seconds = "0.0"
+
+[node name="-----Adventure-----" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("7_supws")
+
+[node name="BeforeAdventureScene" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("7_supws")
+
+[node name="ToHomeScene" type="Node" parent="SceneStateMachine/SceneControlState/BeforeAdventureScene"]
+script = ExtResource("8_0ft0v")
+to = NodePath("../../HomeScene")
+event = &"ToHomeScene"
+delay_in_seconds = "0.0"
+
+[node name="ToAdventureScene" type="Node" parent="SceneStateMachine/SceneControlState/BeforeAdventureScene"]
+script = ExtResource("8_0ft0v")
+to = NodePath("../../AdventureScene")
+event = &"ToAdventureScene"
+delay_in_seconds = "0.0"
+
+[node name="AdventureScene" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("7_supws")
+
+[node name="ToGamePauseScene" type="Node" parent="SceneStateMachine/SceneControlState/AdventureScene"]
+script = ExtResource("8_0ft0v")
+to = NodePath("../../GamePauseScene")
+event = &"ToGamePauseScene"
+delay_in_seconds = "0.0"
+
+[node name="ToAfterAdventureScene" type="Node" parent="SceneStateMachine/SceneControlState/AdventureScene"]
+script = ExtResource("8_0ft0v")
+to = NodePath("../../AfterAdventureScene")
+event = &"ToAfterAdventureScene"
+delay_in_seconds = "0.0"
+
+[node name="AfterAdventureScene" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("7_supws")
+
+[node name="ToHomeScene" type="Node" parent="SceneStateMachine/SceneControlState/AfterAdventureScene"]
+script = ExtResource("8_0ft0v")
+to = NodePath("../../HomeScene")
+event = &"ToHomeScene"
+delay_in_seconds = "0.0"
+
+[node name="-----Other-----" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("7_supws")
+
+[node name="GamePauseScene" type="Node" parent="SceneStateMachine/SceneControlState"]
+process_mode = 2
+script = ExtResource("7_supws")
+
+[node name="ToHomeScene" type="Node" parent="SceneStateMachine/SceneControlState/GamePauseScene"]
+script = ExtResource("8_0ft0v")
+to = NodePath("../../HomeScene")
+event = &"ToHomeScene"
+delay_in_seconds = "0.0"
+
+[node name="ToBattleScene" type="Node" parent="SceneStateMachine/SceneControlState/GamePauseScene"]
+script = ExtResource("8_0ft0v")
+to = NodePath("../../HomeScene")
+event = &"ToBattleScene"
+delay_in_seconds = "0.0"
+
+[node name="ToAdventureScene" type="Node" parent="SceneStateMachine/SceneControlState/GamePauseScene"]
+script = ExtResource("8_0ft0v")
+to = NodePath("../../AdventureScene")
+event = &"ToAdventureScene"
+delay_in_seconds = "0.0"
+
+[node name="GameOverScene" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("7_supws")
+
+[node name="GamePassScene" type="Node" parent="SceneStateMachine/SceneControlState"]
+script = ExtResource("7_supws")
+
+[node name="ToHomeScene" type="Node" parent="SceneStateMachine/SceneControlState/GamePassScene"]
+script = ExtResource("8_0ft0v")
+to = NodePath("../../HomeScene")
+event = &"ToHomeScene"
+delay_in_seconds = "0.0"
+
+[node name="DebuggerLayer" type="Node2D" parent="."]
+visible = false
+
+[node name="StateChartDebugger" parent="DebuggerLayer" instance=ExtResource("8_702vk")]
+custom_minimum_size = Vector2(640, 720)
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 640.0
+offset_bottom = 720.0
+grow_horizontal = 1
+grow_vertical = 1
+initial_node_to_watch = NodePath("../../SceneStateMachine")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[connection signal="state_entered" from="SceneStateMachine/SceneControlState/LogoScene" to="." method="_on_logo_scene_state_entered"]
+[connection signal="state_exited" from="SceneStateMachine/SceneControlState/LogoScene" to="." method="_on_logo_scene_state_exited"]
+[connection signal="state_entered" from="SceneStateMachine/SceneControlState/StartMenuScene" to="." method="_on_start_menu_scene_state_entered"]
+[connection signal="state_exited" from="SceneStateMachine/SceneControlState/StartMenuScene" to="." method="_on_start_menu_scene_state_exited"]
+[connection signal="state_entered" from="SceneStateMachine/SceneControlState/LoadGameScene" to="." method="_on_load_game_scene_state_entered"]
+[connection signal="state_exited" from="SceneStateMachine/SceneControlState/LoadGameScene" to="." method="_on_load_game_scene_state_exited"]
+[connection signal="state_entered" from="SceneStateMachine/SceneControlState/-----Game-----" to="." method="_on_before_battle_scene_state_entered"]
+[connection signal="state_exited" from="SceneStateMachine/SceneControlState/-----Game-----" to="." method="_on_before_battle_scene_state_exited"]
+[connection signal="state_entered" from="SceneStateMachine/SceneControlState/NewGameScene" to="." method="_on_new_game_scene_state_entered"]
+[connection signal="state_exited" from="SceneStateMachine/SceneControlState/NewGameScene" to="." method="_on_new_game_scene_state_exited"]
+[connection signal="state_entered" from="SceneStateMachine/SceneControlState/AutoGameSceneAfterLoadGameScene" to="." method="_on_auto_game_scene_after_load_game_scene_state_entered"]
+[connection signal="state_exited" from="SceneStateMachine/SceneControlState/AutoGameSceneAfterLoadGameScene" to="." method="_on_auto_game_scene_after_load_game_scene_state_exited"]
+[connection signal="state_entered" from="SceneStateMachine/SceneControlState/HomeScene" to="." method="_on_home_scene_state_entered"]
+[connection signal="state_exited" from="SceneStateMachine/SceneControlState/HomeScene" to="." method="_on_home_scene_state_exited"]
+[connection signal="state_entered" from="SceneStateMachine/SceneControlState/CageEditScene" to="." method="_on_cage_edit_scene_state_entered"]
+[connection signal="state_exited" from="SceneStateMachine/SceneControlState/CageEditScene" to="." method="_on_cage_edit_scene_state_exited"]
+[connection signal="state_entered" from="SceneStateMachine/SceneControlState/-----Battle-----" to="." method="_on_before_battle_scene_state_entered"]
+[connection signal="state_exited" from="SceneStateMachine/SceneControlState/-----Battle-----" to="." method="_on_before_battle_scene_state_exited"]
+[connection signal="state_entered" from="SceneStateMachine/SceneControlState/BeforeBattleScene" to="." method="_on_before_battle_scene_state_entered"]
+[connection signal="state_exited" from="SceneStateMachine/SceneControlState/BeforeBattleScene" to="." method="_on_before_battle_scene_state_exited"]
+[connection signal="state_entered" from="SceneStateMachine/SceneControlState/BattleScene" to="." method="_on_battle_scene_state_entered"]
+[connection signal="state_exited" from="SceneStateMachine/SceneControlState/BattleScene" to="." method="_on_battle_scene_state_exited"]
+[connection signal="state_entered" from="SceneStateMachine/SceneControlState/AfterBattleScene" to="." method="_on_after_battle_scene_state_entered"]
+[connection signal="state_exited" from="SceneStateMachine/SceneControlState/AfterBattleScene" to="." method="_on_after_battle_scene_state_exited"]
+[connection signal="state_entered" from="SceneStateMachine/SceneControlState/-----Adventure-----" to="." method="_on_before_battle_scene_state_entered"]
+[connection signal="state_exited" from="SceneStateMachine/SceneControlState/-----Adventure-----" to="." method="_on_before_battle_scene_state_exited"]
+[connection signal="state_entered" from="SceneStateMachine/SceneControlState/BeforeAdventureScene" to="." method="_on_before_adventure_scene_state_entered"]
+[connection signal="state_exited" from="SceneStateMachine/SceneControlState/BeforeAdventureScene" to="." method="_on_before_adventure_scene_state_exited"]
+[connection signal="state_entered" from="SceneStateMachine/SceneControlState/AdventureScene" to="." method="_on_adventure_scene_state_entered"]
+[connection signal="state_exited" from="SceneStateMachine/SceneControlState/AdventureScene" to="." method="_on_adventure_scene_state_exited"]
+[connection signal="state_entered" from="SceneStateMachine/SceneControlState/AfterAdventureScene" to="." method="_on_after_adventure_scene_state_entered"]
+[connection signal="state_exited" from="SceneStateMachine/SceneControlState/AfterAdventureScene" to="." method="_on_after_adventure_scene_state_exited"]
+[connection signal="state_entered" from="SceneStateMachine/SceneControlState/-----Other-----" to="." method="_on_before_battle_scene_state_entered"]
+[connection signal="state_exited" from="SceneStateMachine/SceneControlState/-----Other-----" to="." method="_on_before_battle_scene_state_exited"]
+[connection signal="state_entered" from="SceneStateMachine/SceneControlState/GamePauseScene" to="." method="_on_game_pause_scene_state_entered"]
+[connection signal="state_exited" from="SceneStateMachine/SceneControlState/GamePauseScene" to="." method="_on_game_pause_scene_state_exited"]
+[connection signal="state_entered" from="SceneStateMachine/SceneControlState/GamePassScene" to="." method="_on_game_pass_scene_state_entered"]
+[connection signal="state_exited" from="SceneStateMachine/SceneControlState/GamePassScene" to="." method="_on_game_pass_scene_state_exited"]

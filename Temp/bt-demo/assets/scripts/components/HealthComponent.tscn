@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://xcihfw051wn6"]
+
+[ext_resource type="Script" uid="uid://ca7a82b4sv1o7" path="res://demos/assets/scripts/components/HealthComponent.gd" id="1_er3ga"]
+
+[node name="HealthComponent" type="Node"]
+script = ExtResource("1_er3ga")
+
+[connection signal="ready" from="." to="." method="_on_ready"]

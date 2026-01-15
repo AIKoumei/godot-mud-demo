@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b8spwi4aor12x"
+path="res://.godot/imported/Digimon World Championship OST #11 Where to Hunt.mp3-b5e468c28a0f279a2bfec63cc5b70c3f.mp3str"
+
+[deps]
+
+source_file="res://Temp/bt-demo/assets/audio/bgm/base/Digimon World Championship OST #11 Where to Hunt.mp3"
+dest_files=["res://.godot/imported/Digimon World Championship OST #11 Where to Hunt.mp3-b5e468c28a0f279a2bfec63cc5b70c3f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

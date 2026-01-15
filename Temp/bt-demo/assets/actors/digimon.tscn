@@ -1,0 +1,46 @@
+[gd_scene load_steps=11 format=3 uid="uid://cjh5s2rdvj1jo"]
+
+[ext_resource type="Script" uid="uid://cdoxt6olpyyfr" path="res://assets/actors/digimon.gd" id="1_q1g1f"]
+[ext_resource type="Texture2D" uid="uid://2uyxh7sy8qny" path="res://demos/limboai/assets/weapon_ninja_star.png" id="2_px217"]
+[ext_resource type="BehaviorTree" uid="uid://b2rkjsbpwg6ae" path="res://assets/ai/trees/NPC.tres" id="3_0e6c5"]
+[ext_resource type="PackedScene" uid="uid://ds7dldau3k1d1" path="res://assets/scripts/components/ActorComponent.tscn" id="4_hyanf"]
+[ext_resource type="PackedScene" uid="uid://cvg3s1iijyj8p" path="res://assets/scripts/components/TeamComponent.tscn" id="5_i1hvo"]
+[ext_resource type="PackedScene" uid="uid://burqjb4ecks87" path="res://assets/scripts/components/DetectiveComponent.tscn" id="6_rjoqq"]
+[ext_resource type="PackedScene" uid="uid://q01e2x4krhmf" path="res://assets/scripts/components/AttackableComponent.tscn" id="7_27dhg"]
+[ext_resource type="PackedScene" uid="uid://xcihfw051wn6" path="res://assets/scripts/components/HealthComponent.tscn" id="8_u8p1v"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ufj7s"]
+size = Vector2(66, 66)
+
+[sub_resource type="BlackboardPlan" id="BlackboardPlan_bjdfy"]
+
+[node name="Digimon" type="CharacterBody2D"]
+collision_layer = 0
+collision_mask = 0
+script = ExtResource("1_q1g1f")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_px217")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ufj7s")
+
+[node name="BTPlayer" type="BTPlayer" parent="."]
+behavior_tree = ExtResource("3_0e6c5")
+active = false
+blackboard_plan = SubResource("BlackboardPlan_bjdfy")
+
+[node name="Components" type="Node" parent="."]
+
+[node name="ActorComponent" parent="Components" instance=ExtResource("4_hyanf")]
+
+[node name="TeamComponent" parent="Components" instance=ExtResource("5_i1hvo")]
+team = 1
+
+[node name="DetectiveComponent" parent="Components" instance=ExtResource("6_rjoqq")]
+
+[node name="AttackableComponent" parent="Components" instance=ExtResource("7_27dhg")]
+
+[node name="HealthComponent" parent="Components" instance=ExtResource("8_u8p1v")]
+
+[connection signal="ready" from="." to="." method="_on_ready"]

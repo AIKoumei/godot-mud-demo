@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bscn3eh4etdu2"
+path="res://.godot/imported/Digimon World Championship OST #17 Field Fight.mp3-3bfdaeb9768c5117075b257f6ee7c438.mp3str"
+
+[deps]
+
+source_file="res://Temp/bt-demo/assets/audio/bgm/base/Digimon World Championship OST #17 Field Fight.mp3"
+dest_files=["res://.godot/imported/Digimon World Championship OST #17 Field Fight.mp3-3bfdaeb9768c5117075b257f6ee7c438.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

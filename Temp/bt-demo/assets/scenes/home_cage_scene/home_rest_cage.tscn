@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=4 uid="uid://ctnolqxsl1jpu"]
+
+[ext_resource type="Script" uid="uid://c0a2cqjor8e37" path="res://assets/scripts/home_cages/common_home_cage.gd" id="1_v5x6y"]
+[ext_resource type="Texture2D" uid="uid://cr53ccr40jkb0" path="res://assets/spirits/tachie/cages/Rest.jpg" id="2_ov26t"]
+[ext_resource type="TileSet" uid="uid://do07k12q1uudf" path="res://assets/scenes/home_cage_scene/home_rest_cage.tres" id="3_u7gn5"]
+
+[node name="HomeRestCage" type="Area2D"]
+script = ExtResource("1_v5x6y")
+cage_type = 1
+train_type = null
+train_value = null
+metadata/_custom_type_script = "uid://c0a2cqjor8e37"
+
+[node name="BackgroundImage" type="TextureRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = -160.0
+offset_right = 160.0
+offset_bottom = 160.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_ov26t")
+expand_mode = 1
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(160, 0, 64, 128, -64, 128, -160, 0, -64, -128, 64, -128)
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+visible = false
+position = Vector2(-32, -64)
+tile_map_data = PackedByteArray("AAAAAAAA6QAAAAAAAAAAAP7/6QAAAAAAAAABAP//6QAAAAAAAAACAP//6QAAAAAAAAACAAAA6QAAAAAAAAACAAEA6QAAAAAAAAABAAEA6QAAAAAAAAABAAIA6QAAAAAAAAAAAAEA6QAAAAAAAAAAAAIA6QAAAAAAAAD//wIA6QAAAAAAAAD+/wEA6QAAAAAAAAD+/wAA6QAAAAAAAAD+////6QAAAAAAAAD/////6QAAAAAAAAD//wAA6QAAAAAAAAD//wEA6QAAAAAAAAAAAP//6QAAAAAAAAABAAAA6QAAAAAAAAA=")
+tile_set = ExtResource("3_u7gn5")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
