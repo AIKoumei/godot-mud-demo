@@ -1,58 +1,182 @@
-## ModEntry.gd
-## 模块入口脚本（每个 mod 必须有）
+## ---------------------------------------------------------
+## SceneManager 模块（ModInterface 版本）
+##
+## 功能说明：
+## - 负责场景切换（不关心场景名）
+## - 只接收 path + type（字符串）
+## - SceneType 字符串：
+##   - "WORLD"
+##   - "UI_MAIN"
+##   - "UI_OVERLAY"
+## - UI_MAIN 挂载到 CanvasUILayer（Middle）
+## - UI_OVERLAY 挂载到 CanvasUILayer（Top）
+## - WORLD 挂载到 GameSceneLayer
+##
+## ---------------------------------------------------------
+
 extends ModInterface
 
+@export var default_use_fade: bool = true
+@export var fade_time: float = 0.35
 
-## 生命周期：模块初始化
-func _on_mod_init() -> void:
-	super._on_mod_init()
-	# 你可以在这里读取配置、初始化数据、注册事件等
+var _current_main_scene: Node = null
+var _ui_overlay_stack: Array[Node] = []
 
-## 生命周期：模块启用
-func _on_mod_enable() -> void:
-	super._on_mod_enable()
-	# 入口场景已经实例化，可以开始逻辑
 
-## 生命周期：模块禁用（未来支持）
-func _on_mod_disable() -> void:
-	super._on_mod_disable()
-	# 清理 UI、暂停逻辑等
-
-## 生命周期：模块卸载
-func _on_mod_unload() -> void:
-	super._on_mod_unload()
-	# 清理资源、断开信号、保存数据等
-
-## 生命周期：模块加载
-func _on_mod_load() -> void:
-	super._on_mod_load()
-	# 子类实现
-
-## 模块间通信
-func _on_mod_event(_mod_name: String, event_name: String, event_data: Dictionary) -> void:
-	print("[Mod:%s] 收到消息: [%s:%s]" % [mod_name, _mod_name, event_name])
-	
-	
 # ---------------------------------------------------------
-# mod 功能
+# FadeRect 获取
 # ---------------------------------------------------------
+func _get_fade_rect() -> Control:
+	var fade_rect: Control = GameCore.mod_manager.call_mod("CanvasUILayer", "get_fade_rect")
+	return fade_rect
 
 
-func load_scene(game_scene: String) -> void:
-	if not CommonEnum.E_Scene.has(game_scene):
-		push_warning("[game_scene:%s] 场景不存在" % [game_scene])
+# ---------------------------------------------------------
+# Fade 动画
+# ---------------------------------------------------------
+func _fade_out() -> void:
+	var fade_rect := _get_fade_rect()
+	if fade_rect == null:
 		return
-	pass
+
+	fade_rect.visible = true
+	fade_rect.modulate.a = 0.0
+
+	var tween := create_tween()
+	tween.tween_property(fade_rect, "modulate:a", 1.0, fade_time)
+	await tween.finished
 
 
-# ---------------------------------------------------------
-# 外部访问
-# ---------------------------------------------------------
-
-
-func jump_to_game_scene(game_scene: String) -> void:
-	if not CommonEnum.E_Scene.has(game_scene):
-		push_warning("[game_scene:%s] 场景不存在" % [game_scene])
+func _fade_in() -> void:
+	var fade_rect := _get_fade_rect()
+	if fade_rect == null:
 		return
-	pass
-	print("[game_scene:%s] 跳转场景" % [game_scene])
+
+	fade_rect.visible = true
+	fade_rect.modulate.a = 1.0
+
+	var tween := create_tween()
+	tween.tween_property(fade_rect, "modulate:a", 0.0, fade_time)
+	await tween.finished
+
+	fade_rect.visible = false
+
+
+# ---------------------------------------------------------
+# 内部：加载 WORLD 场景
+# ---------------------------------------------------------
+func _load_world_scene(path: String) -> void:
+	var scene_res: PackedScene = load(path)
+	if scene_res == null:
+		push_error("[SceneManager] Failed to load WORLD scene: %s" % path)
+		return
+
+	if _current_main_scene and _current_main_scene.is_inside_tree():
+		_current_main_scene.queue_free()
+
+	var new_scene: Node = scene_res.instantiate()
+	_current_main_scene = new_scene
+	GameCore.get_game_scene_layer().add_child(new_scene)
+
+
+# ---------------------------------------------------------
+# 内部：加载 UI_MAIN 场景
+# ---------------------------------------------------------
+func _load_ui_main_scene(path: String) -> void:
+	var scene_res: PackedScene = load(path)
+	if scene_res == null:
+		push_error("[SceneManager] Failed to load UI_MAIN scene: %s" % path)
+		return
+
+	# 清理旧主场景
+	if _current_main_scene and _current_main_scene.is_inside_tree():
+		_current_main_scene.queue_free()
+
+	# 清理所有 UI_OVERLAY
+	for ui in _ui_overlay_stack:
+		if ui and ui.is_inside_tree():
+			ui.queue_free()
+	_ui_overlay_stack.clear()
+
+	var ui_scene: Node = scene_res.instantiate()
+
+	var layer: Control = GameCore.mod_manager.call_mod("CanvasUILayer", "get_ui_layer_middle_window_layer")
+	layer.add_child(ui_scene)
+
+	_current_main_scene = ui_scene
+
+
+# ---------------------------------------------------------
+# 内部：加载 UI_OVERLAY 场景
+# ---------------------------------------------------------
+func _load_ui_overlay_scene(path: String) -> void:
+	var scene_res: PackedScene = load(path)
+	if scene_res == null:
+		push_error("[SceneManager] Failed to load UI_OVERLAY scene: %s" % path)
+		return
+
+	var ui_scene: Node = scene_res.instantiate()
+	_ui_overlay_stack.append(ui_scene)
+
+	var top_layer: Control = GameCore.mod_manager.call_mod("CanvasUILayer", "get_ui_layer_top_window_layer")
+	top_layer.add_child(ui_scene)
+
+
+# ---------------------------------------------------------
+# 对外：切换场景（path + type）
+# ---------------------------------------------------------
+func change_scene(path: String, type: String, use_fade: bool = default_use_fade) -> void:
+	if use_fade:
+		await _fade_out()
+
+	match type:
+		"WORLD":
+			_load_world_scene(path)
+
+		"UI_MAIN":
+			_load_ui_main_scene(path)
+
+		"UI_OVERLAY":
+			_load_ui_overlay_scene(path)
+
+		_:
+			push_warning("[SceneManager] Unknown SceneType: %s" % type)
+
+	if use_fade:
+		await _fade_in()
+
+
+# ---------------------------------------------------------
+# 对外：push UI_OVERLAY
+# ---------------------------------------------------------
+func push_scene(path: String, type: String, use_fade: bool = default_use_fade) -> void:
+	if type != "UI_OVERLAY":
+		push_warning("[SceneManager] push_scene: only UI_OVERLAY can be pushed")
+		return
+
+	if use_fade:
+		await _fade_out()
+
+	_load_ui_overlay_scene(path)
+
+	if use_fade:
+		await _fade_in()
+
+
+# ---------------------------------------------------------
+# 对外：pop UI_OVERLAY
+# ---------------------------------------------------------
+func pop_scene(use_fade: bool = default_use_fade) -> void:
+	if _ui_overlay_stack.is_empty():
+		push_warning("[SceneManager] pop_scene: stack empty")
+		return
+
+	if use_fade:
+		await _fade_out()
+
+	var ui_scene: Node = _ui_overlay_stack.pop_back()
+	if ui_scene and ui_scene.is_inside_tree():
+		ui_scene.queue_free()
+
+	if use_fade:
+		await _fade_in()

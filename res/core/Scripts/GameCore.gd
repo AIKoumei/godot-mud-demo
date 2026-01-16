@@ -75,6 +75,10 @@ func get_pause_scene_layer() -> Node:
 	return get_tree().get_root().get_node("Main/PauseSceneLayer")
 
 
+func get_main_layer() -> Node:
+	return get_tree().get_root().get_node("Main")
+
+
 func get_UI_layer() -> Node:
 	return get_tree().get_root().get_node("Main/CanvasLayer")
 
@@ -104,5 +108,4 @@ func _on_loading_game_scene_state_entered() -> void:
 
 func _on_start_menu_scene_state_entered() -> void:
 	print("Game Menu...")
-	mod_manager.call_mod("SceneManager", "jump_to_game_scene", CommonEnum.E_Scene.StartMenuScene)
-	
+	GameCore.mod_manager.call_mod("DefaultGameScene", "change_scene", "StartMenu")

@@ -1,7 +1,7 @@
 extends Node
 
-
-var E_Scene = {
+#可能废弃
+var ScenePath = {
 	"LogoScene":"LogoScene"
 	,"LoadingScene":"LoadingScene"
 	,"StartMenuScene":"StartMenuScene"

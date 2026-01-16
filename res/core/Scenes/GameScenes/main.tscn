@@ -17,52 +17,6 @@ process_mode = 1
 process_mode = 2
 visible = false
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="Control" type="Control" parent="CanvasLayer"]
-custom_minimum_size = Vector2(1024, 576)
-layout_mode = 3
-anchors_preset = 0
-offset_right = 1024.0
-offset_bottom = 576.0
-mouse_filter = 1
-
-[node name="BottonWindowLayer" type="Control" parent="CanvasLayer/Control"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-
-[node name="MiddleWindowLayer" type="Control" parent="CanvasLayer/Control"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-
-[node name="TopWindowLayer" type="Control" parent="CanvasLayer/Control"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-
-[node name="TipsWindowLayer" type="Control" parent="CanvasLayer/Control"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-
 [node name="SceneStateMachine" type="Node" parent="."]
 script = ExtResource("2_qhwku")
 metadata/_custom_type_script = "uid://couw105c3bde4"

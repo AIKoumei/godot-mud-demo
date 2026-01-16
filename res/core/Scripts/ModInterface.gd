@@ -27,8 +27,8 @@ func enable_mod() -> void:
 func disable_mod() -> void:
 	_on_mod_disable()
 
-func load_mod() -> void:
-	_on_mod_load()
+func load_mod() -> bool:
+	return _on_mod_load()
 
 func unload_mod() -> void:
 	_on_mod_unload()
@@ -56,10 +56,10 @@ func _on_mod_disable() -> void:
 	pass
 
 ## 生命周期：模块加载
-func _on_mod_load() -> void:
+func _on_mod_load() -> bool:
 	print("[ModEntry:%s] 模块已加载" % mod_name)
 	# 子类实现
-	pass
+	return true
 
 ## 生命周期：模块卸载（场景被移除前）
 func _on_mod_unload() -> void:
