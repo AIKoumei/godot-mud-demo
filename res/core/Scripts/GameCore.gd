@@ -10,6 +10,8 @@ const VERSION = "v.0.0.1"
 var mod_manager = ModManager.new()
 @export var SceneStateMachine = null
 
+var ArrayTools = _ArrayTools.new()
+
 
 ## 初始化游戏核心
 func _ready():

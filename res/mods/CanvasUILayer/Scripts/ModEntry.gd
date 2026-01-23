@@ -49,7 +49,7 @@ func _on_mod_load() -> bool:
 		push_error("[%s] Loaded scene is not a CanvasLayer: %s" % [mod_name, scene_path_CanvasUILayer])
 		return false
 
-	GameCore.add_child(CanvasUILayer)
+	get_tree().root.get_node_or_null("Main").add_child(CanvasUILayer)
 
 	BottomWindowLayer = CanvasUILayer.get_node_or_null("Control/BottomWindowLayer")
 	MiddleWindowLayer = CanvasUILayer.get_node_or_null("Control/MiddleWindowLayer")

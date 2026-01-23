@@ -1,0 +1,49 @@
+{
+	"WorldOnly": {
+		"villager_01": {
+			"id": "villager_01",
+			"name": "村民 A",
+			"mod": "DefaultUnits",
+			"type": "NPC",
+			"unit_role": "WorldOnly",
+			"location": "file_island",
+			"tags": ["villager"]
+		}
+	},
+
+	"BattleOnly": {
+		"slime_lv1": {
+			"id": "slime_lv1",
+			"name": "史莱姆 Lv1",
+			"mod": "DefaultUnits",
+			"type": "Enemy",
+			"unit_role": "BattleOnly",
+			"battle_stats": {
+				"hp": 20,
+				"atk": 5,
+				"def": 2,
+				"speed": 3
+			},
+			"tags": ["slime"]
+		}
+	},
+
+	"Both": {
+		"player_hero": {
+			"id": "player_hero",
+			"name": "主角",
+			"mod": "DefaultUnits",
+			"type": "Player",
+			"unit_role": "Both",
+			"location": "file_island",
+			"battle_stats": {
+				"hp": 100,
+				"atk": 20,
+				"def": 10,
+				"speed": 5,
+				"skills": ["punch", "kick"]
+			},
+			"tags": ["player", "hero"]
+		}
+	}
+}

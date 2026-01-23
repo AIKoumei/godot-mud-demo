@@ -23,6 +23,8 @@ extends ModInterface
 @export var PauseMenuScene: String
 @export var GameOverScene: String
 
+@export var DigimonVpetUI: String = "res://res/mods/DefaultGameScene/Scenes/GameScenes/DigimonVpetUI.tscn"
+
 # ---------------------------------------------------------
 # 内部场景表
 # ---------------------------------------------------------
@@ -55,6 +57,15 @@ func _on_mod_load() -> bool:
 		"GameOver": {
 			"path": GameOverScene,
 			"type": "UI_MAIN"
+		},
+
+		# -------------------------------------------------
+		# 新增：DigimonVpetUI（虚拟宠物 UI）
+		# 类型：UI_OVERLAY（覆盖在主 UI 上）
+		# -------------------------------------------------
+		"DigimonVpetUI": {
+			"path": DigimonVpetUI,
+			"type": "UI_MAIN"
 		}
 	}
 
@@ -82,7 +93,10 @@ func change_scene(scene_name: String, use_fade: bool = true) -> void:
 		"change_scene",
 		info.path,
 		info.type,
-		use_fade
+		use_fade,
+		{
+			"scene_name":scene_name
+		}
 	)
 
 

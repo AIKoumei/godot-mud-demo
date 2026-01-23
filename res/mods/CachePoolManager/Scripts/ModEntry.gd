@@ -111,7 +111,7 @@ func _thread_cleanup_loop() -> void:
 # 后台线程：扫描过期缓存（不 queue_free）
 # ---------------------------------------------------------
 func _cleanup_expired_cache_thread() -> void:
-	var now: int = Time.get_unix_time_from_system()
+	var now: float = Time.get_unix_time_from_system()
 
 	_cleanup_mutex.lock()
 
@@ -124,7 +124,7 @@ func _cleanup_expired_cache_thread() -> void:
 
 			for cache_info: Dictionary in list:
 				var obj: Object = cache_info["object"]
-				var expiry: int = cache_info["expiry_time"]
+				var expiry: float = cache_info["expiry_time"]
 				var always: bool = cache_info["always_cache"]
 
 				if always or now < expiry:

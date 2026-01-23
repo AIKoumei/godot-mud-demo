@@ -1,0 +1,65 @@
+[gd_scene load_steps=3 format=3 uid="uid://bv8yohtmdb8jt"]
+
+[ext_resource type="Script" uid="uid://pb74x6kr1d2u" path="res://res/mods/WorldMapGenerator/Scenes/TestScenes/SimplyMudTownGenScene.gd" id="1_gt3u1"]
+[ext_resource type="Theme" uid="uid://8c5j2xptwq82" path="res://res/core/UI/Theme/SproutLands/sprout_lands_theme.tres" id="2_0ftw2"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_gt3u1")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = ExtResource("2_0ftw2")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -40.0
+offset_right = 40.0
+grow_vertical = 0
+mouse_filter = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Control/MarginContainer"]
+layout_mode = 2
+mouse_filter = 2
+alignment = 1
+
+[node name="GenButton" type="Button" parent="CanvasLayer/Control/MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(48, 32)
+layout_mode = 2
+theme = ExtResource("2_0ftw2")
+text = "Gen"
+
+[node name="Control" type="Control" parent="CanvasLayer/Control/MarginContainer"]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Control" type="Control" parent="CanvasLayer/Control/MarginContainer/Control"]
+layout_mode = 1
+anchors_preset = 0
+mouse_filter = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Control/MarginContainer/Control/Control"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -40.0
+offset_right = 40.0
+grow_vertical = 0
+mouse_filter = 2
+
+[node name="TownConfigInfo" type="TextEdit" parent="CanvasLayer/Control/MarginContainer/Control/Control/MarginContainer"]
+custom_minimum_size = Vector2(256, 256)
+layout_mode = 2
+editable = false
+scroll_smooth = true

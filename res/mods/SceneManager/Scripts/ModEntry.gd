@@ -24,6 +24,12 @@ var _ui_overlay_stack: Array[Node] = []
 
 
 # ---------------------------------------------------------
+# 
+# ---------------------------------------------------------
+func get_current_main_scene():
+	return _current_main_scene
+
+# ---------------------------------------------------------
 # FadeRect 获取
 # ---------------------------------------------------------
 func _get_fade_rect() -> Control:
@@ -125,7 +131,12 @@ func _load_ui_overlay_scene(path: String) -> void:
 # ---------------------------------------------------------
 # 对外：切换场景（path + type）
 # ---------------------------------------------------------
-func change_scene(path: String, type: String, use_fade: bool = default_use_fade) -> void:
+func change_scene(path: String, type: String, use_fade: bool = default_use_fade, extra = null) -> void:
+	if not use_fade is bool:
+		use_fade = default_use_fade
+	if not extra is Dictionary:
+		extra = {}
+	
 	if use_fade:
 		await _fade_out()
 
@@ -144,6 +155,10 @@ func change_scene(path: String, type: String, use_fade: bool = default_use_fade)
 
 	if use_fade:
 		await _fade_in()
+		
+	emit_mod_event("after_change_scene", {
+		"scene_name":extra.get("scene_name", null)
+	})
 
 
 # ---------------------------------------------------------

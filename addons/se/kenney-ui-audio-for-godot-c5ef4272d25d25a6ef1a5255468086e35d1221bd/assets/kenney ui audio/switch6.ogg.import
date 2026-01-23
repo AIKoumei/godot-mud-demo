@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://djbp4f5esjbfn"
+path="res://.godot/imported/switch6.ogg-b935ead742abc4387746f805876a712b.oggvorbisstr"
+
+[deps]
+
+source_file="res://addons/se/kenney-ui-audio-for-godot-c5ef4272d25d25a6ef1a5255468086e35d1221bd/assets/kenney ui audio/switch6.ogg"
+dest_files=["res://.godot/imported/switch6.ogg-b935ead742abc4387746f805876a712b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

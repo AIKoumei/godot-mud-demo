@@ -19,17 +19,20 @@ config/icon="res://icon.svg"
 
 GameCore="*res://res/core/Scripts/GameCore.gd"
 CommonEnum="*res://res/core/Scripts/Common/CommonEnum.gd"
+UIAnimation="*res://addons/godot_ui_animations/UIAnimationHandler.tscn"
+g_DebugInfoViewer="*res://res/core/Scripts/Debug/g_DebugInfoViewer.gd"
 
 [display]
 
 window/size/viewport_width=1024
 window/size/viewport_height=576
+window/size/always_on_top=true
 window/stretch/mode="viewport"
 window/vsync/vsync_mode=3
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/codeandweb.texturepacker/plugin.cfg", "res://addons/godot_state_charts/plugin.cfg")
+enabled=PackedStringArray("res://addons/2D-Liquid-Simulator-f438a1eacf6a2d4ebe01f37200087d08a6a50028/examples/2_with_border_and_collision/external_addons/nine_patch_sprite_2d/plugin.cfg", "res://addons/codeandweb.texturepacker/plugin.cfg", "res://addons/godot_state_charts/plugin.cfg", "res://addons/godot_ui_animations/plugin.cfg", "res://addons/liquidsimulator/plugin.cfg", "res://addons/system/dice_syntax_gd-5be7ef0e08c56cc9c231b7f6298d56f2f97f4c3d/addons/dice_syntax/plugin.cfg", "res://addons/system/godot-dice-roller-ed0fb2b0ba686a14da1a4926c0d956a0bae1d175/addons/dice_roller/plugin.cfg", "res://addons/tnowe_extra_controls/plugin.cfg", "res://addons/worldmap_builder/plugin.cfg")
 
 [input_devices]
 

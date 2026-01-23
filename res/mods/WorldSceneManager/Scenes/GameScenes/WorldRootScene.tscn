@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://lbwbdbw73o68"]
+
+[ext_resource type="Texture2D" uid="uid://dng05ldoakroh" path="res://icon.svg" id="1_neonw"]
+[ext_resource type="Script" uid="uid://b3mxd4iwdorka" path="res://res/mods/WorldSceneManager/Scripts/Core/WorldMapScene.gd" id="1_y35sj"]
+[ext_resource type="TileSet" uid="uid://vh2yajycgo2h" path="res://res/core/Sprites/Tileset/hex_map_64x64/map_64x64.tres" id="2_n7rv2"]
+
+[node name="WorldRoot" type="Node2D"]
+light_mask = 2
+visibility_layer = 2
+script = ExtResource("1_y35sj")
+
+[node name="MapLayer" type="Node2D" parent="."]
+light_mask = 2
+visibility_layer = 2
+
+[node name="PathLayer" type="TileMapLayer" parent="MapLayer"]
+light_mask = 2
+visibility_layer = 2
+tile_set = ExtResource("2_n7rv2")
+
+[node name="GroundLayer" type="TileMapLayer" parent="MapLayer"]
+light_mask = 2
+visibility_layer = 2
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 239, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 239, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 239, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 239, 0, 0, 0, 0, 0, 0, 0)
+tile_set = ExtResource("2_n7rv2")
+
+[node name="MapCellLayer" type="Node2D" parent="MapLayer"]
+
+[node name="TestSprite2D" type="Sprite2D" parent="."]
+light_mask = 2
+visibility_layer = 2
+position = Vector2(33, 159)
+texture = ExtResource("1_neonw")

@@ -1,0 +1,9 @@
+{
+	"name": "DefaultLocations",
+	"version": "1.0.0",
+	"entry_scene": "",
+	"enabled": true,
+	"dependencies": {
+		"required": ["LocationManager"]
+	}
+}

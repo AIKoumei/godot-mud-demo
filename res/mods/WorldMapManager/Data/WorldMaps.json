@@ -1,0 +1,29 @@
+{
+  "version": 1,
+
+  "locations": {
+	"file_island_village": {
+	  "location_id": "file_island_village",
+
+	  "name": "Village", 
+	  "type": "Region", 
+	  "owner": "file_island",
+
+	  "map_size": { "width": 30, "height": 20 },
+
+	  "map_data": [
+		{ "x": 0, "y": 0, "tile": "road" },
+		{ "x": 1, "y": 0, "tile": "house" }
+	  ],
+
+	  "spawn_points": {
+		"Center": { "x": 5, "y": 5 }
+	  },
+
+	  "metadata": {
+		"weather_type": "cloudy",
+		"music": "village_theme"
+	  }
+	}
+  }
+}

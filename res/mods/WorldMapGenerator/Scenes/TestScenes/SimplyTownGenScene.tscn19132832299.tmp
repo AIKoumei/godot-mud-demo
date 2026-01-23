@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://cvvvar05hgqst"]
+
+[ext_resource type="Script" uid="uid://dfdxkxlfhbsud" path="res://res/mods/WorldMapGenerator/Scenes/TestScenes/SimplyTownGenScene.gd" id="1_6724v"]
+[ext_resource type="Theme" uid="uid://8c5j2xptwq82" path="res://res/core/UI/Theme/SproutLands/sprout_lands_theme.tres" id="2_motsj"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_6724v")
+cell_size = null
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_motsj")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -48.0
+offset_bottom = 38.0
+grow_horizontal = 0
+alignment = 1
+
+[node name="GenButton" type="Button" parent="CanvasLayer/Control/HBoxContainer"]
+custom_minimum_size = Vector2(48, 32)
+layout_mode = 2
+theme = ExtResource("2_motsj")
+text = "Gen"

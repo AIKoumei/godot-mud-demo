@@ -1,0 +1,55 @@
+{
+	"digital_world_root": {
+		"version": "1.0.0",
+		"id": "digital_world_root",
+		"name": "数码世界",
+		"world_type": "DigitalWorld",
+		"type": "DigitalWorld",
+		"parent": ""
+	},
+
+	"file_continent": {
+		"version": "1.0.0",
+		"id": "file_continent",
+		"name": "文件大陆",
+		"world_type": "DigitalWorld",
+		"type": "Continent",
+		"parent": "digital_world_root"
+	},
+
+	"file_island": {
+		"version": "1.0.0",
+		"id": "file_island",
+		"name": "文件岛",
+		"world_type": "DigitalWorld",
+		"type": "Island",
+		"parent": "file_continent"
+	},
+
+	"file_island_village": {
+		"version": "1.0.0",
+		"id": "file_island_village",
+		"name": "文件岛村庄",
+		"world_type": "DigitalWorld",
+		"type": "Island",
+		"parent": "file_island"
+	},
+
+	"training_field": {
+		"version": "1.0.0",
+		"id": "training_field",
+		"name": "训练场",
+		"world_type": "DigitalWorld",
+		"type": "Field",
+		"parent": "file_continent"
+	},
+
+	"training_zone": {
+		"version": "1.0.0",
+		"id": "training_zone",
+		"name": "训练区",
+		"world_type": "DigitalWorld",
+		"type": "Zone",
+		"parent": "training_field"
+	}
+}

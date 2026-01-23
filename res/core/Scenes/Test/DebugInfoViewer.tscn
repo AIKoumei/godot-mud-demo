@@ -1,0 +1,58 @@
+[gd_scene load_steps=3 format=3 uid="uid://dh3ad03velsvj"]
+
+[ext_resource type="Theme" uid="uid://cnjtetudthuan" path="res://addons/windows_95_theme/windows_95_theme.tres" id="1_6nmq0"]
+[ext_resource type="Script" uid="uid://dav50sf6op84" path="res://res/core/Scripts/Debug/DebugInfoViewer.gd" id="1_p0ho4"]
+
+[node name="DebugInfoViewer" type="CanvasLayer"]
+script = ExtResource("1_p0ho4")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_6nmq0")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+custom_minimum_size = Vector2(256, 0)
+layout_mode = 1
+offset_right = 256.0
+offset_bottom = 37.0
+mouse_filter = 2
+
+[node name="MenuBar" type="HBoxContainer" parent="Control/VBoxContainer"]
+layout_mode = 2
+
+[node name="ShowDebugView" type="Button" parent="Control/VBoxContainer/MenuBar"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "▶︎ DebugVIew"
+
+[node name="HideDebugView" type="Button" parent="Control/VBoxContainer/MenuBar"]
+visible = false
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "◀︎ HideDebugView"
+
+[node name="VBoxDebugView" type="VBoxContainer" parent="Control/VBoxContainer"]
+visible = false
+custom_minimum_size = Vector2(256, 0)
+layout_mode = 2
+
+[node name="FPSViewerContainer" type="FoldableContainer" parent="Control/VBoxContainer/VBoxDebugView"]
+layout_mode = 2
+title = "FPS"
+
+[node name="FPSViewer" type="Control" parent="Control/VBoxContainer/VBoxDebugView/FPSViewerContainer"]
+custom_minimum_size = Vector2(0, 128)
+layout_mode = 2
+
+[node name="DrawCallsContainer" type="FoldableContainer" parent="Control/VBoxContainer/VBoxDebugView"]
+layout_mode = 2
+title = "DrawCalls"
+
+[node name="DrawCallsViewer" type="Control" parent="Control/VBoxContainer/VBoxDebugView/DrawCallsContainer"]
+custom_minimum_size = Vector2(0, 128)
+layout_mode = 2

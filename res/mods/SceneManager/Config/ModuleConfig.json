@@ -1,8 +1,9 @@
 {
 	"version":"0.0.1"
-	,"enabled":"enable"
+	,"enabled":true
 	,"dependencies": {
-		"required": [],
+		"required": ["CanvasUILayer"],
 		"optional": []
 	}
 }
+

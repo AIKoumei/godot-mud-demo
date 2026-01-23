@@ -1,0 +1,93 @@
+[gd_scene load_steps=3 format=3 uid="uid://dx7h4ulov8pbf"]
+
+[ext_resource type="Script" uid="uid://1078rhwbapjf" path="res://res/mods/WorldMapGenerator/Scenes/TestScenes/WorldMapGenerator.gd" id="1_4m2ie"]
+[ext_resource type="Theme" uid="uid://8c5j2xptwq82" path="res://res/core/UI/Theme/SproutLands/sprout_lands_theme.tres" id="2_2835w"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_4m2ie")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_2835w")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -48.0
+offset_bottom = 38.0
+grow_horizontal = 0
+alignment = 1
+
+[node name="GenButton" type="Button" parent="CanvasLayer/Control/HBoxContainer"]
+custom_minimum_size = Vector2(48, 32)
+layout_mode = 2
+theme = ExtResource("2_2835w")
+text = "Gen"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -64.0
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+
+[node name="LayerAll" type="Button" parent="CanvasLayer/Control/HBoxContainer2"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+theme = ExtResource("2_2835w")
+text = "LayerAll"
+
+[node name="Layerheightmap" type="Button" parent="CanvasLayer/Control/HBoxContainer2"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+theme = ExtResource("2_2835w")
+text = "Layerheightmap"
+
+[node name="Layertemperature" type="Button" parent="CanvasLayer/Control/HBoxContainer2"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+theme = ExtResource("2_2835w")
+text = "Layertemperature"
+
+[node name="Layerhumidity" type="Button" parent="CanvasLayer/Control/HBoxContainer2"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+theme = ExtResource("2_2835w")
+text = "Layerhumidity"
+
+[node name="Layerwater_amount" type="Button" parent="CanvasLayer/Control/HBoxContainer2"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+theme = ExtResource("2_2835w")
+text = "Layerwater_amount"
+
+[node name="Layerriver" type="Button" parent="CanvasLayer/Control/HBoxContainer2"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+theme = ExtResource("2_2835w")
+text = "Layerriver"
+
+[node name="Layerbiome" type="Button" parent="CanvasLayer/Control/HBoxContainer2"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+theme = ExtResource("2_2835w")
+text = "Layerbiome"
+
+[node name="Layerregion_id" type="Button" parent="CanvasLayer/Control/HBoxContainer2"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+theme = ExtResource("2_2835w")
+text = "Layerregion_id"

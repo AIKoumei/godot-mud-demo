@@ -14,6 +14,7 @@ func _process(delta: float) -> void:
 func _on_new_game_pressed() -> void:
 	pass # Replace with function body.
 	#GameCore.mod_manager.call_mod("DefaultGameScene", "change_scene_by_name", "GameWorld")
+	GameCore.mod_manager.call_mod("GameManager", "new_game")
 
 
 func _on_load_game_pressed() -> void:

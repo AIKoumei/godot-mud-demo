@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3pfi55plm5fd"]
+
+[ext_resource type="Script" uid="uid://dqrf1ikp37ur5" path="res://res/mods/WorldSceneManager/Scripts/Core/MapMudCell.gd" id="1_0aj7n"]
+[ext_resource type="Texture2D" uid="uid://dng05ldoakroh" path="res://icon.svg" id="3_l6hxe"]
+
+[node name="MapMudCell" type="Node2D"]
+light_mask = 2
+visibility_layer = 2
+script = ExtResource("1_0aj7n")
+
+[node name="InfoLayer" type="Node2D" parent="."]
+light_mask = 2
+visibility_layer = 2
+
+[node name="MapUnit" type="Node2D" parent="."]
+light_mask = 2
+visibility_layer = 2
+
+[node name="Icon" type="Sprite2D" parent="MapUnit"]
+light_mask = 2
+visibility_layer = 2
+texture = ExtResource("3_l6hxe")
+
+[node name="MapTag" type="Node2D" parent="."]
+light_mask = 2
+visibility_layer = 2
+
+[node name="Icon" type="Sprite2D" parent="MapTag"]
+light_mask = 2
+visibility_layer = 2
+texture = ExtResource("3_l6hxe")
+
+[node name="TestSprite2D" type="Sprite2D" parent="."]
+light_mask = 2
+visibility_layer = 2
+texture = ExtResource("3_l6hxe")

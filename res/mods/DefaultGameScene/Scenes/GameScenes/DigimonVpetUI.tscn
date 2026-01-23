@@ -1,0 +1,305 @@
+[gd_scene load_steps=5 format=3 uid="uid://doxe5ao8fbhtd"]
+
+[ext_resource type="Theme" uid="uid://8c5j2xptwq82" path="res://res/core/UI/Theme/SproutLands/sprout_lands_theme.tres" id="1_n3rd2"]
+[ext_resource type="Script" uid="uid://cgftd4dnpdtn4" path="res://res/mods/DefaultGameScene/Scripts/GameScene/DigimonVpetUI.gd" id="2_jwi6v"]
+
+[sub_resource type="GDScript" id="GDScript_sp5hi"]
+script/source = "extends SubViewport
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	if get_update_mode() != UpdateMode.UPDATE_ALWAYS:
+		set_update_mode(UpdateMode.UPDATE_ALWAYS)
+	
+"
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_sp5hi"]
+viewport_path = NodePath("MarginRoot/VBoxRoot/MainRow/FieldPanel/FieldMargin/FieldView/SubViewportContainer/SubViewport")
+
+[node name="DigimonVpetUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_n3rd2")
+script = ExtResource("2_jwi6v")
+
+[node name="MarginRoot" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="VBoxRoot" type="VBoxContainer" parent="MarginRoot"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="SystemBarPanel" type="Panel" parent="MarginRoot/VBoxRoot"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+
+[node name="SystemBarMargin" type="MarginContainer" parent="MarginRoot/VBoxRoot/SystemBarPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="SystemBar" type="HBoxContainer" parent="MarginRoot/VBoxRoot/SystemBarPanel/SystemBarMargin"]
+layout_mode = 2
+
+[node name="TimeLabel" type="Label" parent="MarginRoot/VBoxRoot/SystemBarPanel/SystemBarMargin/SystemBar"]
+layout_mode = 2
+text = "时间: 08:32"
+
+[node name="MoneyLabel" type="Label" parent="MarginRoot/VBoxRoot/SystemBarPanel/SystemBarMargin/SystemBar"]
+layout_mode = 2
+text = "金币: 1240"
+
+[node name="AreaLabel" type="Label" parent="MarginRoot/VBoxRoot/SystemBarPanel/SystemBarMargin/SystemBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "地区: 日光平原"
+
+[node name="MainRow" type="HBoxContainer" parent="MarginRoot/VBoxRoot"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="FieldPanel" type="Panel" parent="MarginRoot/VBoxRoot/MainRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="FieldMargin" type="MarginContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="FieldView" type="Control" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/FieldMargin"]
+layout_mode = 2
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/FieldMargin/FieldView"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/FieldMargin/FieldView/SubViewportContainer"]
+handle_input_locally = false
+canvas_cull_mask = 4293918722
+size = Vector2i(728, 508)
+render_target_update_mode = 0
+script = SubResource("GDScript_sp5hi")
+
+[node name="SubViewportView" type="TextureRect" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/FieldMargin/FieldView"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("ViewportTexture_sp5hi")
+
+[node name="MessageMargin" type="MarginContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -160.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="BGColorRect" type="ColorRect" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MessageMargin"]
+layout_mode = 2
+color = Color(0.33333334, 0.33333334, 0.33333334, 0.33333334)
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MessageMargin"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="MessageLog" type="RichTextLabel" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MessageMargin/MarginContainer"]
+layout_mode = 2
+text = "- 你来到日光平原，阳光十分温暖
+- 亚古兽似乎发现了什么"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginRoot/VBoxRoot/MainRow"]
+layout_mode = 2
+
+[node name="PartyPanel" type="Panel" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer"]
+custom_minimum_size = Vector2(260, 264)
+layout_mode = 2
+
+[node name="PartyMargin" type="MarginContainer" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="PartyVBox" type="VBoxContainer" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin"]
+layout_mode = 2
+
+[node name="PartyTitle" type="Label" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox"]
+layout_mode = 2
+text = "队伍状态"
+
+[node name="PartyMember1" type="HBoxContainer" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox"]
+layout_mode = 2
+
+[node name="PM1Name" type="Label" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox/PartyMember1"]
+layout_mode = 2
+text = "亚古兽 Lv12"
+
+[node name="PM1HPBar" type="ProgressBar" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox/PartyMember1"]
+layout_mode = 2
+size_flags_horizontal = 3
+value = 80.0
+
+[node name="PartyMember2" type="HBoxContainer" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox"]
+layout_mode = 2
+
+[node name="PM2Name" type="Label" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox/PartyMember2"]
+layout_mode = 2
+text = "加布兽 Lv10"
+
+[node name="PM2HPBar" type="ProgressBar" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox/PartyMember2"]
+layout_mode = 2
+size_flags_horizontal = 3
+value = 60.0
+
+[node name="PartyMember3" type="HBoxContainer" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox"]
+layout_mode = 2
+
+[node name="PM3Name" type="Label" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox/PartyMember3"]
+layout_mode = 2
+text = "巴达兽 Lv9"
+
+[node name="PM3HPBar" type="ProgressBar" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox/PartyMember3"]
+layout_mode = 2
+size_flags_horizontal = 3
+value = 90.0
+
+[node name="ReserveTitle" type="Label" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox"]
+layout_mode = 2
+text = "后备队员"
+
+[node name="ReserveMember1" type="HBoxContainer" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox"]
+layout_mode = 2
+
+[node name="RM1Name" type="Label" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox/ReserveMember1"]
+layout_mode = 2
+text = "空槽"
+
+[node name="RM1HPBar" type="ProgressBar" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox/ReserveMember1"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ReserveMember2" type="HBoxContainer" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox"]
+layout_mode = 2
+
+[node name="RM2Name" type="Label" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox/ReserveMember2"]
+layout_mode = 2
+text = "空槽"
+
+[node name="RM2HPBar" type="ProgressBar" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox/ReserveMember2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ReserveMember3" type="HBoxContainer" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox"]
+layout_mode = 2
+
+[node name="RM3Name" type="Label" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox/ReserveMember3"]
+layout_mode = 2
+text = "空槽"
+
+[node name="RM3HPBar" type="ProgressBar" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox/ReserveMember3"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ActionBarPanel" type="Panel" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ActionMargin" type="MarginContainer" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/ActionBarPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="ActionBar" type="GridContainer" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/ActionBarPanel/ActionMargin"]
+layout_mode = 2
+columns = 5
+
+[node name="MenuButton" type="Button" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/ActionBarPanel/ActionMargin/ActionBar"]
+layout_mode = 2
+text = "菜单"
+
+[node name="PartyButton" type="Button" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/ActionBarPanel/ActionMargin/ActionBar"]
+layout_mode = 2
+text = "队伍"
+
+[node name="ItemButton" type="Button" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/ActionBarPanel/ActionMargin/ActionBar"]
+layout_mode = 2
+text = "物品"
+
+[node name="QuestButton" type="Button" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/ActionBarPanel/ActionMargin/ActionBar"]
+layout_mode = 2
+text = "任务"
+
+[node name="MapButton" type="Button" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/ActionBarPanel/ActionMargin/ActionBar"]
+layout_mode = 2
+text = "地图"
+
+[node name="SettingsButton" type="Button" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/ActionBarPanel/ActionMargin/ActionBar"]
+layout_mode = 2
+text = "设置"
