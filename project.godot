@@ -8,18 +8,22 @@
 
 config_version=5
 
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
 [application]
 
 config/name="godot-mud-demo"
 run/main_scene="uid://cps7uyr47jyfk"
-config/features=PackedStringArray("4.5", "GL Compatibility")
+config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
 GameCore="*res://res/core/Scripts/GameCore.gd"
 CommonEnum="*res://res/core/Scripts/Common/CommonEnum.gd"
-UIAnimation="*res://addons/godot_ui_animations/UIAnimationHandler.tscn"
+UIAnimation="*uid://cawfyydj325or"
 g_DebugInfoViewer="*res://res/core/Scripts/Debug/g_DebugInfoViewer.gd"
 
 [display]

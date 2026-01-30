@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=487 format=3 uid="uid://vh2yajycgo2h"]
+[gd_resource type="TileSet" format=3 uid="uid://vh2yajycgo2h"]
 
 [ext_resource type="Texture2D" uid="uid://c4efvef7imwc7" path="res://Temp/bt-demo/assets/spirits/tiles/hex_map_64x64/texture.sprites/tiles&#x2F;HSI_aqua_001.tres" id="1_xbf4t"]
 [ext_resource type="Texture2D" uid="uid://1lovfhonxbru" path="res://Temp/bt-demo/assets/spirits/tiles/hex_map_64x64/texture.sprites/tiles&#x2F;HSI_aqua_002.tres" id="2_2qso0"]

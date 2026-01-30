@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=123 format=3 uid="uid://cnjtetudthuan"]
+[gd_resource type="Theme" format=3 uid="uid://cnjtetudthuan"]
 
 [ext_resource type="FontFile" uid="uid://80f5vdk0lhte" path="res://addons/windows_95_theme/MS Sans Serif.ttf" id="1_ewhgx"]
 [ext_resource type="Texture2D" uid="uid://c1833rva8bi5u" path="res://addons/windows_95_theme/Windows_95_panel1.png" id="2_6pbjp"]

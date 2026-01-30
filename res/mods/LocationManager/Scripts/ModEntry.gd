@@ -11,46 +11,11 @@
 ##
 ## 单个地点数据格式（顶层必须包含 version）：
 ## {
-##   "version": "1.0.0",
-##   "id": "file_island",
-##   "name": "文件岛",
-##   "world_type": "DigitalWorld",
-##   "type": "Island",
-##   "parent": "file_continent",
-##   "map_path": "res://maps/file_island.tscn",
-##   "spawn_point": "Entry",
-##   "tags": ["digital", "island"]
 ## }
 ##
 ## ---------------------------------------------------------
-## 数码世界（Digital World）最终层级结构
+## location type level 层级结构
 ##
-##   DigitalWorld（世界根）
-##     └── Continent（大陆）
-##            ├── Island（岛屿）
-##            │      └── Region（地域）
-##            │          └── Location
-##            │              └── Room
-##            │
-##            └── Field（场域）
-##                   └── Zone（区域，最终可进入地点）
-##                       └── Location
-##                           └── Room
-##
-## 约束：
-## - Region 的父级必须是 Island
-## - Field 的父级必须是 Continent
-## - Zone 的父级必须是 Field
-## - Region 下没有 Field，也没有 Zone
-##
-## ---------------------------------------------------------
-## 现实世界（Real World）层级结构
-##
-##   RealWorld（世界根）
-##     └── Country（国家）
-##            └── City（城市）
-##                   └── Location（地点，最终可进入地点）
-##                       └── Room
 ##
 ## ---------------------------------------------------------
 ## 可能涉及的外部模块（交互提示）
@@ -72,8 +37,28 @@ extends ModInterface
 
 var VERSION: String = "1.0.0"
 
-const WORLD_TYPE_DIGITAL: String = "DigitalWorld"
-const WORLD_TYPE_REAL: String = "RealWorld"
+## ---------------------------------------------------------
+##	TYPE_LEVEL : [TYPE]
+##		"World": ["Digital World", "Real World", "Witchelny", "Mirror World", "DigiQuartz", "Internet", "Cyberspace EDEN", "LACUNA", "Web",],
+##		"Continent": ["Continent"],
+##		"Region": ["Region", "Zone", "Electromagnetic Stream", "Terminal",],
+##		"Island": ["Island", ],
+##		"Area": ["Area", ],
+##		"Location": [
+##		    "Location",
+##		    "Mountain", "Forest", "Jungle", "Lake", "Desert", "Plain", "Grassland", "Grasslands", "Valley", "Canyon", "Volcano", "Iceberg", "Cape", "Wasteland", "Dunes", "Swamp", "Beach"
+##		    "City", "Town", "Village", "Capital", "Port",
+##		    "Castle", "Palace", "Fortress", "Shrine", "Temple", "Market", "Sanctuary", "Tower", "Hole", "Cave", "Tunnel", "Ship", "Gym", "Library", "Mansion", "Factory", "Skyscraper",
+##		    "Road", "Bridge",
+##		],
+##		"Settlement": [],
+##		"Structure": [],
+##		"Landform": [],
+##		"Path": [],
+## ---------------------------------------------------------
+
+const TYPE_LEVEL_DIGITAL: String = "DigitalWorld"
+const TYPE_LEVEL_REAL: String = "RealWorld"
 
 const TYPE_DIGITAL_WORLD: String = "DigitalWorld"
 const TYPE_CONTINENT: String = "Continent"
@@ -174,26 +159,26 @@ func register_locations_from_json(json_path: String) -> void:
 			register_location(loc_data)
 
 
-func get_location(location_id: String) -> Dictionary:
-	var result: Variant = locations.get(location_id)
+func get_location(location_name: String) -> Dictionary:
+	var result: Variant = locations.get(location_name)
 	if typeof(result) == TYPE_DICTIONARY:
 		return result
 	return {}
 
 
-func has_location(location_id: String) -> bool:
-	return locations.has(location_id)
+func has_location(location_name: String) -> bool:
+	return locations.has(location_name)
 
 
-func get_location_children(location_id: String) -> Array:
-	var arr: Array = children_map.get(location_id, [])
+func get_location_children(location_name: String) -> Array:
+	var arr: Array = children_map.get(location_name, [])
 	return arr
 
 
-func get_location_parent(location_id: String) -> String:
-	if not locations.has(location_id):
+func get_location_parent(location_name: String) -> String:
+	if not locations.has(location_name):
 		return ""
-	var data: Dictionary = locations[location_id]
+	var data: Dictionary = locations[location_name]
 	var parent_value: Variant = data.get("parent", "")
 	return str(parent_value)
 
@@ -203,7 +188,7 @@ func get_locations_by_type(type_name: String) -> Array:
 	return arr
 
 
-func get_locations_by_world_type(world_type: String) -> Array:
+func get_locations_by_type_level(world_type: String) -> Array:
 	var result: Array = []
 	for id in locations.keys():
 		var data: Dictionary = locations[id]
@@ -213,22 +198,11 @@ func get_locations_by_world_type(world_type: String) -> Array:
 	return result
 
 
-func get_locations_by_tag(tag: String) -> Array:
-	var result: Array = []
-	for id in locations.keys():
-		var data: Dictionary = locations[id]
-		var tags_variant: Variant = data.get("tags", [])
-		if typeof(tags_variant) == TYPE_ARRAY:
-			var tags: Array = tags_variant
-			if tag in tags:
-				result.append(id)
-	return result
-
-
 func get_all_locations() -> Array:
 	return locations.keys()
 
 
+# TODO 等待后续其他逻辑的实现，再实现这个方法
 func get_root_locations() -> Array:
 	var result: Array = []
 	for id in locations.keys():

@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=40 format=3 uid="uid://8c5j2xptwq82"]
+[gd_resource type="Theme" format=3 uid="uid://8c5j2xptwq82"]
 
 [ext_resource type="Texture2D" uid="uid://bef816edvcpop" path="res://res/core/UI/Theme/SproutLands/assets/Sprite sheet for Basic Pack.png" id="1_pp7bg"]
 
