@@ -1,3 +1,10 @@
+## #############################################################################
+## 	这里放着 location map 的固定配置
+## 	
+## 	需要大改
+## 	可能需要协同 WorldMapGenerator 做固定 location map 的覆盖生成，而不是全随机生成
+## #############################################################################
+
 extends ModInterface
 class_name WorldMapManager
 
@@ -9,12 +16,12 @@ func _on_mod_load() -> bool:
 	var file = FileAccess.open(path, FileAccess.READ)
 	if file == null:
 		push_error("[WorldMapManager] Cannot read file: %s" % path)
-		return false
+		return true
 
 	var parsed = JSON.parse_string(file.get_as_text())
 	if typeof(parsed) != TYPE_DICTIONARY:
 		push_error("[WorldMapManager] Invalid JSON format")
-		return false
+		return true
 
 	_version = parsed.get("version", 1)
 	_locations = parsed.get("locations", {})

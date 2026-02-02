@@ -1,8 +1,8 @@
 {
   "metadata": {
 	"version": "1.0",
-	"generated_at": "2026-01-30 11:58:24",
-	"total_locations": 889,
+	"generated_at": "2026-02-01 22:19:06",
+	"total_locations": 874,
 	"total_relationships": 178
   },
   "data": {
@@ -956,302 +956,63 @@
 		},
 		"location level type": "Location"
 	  },
-	  "Metal Seadramon": {
-		"name": "Metal Seadramon",
+	  "Digital Ocean": {
+		"name": "Digital Ocean",
 		"Kanji/Kana": "",
-		"url": "https://wikimon.net/Metal_Seadramon",
+		"url": "",
 		"introduce": "",
-		"description": "",
+		"description": "The Digital Ocean is ruled by Metal Seadramon and is protected by an Anomalocarimon and legions of Hangyomon. It is where the Chosen Children arrived after they were saved by Piccolomon. After traveling through the ocean with the help of Whamon, the children ended up in a small lake. Whamon sacrificed his life to protect the children and then War Greymon was able to kill Metal Seadramon with his Brave Tornado attack, destroying him and returning the ocean to normal.",
 		"type": {
 		  "content": "Area",
 		  "url": ""
 		},
 		"location level type": "Area"
 	  },
-	  "Anomalocarimon": {
-		"name": "Anomalocarimon",
+	  "Digital Forest": {
+		"name": "Digital Forest",
 		"Kanji/Kana": "",
-		"url": "https://wikimon.net/Anomalocarimon",
+		"url": "",
 		"introduce": "",
-		"description": "",
+		"description": "The forest section is controlled by Pinocchimon from his mansion. The forest floor can be rearranged by Pinocchimon's remote control. He also has small voodoo dolls that control the Chosen Children's movements and location throughout the forest. When Takaishi Takeru was playing with Pinocchimon inside his mansion, he was able to destroy the remote and take the dolls. Later Metal Garurumon destroyed Pinocchimon and the land he controlled faded from Spiral Mountain.",
 		"type": {
 		  "content": "Area",
 		  "url": ""
 		},
 		"location level type": "Area"
 	  },
-	  "Hangyomon": {
-		"name": "Hangyomon",
+	  "Digital City": {
+		"name": "Digital City",
+		"Kanji/Kana": {
+		  "content": "デジタル・シティ",
+		  "url": ""
+		},
+		"inhabitants": {
+		  "Agumon": [
+			{
+			  "text": "Leomon",
+			  "url": "https://wikimon.net/Leomon"
+			},
+			{
+			  "text": "Palmon",
+			  "url": "https://wikimon.net/Palmon"
+			}
+		  ]
+		},
+		"url": "https://wikimon.net/Digital_City",
+		"introduce": "Digital City (デジタル･シティ Dejitaru Shiti) is a location in Directory Continent.",
+		"description": "",
+		"type": {
+		  "content": "City",
+		  "url": ""
+		},
+		"location level type": "Location"
+	  },
+	  "Wasteland": {
+		"name": "Wasteland",
 		"Kanji/Kana": "",
-		"url": "https://wikimon.net/Hangyomon",
+		"url": "",
 		"introduce": "",
-		"description": "",
-		"type": {
-		  "content": "Area",
-		  "url": ""
-		},
-		"location level type": "Area"
-	  },
-	  "Chosen Children": {
-		"name": "Chosen Children",
-		"Kanji/Kana": "",
-		"url": "https://wikimon.net/Chosen_Children",
-		"introduce": "",
-		"description": "",
-		"type": {
-		  "content": "Area",
-		  "url": ""
-		},
-		"location level type": "Area"
-	  },
-	  "Piccolomon": {
-		"name": "Piccolomon",
-		"Kanji/Kana": "",
-		"url": "https://wikimon.net/Piccolomon",
-		"introduce": "",
-		"description": "",
-		"type": {
-		  "content": "Area",
-		  "url": ""
-		},
-		"location level type": "Area"
-	  },
-	  "Whamon": {
-		"name": "Whamon",
-		"Kanji/Kana": "",
-		"url": "https://wikimon.net/Whamon",
-		"introduce": "",
-		"description": "",
-		"type": {
-		  "content": "Area",
-		  "url": ""
-		},
-		"location level type": "Area"
-	  },
-	  "War Greymon": {
-		"name": "War Greymon",
-		"Kanji/Kana": "",
-		"url": "https://wikimon.net/Agumon_(Adventure)",
-		"introduce": "",
-		"description": "",
-		"type": {
-		  "content": "Area",
-		  "url": ""
-		},
-		"location level type": "Area"
-	  },
-	  "Pinocchimon": {
-		"name": "Pinocchimon",
-		"Kanji/Kana": "",
-		"url": "https://wikimon.net/Pinocchimon",
-		"introduce": "",
-		"description": "",
-		"type": {
-		  "content": "Area",
-		  "url": ""
-		},
-		"location level type": "Area"
-	  },
-	  "Chosen Children's": {
-		"name": "Chosen Children's",
-		"Kanji/Kana": "",
-		"url": "https://wikimon.net/Chosen_Children",
-		"introduce": "",
-		"description": "",
-		"type": {
-		  "content": "Area",
-		  "url": ""
-		},
-		"location level type": "Area"
-	  },
-	  "Takaishi Takeru": {
-		"name": "Takaishi Takeru",
-		"Kanji/Kana": "",
-		"url": "https://wikimon.net/Takaishi_Takeru",
-		"introduce": "",
-		"description": "",
-		"type": {
-		  "content": "Area",
-		  "url": ""
-		},
-		"location level type": "Area"
-	  },
-	  "Metal Garurumon": {
-		"name": "Metal Garurumon",
-		"Kanji/Kana": "",
-		"url": "https://wikimon.net/Gabumon_(Adventure)",
-		"introduce": "",
-		"description": "",
-		"type": {
-		  "content": "Area",
-		  "url": ""
-		},
-		"location level type": "Area"
-	  },
-	  "Mugendramon": {
-		"name": "Mugendramon",
-		"Kanji/Kana": "",
-		"url": "https://wikimon.net/Mugendramon_(Adventure)",
-		"introduce": "",
-		"description": "",
-		"type": {
-		  "content": "Area",
-		  "url": ""
-		},
-		"location level type": "Area"
-	  },
-	  "Real World": {
-		"name": "Real World",
-		"Kanji/Kana": "",
-		"inhabitants": {},
-		"url": "https://wikimon.net/Real_World",
-		"introduce": "The Real World (リアルワールド, Riaru Wārudo, 現実世界, Genjitsu Sekai), also referred to as the Human World (人間界, Ningenkai) AKA Planet Earth or Material World (マテリアルワールド, Materiaru Wārudo), is a place inhabited by humans and other organisms.",
-		"description": "",
-		"type": {
-		  "content": "Real World",
-		  "url": ""
-		},
-		"location level type": "World"
-	  },
-	  "Mechanorimon": {
-		"name": "Mechanorimon",
-		"Kanji/Kana": "",
-		"url": "https://wikimon.net/Mechanorimon",
-		"introduce": "",
-		"description": "",
-		"type": {
-		  "content": "Area",
-		  "url": ""
-		},
-		"location level type": "Area"
-	  },
-	  "Tankmon": {
-		"name": "Tankmon",
-		"Kanji/Kana": "",
-		"url": "https://wikimon.net/Tankmon",
-		"introduce": "",
-		"description": "",
-		"type": {
-		  "content": "Area",
-		  "url": ""
-		},
-		"location level type": "Area"
-	  },
-	  "Yagami Hikari": {
-		"name": "Yagami Hikari",
-		"Kanji/Kana": "",
-		"url": "https://wikimon.net/Yagami_Hikari",
-		"introduce": "",
-		"description": "",
-		"type": {
-		  "content": "Area",
-		  "url": ""
-		},
-		"location level type": "Area"
-	  },
-	  "Gigadramon": {
-		"name": "Gigadramon",
-		"Kanji/Kana": "",
-		"url": "https://wikimon.net/Gigadramon",
-		"introduce": "",
-		"description": "",
-		"type": {
-		  "content": "Area",
-		  "url": ""
-		},
-		"location level type": "Area"
-	  },
-	  "Megadramon": {
-		"name": "Megadramon",
-		"Kanji/Kana": "",
-		"url": "https://wikimon.net/Megadramon",
-		"introduce": "",
-		"description": "",
-		"type": {
-		  "content": "Area",
-		  "url": ""
-		},
-		"location level type": "Area"
-	  },
-	  "Waru Monzaemon": {
-		"name": "Waru Monzaemon",
-		"Kanji/Kana": "",
-		"url": "https://wikimon.net/Waru_Monzaemon",
-		"introduce": "",
-		"description": "",
-		"type": {
-		  "content": "Area",
-		  "url": ""
-		},
-		"location level type": "Area"
-	  },
-	  "Numemon": {
-		"name": "Numemon",
-		"Kanji/Kana": "",
-		"url": "https://wikimon.net/Numemon",
-		"introduce": "",
-		"description": "",
-		"type": {
-		  "content": "Area",
-		  "url": ""
-		},
-		"location level type": "Area"
-	  },
-	  "Digital World": {
-		"name": "Digital World",
-		"Kanji/Kana": "",
-		"inhabitants": {},
-		"url": "https://wikimon.net/Digital_World",
-		"introduce": "The \"Digital World\" (デジタルワールド, Dejitaru Wārudo) and \"Digimon World\" (デジモンワールド, Dejimon Wārudo) are names often used to refer to the many Digital Worlds that exist across all media, but it's also the default name for the Digital World ruled by the Host Computer Yggdrasill, one of the three main Digital Worlds known.[1]",
-		"description": "",
-		"type": {
-		  "content": "Digital World",
-		  "url": ""
-		},
-		"location level type": "World"
-	  },
-	  "Piemon": {
-		"name": "Piemon",
-		"Kanji/Kana": "",
-		"url": "https://wikimon.net/Piemon",
-		"introduce": "",
-		"description": "",
-		"type": {
-		  "content": "Area",
-		  "url": ""
-		},
-		"location level type": "Area"
-	  },
-	  "Lady Devimon": {
-		"name": "Lady Devimon",
-		"Kanji/Kana": "",
-		"url": "https://wikimon.net/Lady_Devimon",
-		"introduce": "",
-		"description": "",
-		"type": {
-		  "content": "Area",
-		  "url": ""
-		},
-		"location level type": "Area"
-	  },
-	  "Evilmon": {
-		"name": "Evilmon",
-		"Kanji/Kana": "",
-		"url": "https://wikimon.net/Evilmon",
-		"introduce": "",
-		"description": "",
-		"type": {
-		  "content": "Area",
-		  "url": ""
-		},
-		"location level type": "Area"
-	  },
-	  "Holy Angemon": {
-		"name": "Holy Angemon",
-		"Kanji/Kana": "",
-		"url": "https://wikimon.net/Patamon_(Adventure)",
-		"introduce": "",
-		"description": "",
+		"description": "The wasteland was ruled by Piemon on top of Spiral Mountain. His bodyguard was Lady Devimon and had an army of Evilmon under his control. When Piemon was sealed in Holy Angemon's Heaven's Gate, the remaining part of Spiral Mountain returned to normal.",
 		"type": {
 		  "content": "Area",
 		  "url": ""
@@ -4339,18 +4100,6 @@
 		},
 		"location level type": "World"
 	  },
-	  "Appmon": {
-		"name": "Appmon",
-		"Kanji/Kana": "",
-		"url": "https://wikimon.net/Appmon_(species)",
-		"introduce": "",
-		"description": "",
-		"type": {
-		  "content": "Area",
-		  "url": ""
-		},
-		"location level type": "Area"
-	  },
 	  "Dark Web": {
 		"name": "Dark Web",
 		"Kanji/Kana": "",
@@ -4363,18 +4112,6 @@
 		  "url": ""
 		},
 		"location level type": "World"
-	  },
-	  "Leviathan": {
-		"name": "Leviathan",
-		"Kanji/Kana": "",
-		"url": "https://wikimon.net/Leviathan",
-		"introduce": "",
-		"description": "",
-		"type": {
-		  "content": "Area",
-		  "url": ""
-		},
-		"location level type": "Area"
 	  },
 	  "Reviewmon Island": {
 		"name": "Reviewmon Island",
@@ -9288,6 +9025,19 @@
 		},
 		"location level type": "Island"
 	  },
+	  "Digital World": {
+		"name": "Digital World",
+		"Kanji/Kana": "",
+		"inhabitants": {},
+		"url": "https://wikimon.net/Digital_World",
+		"introduce": "The \"Digital World\" (デジタルワールド, Dejitaru Wārudo) and \"Digimon World\" (デジモンワールド, Dejimon Wārudo) are names often used to refer to the many Digital Worlds that exist across all media, but it's also the default name for the Digital World ruled by the Host Computer Yggdrasill, one of the three main Digital Worlds known.[1]",
+		"description": "",
+		"type": {
+		  "content": "Digital World",
+		  "url": ""
+		},
+		"location level type": "World"
+	  },
 	  "Server Continent": {
 		"name": "Server Continent",
 		"Kanji/Kana": {
@@ -10068,33 +9818,6 @@
 		"description": "Device Dome is a dome that was created by the people who had fled during Crimson's revolt. Many engineers are currently living here.",
 		"type": {
 		  "content": "Dome",
-		  "url": ""
-		},
-		"location level type": "Location"
-	  },
-	  "Digital City": {
-		"name": "Digital City",
-		"Kanji/Kana": {
-		  "content": "デジタル・シティ",
-		  "url": ""
-		},
-		"inhabitants": {
-		  "Agumon": [
-			{
-			  "text": "Leomon",
-			  "url": "https://wikimon.net/Leomon"
-			},
-			{
-			  "text": "Palmon",
-			  "url": "https://wikimon.net/Palmon"
-			}
-		  ]
-		},
-		"url": "https://wikimon.net/Digital_City",
-		"introduce": "Digital City (デジタル･シティ Dejitaru Shiti) is a location in Directory Continent.",
-		"description": "",
-		"type": {
-		  "content": "City",
 		  "url": ""
 		},
 		"location level type": "Location"
@@ -15883,32 +15606,8 @@
 		},
 		"location level type": "Area"
 	  },
-	  "Kamakura (": {
-		"name": "Kamakura (",
-		"Kanji/Kana": "",
-		"url": "",
-		"introduce": "",
-		"description": "",
-		"type": {
-		  "content": "Area",
-		  "url": ""
-		},
-		"location level type": "Area"
-	  },
-	  "Igloo Village": {
-		"name": "Igloo Village",
-		"Kanji/Kana": "",
-		"url": "",
-		"introduce": "",
-		"description": "",
-		"type": {
-		  "content": "Area",
-		  "url": ""
-		},
-		"location level type": "Area"
-	  },
-	  ")": {
-		"name": ")",
+	  "Kamakura ( Igloo Village )": {
+		"name": "Kamakura ( Igloo Village )",
 		"Kanji/Kana": "",
 		"url": "",
 		"introduce": "",
@@ -18079,36 +17778,144 @@
 		},
 		"location level type": "World"
 	  },
-	  "NPCs": {
-		"name": "NPCs",
+	  "Emerald Coast": {
+		"name": "Emerald Coast",
 		"Kanji/Kana": "",
-		"url": "https://wikimon.net/index.php?title=NPC_(Liberator)&action=edit&redlink=1",
+		"url": "",
 		"introduce": "",
-		"description": "",
+		"description": "The Invasive Forest City Emerald Coast (侵森都市エメラルドコースト Shinshin Toshi Emerarudo Kōsuto; Dub: Emerald Coast, the Invasive Forest City) is a vast city encroached upon by nature. It primarily features skyscrapers, but there are also places resembling Southeast Asian ruins and Japanese-style buildings, all of which are taken over by plants. It functions as a tutorial area for beginning players embarking on their first adventure, with most of the battle NPCs encountered being low-level. It's beloved by many players for its quiet atmosphere relatively peaceful setting, making it useful as a base of operations. There are two types of quest in this area: NPCs that act as conduits to the episodes of the Main Scenario's prologue are located in the Emerald Coast. One of these is Makina, a robot on the brink of shutdown who entrusts several cards to the players starting the Main Scenario, before exhausting its power.[1]",
 		"type": {
 		  "content": "Area",
 		  "url": ""
 		},
 		"location level type": "Area"
 	  },
-	  "[1]": {
-		"name": "[1]",
+	  "Hatsumōde Forest": {
+		"name": "Hatsumōde Forest",
 		"Kanji/Kana": "",
-		"url": "https://wikimon.net#cite_note-tips1-1",
+		"url": "",
 		"introduce": "",
-		"description": "",
+		"description": "Hatsumōde Forest (初詣の森 Hatsumōde no Mori; Dub: Shrine Forest)",
 		"type": {
 		  "content": "Area",
 		  "url": ""
 		},
 		"location level type": "Area"
 	  },
-	  "[5]": {
-		"name": "[5]",
+	  "Sanctuary": {
+		"name": "Sanctuary",
 		"Kanji/Kana": "",
-		"url": "https://wikimon.net#cite_note-.5B.5BDEBUG.1-1.7C.27.27Digimon_Liberator:_.22Yuuki.22.27.27.5D.5D-5",
+		"url": "",
 		"introduce": "",
-		"description": "",
+		"description": "Sanctuary (聖域 Seiiki; Dub: Sanctuary)",
+		"type": {
+		  "content": "Area",
+		  "url": ""
+		},
+		"location level type": "Area"
+	  },
+	  "Jewel": {
+		"name": "Jewel",
+		"Kanji/Kana": "",
+		"url": "",
+		"introduce": "",
+		"description": "The Central District Jewel (中央府ジュエル Chūō-fu Jueru; Dub: The Central District of Jewel)",
+		"type": {
+		  "content": "Area",
+		  "url": ""
+		},
+		"location level type": "Area"
+	  },
+	  "Lapis Marines": {
+		"name": "Lapis Marines",
+		"Kanji/Kana": "",
+		"url": "",
+		"introduce": "",
+		"description": "The Ever-Sunny Seascape Lapis Marines (連晴海岸ラピスマーリンズ Rensei Kaigan Rapisu Mārinzu; Dub: Lapis Marine, the Ever-Sunny Seascape)",
+		"type": {
+		  "content": "Area",
+		  "url": ""
+		},
+		"location level type": "Area"
+	  },
+	  "Obsidian Desert": {
+		"name": "Obsidian Desert",
+		"Kanji/Kana": "",
+		"url": "",
+		"introduce": "",
+		"description": "The Dusty Demonic Realm Obsidian Desert (塵外魔境オブシディアンデザート Jingai Makyō Obushidian Dezāto; Dub: Obsidian Desert, the Dusty Demonic Realm)",
+		"type": {
+		  "content": "Area",
+		  "url": ""
+		},
+		"location level type": "Area"
+	  },
+	  "Amber Remains": {
+		"name": "Amber Remains",
+		"Kanji/Kana": "",
+		"url": "",
+		"introduce": "",
+		"description": "The Time Static Domain Amber Remains (時静領域アンバーリメインズ Jisei Ryōiki Anbā Rimeinzu; Dub: Amber Remains, the Timeless Domain)",
+		"type": {
+		  "content": "Area",
+		  "url": ""
+		},
+		"location level type": "Area"
+	  },
+	  "Ruby Mountain": {
+		"name": "Ruby Mountain",
+		"Kanji/Kana": "",
+		"url": "",
+		"introduce": "",
+		"description": "The Roaring Flame Zone Ruby Mountain (轟炎地帯ルビーマウンテン Gouen Chitai Rubī Maunten; Dub: Ruby Mountain, the Inferno Zone) is a high-level area within LACUNA, located far from the central city, on the distant outskirts of the realm. No NPCs normally exist in this area. Due to the smoke and ash billowing from clusters of active volcanoes, the sky cannot be seen, the only light coming from rivers of flowing magma, casting everything in a glowing red. The dull pop of bubbles forming from the lava and the savory sizzle of the molten stone serve as makeshift background music.[5]",
+		"type": {
+		  "content": "Area",
+		  "url": ""
+		},
+		"location level type": "Area"
+	  },
+	  "Amethyst City": {
+		"name": "Amethyst City",
+		"Kanji/Kana": "",
+		"url": "",
+		"introduce": "",
+		"description": "The Sharp Sky Corridor Amethyst City (尖鋭天廊アメジストシティ Senei Tenrō Amejisuto Shiti; Dub: Amethyst City, the Sky Spire Corridor)",
+		"type": {
+		  "content": "Area",
+		  "url": ""
+		},
+		"location level type": "Area"
+	  },
+	  "E.G.G": {
+		"name": "E.G.G",
+		"Kanji/Kana": "",
+		"url": "",
+		"introduce": "",
+		"description": "E.G.G (エッグ Eggu), short for Extent of Governing Ground, is an enormous computer.",
+		"type": {
+		  "content": "Area",
+		  "url": ""
+		},
+		"location level type": "Area"
+	  },
+	  "Garden": {
+		"name": "Garden",
+		"Kanji/Kana": "",
+		"url": "",
+		"introduce": "",
+		"description": "Garden (ガーデン Gāden).",
+		"type": {
+		  "content": "Area",
+		  "url": ""
+		},
+		"location level type": "Area"
+	  },
+	  "Avalon": {
+		"name": "Avalon",
+		"Kanji/Kana": "",
+		"url": "",
+		"introduce": "",
+		"description": "Debug Team Dedicated Area Avalon (デバッグチーム専用エリアアヴァロン Debaggu Chīmu Senyō Eria Avaron; Dub: Avalon, the Debugging Team's Private Area)",
 		"type": {
 		  "content": "Area",
 		  "url": ""
@@ -18570,6 +18377,19 @@
 		  "url": ""
 		},
 		"location level type": "Location"
+	  },
+	  "Real World": {
+		"name": "Real World",
+		"Kanji/Kana": "",
+		"inhabitants": {},
+		"url": "https://wikimon.net/Real_World",
+		"introduce": "The Real World (リアルワールド, Riaru Wārudo, 現実世界, Genjitsu Sekai), also referred to as the Human World (人間界, Ningenkai) AKA Planet Earth or Material World (マテリアルワールド, Materiaru Wārudo), is a place inhabited by humans and other organisms.",
+		"description": "",
+		"type": {
+		  "content": "Real World",
+		  "url": ""
+		},
+		"location level type": "World"
 	  },
 	  "Summer camp": {
 		"name": "Summer camp",
@@ -20911,97 +20731,76 @@
         "Pharga"
 	  ],
 	  "Infinity Mountain": [
-		"Infinity Mountain (Digimon Adventure)",
 		"Infinity Mountain (Digimon World: Digital Card Battle)",
-		"Colosseum/DigiTower (Digimon World Re:Digitize)",
-        "Back Dimension"
+		"Infinity Mountain (Digimon Adventure)",
+		"Back Dimension",
+        "Colosseum/DigiTower (Digimon World Re:Digitize)"
 	  ],
 	  "Spiral Mountain": [
-		"Evilmon",
-		"Real World",
-		"Anomalocarimon",
-		"Chosen Children",
-		"Yagami Hikari",
-		"Mugendramon",
-		"Pinocchimon",
-		"Tankmon",
-		"Lady Devimon",
-		"Hangyomon",
-		"Holy Angemon",
-		"Piccolomon",
-		"War Greymon",
-		"Chosen Children's",
-		"Waru Monzaemon",
-		"Numemon",
-		"Metal Garurumon",
-		"Megadramon",
-		"Piemon",
-		"Digital World",
-		"Gigadramon",
-		"Whamon",
-		"Metal Seadramon",
-		"Mechanorimon",
-        "Takaishi Takeru"
+		"Wasteland",
+		"Digital City",
+		"Digital Forest",
+        "Digital Ocean"
 	  ],
 	  "Dark Continent": [
+		"Dark Continent Forest",
 		"Dark Gate",
-		"Trailmon Graveyard",
-        "Dark Continent Forest"
+        "Trailmon Graveyard"
 	  ],
 	  "Rose Morning Star": [
         "Cherubimon's Castle"
 	  ],
 	  "Toy Town": [
 		"Robot House",
+		"Robot House (ロボットハウス Robotto Hausu)",
 		"Puppet House (ぬいぐるみハウス Nuigurumi Hausu)",
-		"Puppet House",
-        "Robot House (ロボットハウス Robotto Hausu)"
+        "Puppet House"
 	  ],
 	  "Wandering Island": [
-		"Beast Village",
 		"Ornismon's Shrine",
+		"Beast Village",
         "Human Village"
 	  ],
 	  "Abyss Area": [
-		"Abyss Surface",
+		"Abyss Sanctuary",
+		"Throne Room",
 		"Abyss Beach",
 		"Abyss Depths",
-		"Throne Room",
-        "Abyss Sanctuary"
+        "Abyss Surface"
 	  ],
 	  "Akashic Records": [
+		"Akashic Chaos",
+		"Akashic Hades",
+		"Akashic Ragnorak",
+		"Akashic Maze",
 		"Akashic Abyss",
 		"Akashic Oblivion",
-		"Akashic Hades",
-		"Akashic Forest",
-		"Akashic Maze",
-		"Akashic Chaos",
-        "Akashic Ragnorak"
+        "Akashic Forest"
 	  ],
 	  "Central Town": [
-		"Central Tower",
+		"Central Town",
 		"Spiral Waterway",
-		"Downtown",
 		"Central Isle",
-        "Central Town"
+		"Downtown",
+        "Central Tower"
 	  ],
 	  "Cosmic Area": [
-		"Chill Cosmic",
-        "Heat Cosmic"
+		"Heat Cosmic",
+        "Chill Cosmic"
 	  ],
 	  "Factorial Area": [
-		"Factorial Core",
-		"Factorial Area",
 		"High-Rise Colosseum",
-        "Factorial Town"
+		"Factorial Core",
+		"Factorial Town",
+        "Factorial Area"
 	  ],
 	  "Gear Forest": [
-		"Shaded Woods",
-		"Floating Rock Islands",
-		"Village",
 		"Deep Woods",
+		"Village",
+		"Shaded Woods",
 		"Shade Tree Pier",
-        "Floating Island Plains"
+		"Floating Island Plains",
+        "Floating Rock Islands"
 	  ],
 	  "Guardian Palace": [
 		"Temple of Beginnings",
@@ -21009,33 +20808,30 @@
         "Palace Otherside"
 	  ],
 	  "Hifumigaoka Peripheral Region": [
-		"Yongendōri",
 		"Hifumigaoka",
 		"Nikotamagawa",
+		"Yongendōri",
         "Mihamakou"
 	  ],
 	  "Net Ocean (Appmon)": [
-		"Appmon",
-		"Leviathan",
 		"Surface Web",
 		"Deep Web",
-		"Cyber Kowloon",
         "Dark Web"
 	  ],
 	  "Bagra Pandemonium": [
         "Great Bagra Palace"
 	  ],
 	  "Bright Land": [
-		"Hell's Field",
-        "Apollonia Tower"
+		"Apollonia Tower",
+        "Hell's Field"
 	  ],
 	  "Cyber Land": [
         "Cyber Land's Futuristic Metropolis"
 	  ],
 	  "Dragon Land": [
+		"Village of Smiles",
 		"Dracomon's Underground Tunnels",
-		"Dorbickmon's Castle",
-        "Village of Smiles"
+        "Dorbickmon's Castle"
 	  ],
 	  "Forest Zone": [
         "Temple of Love"
@@ -21045,15 +20841,15 @@
         "Mushroom Village"
 	  ],
 	  "Heaven Zone": [
-		"Library",
 		"Temple of Darkness",
-		"Police Station",
-        "Execution Grounds"
+		"Execution Grounds",
+		"Library",
+        "Police Station"
 	  ],
 	  "Honey Land": [
-		"Honey Land Amusement Park",
 		"Holy Temple",
 		"Battle Cry Forest",
+		"Honey Land Amusement Park",
         "Zamielmon's Castle"
 	  ],
 	  "Jupiter Zone": [
@@ -21065,22 +20861,22 @@
 	  ],
 	  "LS-tou Zone": [
 		"Dark Tunnel",
-		"Crystal Volcano",
-		"Papyrus Desert",
-		"Crystal Mine",
-		"Tokona Sea",
 		"Skull Iceberg",
-		"Crystal Cave",
+		"Crystal Mine",
 		"Lost Space",
-		"Digital Space",
-		"Spider Nest Ruins",
-		"Sky Fort",
-		"Stealth Valley",
-		"Fort Yard",
-		"Flower Meadow",
-		"Roundabout Amazon",
 		"Tokona Coast",
-        "Knuckle Coast"
+		"Roundabout Amazon",
+		"Digital Space",
+		"Flower Meadow",
+		"Knuckle Coast",
+		"Stealth Valley",
+		"Tokona Sea",
+		"Fort Yard",
+		"Sky Fort",
+		"Crystal Volcano",
+		"Crystal Cave",
+		"Spider Nest Ruins",
+        "Papyrus Desert"
 	  ],
 	  "Magma Zone": [
         "Ancient Volcamon's Lair"
@@ -21089,10 +20885,10 @@
         "Dark Crystal Palace"
 	  ],
 	  "Sand Zone": [
-		"Underground Caverns",
-		"Sandoria",
 		"Pyramid of Revival",
-        "Pharaohmon's Pyramid"
+		"Sandoria",
+		"Pharaohmon's Pyramid",
+        "Underground Caverns"
 	  ],
 	  "Vampire Land": [
 		"Chocomon Village",
@@ -21101,226 +20897,226 @@
 	  ],
 	  "Amaterasu Server": [
 		"Central Sector (Amaterasu Server)",
-		"West Sector",
+		"East Sector (Amaterasu Server)",
+		"North Sector",
+		"North Sector (Amaterasu Server)",
 		"Wire Forest (Amaterasu Server)",
+		"Central Sector",
+		"West Sector",
 		"South Sector (Amaterasu Server)",
 		"West Sector (Amaterasu Server)",
 		"Zhuque City",
-		"North Sector (Amaterasu Server)",
-		"South Sector",
-		"North Sector",
-		"Qinglong City",
-		"Central Sector",
 		"East Sector",
-        "East Sector (Amaterasu Server)"
+		"Qinglong City",
+        "South Sector"
 	  ],
 	  "Asuka Server": [
-		"East Sector (Asuka Server)",
-		"West Sector",
-		"Bulk Bridge",
-		"Bios Swamp",
-		"Northerly Wasteland East",
-		"Suzaku City",
-		"East Station",
 		"Chrome Mine",
-		"Asuka City",
-		"Deeper Crack",
-		"Hangyomon's Pond",
-		"Jungle Boneyard",
+		"Peltier Oasis",
+		"Suzaku City",
+		"Protocol Forest",
+		"Central Sector",
+		"West Sector",
 		"Central Park",
-		"Noise Desert",
-		"Bulk Swamp",
-		"North Sector",
-		"Lake of Ice",
-		"Suzaku Underground Lake",
 		"Bullet Valley",
-		"Protocol Ruins",
-		"Catacomb",
-		"Tranquil Swamp",
+		"Snow Mountain",
+		"Northerly Wasteland East",
+		"Mirage Tower",
+		"East Sector (Asuka Server)",
 		"Boot Mountain",
-		"Shell Beach",
+		"South Cape",
+		"Wire Forest",
+		"Bulk Bridge",
+		"Dum Dum Factory",
+		"South Station",
+		"Bulk Swamp",
+		"Sincerity Altar",
 		"Battle Gate",
 		"Legendary Gym",
-		"Wire Forest Entrance",
-		"Phoenix Cove",
-		"Chrome Pit",
-		"East Sector",
-		"North Sector (Asuka Server)",
-		"Southerly Wasteland",
+		"Protocol Ruins",
+		"Lake of Ice",
+		"Shell Beach",
+		"Deeper Crack",
 		"Asuka Bridge",
-		"Jungle Shrine",
-		"Infinity Desert",
-		"Wind Prairie",
-		"Ether Jungle",
-		"Wire Forest",
-		"South Cape",
-		"Central Sector",
-		"South Sector (Asuka Server)",
-		"Freeze Mountain",
-		"Kicking Forest",
-		"Northerly Wasteland West",
-		"Seiryu City",
-		"Card Island",
+		"North Sector (Asuka Server)",
+		"Suzaku Underground Lake",
+		"Jungle Boneyard",
 		"West Sector (Asuka Server)",
-		"Peltier Oasis",
-		"Protocol Forest",
+		"Catacomb",
+		"Freeze Mountain",
 		"Plug Cape",
-		"Dum Dum Factory",
-		"South Sector",
-		"Genbu City",
-		"Sincerity Altar",
-		"Mirage Tower",
+		"Wire Forest Entrance",
+		"Byakko City",
+		"South Sector (Asuka Server)",
+		"Asuka City",
+		"Northerly Wasteland West",
 		"Central Sector (Asuka Server)",
-		"Snow Mountain",
+		"Ether Jungle",
+		"Kicking Forest",
+		"East Sector",
+		"South Sector",
+		"Card Island",
+		"Seiryu City",
+		"Southerly Wasteland",
 		"Tyrano Valley",
-		"South Station",
-        "Byakko City"
+		"North Sector",
+		"Noise Desert",
+		"Phoenix Cove",
+		"Bios Swamp",
+		"Hangyomon's Pond",
+		"Jungle Shrine",
+		"Chrome Pit",
+		"Genbu City",
+		"Tranquil Swamp",
+		"East Station",
+		"Infinity Desert",
+        "Wind Prairie"
 	  ],
 	  "Byte Island": [
-		"Raster Skyscraper",
-		"Tocol Swamp",
-		"Rimet Dunes",
-		"Thiry Canyon",
-		"Toashisu Cave",
+		"Ptolon Shrine",
 		"Antorai Shipwreck",
+		"Thiry Canyon",
+		"Rimet Dunes",
+		"Toashisu Cave",
+		"Tocol Swamp",
 		"Rukon Jungle",
-        "Ptolon Shrine"
+        "Raster Skyscraper"
 	  ],
 	  "Giga Area": [
 		"Dark City",
 		"Pyramid City",
-		"Deserted Island",
-        "Sky City"
+		"Sky City",
+        "Deserted Island"
 	  ],
 	  "Mega Area": [
+		"Igloo City",
+		"Jungle City",
 		"Junk City",
 		"Beginner City",
-		"Jungle City",
-		"Flame City",
-        "Igloo City"
+        "Flame City"
 	  ],
 	  "Tera Area": [
-		"Sage Tower",
+		"Infinity Tower",
 		"Steep Road",
-        "Infinity Tower"
+        "Sage Tower"
 	  ],
 	  "Digi-Land": [
-		"Tera Area",
+		"Mega Area",
 		"Giga Area",
-        "Mega Area"
+        "Tera Area"
 	  ],
 	  "Digital World": [
-		"Dust Zone",
-		"Green Zone",
-		"Wall of Fire",
-		"Honey Land",
-		"Folder Continent",
-		"Prison Land",
-		"Asuka Server",
-		"Gold Land",
-		"LS-tou Zone",
-		"Byte Island",
-		"Sand Zone",
-		"Infinity Ice Ridge",
-		"Cyber Land",
-		"Rose Morning Star",
-		"Bright Land",
-		"Jupiter Zone",
-		"Infinity Continent",
-		"Disc Zone",
-		"Corridor Zone",
-		"Shinobi Zone",
-		"Wanderer's Cape",
-		"Electromagnetic Stream",
-		"Network Interstice",
-		"File Island",
-		"Gold Zone",
-		"Digital Space",
-		"Forest Zone",
-		"Snow Zone",
-		"Sword Zone",
-		"Server Continent",
-		"Rain Zone",
-		"Vampire Land",
-		"Dragon Land",
-		"Sweets Zone",
-		"Karatuki Numemon Mountain",
-		"Heaven Zone",
-		"Directory Continent",
-		"Net Ocean",
-		"Amaterasu Server",
-		"Island Zone",
-		"Wandering Island",
-		"Demon's Valley",
-		"Magma Zone",
-		"Zone (Xros Wars)",
-		"River Zone",
 		"Holy Capital",
-		"Trash Hole",
-		"WWW Continent",
+		"Amaterasu Server",
+		"Green Zone",
+		"Vampire Land",
+		"Zone (Xros Wars)",
 		"Bagra Pandemonium",
-		"Lake Zone",
-		"Digital Dungeon",
-		"Canyon Land",
-		"Forest of Televisions",
 		"Cloud Continent",
+		"Magma Zone",
+		"Forest of Televisions",
+		"Infinity Continent",
+		"Cyber Land",
+		"Folder Continent",
+		"Demon's Valley",
+		"Network Interstice",
+		"Directory Continent",
+		"River Zone",
+		"WWW Continent",
+		"Subspace",
+		"Disc Zone",
+		"Gold Zone",
+		"Island Zone",
+		"Byte Island",
+		"Wandering Island",
+		"Sword Zone",
+		"File Island",
+		"Heaven Zone",
+		"Digital Dungeon",
 		"Forest of the Gods",
-        "Subspace"
+		"Sweets Zone",
+		"Gold Land",
+		"Rain Zone",
+		"Dragon Land",
+		"LS-tou Zone",
+		"Prison Land",
+		"Canyon Land",
+		"Shinobi Zone",
+		"Sand Zone",
+		"Server Continent",
+		"Corridor Zone",
+		"Electromagnetic Stream",
+		"Digital Space",
+		"Wall of Fire",
+		"Net Ocean",
+		"Wanderer's Cape",
+		"Lake Zone",
+		"Asuka Server",
+		"Rose Morning Star",
+		"Trash Hole",
+		"Karatuki Numemon Mountain",
+		"Bright Land",
+		"Infinity Ice Ridge",
+		"Honey Land",
+		"Snow Zone",
+		"Jupiter Zone",
+		"Forest Zone",
+        "Dust Zone"
 	  ],
 	  "Witchelny": [
-		"Brocken Magical Academy",
 		"Dark Area",
-        "Brocken Mountain"
+		"Brocken Mountain",
+        "Brocken Magical Academy"
 	  ],
 	  "Digital City": [
-		"Digimon Center (デジモンセンター Dejimon Sentā)",
-		"Silver Cross",
-		"Colosseum (コロシアム Koroshiamu, dub: Coliseum)",
-		"Blue Falcon",
 		"Tamer Club",
 		"Black Sword (ブラックソード Burakku Sōdo)",
-		"Colosseum",
-		"Blue Falcon (ブルーファルコン Burū Farukon)",
+		"Black Sword",
 		"Silver Cross (シルバークロス Shirubā Kurosu, dub: Gold Hawk)",
+		"Blue Falcon",
+		"Colosseum",
+		"Colosseum (コロシアム Koroshiamu, dub: Coliseum)",
+		"Blue Falcon (ブルーファルコン Burū Farukon)",
+		"Tamer Club (テイマークラブ Teimā Kurabu, dub: Tamer's Club)",
+		"Main Gate (メインゲート Mein Gēto)",
 		"Digimon Center",
 		"Main Gate",
-		"Main Gate (メインゲート Mein Gēto)",
-		"Black Sword",
-        "Tamer Club (テイマークラブ Teimā Kurabu, dub: Tamer's Club)"
+		"Digimon Center (デジモンセンター Dejimon Sentā)",
+        "Silver Cross"
 	  ],
 	  "Directory Continent": [
-		"Meridin Dome",
-		"Boot Hole",
 		"Bug Bug Hole",
-		"Archive Port",
 		"Dynamo Hole",
-		"Digital City",
-		"Shuttle Port",
-		"Decode Hole",
-		"Old Hole",
-		"Resist Hole",
-		"Serial Hole",
-		"Device Dome",
-		"Buffer Hole",
-		"Proxy Hole",
-		"Packet Hole",
-		"Freeze Hole",
+		"Meridin Dome",
 		"Great Hole",
-		"Ergono Hole",
+		"Archive Port",
+		"Decode Hole",
+		"Buffer Hole",
+		"Serial Hole",
+		"Proxy Hole",
+		"Old Hole",
 		"Spool Hole",
+		"Digital City",
+		"Freeze Hole",
+		"Ergono Hole",
+		"Resist Hole",
+		"Shuttle Port",
+		"Boot Hole",
+		"Packet Hole",
+		"Device Dome",
         "Plotter Hole"
 	  ],
 	  "Ancient Dino Region": [
 		"Speedy Time Zone",
+		"Glacial Time Zone",
 		"Digimon World",
-		"Digimon World: Digital Card Battle",
-        "Glacial Time Zone"
+        "Digimon World: Digital Card Battle"
 	  ],
 	  "Beetle Land": [
-		"Digimon World: Digital Card Battle",
 		"Square (広場 Hiroba)",
-		"Square",
 		"Colosseum",
+		"Digimon World: Digital Card Battle",
+		"Square",
         "Colosseum (コロシアム Koroshiamu)"
 	  ],
 	  "Daion Region": [
@@ -21328,145 +21124,143 @@
         "King's Room"
 	  ],
 	  "Factorial Town": [
-		"Square (ゲート広場 Gēto Hiroba, meaning Gate Square)",
+		"Factory (ファクトリー Fakutorī)",
 		"Sewers",
-		"Square",
+		"Square (ゲート広場 Gēto Hiroba, meaning Gate Square)",
 		"Factory",
-        "Factory (ファクトリー Fakutorī)"
+        "Square"
 	  ],
 	  "File Island": [
-		"Ice Sanctuary",
-		"Boncano Volcano",
-		"Infinity Mountain",
-		"Coela Point",
-		"Register Grassland",
-		"Ogre Fort",
-		"Ancient Dino Region",
-		"Misty Trees",
-		"Mangrove",
-		"Colosseum/DigiTower",
-		"Pyocomon Village",
-		"Leomon's Ancestral Cave",
-		"Dragon's Lake",
-		"Cluster Hole",
-		"Copper Mine of Beginnings (はじまりの銅山 Hajimari no Douzan)",
-		"Green Gym",
 		"Signpost Woods",
+		"Sewers",
+		"Mangrove",
+		"Coela Cape",
+		"SysAd Hole",
+		"Toy Town",
+		"Register Grassland",
+		"Rubbish Heap",
+		"Overdell",
+		"Monkey Mountain (サル山 Saru Yama)",
+		"Binary Castle",
+		"Dragon's Lake",
+		"Colosseum/DigiTower",
+		"Tropica Jungle",
 		"File Island Waterfront",
 		"Unwavering Forest",
-		"Toy Town",
-		"Tropica Jungle",
-		"Dragon Eye Lake",
-		"Giban Castle Outer Walls",
-		"Back Dimension",
-		"MIMD Hole",
-		"Lost Historic Site",
-		"Drill Tunnel",
-		"Speedy Time Zone",
-		"Amida Forest",
-		"GIPS Hole",
-		"Powdery Cliff",
-		"Binary Castle",
-		"Archive Ship",
-		"Giban Castle",
-		"Railroad Plains",
-		"Night Canyon",
-		"Coela Cape",
-		"Comber Volcano Crater",
-		"Lava Cave",
-		"Secret Beach Cave",
-		"Beetle Land",
-		"Dust Kingdom",
-		"Daion Region",
-		"Village of Beginnings",
-		"Fluorescent Cave",
-		"Ogre Fortress",
-		"Factorial Town",
-		"Overdell Cemetery",
-		"Gravel Wasteland",
-		"Silent Forest",
-		"Lott Woods",
-		"Monkey Mountain (サル山 Saru Yama)",
-		"Dark Lord Mansion",
-		"Mangrove Region",
-		"Muro Forest",
-		"Glacial Time Zone",
-		"Lex Hole",
-		"Coolin Desert",
-		"SysAd Hole",
-		"Coupler Hole",
-		"Overdell",
-		"Chip Plains",
-		"Reiku Iceberg",
-		"Sewers",
-		"Digi Bridge",
-		"Outlook Mountain",
-		"Kunemon's Bed",
-		"Noise Hole",
 		"Bias Hole",
-		"Rubbish Heap",
-		"Submerged Ruins",
+		"GIPS Hole",
+		"Dragon Eye Lake",
+		"Cluster Hole",
+		"Back Dimension",
+		"Mangrove Region",
 		"Trash Mountain",
-		"Forest of Beginnings (はじまりの密林 Hajimari no Mitsurin)",
-		"Reverb Hole",
-		"Ancient Bone Swamp",
+		"Lott Woods",
+		"Lava Cave",
+		"Factorial Town",
 		"Tropical Jungle",
-		"Silver Lake",
-		"Great Canyon",
-		"Comber Volcano",
+		"Railroad Plains",
+		"Powdery Cliff",
+		"Comber Volcano Crater",
+		"Dark Lord Mansion",
+		"Freezeland",
+		"Coela Point",
+		"Lex Hole",
+		"Speedy Time Zone",
+		"Chip Plains",
+		"Submerged Ruins",
+		"Ogre Fort",
+		"Ancient Bone Swamp",
+		"Amida Forest",
+		"Ogre Fortress",
+		"Green Gym",
+		"Village of Beginnings",
 		"Furagude Forest",
-		"Orge Fortress",
-		"Dark Mansion",
-		"Gear Savannah",
 		"Underground Waterway Labyrinth",
+		"Muro Forest",
+		"Archive Ship",
+		"Drill Tunnel",
+		"Boncano Volcano",
+		"Coolin Desert",
+		"Gear Savannah",
+		"Reiku Iceberg",
+		"Copper Mine of Beginnings (はじまりの銅山 Hajimari no Douzan)",
+		"Kunemon's Bed",
+		"Orge Fortress",
+		"Silver Lake",
 		"Geko Swamp",
+		"Silent Forest",
+		"Ancient Dino Region",
+		"MIMD Hole",
+		"Secret Beach Cave",
+		"Daion Region",
+		"Fluorescent Cave",
+		"Dust Kingdom",
+		"Lost Historic Site",
+		"Reverb Hole",
 		"Grassland of Beginnings (はじまりの草原 Hajimari no Sougen)",
-        "Freezeland"
+		"Noise Hole",
+		"Forest of Beginnings (はじまりの密林 Hajimari no Mitsurin)",
+		"Giban Castle Outer Walls",
+		"Comber Volcano",
+		"Dark Mansion",
+		"Gravel Wasteland",
+		"Giban Castle",
+		"Outlook Mountain",
+		"Pyocomon Village",
+		"Leomon's Ancestral Cave",
+		"Misty Trees",
+		"Great Canyon",
+		"Beetle Land",
+		"Digi Bridge",
+		"Infinity Mountain",
+		"Night Canyon",
+		"Glacial Time Zone",
+		"Ice Sanctuary",
+		"Coupler Hole",
+        "Overdell Cemetery"
 	  ],
 	  "Freezeland": [
-		"Igloo Village",
-		"Digimon World: Digital Card Battle",
-		"Ice Sanctuary",
-		"Ice Cape",
-		"Kamakura (",
-		"Secret Beach Cave",
 		"Digimon World",
-        ")"
+		"Ice Sanctuary",
+		"Digimon World: Digital Card Battle",
+		"Kamakura ( Igloo Village )",
+		"Secret Beach Cave",
+        "Ice Cape"
 	  ],
 	  "Gear Savannah": [
 		"Digimon World",
 		"Trash Mountain",
-		"Digimon World: Digital Card Battle",
-        "Factorial Town"
+		"Factorial Town",
+        "Digimon World: Digital Card Battle"
 	  ],
 	  "Geko Swamp": [
         "Daion Region"
 	  ],
 	  "Great Canyon": [
-		"Digimon World: Digital Card Battle",
+		"Digimon World",
 		"Invisible Bridge",
 		"Ancient Dino Region",
 		"Gre Bridge",
-		"Upper Area",
+		"Digimon World: Digital Card Battle",
 		"Ogre Fortress",
-        "Digimon World"
+        "Upper Area"
 	  ],
 	  "Misty Trees": [
-		"Toy Town",
-		"Foot of Tree (千年樹の麓 Sennenju no Fumoto, meaning Foot of the Thousand Year Tree)",
 		"Tree Front",
 		"Tree Front (ツリーフロント Tsurī Furonto)",
-        "Foot of Tree"
+		"Foot of Tree",
+		"Foot of Tree (千年樹の麓 Sennenju no Fumoto, meaning Foot of the Thousand Year Tree)",
+        "Toy Town"
 	  ],
 	  "Outlook Mountain": [
 		"Outlook Mountain Spore Area",
 		"Outlook Mountain Road (ミハラシ山道 Miharashi Yamamichi, also Steep Path)",
-		"Outlook Mountain Spore Area (ミハラシ山 ホウシ域 Miharashi Houshi'iki)",
-		"Outlook Mountain Road",
 		"Outlook Platform (ミハラシ台 Miharashi Dai, also Outlook Hill)",
+		"Outlook Mountain Spore Area (ミハラシ山 ホウシ域 Miharashi Houshi'iki)",
+		"Outlook's Foot",
+		"Outlook Mountain Road",
 		"Outlook's Foot (ミハラシすそ野 Miharashi Susono)",
-		"Outlook Platform",
-        "Outlook's Foot"
+        "Outlook Platform"
 	  ],
 	  "Overdell Cemetery": [
         "Dark Lord Mansion"
@@ -21475,170 +21269,179 @@
         "Dust Kingdom"
 	  ],
 	  "Tropical Jungle": [
-		"Naked Beach",
-		"Invisible Bridge",
-		"Invisible Bridge (見えない橋 Mienai Hashi)",
-		"Naked Beach (まるだしビーチ Marudashi Bīchi)",
-		"Amida Forest",
 		"Great Canyon Entrance (グレートキャニオン入り口 Gurēto Kyanion Iriguchi)",
 		"Great Canyon Entrance",
+		"Naked Beach (まるだしビーチ Marudashi Bīchi)",
+		"Invisible Bridge",
+		"Naked Beach",
+		"Invisible Bridge (見えない橋 Mienai Hashi)",
+		"Amida Forest",
         "Mangrove Region"
 	  ],
 	  "Unwavering Forest": [
 		"Village of Beginnings",
-		"Green Gym",
-		"Drill Tunnel",
-		"Kunemon's Bed",
-		"Dragon Eye Lake",
-		"Digi Bridge",
-		"Outlook Mountain",
 		"Beetle Land",
-        "Coela Point"
+		"Kunemon's Bed",
+		"Coela Point",
+		"Digi Bridge",
+		"Green Gym",
+		"Dragon Eye Lake",
+		"Outlook Mountain",
+        "Drill Tunnel"
 	  ],
 	  "Folder Continent": [
 		"Dragon's Valley",
-		"Demon Castle",
-		"Holy Angel Castle",
-		"Codec Ruins",
+		"Metal Factory",
 		"Net Ocean",
-		"Net Surf Village",
-		"Star City",
-		"Hospitown",
-		"Nightmare Castle",
+		"Demon Castle",
 		"Sort Forest",
-        "Metal Factory"
+		"Net Surf Village",
+		"Nightmare Castle",
+		"Codec Ruins",
+		"Hospitown",
+		"Star City",
+        "Holy Angel Castle"
 	  ],
 	  "Forest of the Gods": [
         "Script Forest"
 	  ],
 	  "Kernel Zone": [
+		"Chaos Tower",
 		"Core Tower",
-		"Shuttle Point",
-        "Chaos Tower"
+        "Shuttle Point"
 	  ],
 	  "Network Interstice": [
         "Bug Maze"
 	  ],
 	  "Ulud Terminal": [
 		"Rolan Continent (ローラン大陸)",
-		"Goldia Continent (ゴルディア大陸)",
-        "Lemoore Continent (レムーア大陸)"
+		"Lemoore Continent (レムーア大陸)",
+        "Goldia Continent (ゴルディア大陸)"
 	  ],
 	  "Server Continent": [
-		"Piccolomon's Forest",
-		"Jungle Area",
 		"Vamdemon Castle",
-		"Vademon's Den",
-		"Colosseum",
-		"Tonosama Gekomon's Castle",
 		"Amusement Park",
-		"Koromon Village",
-		"Nanomon's Pyramid",
+		"Piccolomon's Forest",
+		"Colosseum",
+		"Jungle Area",
 		"Gennai's Home",
-		"Luxury Liner",
+		"Nanomon's Pyramid",
+		"Digitamamon's Shop",
 		"Underwater Cave",
-        "Digitamamon's Shop"
+		"Vademon's Den",
+		"Tonosama Gekomon's Castle",
+		"Koromon Village",
+        "Luxury Liner"
 	  ],
 	  "WWW Continent": [
-		"Boot Volcano",
+		"Assembler Tower",
 		"Hang-Up Ruins",
 		"Stack Jungle",
-		"Assembler Tower",
-		"North Bridge Island-(Assuming that it is the sandy reef adjacent to the Island)",
-		"Dynamo Power Plant",
+		"Boot Volcano",
+		"Oasis City",
 		"Crack Wetlands",
-        "Oasis City"
+		"Dynamo Power Plant",
+        "North Bridge Island-(Assuming that it is the sandy reef adjacent to the Island)"
 	  ],
 	  "Gurabo Continent": [
-		"Proxy Island",
-		"Class Desert",
-		"Angler Tunnel",
-		"Thriller Ruins",
 		"Wizard Temple",
 		"Chrome Mine",
-		"Task Canyon",
 		"Gurabo Central",
 		"Risk Factory",
+		"Class Desert",
+		"Thriller Ruins",
+		"Proxy Island",
+		"Angler Tunnel",
+		"Task Canyon",
         "Access Glacier"
 	  ],
 	  "LACUNA": [
-		"[1]",
-		"NPCs",
-        "[5]"
+		"Lapis Marines",
+		"Jewel",
+		"Hatsumōde Forest",
+		"E.G.G",
+		"Amethyst City",
+		"Amber Remains",
+		"Sanctuary",
+		"Obsidian Desert",
+		"Garden",
+		"Emerald Coast",
+		"Avalon",
+        "Ruby Mountain"
 	  ],
 	  "Mazabo Continent": [
-		"Limit Valley",
 		"Label Forest",
-		"Packet Coast",
-		"Magnet Mine",
-		"Register Jungle",
 		"Shadow Hell",
+		"DigiBase",
 		"Heritage Cape",
-		"Palace Laboratory",
-		"Chip Forest",
-		"Pixel Desert",
-		"Login Mountain",
+		"Magnet Mine",
 		"Palette Amazon",
 		"Loop Swamp",
-		"DigiBase",
+		"Pixel Desert",
+		"Limit Valley",
+		"Packet Coast",
+		"Login Mountain",
+		"Register Jungle",
+		"Palace Laboratory",
+		"Chip Forest",
         "Patch Prairie"
 	  ],
 	  "DigiBase": [
-		"DigiBase Front (デジベースフロント)",
+		"Base Port (ベースポート)",
+		"Yggdra Room (イグドラルーム)",
 		"Entrance Room (エントランスルーム)",
 		"Private Room (プライベートルーム)",
-		"Yggdra Room (イグドラルーム)",
-        "Base Port (ベースポート)"
+        "DigiBase Front (デジベースフロント)"
 	  ],
 	  "Infinity Ice Ridge": [
         "Mercurymon's Palace"
 	  ],
 	  "Digital World: Iliad": [
-		"Factorial Area",
 		"Abyss Area",
-		"Gear Forest",
 		"Cosmic Area",
 		"Guardian Palace",
-        "Central Town"
+		"Gear Forest",
+		"Central Town",
+        "Factorial Area"
 	  ],
 	  "Real World": [
+		"Shinjuku Underground Arena",
 		"Kashinoki Bookstore",
-		"Nakano Broadway",
-		"Rebellion Village",
 		"L-Town",
-        "Shinjuku Underground Arena"
+		"Nakano Broadway",
+        "Rebellion Village"
 	  ],
 	  "Surface Web": [
-		"Shooting Island",
+		"Appmon Academy",
+		"Reviewmon Island",
 		"Desert (Appmon)",
 		"Virus Island",
-		"Timemon Island",
-		"Appmon Academy",
-        "Reviewmon Island"
+		"Shooting Island",
+        "Timemon Island"
 	  ],
 	  "AR-Field": [
-		"Desert",
-		"Sakusimon's AR-Field (Manga)",
-		"Beauty Palace (Anime)",
-		"Medicmon's AR-Field (Manga)",
-		"Nakano Broadstreet's AR-Field (Anime)",
-		"Beauty Palace",
 		"Bi Royal Palace (Anime)",
-		"Scorpmon's AR-Field (Manga)",
-		"Bi Royal Palace",
-		"Chaos AR-Field (Game)",
+		"Weatherdramon's AR-Field (Manga)",
 		"Calendar World (Anime)",
 		"Gomimon's AR-Field (Manga)",
-		"Weathermon's AR-Field (Manga)",
-		"Chaos AR-Field",
-		"Sham Mansion",
-		"Cyber Arena",
-		"Weatherdramon's AR-Field (Manga)",
-		"Calendar World",
-		"Charisma Castle (Anime)",
-		"Charisma Castle",
-		"Appmon Cemetery",
 		"Appmon Cemetery (Anime)",
+		"Appmon Cemetery",
+		"Charisma Castle",
+		"Bi Royal Palace",
+		"Desert",
+		"Sham Mansion",
+		"Calendar World",
+		"Beauty Palace (Anime)",
+		"Nakano Broadstreet's AR-Field (Anime)",
+		"Cyber Arena",
+		"Sakusimon's AR-Field (Manga)",
+		"Charisma Castle (Anime)",
+		"Scorpmon's AR-Field (Manga)",
+		"Beauty Palace",
+		"Chaos AR-Field (Game)",
+		"Medicmon's AR-Field (Manga)",
+		"Chaos AR-Field",
+		"Weathermon's AR-Field (Manga)",
         "Sham Mansion (Anime)"
 	  ],
 	  "Deep Web": [
@@ -21652,60 +21455,60 @@
 	  ],
 	  "Infinity Mountain (Digimon World: Digital Card Battle)": [
 		"Top (マウンテン頂上 Maunten Chōjō, meaning Mountain Summit)",
-		"2F (マウンテン２F Maunten Nifuroa, meaning Mountain 2nd Floor)",
 		"Gate (マウンテン入口 Maunten Iriguchi, meaning Mountain Entrance)",
+		"2F (マウンテン２F Maunten Nifuroa, meaning Mountain 2nd Floor)",
         "1F (マウンテン１F Maunten Ichifuroa, meaning Mountain 1st Floor)"
 	  ],
 	  "Colosseum/DigiTower (Digimon World Re:Digitize)": [
-		"Passageway (通路 Tsūro)",
 		"10th Floor Lobby (10Fロビー Juffuroa Robī)",
-		"1st Floor Lobby (1Fロビー Ichifuroa Robī)",
 		"40th Floor Lobby (40Fロビー Yonjuffuroa Robī)",
 		"Control Room (管制室 Kanseishitsu)",
+		"1st Floor Lobby (1Fロビー Ichifuroa Robī)",
+		"Passageway (通路 Tsūro)",
 		"20th Floor Lobby (20Fロビー Nijuffuroa Robī)",
         "30th Floor Lobby (30Fロビー Sanjuffuroa Robī)"
 	  ],
 	  "Infinity Mountain (Digimon Adventure)": [
-		"Cottage (コテージ Kotēji)",
-        "Devimon's Castle (デビモンの城 Debimon no Shiro)"
+		"Devimon's Castle (デビモンの城 Debimon no Shiro)",
+        "Cottage (コテージ Kotēji)"
 	  ],
 	  "Bloody Castle": [
         "Castle's Labyrinth (迷宮城 Meikyūjō)"
 	  ],
 	  "Dark Forest": [
-		"World of Insects (虫たちの世界 Mushi-tachi no Sekai)",
-        "Under Forest (ｱﾝﾀﾞｰﾌｫﾚｽﾄ Andā Foresuto)"
+		"Under Forest (ｱﾝﾀﾞｰﾌｫﾚｽﾄ Andā Foresuto)",
+        "World of Insects (虫たちの世界 Mushi-tachi no Sekai)"
 	  ],
 	  "Fujimizaka": [
-		"L Mart",
 		"Fujimizaka Shrine",
-		"Nakamura-Fujimizaka",
-		"Kashinoki Books",
-		"L Burger",
-		"Haru's Home",
 		"Secret Base",
-		"Tokyo High Tower",
+		"Kashinoki Books",
+		"Nakamura-Fujimizaka",
+		"Kitchen Fujimi",
+		"L Mart",
 		"Success Academy",
-		"Fujimizaka Middle School",
 		"Yanagi Pizza",
-        "Kitchen Fujimi"
+		"Fujimizaka Middle School",
+		"Tokyo High Tower",
+		"Haru's Home",
+        "L Burger"
 	  ],
 	  "Central Sector (Amaterasu Server)": [
+		"Wire Forest Entrance",
 		"Amaterasu Bridge",
 		"Amaterasu City",
-		"Shell Beach",
 		"Plug Cape",
-		"Wire Forest Entrance",
-        "Central Park"
+		"Central Park",
+        "Shell Beach"
 	  ],
 	  "East Sector (Amaterasu Server)": [
-		"Kicking Forest",
+		"Tyrano Valley",
+		"Hangyomon's Pond",
+		"Protocol Forest",
 		"East Station",
 		"Deeper Crack",
-		"Protocol Forest",
-		"Hangyomon's Pond",
+		"Kicking Forest",
 		"Wind Prairie",
-		"Tyrano Valley",
 		"Qinglong City",
         "Wire Forest"
 	  ],
@@ -21716,93 +21519,93 @@
         "Card Island"
 	  ],
 	  "North Sector (Amaterasu Server)": [
-		"Freeze Mountain",
-		"Xuanwu City",
 		"Chrome Mine",
-		"Boot Mountain",
+		"Freeze Mountain",
+		"Chrome Pit",
+		"Xuanwu City",
+		"Snow Mountain",
 		"Battle Gate",
 		"Legendary Gym",
-		"Snow Mountain",
-		"Lake of Ice",
-        "Chrome Pit"
+		"Boot Mountain",
+        "Lake of Ice"
 	  ],
 	  "Chrome Pit": [
-		"Chrome Blacksmith (クロンのかじや Kuron no Kajiya, dub: Kulon Weapons)",
-		"Ice Dungeon",
+		"Ice Dungeon (アイス・ダンジョン Aisu Danjon)",
 		"Dark Dungeon",
 		"Fire Dungeon (ファイア・ダンジョン Faia Danjon)",
-		"Chamber Room (チェンバー・ルーム Chenbaa Ruumu)",
-		"Ice Dungeon (アイス・ダンジョン Aisu Danjon)",
+		"Ice Dungeon",
 		"Dark Dungeon (ダーク・ダンジョン Daaku Danjon)",
+		"Chrome Blacksmith (クロンのかじや Kuron no Kajiya, dub: Kulon Weapons)",
+		"Chamber Room (チェンバー・ルーム Chenbaa Ruumu)",
         "Fire Dungeon"
 	  ],
 	  "Qinglong City": [
-		"Qinglong Tower (チンロン・タワー Chinron Tawā)",
+		"Zephyr Tower (そよかぜタワー Soyokaze Tawā)",
 		"Gale Tower (しっぷうタワー Shippū Tawā)",
-        "Zephyr Tower (そよかぜタワー Soyokaze Tawā)"
+        "Qinglong Tower (チンロン・タワー Chinron Tawā)"
 	  ],
 	  "South Sector (Amaterasu Server)": [
-		"Bios Swamp",
-		"Tranquil Swamp",
 		"Jungle Boneyard",
-		"Zhuque City",
-		"Jungle Shrine",
 		"Phoenix Cove",
-		"Ether Jungle",
-		"South Cape",
+		"Bios Swamp",
+		"Jungle Shrine",
+		"Tranquil Swamp",
+		"South Station",
 		"Bulk Swamp",
-        "South Station"
+		"Ether Jungle",
+		"Zhuque City",
+        "South Cape"
 	  ],
 	  "Bulk Swamp": [
         "Bulk Bridge"
 	  ],
 	  "Zhuque City": [
-		"Zhuque Hall (スーツェイ・ホール Sūtsei Hōru)",
+		"Zhuque Hotel (スーツェイ・ホテル Sūtsei Hoteru, dub: Zhuque Inn)",
 		"Zhuque Underground Lake",
-        "Zhuque Hotel (スーツェイ・ホテル Sūtsei Hoteru, dub: Zhuque Inn)"
+        "Zhuque Hall (スーツェイ・ホール Sūtsei Hōru)"
 	  ],
 	  "Jungle Shrine": [
         "Catacomb"
 	  ],
 	  "West Sector (Amaterasu Server)": [
-		"Northerly Wasteland West",
-		"Southerly Wasteland",
-		"Bullet Valley",
-		"Northerly Wasteland East",
 		"Baihu City",
+		"Noise Desert",
 		"Peltier Oasis",
-		"Infinity Desert",
 		"Dum Dum Factory",
-        "Noise Desert"
+		"Infinity Desert",
+		"Bullet Valley",
+		"Northerly Wasteland West",
+		"Northerly Wasteland East",
+        "Southerly Wasteland"
 	  ],
 	  "Infinity Desert": [
         "Mirage Tower"
 	  ],
 	  "Wire Forest (Amaterasu Server)": [
+		"Wire Forest West (ワイヤのもり・にし Waiya no Mori - Nishi, dub: West Wire Forest)",
 		"Wire Forest East (ワイヤのもり・ひがし Waiya no Mori - Higashi, dub: East Wire Forest)",
-		"Forest Hotel (もりのホテル Mori no Hoteru, dub: Forest Inn)",
-        "Wire Forest West (ワイヤのもり・にし Waiya no Mori - Nishi, dub: West Wire Forest)"
+        "Forest Hotel (もりのホテル Mori no Hoteru, dub: Forest Inn)"
 	  ],
 	  "Asuka City": [
-		"Cargo Tower (カーゴ・タワー Kāgo Tawā)",
-		"Asuka Underground Waterways (アスカのちかすいろ Asuka no Chika Suiro, dub: Asuka Sewers)",
-		"Lamb Chop (ラム・チョップ Ramu Choppu)",
-		"Asuka Hotel (アスカ・ホテル Asuka Hoteru, dub: Asuka Inn)",
-		"Underground Passage (ちかつうろ Chika Tsūro, dub: Underground Path)",
 		"Underwater Tunnel (すいちゅうトンネル Suichū Tonneru, dub: Water Tunnel)",
+		"Cargo Tower (カーゴ・タワー Kāgo Tawā)",
+		"Prison Tower (プリズン・タワー Purizun Tawā)",
+		"Lamb Chop (ラム・チョップ Ramu Choppu)",
+		"Asuka Underground Waterways (アスカのちかすいろ Asuka no Chika Suiro, dub: Asuka Sewers)",
+		"Admin Center (かんりセンター Kanri Sentā)",
+		"Underground Passage (ちかつうろ Chika Tsūro, dub: Underground Path)",
+		"El Dorado (エル・ドラド Eru Dorado)",
 		"Smith's Shop (スミスのみせ Sumisu no Mise)",
 		"Yellow Cruiser (イエロー・クルーザー Ierō Kurūzā)",
-		"El Dorado (エル・ドラド Eru Dorado)",
-		"Admin Center (かんりセンター Kanri Sentā)",
-        "Prison Tower (プリズン・タワー Purizun Tawā)"
+        "Asuka Hotel (アスカ・ホテル Asuka Hoteru, dub: Asuka Inn)"
 	  ],
 	  "Admin Center (かんりセンター Kanri Sentā)": [
-		"A.o.A. Control Room (A.o.A.しれいしつ A.o.A. Shireishitsu, dub: A.o.A. Headquarters)",
-		"Login Room (ログイン・ルーム Roguin Rūmu)",
 		"Digimon Lab (デジモン・ラボ Dejimon Rabo)",
 		"Main Lobby (メイン・ロビー Mein Robī)",
+		"Login Room (ログイン・ルーム Roguin Rūmu)",
 		"Master Room (マスター・ルーム Masutā Rūmu)",
 		"Stairs to Basement (ちかへのかいだん Chika e no Kaidan, dub: Basement Stairs)",
+		"A.o.A. Control Room (A.o.A.しれいしつ A.o.A. Shireishitsu, dub: A.o.A. Headquarters)",
         "Arena Reception (アリーナのうけつけ Arīna no Uketsuke, dub: )"
 	  ],
 	  "Asuka Underground Waterways (アスカのちかすいろ Asuka no Chika Suiro, dub: Asuka Sewers)": [
@@ -21820,32 +21623,32 @@
         "Byakko Dome (ビャッコ・ドーム Byakko Dōmu)"
 	  ],
 	  "Central Sector (Asuka Server)": [
-		"Asuka Bridge",
+		"Wire Forest Entrance",
+		"Plug Cape",
+		"Central Park",
 		"Asuka City",
 		"Shell Beach",
-		"Plug Cape",
-		"Wire Forest Entrance",
-        "Central Park"
+        "Asuka Bridge"
 	  ],
 	  "Dum Dum Factory": [
-		"Sewers (げすいどう Gesuidou)",
-		"Duct Room 01 (ダクト・ルーム01 Dakuto Rūmu 01)",
 		"Operation Room (オペレーション・ルーム Operēshon Rūmu, dub: Operations Room)",
-		"Duct Room 03 (ダクト・ルーム03 Dakuto Rūmu 03)",
-		"Duct Room 04 (ダクト・ルーム04 Dakuto Rūmu 04)",
-		"Duct Room 02 (ダクト・ルーム02 Dakuto Rūmu 02)",
+		"Duct Room 01 (ダクト・ルーム01 Dakuto Rūmu 01)",
 		"Secret Stairs (ヒミツのかいだん Himitsu no Kaidan)",
-        "Secret Room (ヒミツのへや Himitsu no Heya)"
+		"Sewers (げすいどう Gesuidou)",
+		"Duct Room 03 (ダクト・ルーム03 Dakuto Rūmu 03)",
+		"Secret Room (ヒミツのへや Himitsu no Heya)",
+		"Duct Room 04 (ダクト・ルーム04 Dakuto Rūmu 04)",
+        "Duct Room 02 (ダクト・ルーム02 Dakuto Rūmu 02)"
 	  ],
 	  "East Sector (Asuka Server)": [
-		"Kicking Forest",
 		"Seiryu City",
+		"Tyrano Valley",
+		"Hangyomon's Pond",
+		"Protocol Forest",
 		"East Station",
 		"Deeper Crack",
-		"Protocol Forest",
-		"Hangyomon's Pond",
+		"Kicking Forest",
 		"Wind Prairie",
-		"Tyrano Valley",
         "Wire Forest"
 	  ],
 	  "Mirage Tower": [
@@ -21856,60 +21659,60 @@
         "Noise Desert South (ノイズのさばく・みなみ Noizu no Sabaku - Minami, dub: S Noise Desert)"
 	  ],
 	  "North Sector (Asuka Server)": [
-		"Freeze Mountain",
 		"Chrome Mine",
-		"Boot Mountain",
-		"Battle Gate",
-		"Legendary Gym",
+		"Freeze Mountain",
+		"Chrome Pit",
 		"Genbu City",
 		"Snow Mountain",
-		"Lake of Ice",
-        "Chrome Pit"
+		"Battle Gate",
+		"Legendary Gym",
+		"Boot Mountain",
+        "Lake of Ice"
 	  ],
 	  "Seiryu City": [
 		"Zephyr Tower (そよかぜタワー Soyokaze Tawā)",
-		"Seiryu Tower (せいりゅうタワー Seiryū Tawā)",
-        "Gale Tower (しっぷうタワー Shippū Tawā)"
+		"Gale Tower (しっぷうタワー Shippū Tawā)",
+        "Seiryu Tower (せいりゅうタワー Seiryū Tawā)"
 	  ],
 	  "Snow Mountain": [
         "Mountain Hotel (やまのホテル Yama no Hoteru, dub: Mountain Inn)"
 	  ],
 	  "South Sector (Asuka Server)": [
-		"Suzaku City",
-		"Bios Swamp",
-		"Tranquil Swamp",
 		"Jungle Boneyard",
-		"Jungle Shrine",
 		"Phoenix Cove",
-		"Ether Jungle",
-		"South Cape",
+		"Bios Swamp",
+		"Suzaku City",
+		"Jungle Shrine",
+		"Tranquil Swamp",
+		"South Station",
 		"Bulk Swamp",
-        "South Station"
+		"Ether Jungle",
+        "South Cape"
 	  ],
 	  "Suzaku City": [
-		"Suzaku Hall (スザク・ホール Suzaku Hōru)",
 		"Suzaku Underground Lake",
+		"Suzaku Hall (スザク・ホール Suzaku Hōru)",
         "Suzaku Hotel (スザク・ホテル Suzaku Hoteru, dub: Suzaku Inn)"
 	  ],
 	  "Tranquil Swamp": [
-		"Shaman House (シャーマン・ハウス Shāman Hausu)",
-        "Swamp Hotel (ぬまのホテル Numa no Hoteru, dub: Swamp Inn)"
+		"Swamp Hotel (ぬまのホテル Numa no Hoteru, dub: Swamp Inn)",
+        "Shaman House (シャーマン・ハウス Shāman Hausu)"
 	  ],
 	  "West Sector (Asuka Server)": [
-		"Northerly Wasteland West",
-		"Southerly Wasteland",
-		"Bullet Valley",
-		"Northerly Wasteland East",
-		"Peltier Oasis",
-		"Infinity Desert",
-		"Dum Dum Factory",
 		"Noise Desert",
-        "Byakko City"
+		"Peltier Oasis",
+		"Byakko City",
+		"Dum Dum Factory",
+		"Infinity Desert",
+		"Bullet Valley",
+		"Northerly Wasteland West",
+		"Northerly Wasteland East",
+        "Southerly Wasteland"
 	  ],
 	  "Wire Forest": [
+		"Wire Forest West (ワイヤのもり・にし Waiya no Mori - Nishi, dub: West Wire Forest)",
 		"Wire Forest East (ワイヤのもり・ひがし Waiya no Mori - Higashi, dub: East Wire Forest)",
-		"Forest Hotel (もりのホテル Mori no Hoteru, dub: Forest Inn)",
-        "Wire Forest West (ワイヤのもり・にし Waiya no Mori - Nishi, dub: West Wire Forest)"
+        "Forest Hotel (もりのホテル Mori no Hoteru, dub: Forest Inn)"
 	  ],
 	  "Ptolon Shrine": [
         "Ptolon Underground Shrine"
@@ -21924,16 +21727,16 @@
         "Battle Cafe (バトルカフェ Batoru Kafe)"
 	  ],
 	  "Pyramid City": [
-		"Fusion Shop (ごうせいショップ Gousei Shoppu)",
-		"Extra Arena",
 		"Battle Arena (バトルアリーナ Batoru Arīna)",
-        "Battle Cafe (バトルカフェ Batoru Kafe)"
+		"Fusion Shop (ごうせいショップ Gousei Shoppu)",
+		"Battle Cafe (バトルカフェ Batoru Kafe)",
+        "Extra Arena"
 	  ],
 	  "Sky City": [
 		"Player's Room (プレイヤーズルーム Pureiyāzu Rūmu)",
-		"Extra Arena",
 		"Battle Arena (バトルアリーナ Batoru Arīna)",
-        "Battle Cafe (バトルカフェ Batoru Kafe)"
+		"Battle Cafe (バトルカフェ Batoru Kafe)",
+        "Extra Arena"
 	  ],
 	  "Beginner City": [
 		"Player's Room (プレイヤーズルーム Pureiyāzu Rūmu)",
@@ -21941,21 +21744,21 @@
         "Battle Cafe (バトルカフェ Batoru Kafe)"
 	  ],
 	  "Flame City": [
-		"Fusion Shop (ごうせいショップ Gousei Shoppu)",
-		"Extra Arena",
 		"Battle Arena (バトルアリーナ Batoru Arīna)",
-        "Battle Cafe (バトルカフェ Batoru Kafe)"
+		"Fusion Shop (ごうせいショップ Gousei Shoppu)",
+		"Battle Cafe (バトルカフェ Batoru Kafe)",
+        "Extra Arena"
 	  ],
 	  "Igloo City": [
-		"Extra Arena",
 		"Battle Arena (バトルアリーナ Batoru Arīna)",
-        "Battle Cafe (バトルカフェ Batoru Kafe)"
+		"Battle Cafe (バトルカフェ Batoru Kafe)",
+        "Extra Arena"
 	  ],
 	  "Jungle City": [
-		"Beet Arena (ビートアリーナ Bīto Arīna)",
 		"Extra Arena",
 		"Battle Arena (バトルアリーナ Batoru Arīna)",
-        "Battle Cafe (バトルカフェ Batoru Kafe)"
+		"Battle Cafe (バトルカフェ Batoru Kafe)",
+        "Beet Arena (ビートアリーナ Bīto Arīna)"
 	  ],
 	  "Junk City": [
 		"Battle Arena (バトルアリ－ナ Batoru Arīna)",
@@ -21976,109 +21779,109 @@
         "Battle Cafe (バトルカフェ Batoru Kafe)"
 	  ],
 	  "Ancient Bone Swamp": [
-		"Canyon (峡谷 Kyoukoku)",
 		"Dinosaur's Ribcage (竜の肋骨 Ryū no Rokkotsu)",
-		"Dinosaur's Stomach (竜の胃袋 Ryū no Ibukuro)",
-		"Waterway (水路 Suiro)",
+		"Woods (森 Mori)",
 		"Center of Swamp (沼の中心 Numa no Chūshin)",
-        "Woods (森 Mori)"
+		"Dinosaur's Stomach (竜の胃袋 Ryū no Ibukuro)",
+		"Canyon (峡谷 Kyoukoku)",
+        "Waterway (水路 Suiro)"
 	  ],
 	  "Digimon World": [
 		"Upper Area (アッパーエリア Appā Eria)",
-		"Factorial Town",
 		"Trash Mountain",
-		"Ancient Dino Region",
-		"Speedy Time Zone",
+		"Glacial Time Zone",
 		"Ice Sanctuary",
-		"Secret Beach Cave",
-		"Invisible Bridge (見えない橋 Mienai Hashi)",
-		"Gre Bridge (グレ大橋 Gure Ōhashi)",
-		"Ogre Fortress",
-		"Monochro Shop (モノクロ店 Monokuro Mise)",
+		"Factorial Town",
 		"Ice Cape (流氷岬 Ryūhyou Misaki)",
-        "Glacial Time Zone"
+		"Ancient Dino Region",
+		"Monochro Shop (モノクロ店 Monokuro Mise)",
+		"Invisible Bridge (見えない橋 Mienai Hashi)",
+		"Secret Beach Cave",
+		"Ogre Fortress",
+		"Speedy Time Zone",
+        "Gre Bridge (グレ大橋 Gure Ōhashi)"
 	  ],
 	  "Digimon World: Digital Card Battle": [
-		"Bone Tunnel (骨トンネル Hone Tonneru)",
-		"Kamakura (かまくらビレッヂ Kamakura Birezzhi, meaning Igloo Village)",
-		"Ogre Fort",
-		"Yattarude (やったるでー協会 Yattarudē Kyoukai, meaning Yattarude Association)",
-		"Casino (火事野 Kajino)",
-		"Card Shop (緑カードショップ Midori Kādo Shoppu, meaning Green Card Shop)",
-		"Ice Cape (流氷岬付近 Ryūhyou Misaki Fukin, meaning Ice Cape Vicinity)",
-		"Card Shop (黒カードショップ Kuro Kādo Shoppu, meaning Black Card Shop)",
 		"Entrance (古代境入口 Kodaikyou Iriguchi, meaning Ancient Region Entrance)",
+		"Yattarude (やったるでー協会 Yattarudē Kyoukai, meaning Yattarude Association)",
+		"Kamakura (かまくらビレッヂ Kamakura Birezzhi, meaning Igloo Village)",
 		"Woods (林野 Rinya, meaning Forestry)",
-        "Card Shop (赤カードショップ Aka Kādo Shoppu, meaning Red Card Shop)"
+		"Card Shop (黒カードショップ Kuro Kādo Shoppu, meaning Black Card Shop)",
+		"Ice Cape (流氷岬付近 Ryūhyou Misaki Fukin, meaning Ice Cape Vicinity)",
+		"Card Shop (赤カードショップ Aka Kādo Shoppu, meaning Red Card Shop)",
+		"Ogre Fort",
+		"Card Shop (緑カードショップ Midori Kādo Shoppu, meaning Green Card Shop)",
+		"Bone Tunnel (骨トンネル Hone Tonneru)",
+        "Casino (火事野 Kajino)"
 	  ],
 	  "Binary Castle": [
-		"PHASE1",
-		"PHASE2",
+		"PHASE4",
 		"PHASE3",
-        "PHASE4"
+		"PHASE1",
+        "PHASE2"
 	  ],
 	  "Boncano Volcano": [
-		"North Cave (北洞窟 Kita Doukutsu)",
+		"South Cave (南洞窟 Minami Doukutsu)",
 		"Furnace No.1 (1号炉 Ichigou Ro)",
-		"Furnace No.2 (2号炉 Nigou Ro)",
-        "South Cave (南洞窟 Minami Doukutsu)"
+		"North Cave (北洞窟 Kita Doukutsu)",
+        "Furnace No.2 (2号炉 Nigou Ro)"
 	  ],
 	  "Comber Volcano": [
         "Comber Volcano Crater"
 	  ],
 	  "Drill Tunnel": [
+		"Leomon's Ancestral Cave",
 		"Lava Cave",
+		"Residence Ward (居住区 Kyojūku)",
 		"B2 (地下二階 Chika Nikai)",
-		"B1 (地下一階 Chika Ikkai)",
 		"Master Bar",
 		"Underground Lake (地底湖 Chiteiko, also Bottom Lake)",
-		"Residence Ward (居住区 Kyojūku)",
-        "Leomon's Ancestral Cave"
+        "B1 (地下一階 Chika Ikkai)"
 	  ],
 	  "Fluorescent Cave": [
-		"Grassland (草原 Sougen)",
 		"Mansion (館 Yakata)",
-		"Continued Path to Interior (奥へ続く道 Oku e Tsuzuku Michi)",
-		"Central Tri-color (中央三色 Chūou Sanshoku)",
-		"Desert (砂漠 Sabaku)",
 		"Blue Moss (青苔 Aokoke)",
-        "Yellow Moss (黄苔 Kīkoke)"
+		"Desert (砂漠 Sabaku)",
+		"Yellow Moss (黄苔 Kīkoke)",
+		"Central Tri-color (中央三色 Chūou Sanshoku)",
+		"Continued Path to Interior (奥へ続く道 Oku e Tsuzuku Michi)",
+        "Grassland (草原 Sougen)"
 	  ],
 	  "Giban Castle": [
         "Giban Castle Outer Walls"
 	  ],
 	  "Gravel Wasteland": [
-		"Northeast (北東 Hokutou)",
-		"Northwest (北西 Hokusei)",
+		"Southwest (南西 Nansei)",
 		"Southeast (南東 Nantou)",
-		"Center of Desert (砂漠の中央 Sabaku no Chūou)",
-        "Southwest (南西 Nansei)"
+		"Northwest (北西 Hokusei)",
+		"Northeast (北東 Hokutou)",
+        "Center of Desert (砂漠の中央 Sabaku no Chūou)"
 	  ],
 	  "Night Canyon": [
 		"Snowy Mountains (雪山 Yukiyama)",
-		"Swamp (沼 Numa)",
-		"Mountainside (中腹 Chūfuku)",
 		"Drill Tunnel (ドリルトンネル Doriru Tonneru)",
 		"Garbage Dump (ゴミ捨て場 Gomi Suteba)",
+		"Swamp (沼 Numa)",
+		"Mountainside (中腹 Chūfuku)",
         "South (南 Minami)"
 	  ],
 	  "Powdery Cliff": [
-		"Crevasse (クレバス Kurebasu)",
 		"Canyon (峡谷 Kyoukoku)",
-		"Frozen (氷結 Hyouketsu)",
-        "Crystal Passage (結晶通路 Kesshou Tsūro)"
+		"Crevasse (クレバス Kurebasu)",
+		"Crystal Passage (結晶通路 Kesshou Tsūro)",
+        "Frozen (氷結 Hyouketsu)"
 	  ],
 	  "Railroad Plains": [
-		"Station (駅 Eki)",
-		"Coast (海岸 Kaigan)",
 		"Prairie (大草原 Daisougen)",
-		"Cave (洞窟 Doukutsu)",
-        "Around Town (街周辺 Machi Shūhen)"
+		"Station (駅 Eki)",
+		"Around Town (街周辺 Machi Shūhen)",
+		"Coast (海岸 Kaigan)",
+        "Cave (洞窟 Doukutsu)"
 	  ],
 	  "Signpost Woods": [
-		"Outskirts (街はずれ Machi Hazure)",
 		"Center of Woods (森の中心 Mori no Chūshin)",
 		"Marshland (沼地 Numachi)",
+		"Outskirts (街はずれ Machi Hazure)",
         "Coast (海岸 Kaigan)"
 	  ],
 	  "Speedy Time Zone": [
@@ -22086,16 +21889,16 @@
 	  ],
 	  "Submerged Ruins": [
 		"Rock Wall (岩壁 Ganpeki)",
-		"Center of Waves (波間の中央 Namima no Chūou)",
 		"Steppe (草原 Sougen)",
+		"Center of Waves (波間の中央 Namima no Chūou)",
         "Woods (森 Mori)"
 	  ],
 	  "Underground Waterway Labyrinth": [
-		"Center-West (中央西 Chūou Nishi)",
-		"Swamp (沼 Numa)",
 		"Center (中央 Chūou)",
 		"Woods (森 Mori)",
-        "East (東 Higashi)"
+		"East (東 Higashi)",
+		"Swamp (沼 Numa)",
+        "Center-West (中央西 Chūou Nishi)"
 	  ],
 	  "Bug Maze": [
         "Bug Maze Bottom (バグメイズ・ボトム Bagu Meizu - Botomu, dub: Bug Maze Pit)"
@@ -22105,65 +21908,65 @@
         "Freezeway (フリーズウェイ Frīzuwei)"
 	  ],
 	  "Frost Cathedral (フロストカテドラル Furosuto Katedoraru)": [
-		"Freezing Distributor (凍結分配機 Tōketsu Bunpaiki)",
+		"Frozen Corridor (氷結回廊 Hyōketsu Kairō)",
 		"Freezing Path (凍結路 Tōketsurō)",
 		"Frozen Path Temple (氷結路神殿 Hyōketsuji Shinden)",
-		"Frozen Corridor (氷結回廊 Hyōketsu Kairō)",
 		"Permafrost Wall (永久凍壁 Eikyū Tōheki)",
-        "Ice Statue Chamber (氷像の間 Hyōzō no Ma)"
+		"Ice Statue Chamber (氷像の間 Hyōzō no Ma)",
+        "Freezing Distributor (凍結分配機 Tōketsu Bunpaiki)"
 	  ],
 	  "Chikaino Grasslands": [
-		"Forest Path (森の小道 Mori no Komichi)",
 		"Ruins Lake (跡地湖 Atochi Mizūmi)",
-		"First Power Plant (第一発電所 Dai'ichi Hatsudenjo)",
-		"Cave Entrance (洞窟入り口 Dōkutsu Iriguchi)",
-		"Great Plains (大平原 Taiheigen)",
 		"Second Power Plant (第二発電所 Dai'ni Hatsudenjo)",
-        "Old Cableway (旧ケーブル路 Kyū Kēburu Ji)"
+		"Forest Path (森の小道 Mori no Komichi)",
+		"Cave Entrance (洞窟入り口 Dōkutsu Iriguchi)",
+		"Old Cableway (旧ケーブル路 Kyū Kēburu Ji)",
+		"Great Plains (大平原 Taiheigen)",
+        "First Power Plant (第一発電所 Dai'ichi Hatsudenjo)"
 	  ],
 	  "Floatia": [
 		"Different Dimension District (異次元区 Ijigenku)",
-		"Agricultural District (農業区 Nōgyōku)",
-		"Commercial District (商業区 Shōgyōku)",
-		"Research District (研究区 Kenkyūku)",
+		"Central District (中央区 Chūōku)",
 		"Entertainment District (娯楽区 Gorakuku)",
-        "Central District (中央区 Chūōku)"
+		"Research District (研究区 Kenkyūku)",
+		"Agricultural District (農業区 Nōgyōku)",
+        "Commercial District (商業区 Shōgyōku)"
 	  ],
 	  "Central District (中央区 Chūōku)": [
-		"Jijimon's House (ジジモンの家 Jijimon no Ie)",
+		"Item Bank (預かり屋 Azukariya)",
 		"Transport Shop (転送屋 Tensōya)",
-		"Construction Shop (建築屋 Kenchikuya)",
-        "Item Bank (預かり屋 Azukariya)"
+		"Jijimon's House (ジジモンの家 Jijimon no Ie)",
+        "Construction Shop (建築屋 Kenchikuya)"
 	  ],
 	  "Commercial District (商業区 Shōgyōku)": [
-		"Clinic (医院 I'in)",
 		"Luxury Item Shop (高級アイテム屋 Kōkyū Aitemu Ya)",
-		"Item Shop (アイテム屋 Aitemu Ya)",
+		"Clinic (医院 I'in)",
 		"Restaurant (レストラン Resutoran)",
+		"Item Shop (アイテム屋 Aitemu Ya)",
         "Market Trader (相場屋 Sōbaya)"
 	  ],
 	  "Agricultural District (農業区 Nōgyōku)": [
         "Farm (畑 Hatake)"
 	  ],
 	  "Research District (研究区 Kenkyūku)": [
-		"Research Institute (研究所 Kenkyūjō)",
+		"Training Place (トレーニング場 Torēningu Ba)",
 		"Evolution Dojo (進化道場 Shinka Dōjō)",
-        "Training Place (トレーニング場 Torēningu Ba)"
+        "Research Institute (研究所 Kenkyūjō)"
 	  ],
 	  "Entertainment District (娯楽区 Gorakuku)": [
-		"Treasure House (宝探し屋 Takarasagashiya)",
 		"Museum (ミュージアム Myūjiamu)",
-		"Colosseum (コロシアム Koroshiamu)",
-        "Amusement Center (遊技場 Yūgijō)"
+		"Treasure House (宝探し屋 Takarasagashiya)",
+		"Amusement Center (遊技場 Yūgijō)",
+        "Colosseum (コロシアム Koroshiamu)"
 	  ],
 	  "Different Dimension District (異次元区 Ijigenku)": [
         "Time-Space Transfer Device (時空転移装置 Jikūten'i Sōchi)"
 	  ],
 	  "Gluttony Wasteland": [
+		"Guts Wasteland (ガッツ荒野 Gattsu Kōya)",
 		"Castle of Thorns (いばらの城 Ibara no Shiro)",
 		"Dritunnel Hub 1 (ドリトンネルたまり1 Doritonneru Tamari 1)",
-		"Dritunnel Hub 2 (ドリトンネルたまり1 Doritonneru Tamari 2)",
-        "Guts Wasteland (ガッツ荒野 Gattsu Kōya)"
+        "Dritunnel Hub 2 (ドリトンネルたまり1 Doritonneru Tamari 2)"
 	  ],
 	  "Guts Wasteland (ガッツ荒野 Gattsu Kōya)": [
         "Secret Base (ひみつ基地 Himitsu Kichi)"
@@ -22176,15 +21979,15 @@
         "Rosemon's Room (ロゼモンの部屋 Rozemon no Heya)"
 	  ],
 	  "Great Fault Ex Machina": [
-		"Boulder Island (岩島 Iwashima)",
 		"Sewer (下水路 Gesuirō)",
-		"Green Space Island (緑地島 Ryokuchishima)",
-		"East Coast (東岸 Tōgan)",
-		"Branching Island (分岐島 Bunkishima)",
-		"Flower Field Island (花畑島 Hanabatakeshima)",
+		"Boulder Island (岩島 Iwashima)",
 		"West Coast (西岸 Seigan)",
+		"North Coast (北岸 Hokugan)",
+		"Green Space Island (緑地島 Ryokuchishima)",
+		"Flower Field Island (花畑島 Hanabatakeshima)",
+		"Branching Island (分岐島 Bunkishima)",
 		"Control Island (制御島 Seigyoshima)",
-        "North Coast (北岸 Hokugan)"
+        "East Coast (東岸 Tōgan)"
 	  ],
 	  "Sewer (下水路 Gesuirō)": [
         "Great King Scumon's Room (スカモン大王の部屋 Sukamon Daiou no Heya)"
@@ -22193,21 +21996,21 @@
         "Control Room (制御室 Seigyoshitsu)"
 	  ],
 	  "Infinity Cauldron": [
-		"LAYER01",
-		"CORE・00",
-		"CORE・02",
-		"LAYER04",
-		"CORE・01",
 		"LAYER02",
+		"LAYER01",
+		"CORE・01",
+		"CORE・00",
+		"LAYER04",
+		"LAYER06",
+		"CORE・02",
 		"LAYER03",
-		"LAYER05",
-        "LAYER06"
+        "LAYER05"
 	  ],
 	  "Logic Flame Mountain": [
-		"Garbage Collection (ガベージコレクション Gabēji Korekushon)",
+		"Fire Wall (ファイア・ウォール Faia Wōru)",
 		"Fire Circuit (火気回路 Kaki Kairo)",
-		"Gateway (ゲートウェイ Gētowei)",
-        "Fire Wall (ファイア・ウォール Faia Wōru)"
+		"Garbage Collection (ガベージコレクション Gabēji Korekushon)",
+        "Gateway (ゲートウェイ Gētowei)"
 	  ],
 	  "Garbage Collection (ガベージコレクション Gabēji Korekushon)": [
         "Hidden Red Lattice Palace (隠れたる赤格子殿 Kakuretaru Akagōshiden)"
@@ -22216,15 +22019,15 @@
         "Dragon's Dwelling Trident (龍の棲まう三叉 Ryū no Sumau Mitsumata)"
 	  ],
 	  "Gateway (ゲートウェイ Gētowei)": [
-		"Flame Sanctuary (炎の聖域 Honō no Sei'iki)",
-        "Taomon's Meditation Place (タオモンの瞑想場 Taomon no Meisōba)"
+		"Taomon's Meditation Place (タオモンの瞑想場 Taomon no Meisōba)",
+        "Flame Sanctuary (炎の聖域 Honō no Sei'iki)"
 	  ],
 	  "MOD Ship Cape": [
-		"MOD Ship 3.0 (MODシップ3.0 MOD Shippu 3.0)",
-		"Flag MOD Ship (フラグMODシップ Furagu MOD Shippu)",
 		"MOD Ship 2.0 (MODシップ2.0 MOD Shippu 2.0)",
-		"Inlet Cape (入江岬 Irie Misaki)",
-        "MOD Ship 1.0 (MODシップ1.0 MOD Shippu 1.0)"
+		"MOD Ship 1.0 (MODシップ1.0 MOD Shippu 1.0)",
+		"Flag MOD Ship (フラグMODシップ Furagu MOD Shippu)",
+		"MOD Ship 3.0 (MODシップ3.0 MOD Shippu 3.0)",
+        "Inlet Cape (入江岬 Irie Misaki)"
 	  ],
 	  "MOD Ship 2.0 (MODシップ2.0 MOD Shippu 2.0)": [
         "Ship 2.0 Cabin (シップ2.0船室 Shippu 2.0 Senshitsu)"
@@ -22236,28 +22039,28 @@
         "Ship Captain's Room (シップ船長室 Shippu Senchōshitsu)"
 	  ],
 	  "Server Desert": [
-		"Noise Storm (ノイズストーム Noizu Sutōmu)",
-		"Server Tower (サーバー塔 Sābā Tō)",
-		"Server Graveyard (サーバー墓場 Sābā Hakaba)",
-		"Step Steppe (ステップステップ Suteppu Suteppu)",
-		"Sanctuary Corridor (聖域回廊 Sei'iki Kairō)",
-		"Dead End Town (どんづまりの街 Dondzumari no Machi)",
 		"Bus Terminal (バス・ターミナル Basu Tāminaru)",
-        "Tower Road (タワーロード Tawārōdo)"
+		"Dead End Town (どんづまりの街 Dondzumari no Machi)",
+		"Sanctuary Corridor (聖域回廊 Sei'iki Kairō)",
+		"Server Graveyard (サーバー墓場 Sābā Hakaba)",
+		"Tower Road (タワーロード Tawārōdo)",
+		"Server Tower (サーバー塔 Sābā Tō)",
+		"Step Steppe (ステップステップ Suteppu Suteppu)",
+        "Noise Storm (ノイズストーム Noizu Sutōmu)"
 	  ],
 	  "Server Tower (サーバー塔 Sābā Tō)": [
         "Server Tower Interior (サーバー塔内部 Sābā Tō Naibu)"
 	  ],
 	  "Tail Bone Resort": [
-		"Grave Yard (グレイブ・ヤード Gureibu Yādo)",
-		"Corpse Way (コープス・ウェイ Kōpusu Wei)",
 		"Tail Bone Drive (ホネオ・ドライブ Honeo Doraibu)",
-        "Pink Stone Residence (ピンクストーン邸 Pinku Sutōn Yashiki)"
+		"Corpse Way (コープス・ウェイ Kōpusu Wei)",
+		"Pink Stone Residence (ピンクストーン邸 Pinku Sutōn Yashiki)",
+        "Grave Yard (グレイブ・ヤード Gureibu Yādo)"
 	  ],
 	  "Tail Bone Drive (ホネオ・ドライブ Honeo Doraibu)": [
 		"Celeb Room Blue (セレブルームブルー Serebu Rūmu Burū)",
-		"Celeb Room Green (セレブルームグリーン Serebu Rūmu Gurīn)",
-        "Celeb Room Red (セレブルームレッド Serebu Rūmu Reddo)"
+		"Celeb Room Red (セレブルームレッド Serebu Rūmu Reddo)",
+        "Celeb Room Green (セレブルームグリーン Serebu Rūmu Gurīn)"
 	  ],
 	  "Pink Stone Residence (ピンクストーン邸 Pinku Sutōn Yashiki)": [
         "Pink Stone Residence Interior (ピンクストーン邸内 Pinku Sutōn Teinai)"

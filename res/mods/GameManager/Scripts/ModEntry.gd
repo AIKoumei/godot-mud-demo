@@ -32,6 +32,7 @@ func _on_mod_unload() -> void:
 # ---------------------------------------------------------
 # New Game：新游戏流程
 # ---------------------------------------------------------
+var _listener = null
 func new_game() -> void:
 	print("[GameManager] New Game")
 	state = GameState.NEW_GAME
@@ -132,7 +133,7 @@ func new_game() -> void:
 		
 	# 切换场景，准备玩法可视化
 	# 切换到 DigimonVpetUI
-	register_event_listener(ModEventListenerFilter.new()
+	_listener = register_event_listener(ModEventListenerFilter.new()
 		.set_listen_type(ModEventListenerFilter.ListenType.ALWAYS)
 		.set_mod_filter_type(ModEventListenerFilter.ModFilterType.TARGET)
 		.set_mod_name("SceneManager")
@@ -142,6 +143,9 @@ func new_game() -> void:
 	GameCore.mod_manager.call_mod("DefaultGameScene", "change_scene", "DigimonVpetUI")
 
 func init_game_scene_after_DigimonVpetUI():
+	if _listener:
+		unregister_event_listener(_listener)
+		_listener = null
 	# -----------------------------------------------------
 	# 8. 加载地图场景（可视化层，只渲染当前 location）
 	# -----------------------------------------------------

@@ -21,8 +21,9 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-GameCore="*res://res/core/Scripts/GameCore.gd"
 CommonEnum="*res://res/core/Scripts/Common/CommonEnum.gd"
+GameCore="*res://res/core/Scripts/GameCore.gd"
+SaveManager="*uid://b5rbg4sjtq653"
 UIAnimation="*uid://cawfyydj325or"
 g_DebugInfoViewer="*res://res/core/Scripts/Debug/g_DebugInfoViewer.gd"
 

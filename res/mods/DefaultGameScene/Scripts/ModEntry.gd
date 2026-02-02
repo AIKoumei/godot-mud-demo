@@ -20,6 +20,8 @@ extends ModInterface
 @export var BattleScene: String
 
 @export var StartMenuScene: String = "res://res/mods/DefaultGameScene/Scenes/UIScenes/StartMenuScene.tscn"
+@export var NewGameScene: String = "res://res/mods/DefaultGameScene/Scenes/UIScenes/NewGameScene.tscn"
+@export var WorldGenerateScene: String = "res://res/mods/DefaultGameScene/Scenes/UIScenes/WorldGenerateScene.tscn"
 @export var PauseMenuScene: String
 @export var GameOverScene: String
 
@@ -48,6 +50,14 @@ func _on_mod_load() -> bool:
 		},
 		"StartMenu": {
 			"path": StartMenuScene,
+			"type": "UI_MAIN"
+		},
+		"NewGameScene": {
+			"path": NewGameScene,
+			"type": "UI_MAIN"
+		},
+		"WorldGenerateScene": {
+			"path": WorldGenerateScene,
 			"type": "UI_MAIN"
 		},
 		"PauseMenu": {
@@ -82,7 +92,7 @@ func get_scene_info(scene_name: String) -> Dictionary:
 # ---------------------------------------------------------
 # 对外场景切换接口（封装 SceneManager）
 # ---------------------------------------------------------
-func change_scene(scene_name: String, use_fade: bool = true) -> void:
+func change_scene(scene_name: String, use_fade: bool = false) -> void:
 	var info := get_scene_info(scene_name)
 	if info.is_empty():
 		push_error("[%s] change_scene: scene not found: %s" % [mod_name, scene_name])

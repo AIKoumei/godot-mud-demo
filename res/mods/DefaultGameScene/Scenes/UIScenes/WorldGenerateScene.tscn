@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://kq7fprc8w557"]
+
+[ext_resource type="Theme" uid="uid://8c5j2xptwq82" path="res://res/core/UI/Theme/SproutLands/sprout_lands_theme.tres" id="1_8v4ka"]
+[ext_resource type="Script" uid="uid://c6smfppxbbmlu" path="res://res/mods/DefaultGameScene/Scripts/UI/world_generate_scene.gd" id="2_ump6s"]
+[ext_resource type="Texture2D" uid="uid://mfiogxg4bjqy" path="res://res/mods/DefaultGameScene/Sprites/UI/logo_digimon_adventure.png" id="3_30se3"]
+[ext_resource type="LabelSettings" uid="uid://dso7yxle1ncoi" path="res://res/core/Settings/default_label_settings.tres" id="4_30se3"]
+
+[node name="Main" type="Control" unique_id=2074452653]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_8v4ka")
+script = ExtResource("2_ump6s")
+
+[node name="Panel" type="Panel" parent="." unique_id=433976826]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BG" type="MarginContainer" parent="Panel" unique_id=125587224]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="Panel/BG" unique_id=1373056522]
+layout_mode = 2
+texture = ExtResource("3_30se3")
+stretch_mode = 5
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel" unique_id=566144613]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -29.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer" unique_id=820946009]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="ProgressBar" type="ProgressBar" parent="Panel/MarginContainer/VBoxContainer" unique_id=1994537111]
+custom_minimum_size = Vector2(0, 29)
+layout_mode = 2
+show_percentage = false
+
+[node name="Message" type="Label" parent="Panel/MarginContainer/VBoxContainer/ProgressBar" unique_id=1194479429]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+label_settings = ExtResource("4_30se3")
+horizontal_alignment = 1

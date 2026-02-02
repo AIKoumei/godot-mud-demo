@@ -19,8 +19,8 @@ var fps_history: Array[float] = []
 var dc_history: Array[int] = []
 
 var _time_accum: float = 0.0
-var _last_fps: int = -1
-var _last_dc: int = -1
+var _last_fps: float = -1
+var _last_dc: float = -1
 
 # ---------------------------------------------------------
 # 动态节点引用
@@ -159,8 +159,8 @@ func _process(delta: float) -> void:
 
 
 func _record_metrics() -> void:
-	var fps: int = Engine.get_frames_per_second()
-	var dc: int = Performance.get_monitor(Performance.RENDER_TOTAL_DRAW_CALLS_IN_FRAME)
+	var fps: float = Engine.get_frames_per_second()
+	var dc: float = Performance.get_monitor(Performance.RENDER_TOTAL_DRAW_CALLS_IN_FRAME)
 
 	fps_history.append(float(fps))
 	dc_history.append(dc)

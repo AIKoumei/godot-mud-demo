@@ -1,13 +1,16 @@
 {
-  "version": 1,
-
+  
+  "metadata": {
+	"version": "1.0",
+	"generated_at": "2026-01-30 11:58:24",
+	"total_locations": 889,
+	"total_relationships": 178
+  },
+  "data": {
   "locations": {
 	"file_island_village": {
-	  "location_id": "file_island_village",
-
-	  "name": "Village", 
+	  "name": "file_island_village", 
 	  "type": "Region", 
-	  "owner": "file_island",
 
 	  "map_size": { "width": 30, "height": 20 },
 
@@ -25,5 +28,5 @@
 		"music": "village_theme"
 	  }
 	}
-  }
+  }}
 }

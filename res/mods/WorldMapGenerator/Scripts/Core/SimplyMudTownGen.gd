@@ -1,5 +1,5 @@
 class_name SimplyMudTownGen
-extends Object
+extends RefCounted
 
 # ============================================================
 # 节点类型
@@ -58,6 +58,65 @@ class SimplyMudTownData:
 		gate = {}
 		gate_wall = {}
 		blocks = []
+
+	# ---------------------------------------------------------
+	# 转换Vector2i为字典
+	# ---------------------------------------------------------
+	func _vec2i_to_dict(vec: Vector2i) -> Dictionary:
+		return {"x": vec.x, "y": vec.y}
+
+	# ---------------------------------------------------------
+	# 转换字典中的Vector2i键为字符串
+	# ---------------------------------------------------------
+	func _dict_with_vec2i_keys_to_dict(input_dict: Dictionary) -> Dictionary:
+		var result = {}
+		for key in input_dict.keys():
+			if typeof(key) == TYPE_VECTOR2I:
+				var key_str = str(key.x) + "," + str(key.y)
+				result[key_str] = input_dict[key]
+			else:
+				result[key] = input_dict[key]
+		return result
+
+	# ---------------------------------------------------------
+	# 转换为可序列化的字典格式
+	# ---------------------------------------------------------
+	func to_dict() -> Dictionary:
+		# 转换节点
+		var nodes_dict = {}
+		for node_id in nodes.keys():
+			var node = nodes[node_id]
+			nodes_dict[node_id] = {
+				"id": node.id,
+				"type": node.type,
+				"pos": _vec2i_to_dict(node.pos)
+			}
+
+		# 转换区块
+		var blocks_dict = []
+		for block in blocks:
+			var block_copy = block.duplicate()
+			# 转换Color为字符串
+			if block_copy.has("color"):
+				var color = block_copy["color"]
+				block_copy["color"] = {"r": color.r, "g": color.g, "b": color.b, "a": color.a}
+			blocks_dict.append(block_copy)
+
+		return {
+			"nodes": nodes_dict,
+			"center": _vec2i_to_dict(center),
+			"start_wall": _vec2i_to_dict(start_wall),
+			"end_wall": _vec2i_to_dict(end_wall),
+			"mask": _dict_with_vec2i_keys_to_dict(mask),
+			"edge": _dict_with_vec2i_keys_to_dict(edge),
+			"patched_edge": _dict_with_vec2i_keys_to_dict(patched_edge),
+			"delete_wall": _dict_with_vec2i_keys_to_dict(delete_wall),
+			"main_road": _dict_with_vec2i_keys_to_dict(main_road),
+			"secondary_roads": _dict_with_vec2i_keys_to_dict(secondary_roads),
+			"gate": _dict_with_vec2i_keys_to_dict(gate),
+			"gate_wall": _dict_with_vec2i_keys_to_dict(gate_wall),
+			"blocks": blocks_dict
+		}
 
 
 # ============================================================

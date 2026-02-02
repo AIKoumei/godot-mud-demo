@@ -32,13 +32,35 @@ class_name WorldMapInstanceManager
 ##
 ## ---------------------------------------------------------
 
+var _location_map_templates: Dictionary = {}
+var _location_map_instances: Dictionary = {}
 var _instances: Dictionary = {}
 var _current_location_id: String = ""
 
 
 func _on_mod_load() -> bool:
 	print("[WorldMapInstanceManager] 模块已加载")
+	register_event_listener_with_name(ModEventListenerFilter.new()
+		.set_listen_type(ModEventListenerFilter.ListenType.ALWAYS)
+		.set_mod_filter_type(ModEventListenerFilter.ModFilterType.ANY)
+		.set_mod_name("SceneManager")
+		.set_event_filter_type(ModEventListenerFilter.EventFilterType.TARGET)
+		.set_event_name("SaveAllMapData")
+		, "SaveAllMapData"
+	)
 	return true
+
+
+func _on_mod_event(_mod_name: String, event_name: String, event_data: Dictionary) -> void:
+	super._on_mod_event(_mod_name, event_name, event_data)
+	if _mod_name == "WorldMapGenerator" and event_name == "after_gen_all_locations_map_finished":
+		var location_map_datas = event_data.get("location_map_datas",{}) as Dictionary
+		_location_map_templates = location_map_datas.duplicate_deep()
+		_location_map_instances = location_map_datas.duplicate_deep()
+		after_gen_all_locations_finished()
+	# TODO 加一个 popup msg
+	elif event_name == "SaveAllMapData":
+		save_all_location_instances()
 
 
 # ---------------------------------------------------------
@@ -56,9 +78,9 @@ func load_location(location_id: String) -> bool:
 		location_id
 	) as Dictionary
 
-	if static_data == null or static_data.is_empty():
-		push_error("[WorldMapInstanceManager] Invalid location: %s" % location_id)
-		return false
+	#if static_data == null or static_data.is_empty():
+		#push_error("[WorldMapInstanceManager] Invalid location: %s" % location_id)
+		#return false
 
 	var instance: Dictionary = {
 		"version": static_data.get("version", 1),
@@ -75,6 +97,29 @@ func load_location(location_id: String) -> bool:
 
 	print("[WorldMapInstanceManager] Created instance for:", location_id)
 	return true
+
+func gen_all_locations():
+	# 监听生成地图完成
+	register_event_listener_with_name(ModEventListenerFilter.new()
+		.set_listen_type(ModEventListenerFilter.ListenType.ONCE)
+		.set_mod_filter_type(ModEventListenerFilter.ModFilterType.TARGET)
+		.set_mod_name("WorldMapGenerator")
+		.set_event_filter_type(ModEventListenerFilter.EventFilterType.TARGET)
+		.set_event_name("after_gen_all_locations_map_finished")
+		, "after_gen_all_locations_map_finished"
+	)
+	GameCore.mod_manager.call_mod("WorldMapGenerator", "gen_all_locations_map")
+
+func after_gen_all_locations_finished():
+	emit_mod_event("after_gen_all_locations_finished", {
+		"location_map_count":_location_map_instances.size(),
+		"location_map_instances":_location_map_instances
+	})
+
+
+func save_all_location_instances():
+	for data in _location_map_instances.values():
+		SaveManager.save_mod_slot_data(GameCore.Settings.GameSettings.GameSlot, "%s/map_%s"%[mod_name, data.name.uri_encode()], data)
 
 
 # ---------------------------------------------------------

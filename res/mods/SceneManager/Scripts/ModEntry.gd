@@ -16,12 +16,19 @@
 
 extends ModInterface
 
-@export var default_use_fade: bool = true
+@export var default_use_fade: bool = false
 @export var fade_time: float = 0.35
 
 var _current_main_scene: Node = null
 var _ui_overlay_stack: Array[Node] = []
 
+func _on_mod_enable() -> void:
+	super._on_mod_enable()
+	register_event_listener(ModEventListenerFilter.new()
+		.set_listen_type(ModEventListenerFilter.ListenType.ALWAYS)
+		.set_mod_filter_type(ModEventListenerFilter.ModFilterType.ANY)
+		.set_event_filter_type(ModEventListenerFilter.EventFilterType.ANY)
+	)
 
 # ---------------------------------------------------------
 # 
@@ -195,3 +202,9 @@ func pop_scene(use_fade: bool = default_use_fade) -> void:
 
 	if use_fade:
 		await _fade_in()
+
+
+
+func _on_mod_event(_mod_name: String, event_name: String, event_data: Dictionary) -> void:
+	if _current_main_scene and _current_main_scene.has_method("_on_mod_event"):
+		_current_main_scene._on_mod_event(_mod_name, event_name, event_data)

@@ -260,33 +260,27 @@ func load_mod(mod_name: String, mods_path: String = MODS_ROOT) -> bool:
 
 	# 默认配置（res://）
 	var config_path := "%s/Config/ModuleConfig.json" % mod_path
-	var data_path   := "%s/Data/ModuleData.json" % mod_path
 
 	var default_config := load_json(config_path)
-	var default_data   := load_json(data_path)
 
-	if default_config.is_empty() or default_data.is_empty():
-		push_warning("[ModManager] Mod %s missing config or data" % mod_name)
+	if default_config.is_empty():
+		push_warning("[ModManager] Mod %s missing config" % mod_name)
 		return false
 
 	# user 配置（user://）
 	var user_config_path := "user://mods/%s/Config/ModuleConfig.json" % mod_name
-	var user_data_path   := "user://mods/%s/Data/ModuleData.json" % mod_name
 
 	var user_config := load_json_user(user_config_path)
-	var user_data   := load_json_user(user_data_path)
 
 	# 合并（版本对比）
 	var final_config := merge_user_and_default(default_config, user_config, "config", mod_name)
-	var final_data   := merge_user_and_default(default_data, user_data, "data", mod_name)
 
 	# 写回 user（保证 user 始终最新）
 	save_json_user(user_config_path, final_config)
-	save_json_user(user_data_path, final_data)
 
 	loaded_mods[mod_name] = {
 		"config": final_config,
-		"data": final_data,
+		"data": {},
 		"path": mod_path,
 		"script": null,
 		"scene": null,
@@ -525,9 +519,25 @@ func unregister_mod_event_listener(mod_name: String, filter: ModEventListenerFil
 
 	if _event_filters[mod_name].is_empty():
 		_event_filters.erase(mod_name)
+	
+	loaded_mods[mod_name].scene.after_unregister_event_listener(filter)
 
 	_rebuild_dispatch_table()
 
+
+func unregister_all_mod_event_listeners(mod_name: String) -> void:
+	if not _event_filters.has(mod_name):
+		return
+
+	for key in _event_filters[mod_name].keys():
+		var filter = _event_filters[mod_name][key]
+		_event_filters[mod_name].erase(key)
+		loaded_mods[mod_name].scene.after_unregister_event_listener(filter)
+
+	if _event_filters[mod_name].is_empty():
+		_event_filters.erase(mod_name)
+
+	_rebuild_dispatch_table()
 
 # ---------------------------------------------------------
 # 更新 dispatch table（单个 filter）

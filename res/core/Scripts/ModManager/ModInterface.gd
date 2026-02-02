@@ -9,7 +9,7 @@ var mod_name: String = ""
 ## 模块配置（ModuleConfig.json）
 var mod_config: Dictionary = {}
 
-## 模块数据（ModuleData.json）
+## 模块数据（ModuleConfig.json）
 var mod_data: Dictionary = {}
 
 
@@ -95,14 +95,55 @@ func emit_mod_event(event_name: String, event_data: Dictionary = {}) -> void:
 	GameCore.mod_manager.emit_mod_event(mod_name, event_name, event_data)
 
 
+
 ## 注册事件监听器（传入 ModEventListenerFilter）
-func register_event_listener(filter: ModEventListenerFilter) -> void:
+#listener = register_event_listener(ModEventListenerFilter.new()
+#	.set_listen_type(ModEventListenerFilter.ListenType.ALWAYS)
+#	.set_mod_filter_type(ModEventListenerFilter.ModFilterType.TARGET)
+#	.set_mod_name("SceneManager")
+#	.set_event_filter_type(ModEventListenerFilter.EventFilterType.TARGET)
+#	.set_event_name("after_change_scene")
+#)
+#unregister_event_listener(listener)
+func register_event_listener(filter: ModEventListenerFilter) -> ModEventListenerFilter:
 	GameCore.mod_manager.register_mod_event_listener(mod_name, filter)
+	return filter
 
 
 ## 注销事件监听器
 func unregister_event_listener(filter: ModEventListenerFilter) -> void:
 	GameCore.mod_manager.unregister_mod_event_listener(mod_name, filter)
+
+func after_unregister_event_listener(filter: ModEventListenerFilter) -> void:
+	if _listener_to_name.has(filter):
+		_listeners.erase(_listener_to_name[filter])
+		_listener_to_name.erase(filter)
+
+
+var _listeners = {}
+var _listener_to_name = {}
+
+
+func get_listener_by_name(filter_name = "") -> ModEventListenerFilter:
+	return _listeners.get(filter_name, null)
+
+func register_event_listener_with_name(filter: ModEventListenerFilter, filter_name = "") -> ModEventListenerFilter:
+	if _listeners.has(filter_name):
+		unregister_event_listener_with_name(filter_name)
+	GameCore.mod_manager.register_mod_event_listener(mod_name, filter)
+	_listeners[filter_name] = filter
+	_listener_to_name[filter] = filter_name
+	return filter
+
+
+## 注销事件监听器
+func unregister_event_listener_with_name(filter_name = "") -> void:
+	if not _listeners.has(filter_name):
+		return
+	GameCore.mod_manager.unregister_mod_event_listener(mod_name, _listeners[filter_name])
+	_listeners.erase(filter_name)
+	_listener_to_name.erase(filter_name)
+
 
 
 ## ---------------------------------------------------------

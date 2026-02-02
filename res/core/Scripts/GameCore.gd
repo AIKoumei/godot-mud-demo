@@ -2,6 +2,8 @@
 ## 负责游戏初始化、主循环、资源加载
 extends Node
 
+@export var debugging = true
+
 # 版本信息
 const VERSION = "v.0.0.1"
 
@@ -11,6 +13,7 @@ var mod_manager = ModManager.new()
 @export var SceneStateMachine = null
 
 var ArrayTools = _ArrayTools.new()
+var Settings = _Settings.new()
 
 
 ## 初始化游戏核心
