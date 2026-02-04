@@ -2,8 +2,8 @@
 extends ModInterface
 
 # 存储所有逻辑单位实例: { instance_id: UnitEntityObject }
-var _entities: Dictionary = {}
-var _next_id: int = 1000 # 自增 ID 种子
+@export var _entities: Dictionary = {}
+@export var _next_id: int = 1000 # 自增 ID 种子
 
 func _on_mod_load() -> bool:
 	return true
@@ -22,14 +22,8 @@ func create_unit_entity(unit_id: String, initial_data: Dictionary = {}) -> Dicti
 	var entity = {
 		"instance_id": entity_id,
 		"unit_id": unit_id,
-		"base_info": template.get("base_info", {}).duplicate(),
-		"stats": template.get("base_stats", {}).duplicate(),
-		"components": template.get("components", {}).duplicate(),
-		"runtime_data": {
-			"pos": initial_data.get("pos", Vector2.ZERO),
-			"state": "idle",
-			"owner_mod": template._source_mod
-		}
+		"entity_type": template.get("entity_type", "entity"),
+		"attributes": template.get("attributes", {}).duplicate(true),
 	}
 
 	# 3. 记录并维护

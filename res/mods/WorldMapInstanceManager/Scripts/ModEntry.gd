@@ -32,8 +32,7 @@ class_name WorldMapInstanceManager
 ##
 ## ---------------------------------------------------------
 
-var _location_map_templates: Dictionary = {}
-var _location_map_instances: Dictionary = {}
+var _mud_map_instances: Dictionary = {}
 var _instances: Dictionary = {}
 var _current_location_id: String = ""
 
@@ -45,21 +44,21 @@ func _on_mod_load() -> bool:
 		.set_mod_filter_type(ModEventListenerFilter.ModFilterType.ANY)
 		.set_mod_name("SceneManager")
 		.set_event_filter_type(ModEventListenerFilter.EventFilterType.TARGET)
-		.set_event_name("SaveAllMapData")
-		, "SaveAllMapData"
+		.set_event_name("SaveAllMapInstanceData")
+		, "SaveAllMapInstanceData"
 	)
 	return true
 
 
 func _on_mod_event(_mod_name: String, event_name: String, event_data: Dictionary) -> void:
 	super._on_mod_event(_mod_name, event_name, event_data)
-	if _mod_name == "WorldMapGenerator" and event_name == "after_gen_all_locations_map_finished":
-		var location_map_datas = event_data.get("location_map_datas",{}) as Dictionary
-		_location_map_templates = location_map_datas.duplicate_deep()
-		_location_map_instances = location_map_datas.duplicate_deep()
+	if _mod_name == "WorldMapManager" and event_name == "after_gen_all_location_map_finished":
+		var mud_map_datas = event_data.get("mud_maps",{}) as Dictionary
+		_mud_map_instances = mud_map_datas.duplicate_deep()
+		# TODO 从 mud entity Factory 中实例化 mud map 中的 entity ，并且在本模块中维护 entity_instances 表 {entity_id : {metadata:{},data:{}}}
 		after_gen_all_locations_finished()
 	# TODO 加一个 popup msg
-	elif event_name == "SaveAllMapData":
+	elif event_name == "SaveAllMapInstanceData":
 		save_all_location_instances()
 
 
@@ -98,28 +97,42 @@ func load_location(location_id: String) -> bool:
 	print("[WorldMapInstanceManager] Created instance for:", location_id)
 	return true
 
+# ----------------------------
+# 	流程：
+# 		1、WorldMapManager 生成 mud map template
+# 		2、接收到信号后， WorldMapInstanceManager 生成 mud map instance
+# 		3、WorldMapInstanceManager 细化 mud map instance
+# 		3.1、生成建筑
+# ----------------------------
 func gen_all_locations():
 	# 监听生成地图完成
 	register_event_listener_with_name(ModEventListenerFilter.new()
 		.set_listen_type(ModEventListenerFilter.ListenType.ONCE)
 		.set_mod_filter_type(ModEventListenerFilter.ModFilterType.TARGET)
-		.set_mod_name("WorldMapGenerator")
+		.set_mod_name("WorldMapManager")
 		.set_event_filter_type(ModEventListenerFilter.EventFilterType.TARGET)
-		.set_event_name("after_gen_all_locations_map_finished")
-		, "after_gen_all_locations_map_finished"
+		.set_event_name("after_gen_all_location_map_finished")
+		, "after_gen_all_location_map_finished"
 	)
-	GameCore.mod_manager.call_mod("WorldMapGenerator", "gen_all_locations_map")
+	# 从配置中生成地图模板
+	GameCore.mod_manager.call_mod("WorldMapManager", "gen_all_locations")
 
 func after_gen_all_locations_finished():
 	emit_mod_event("after_gen_all_locations_finished", {
-		"location_map_count":_location_map_instances.size(),
-		"location_map_instances":_location_map_instances
+		"location_map_count":_mud_map_instances.size(),
+		"location_map_instances":_mud_map_instances
 	})
 
+#
 
 func save_all_location_instances():
-	for data in _location_map_instances.values():
-		SaveManager.save_mod_slot_data(GameCore.Settings.GameSettings.GameSlot, "%s/map_%s"%[mod_name, data.name.uri_encode()], data)
+	if GameCore.debugging and SaveManager.has_mod_slot_file(GameCore.Settings.GameSettings.GameSlot, "%s/%s.sav" % [mod_name, _mud_map_instances.values()[0]]):
+		return
+	for data in _mud_map_instances.values():
+		var map_name = data.get("metadata",{}).get("map_name", "unknow_map")
+		if map_name == "unknow_map":
+			push_warning("[%s] save_all_location_instances 中未知的 map_name" % mod_name)
+		SaveManager.save_mod_slot_data(GameCore.Settings.GameSettings.GameSlot, "%s/map_%s"%[mod_name, map_name.uri_encode()], data)
 
 
 # ---------------------------------------------------------

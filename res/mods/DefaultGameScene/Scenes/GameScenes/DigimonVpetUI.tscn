@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://doxe5ao8fbhtd"]
+[gd_scene format=3 uid="uid://doxe5ao8fbhtd"]
 
 [ext_resource type="Theme" uid="uid://8c5j2xptwq82" path="res://res/core/UI/Theme/SproutLands/sprout_lands_theme.tres" id="1_n3rd2"]
 [ext_resource type="Script" uid="uid://cgftd4dnpdtn4" path="res://res/mods/DefaultGameScene/Scripts/GameScene/DigimonVpetUI.gd" id="2_jwi6v"]
@@ -22,37 +22,40 @@ func _process(delta: float) -> void:
 [sub_resource type="ViewportTexture" id="ViewportTexture_sp5hi"]
 viewport_path = NodePath("MarginRoot/VBoxRoot/MainRow/FieldPanel/FieldMargin/FieldView/SubViewportContainer/SubViewport")
 
-[node name="DigimonVpetUI" type="Control"]
+[node name="Main" type="Control" unique_id=735214543]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 theme = ExtResource("1_n3rd2")
 script = ExtResource("2_jwi6v")
 
-[node name="MarginRoot" type="MarginContainer" parent="."]
+[node name="MarginRoot" type="MarginContainer" parent="." unique_id=1366106356]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 theme_override_constants/margin_left = 8
 theme_override_constants/margin_top = 8
 theme_override_constants/margin_right = 8
 theme_override_constants/margin_bottom = 8
 
-[node name="VBoxRoot" type="VBoxContainer" parent="MarginRoot"]
+[node name="VBoxRoot" type="VBoxContainer" parent="MarginRoot" unique_id=1462755268]
 layout_mode = 2
 size_flags_vertical = 3
+mouse_filter = 2
 
-[node name="SystemBarPanel" type="Panel" parent="MarginRoot/VBoxRoot"]
+[node name="SystemBarPanel" type="Panel" parent="MarginRoot/VBoxRoot" unique_id=1066834423]
 custom_minimum_size = Vector2(0, 32)
 layout_mode = 2
 
-[node name="SystemBarMargin" type="MarginContainer" parent="MarginRoot/VBoxRoot/SystemBarPanel"]
+[node name="SystemBarMargin" type="MarginContainer" parent="MarginRoot/VBoxRoot/SystemBarPanel" unique_id=604460041]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -64,47 +67,50 @@ theme_override_constants/margin_top = 8
 theme_override_constants/margin_right = 8
 theme_override_constants/margin_bottom = 8
 
-[node name="SystemBar" type="HBoxContainer" parent="MarginRoot/VBoxRoot/SystemBarPanel/SystemBarMargin"]
+[node name="SystemBar" type="HBoxContainer" parent="MarginRoot/VBoxRoot/SystemBarPanel/SystemBarMargin" unique_id=468108398]
 layout_mode = 2
 
-[node name="TimeLabel" type="Label" parent="MarginRoot/VBoxRoot/SystemBarPanel/SystemBarMargin/SystemBar"]
+[node name="TimeLabel" type="Label" parent="MarginRoot/VBoxRoot/SystemBarPanel/SystemBarMargin/SystemBar" unique_id=1929982424]
 layout_mode = 2
 text = "时间: 08:32"
 
-[node name="MoneyLabel" type="Label" parent="MarginRoot/VBoxRoot/SystemBarPanel/SystemBarMargin/SystemBar"]
+[node name="MoneyLabel" type="Label" parent="MarginRoot/VBoxRoot/SystemBarPanel/SystemBarMargin/SystemBar" unique_id=688981842]
 layout_mode = 2
 text = "金币: 1240"
 
-[node name="AreaLabel" type="Label" parent="MarginRoot/VBoxRoot/SystemBarPanel/SystemBarMargin/SystemBar"]
+[node name="AreaLabel" type="Label" parent="MarginRoot/VBoxRoot/SystemBarPanel/SystemBarMargin/SystemBar" unique_id=1048030936]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "地区: 日光平原"
 
-[node name="MainRow" type="HBoxContainer" parent="MarginRoot/VBoxRoot"]
+[node name="MainRow" type="HBoxContainer" parent="MarginRoot/VBoxRoot" unique_id=1940935751]
 layout_mode = 2
 size_flags_vertical = 3
+mouse_filter = 2
 
-[node name="FieldPanel" type="Panel" parent="MarginRoot/VBoxRoot/MainRow"]
+[node name="FieldPanel" type="Panel" parent="MarginRoot/VBoxRoot/MainRow" unique_id=1902769987]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+mouse_filter = 2
 
-[node name="FieldMargin" type="MarginContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel"]
+[node name="FieldMargin" type="MarginContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel" unique_id=1355874252]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 theme_override_constants/margin_left = 8
 theme_override_constants/margin_top = 8
 theme_override_constants/margin_right = 8
 theme_override_constants/margin_bottom = 8
 
-[node name="FieldView" type="Control" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/FieldMargin"]
+[node name="FieldView" type="Control" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/FieldMargin" unique_id=1169918027]
 layout_mode = 2
 
-[node name="SubViewportContainer" type="SubViewportContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/FieldMargin/FieldView"]
+[node name="SubViewportContainer" type="SubViewportContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/FieldMargin/FieldView" unique_id=1346381710]
 visible = false
 layout_mode = 1
 anchors_preset = 15
@@ -114,14 +120,14 @@ grow_horizontal = 2
 grow_vertical = 2
 stretch = true
 
-[node name="SubViewport" type="SubViewport" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/FieldMargin/FieldView/SubViewportContainer"]
+[node name="SubViewport" type="SubViewport" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/FieldMargin/FieldView/SubViewportContainer" unique_id=24349350]
 handle_input_locally = false
 canvas_cull_mask = 4293918722
 size = Vector2i(728, 508)
 render_target_update_mode = 0
 script = SubResource("GDScript_sp5hi")
 
-[node name="SubViewportView" type="TextureRect" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/FieldMargin/FieldView"]
+[node name="SubViewportView" type="TextureRect" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/FieldMargin/FieldView" unique_id=776869126]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -130,7 +136,376 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = SubResource("ViewportTexture_sp5hi")
 
-[node name="MessageMargin" type="MarginContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel"]
+[node name="MapEntityPanel" type="MarginContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel" unique_id=1871680401]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -256.0
+offset_bottom = 364.0
+grow_horizontal = 0
+mouse_filter = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="Content" type="Control" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel" unique_id=991088193]
+layout_mode = 2
+
+[node name="BGColorRect" type="ColorRect" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content" unique_id=860329924]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.33333334, 0.33333334, 0.33333334, 0.33333334)
+
+[node name="ContentMarginContainer" type="MarginContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content" unique_id=1160391025]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer" unique_id=610349486]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer" unique_id=1423940042]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="FoldableContainer" type="FoldableContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer" unique_id=246590577]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="GridContainer" type="GridContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer/FoldableContainer" unique_id=1337879557]
+layout_mode = 2
+columns = 3
+
+[node name="Button" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer/FoldableContainer/GridContainer" unique_id=1537126198]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer/FoldableContainer/GridContainer" unique_id=856390214]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer/FoldableContainer/GridContainer" unique_id=2036256331]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer/FoldableContainer/GridContainer" unique_id=786438050]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button5" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer/FoldableContainer/GridContainer" unique_id=1172952510]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button6" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer/FoldableContainer/GridContainer" unique_id=896418114]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button7" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer/FoldableContainer/GridContainer" unique_id=1766856347]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button8" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer/FoldableContainer/GridContainer" unique_id=1613304430]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button9" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer/FoldableContainer/GridContainer" unique_id=1941177867]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="FoldableContainer2" type="FoldableContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer" unique_id=890369066]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="GridContainer" type="GridContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer/FoldableContainer2" unique_id=1925455557]
+layout_mode = 2
+columns = 3
+
+[node name="Button" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer/FoldableContainer2/GridContainer" unique_id=786241993]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer/FoldableContainer2/GridContainer" unique_id=624531819]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer/FoldableContainer2/GridContainer" unique_id=18313826]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer/FoldableContainer2/GridContainer" unique_id=1996666344]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button5" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer/FoldableContainer2/GridContainer" unique_id=1325218615]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button6" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer/FoldableContainer2/GridContainer" unique_id=693516311]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button7" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer/FoldableContainer2/GridContainer" unique_id=1944425714]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button8" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer/FoldableContainer2/GridContainer" unique_id=845049927]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button9" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer/FoldableContainer2/GridContainer" unique_id=1641437933]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="FoldableContainer3" type="FoldableContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer" unique_id=346463641]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="GridContainer" type="GridContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer/FoldableContainer3" unique_id=1021268858]
+layout_mode = 2
+columns = 3
+
+[node name="Button" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer/FoldableContainer3/GridContainer" unique_id=144113141]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer/FoldableContainer3/GridContainer" unique_id=1924964289]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer/FoldableContainer3/GridContainer" unique_id=842277808]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer/FoldableContainer3/GridContainer" unique_id=293328988]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button5" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer/FoldableContainer3/GridContainer" unique_id=1433442300]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button6" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer/FoldableContainer3/GridContainer" unique_id=681170127]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button7" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer/FoldableContainer3/GridContainer" unique_id=1389712690]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button8" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer/FoldableContainer3/GridContainer" unique_id=1872357263]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button9" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer/FoldableContainer3/GridContainer" unique_id=1314725215]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="TestContainer" type="MarginContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content" unique_id=1883345126]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer" unique_id=622231996]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer" unique_id=1781723321]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="FoldableContainer" type="FoldableContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer" unique_id=353534509]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="GridContainer" type="GridContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer/FoldableContainer" unique_id=1627028906]
+layout_mode = 2
+columns = 3
+
+[node name="Button" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer/FoldableContainer/GridContainer" unique_id=2103071089]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer/FoldableContainer/GridContainer" unique_id=1982308134]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer/FoldableContainer/GridContainer" unique_id=348588327]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer/FoldableContainer/GridContainer" unique_id=1195006921]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button5" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer/FoldableContainer/GridContainer" unique_id=146794015]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button6" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer/FoldableContainer/GridContainer" unique_id=1519658846]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button7" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer/FoldableContainer/GridContainer" unique_id=473635883]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button8" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer/FoldableContainer/GridContainer" unique_id=869919022]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button9" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer/FoldableContainer/GridContainer" unique_id=1128176010]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="FoldableContainer2" type="FoldableContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer" unique_id=290969274]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="GridContainer" type="GridContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer/FoldableContainer2" unique_id=1110564647]
+layout_mode = 2
+columns = 3
+
+[node name="Button" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer/FoldableContainer2/GridContainer" unique_id=845005263]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer/FoldableContainer2/GridContainer" unique_id=2074341490]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer/FoldableContainer2/GridContainer" unique_id=1690305433]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer/FoldableContainer2/GridContainer" unique_id=902940227]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button5" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer/FoldableContainer2/GridContainer" unique_id=226007796]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button6" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer/FoldableContainer2/GridContainer" unique_id=1244784236]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button7" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer/FoldableContainer2/GridContainer" unique_id=1290031813]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button8" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer/FoldableContainer2/GridContainer" unique_id=1641209722]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button9" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer/FoldableContainer2/GridContainer" unique_id=522135770]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="FoldableContainer3" type="FoldableContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer" unique_id=1990283657]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="GridContainer" type="GridContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer/FoldableContainer3" unique_id=127342454]
+layout_mode = 2
+columns = 3
+
+[node name="Button" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer/FoldableContainer3/GridContainer" unique_id=1570367367]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer/FoldableContainer3/GridContainer" unique_id=521948636]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer/FoldableContainer3/GridContainer" unique_id=751361927]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer/FoldableContainer3/GridContainer" unique_id=584392209]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button5" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer/FoldableContainer3/GridContainer" unique_id=1248045277]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button6" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer/FoldableContainer3/GridContainer" unique_id=1758590652]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button7" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer/FoldableContainer3/GridContainer" unique_id=140179035]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button8" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer/FoldableContainer3/GridContainer" unique_id=1253982218]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Button9" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer/FoldableContainer3/GridContainer" unique_id=1619441672]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="ShowHideBar" type="Control" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel" unique_id=1539213758]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="HideButton" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/ShowHideBar" unique_id=1626211411]
+self_modulate = Color(1, 1, 1, 0.627451)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -14.0
+offset_top = -19.0
+offset_right = 14.0
+offset_bottom = 19.0
+grow_vertical = 2
+text = "▶︎"
+
+[node name="ShowButton" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/ShowHideBar" unique_id=10010369]
+visible = false
+self_modulate = Color(1, 1, 1, 0.627451)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -14.0
+offset_top = -19.0
+offset_right = 14.0
+offset_bottom = 19.0
+grow_vertical = 2
+text = "◀︎"
+
+[node name="MessageMargin" type="MarginContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel" unique_id=87159594]
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
@@ -139,35 +514,69 @@ anchor_bottom = 1.0
 offset_top = -160.0
 grow_horizontal = 2
 grow_vertical = 0
+mouse_filter = 2
 theme_override_constants/margin_left = 8
 theme_override_constants/margin_top = 8
 theme_override_constants/margin_right = 8
 theme_override_constants/margin_bottom = 8
 
-[node name="BGColorRect" type="ColorRect" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MessageMargin"]
+[node name="BGColorRect" type="ColorRect" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MessageMargin" unique_id=701603240]
 layout_mode = 2
+mouse_filter = 2
 color = Color(0.33333334, 0.33333334, 0.33333334, 0.33333334)
 
-[node name="MarginContainer" type="MarginContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MessageMargin"]
+[node name="MarginContainer" type="MarginContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MessageMargin" unique_id=962960651]
 layout_mode = 2
+mouse_filter = 2
 theme_override_constants/margin_left = 8
 theme_override_constants/margin_top = 8
 theme_override_constants/margin_right = 8
 theme_override_constants/margin_bottom = 8
 
-[node name="MessageLog" type="RichTextLabel" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MessageMargin/MarginContainer"]
+[node name="MessageLog" type="RichTextLabel" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MessageMargin/MarginContainer" unique_id=458485237]
 layout_mode = 2
 text = "- 你来到日光平原，阳光十分温暖
 - 亚古兽似乎发现了什么"
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginRoot/VBoxRoot/MainRow"]
+[node name="ShowHideBar" type="Control" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MessageMargin" unique_id=1909242101]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="HideButton" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MessageMargin/ShowHideBar" unique_id=2121803804]
+self_modulate = Color(1, 1, 1, 0.627451)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -14.0
+offset_top = -19.0
+offset_right = 14.0
+offset_bottom = 19.0
+grow_horizontal = 2
+text = "▼"
+
+[node name="ShowButton" type="Button" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MessageMargin/ShowHideBar" unique_id=497043752]
+visible = false
+self_modulate = Color(1, 1, 1, 0.627451)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -14.0
+offset_top = -19.0
+offset_right = 14.0
+offset_bottom = 19.0
+grow_horizontal = 2
+text = "▲"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginRoot/VBoxRoot/MainRow" unique_id=1109678210]
 layout_mode = 2
 
-[node name="PartyPanel" type="Panel" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer"]
+[node name="PartyPanel" type="Panel" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer" unique_id=937396254]
 custom_minimum_size = Vector2(260, 264)
 layout_mode = 2
 
-[node name="PartyMargin" type="MarginContainer" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel"]
+[node name="PartyMargin" type="MarginContainer" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel" unique_id=1356755350]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -179,92 +588,92 @@ theme_override_constants/margin_top = 8
 theme_override_constants/margin_right = 8
 theme_override_constants/margin_bottom = 8
 
-[node name="PartyVBox" type="VBoxContainer" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin"]
+[node name="PartyVBox" type="VBoxContainer" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin" unique_id=1456555088]
 layout_mode = 2
 
-[node name="PartyTitle" type="Label" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox"]
+[node name="PartyTitle" type="Label" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox" unique_id=603903772]
 layout_mode = 2
 text = "队伍状态"
 
-[node name="PartyMember1" type="HBoxContainer" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox"]
+[node name="PartyMember1" type="HBoxContainer" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox" unique_id=349572293]
 layout_mode = 2
 
-[node name="PM1Name" type="Label" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox/PartyMember1"]
+[node name="PM1Name" type="Label" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox/PartyMember1" unique_id=1391768377]
 layout_mode = 2
 text = "亚古兽 Lv12"
 
-[node name="PM1HPBar" type="ProgressBar" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox/PartyMember1"]
+[node name="PM1HPBar" type="ProgressBar" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox/PartyMember1" unique_id=1004303647]
 layout_mode = 2
 size_flags_horizontal = 3
 value = 80.0
 
-[node name="PartyMember2" type="HBoxContainer" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox"]
+[node name="PartyMember2" type="HBoxContainer" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox" unique_id=381015596]
 layout_mode = 2
 
-[node name="PM2Name" type="Label" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox/PartyMember2"]
+[node name="PM2Name" type="Label" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox/PartyMember2" unique_id=1581332144]
 layout_mode = 2
 text = "加布兽 Lv10"
 
-[node name="PM2HPBar" type="ProgressBar" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox/PartyMember2"]
+[node name="PM2HPBar" type="ProgressBar" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox/PartyMember2" unique_id=427333202]
 layout_mode = 2
 size_flags_horizontal = 3
 value = 60.0
 
-[node name="PartyMember3" type="HBoxContainer" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox"]
+[node name="PartyMember3" type="HBoxContainer" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox" unique_id=1800526238]
 layout_mode = 2
 
-[node name="PM3Name" type="Label" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox/PartyMember3"]
+[node name="PM3Name" type="Label" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox/PartyMember3" unique_id=42701170]
 layout_mode = 2
 text = "巴达兽 Lv9"
 
-[node name="PM3HPBar" type="ProgressBar" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox/PartyMember3"]
+[node name="PM3HPBar" type="ProgressBar" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox/PartyMember3" unique_id=150950895]
 layout_mode = 2
 size_flags_horizontal = 3
 value = 90.0
 
-[node name="ReserveTitle" type="Label" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox"]
+[node name="ReserveTitle" type="Label" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox" unique_id=522314726]
 layout_mode = 2
 text = "后备队员"
 
-[node name="ReserveMember1" type="HBoxContainer" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox"]
+[node name="ReserveMember1" type="HBoxContainer" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox" unique_id=2064572049]
 layout_mode = 2
 
-[node name="RM1Name" type="Label" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox/ReserveMember1"]
-layout_mode = 2
-text = "空槽"
-
-[node name="RM1HPBar" type="ProgressBar" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox/ReserveMember1"]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="ReserveMember2" type="HBoxContainer" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox"]
-layout_mode = 2
-
-[node name="RM2Name" type="Label" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox/ReserveMember2"]
+[node name="RM1Name" type="Label" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox/ReserveMember1" unique_id=1190195930]
 layout_mode = 2
 text = "空槽"
 
-[node name="RM2HPBar" type="ProgressBar" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox/ReserveMember2"]
+[node name="RM1HPBar" type="ProgressBar" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox/ReserveMember1" unique_id=2094386587]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="ReserveMember3" type="HBoxContainer" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox"]
+[node name="ReserveMember2" type="HBoxContainer" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox" unique_id=1556278989]
 layout_mode = 2
 
-[node name="RM3Name" type="Label" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox/ReserveMember3"]
+[node name="RM2Name" type="Label" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox/ReserveMember2" unique_id=785892165]
 layout_mode = 2
 text = "空槽"
 
-[node name="RM3HPBar" type="ProgressBar" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox/ReserveMember3"]
+[node name="RM2HPBar" type="ProgressBar" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox/ReserveMember2" unique_id=428463226]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="ActionBarPanel" type="Panel" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer"]
+[node name="ReserveMember3" type="HBoxContainer" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox" unique_id=1401426822]
+layout_mode = 2
+
+[node name="RM3Name" type="Label" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox/ReserveMember3" unique_id=1392340576]
+layout_mode = 2
+text = "空槽"
+
+[node name="RM3HPBar" type="ProgressBar" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/PartyPanel/PartyMargin/PartyVBox/ReserveMember3" unique_id=1840724299]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ActionBarPanel" type="Panel" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer" unique_id=166276159]
 custom_minimum_size = Vector2(0, 60)
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="ActionMargin" type="MarginContainer" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/ActionBarPanel"]
+[node name="ActionMargin" type="MarginContainer" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/ActionBarPanel" unique_id=43069975]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -276,30 +685,30 @@ theme_override_constants/margin_top = 8
 theme_override_constants/margin_right = 8
 theme_override_constants/margin_bottom = 8
 
-[node name="ActionBar" type="GridContainer" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/ActionBarPanel/ActionMargin"]
+[node name="ActionBar" type="GridContainer" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/ActionBarPanel/ActionMargin" unique_id=633492397]
 layout_mode = 2
 columns = 5
 
-[node name="MenuButton" type="Button" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/ActionBarPanel/ActionMargin/ActionBar"]
+[node name="MenuButton" type="Button" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/ActionBarPanel/ActionMargin/ActionBar" unique_id=2105915657]
 layout_mode = 2
 text = "菜单"
 
-[node name="PartyButton" type="Button" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/ActionBarPanel/ActionMargin/ActionBar"]
+[node name="PartyButton" type="Button" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/ActionBarPanel/ActionMargin/ActionBar" unique_id=1101709105]
 layout_mode = 2
 text = "队伍"
 
-[node name="ItemButton" type="Button" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/ActionBarPanel/ActionMargin/ActionBar"]
+[node name="ItemButton" type="Button" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/ActionBarPanel/ActionMargin/ActionBar" unique_id=149100826]
 layout_mode = 2
 text = "物品"
 
-[node name="QuestButton" type="Button" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/ActionBarPanel/ActionMargin/ActionBar"]
+[node name="QuestButton" type="Button" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/ActionBarPanel/ActionMargin/ActionBar" unique_id=739383221]
 layout_mode = 2
 text = "任务"
 
-[node name="MapButton" type="Button" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/ActionBarPanel/ActionMargin/ActionBar"]
+[node name="MapButton" type="Button" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/ActionBarPanel/ActionMargin/ActionBar" unique_id=193922582]
 layout_mode = 2
 text = "地图"
 
-[node name="SettingsButton" type="Button" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/ActionBarPanel/ActionMargin/ActionBar"]
+[node name="SettingsButton" type="Button" parent="MarginRoot/VBoxRoot/MainRow/VBoxContainer/ActionBarPanel/ActionMargin/ActionBar" unique_id=965927176]
 layout_mode = 2
 text = "设置"

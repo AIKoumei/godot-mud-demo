@@ -1,32 +1,76 @@
 {
-  
-  "metadata": {
-	"version": "1.0",
-	"generated_at": "2026-01-30 11:58:24",
-	"total_locations": 889,
-	"total_relationships": 178
-  },
-  "data": {
-  "locations": {
-	"file_island_village": {
-	  "name": "file_island_village", 
-	  "type": "Region", 
-
-	  "map_size": { "width": 30, "height": 20 },
-
-	  "map_data": [
-		{ "x": 0, "y": 0, "tile": "road" },
-		{ "x": 1, "y": 0, "tile": "house" }
-	  ],
-
-	  "spawn_points": {
-		"Center": { "x": 5, "y": 5 }
-	  },
-
-	  "metadata": {
-		"weather_type": "cloudy",
-		"music": "village_theme"
-	  }
+	"metadata": {
+		"version": "1.0",
+		"generated_at": "2026-02-01 22:19:06",
+		"total_locations": 874,
+		"total_relationships": 178
+	},
+	"data": {
+		"locations": {
+			"Amusement Park": {
+				"name": "Amusement Park",
+				"Kanji/Kana": {
+					"content": "",
+					"url": ""
+				},
+				"inhabitants": {
+					"Betamon (multiple)": [{
+							"text": "Kuwagamon (multiple)",
+							"url": "https://wikimon.net/Kuwagamon"
+						},
+						{
+							"text": "Monochromon (multiple)",
+							"url": "https://wikimon.net/Monochromon"
+						},
+						{
+							"text": "Numemon (multiple)",
+							"url": "https://wikimon.net/Numemon"
+						}
+					]
+				},
+				"url": "https://wikimon.net/Amusement_Park",
+				"introduce": "The Amusement Park is a location in Server Continent.",
+				"description": "",
+				"type": {
+					"content": "Park",
+					"url": ""
+				},
+				"location level type": "Location",
+				"map_infos": {
+					"map_size": {
+						"width": 30,
+						"height": 20
+					},
+					"map_data": [{
+							"x": 0,
+							"y": 0,
+							"tile": "road"
+						},
+						{
+							"x": 1,
+							"y": 0,
+							"tile": "house"
+						}
+					],
+					"spawn_points": {
+						"Center": {
+							"x": 5,
+							"y": 5
+						}
+					},
+					"attributes": {
+						"weather_type": "cloudy",
+						"music": "village_theme"
+					}
+				},
+			},
+		},
+		"player_spawn_point": "",
+		"relationships": {
+			"Infinity Continent": [
+				"Pharga"
+			],
+		},
+		"player_spawn_location": "Village of Beginnings"
 	}
-  }}
 }
