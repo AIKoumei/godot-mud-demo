@@ -1,0 +1,21 @@
+{
+	"_source_mod": "EntityManager",
+	"attributes": {
+		"description": "这是一座山峰。",
+		"encounter_id_list": [],
+		"height_level": 6,
+		"map_cell_type": "peak",
+		"map_position": [
+			3,
+			5
+		],
+		"passable": {
+
+		}
+	},
+	"entity_id": "map_cell_peak",
+	"entity_instance_id": "2152",
+	"entity_type": "peak",
+	"instance_id": "2152",
+	"type": "peak"
+}

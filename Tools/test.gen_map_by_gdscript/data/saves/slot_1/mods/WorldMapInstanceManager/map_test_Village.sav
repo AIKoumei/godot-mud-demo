@@ -1,0 +1,5812 @@
+{
+	"data": {
+		"blocks": {
+
+		},
+		"encounters": {
+
+		},
+		"map_id": "test_Village",
+		"map_name": "test_Village",
+		"map_nodes": [
+			{
+				"entity_instance_id": "1813",
+				"entity_type": "wall",
+				"map_position": [
+					0,
+					0
+				]
+			},
+			{
+				"entity_instance_id": "1814",
+				"entity_type": "gate_wall",
+				"map_position": [
+					13,
+					0
+				]
+			},
+			{
+				"entity_instance_id": "1815",
+				"entity_type": "wall",
+				"map_position": [
+					14,
+					0
+				]
+			},
+			{
+				"entity_instance_id": "1816",
+				"entity_type": "wall",
+				"map_position": [
+					0,
+					1
+				]
+			},
+			{
+				"entity_instance_id": "1817",
+				"entity_type": "secondary_road",
+				"map_position": [
+					3,
+					1
+				]
+			},
+			{
+				"entity_instance_id": "1818",
+				"entity_type": "secondary_road",
+				"map_position": [
+					6,
+					1
+				]
+			},
+			{
+				"entity_instance_id": "1819",
+				"entity_type": "secondary_road",
+				"map_position": [
+					9,
+					1
+				]
+			},
+			{
+				"entity_instance_id": "1820",
+				"entity_type": "secondary_road",
+				"map_position": [
+					11,
+					1
+				]
+			},
+			{
+				"entity_instance_id": "1821",
+				"entity_type": "primary_road",
+				"map_position": [
+					12,
+					1
+				]
+			},
+			{
+				"entity_instance_id": "1822",
+				"entity_type": "secondary_road",
+				"map_position": [
+					14,
+					1
+				]
+			},
+			{
+				"entity_instance_id": "1823",
+				"entity_type": "wall",
+				"map_position": [
+					18,
+					1
+				]
+			},
+			{
+				"entity_instance_id": "1824",
+				"entity_type": "secondary_road",
+				"map_position": [
+					1,
+					2
+				]
+			},
+			{
+				"entity_instance_id": "1825",
+				"entity_type": "secondary_road",
+				"map_position": [
+					2,
+					2
+				]
+			},
+			{
+				"entity_instance_id": "1826",
+				"entity_type": "secondary_road",
+				"map_position": [
+					3,
+					2
+				]
+			},
+			{
+				"entity_instance_id": "1827",
+				"entity_type": "secondary_road",
+				"map_position": [
+					6,
+					2
+				]
+			},
+			{
+				"entity_instance_id": "1828",
+				"entity_type": "secondary_road",
+				"map_position": [
+					7,
+					2
+				]
+			},
+			{
+				"entity_instance_id": "1829",
+				"entity_type": "secondary_road",
+				"map_position": [
+					8,
+					2
+				]
+			},
+			{
+				"entity_instance_id": "1830",
+				"entity_type": "secondary_road",
+				"map_position": [
+					9,
+					2
+				]
+			},
+			{
+				"entity_instance_id": "1831",
+				"entity_type": "secondary_road",
+				"map_position": [
+					10,
+					2
+				]
+			},
+			{
+				"entity_instance_id": "1832",
+				"entity_type": "secondary_road",
+				"map_position": [
+					11,
+					2
+				]
+			},
+			{
+				"entity_instance_id": "1833",
+				"entity_type": "primary_road",
+				"map_position": [
+					12,
+					2
+				]
+			},
+			{
+				"entity_instance_id": "1834",
+				"entity_type": "secondary_road",
+				"map_position": [
+					14,
+					2
+				]
+			},
+			{
+				"entity_instance_id": "1835",
+				"entity_type": "wall",
+				"map_position": [
+					18,
+					2
+				]
+			},
+			{
+				"entity_instance_id": "1836",
+				"entity_type": "secondary_road",
+				"map_position": [
+					2,
+					3
+				]
+			},
+			{
+				"entity_instance_id": "1837",
+				"entity_type": "secondary_road",
+				"map_position": [
+					3,
+					3
+				]
+			},
+			{
+				"entity_instance_id": "1838",
+				"entity_type": "secondary_road",
+				"map_position": [
+					4,
+					3
+				]
+			},
+			{
+				"entity_instance_id": "1839",
+				"entity_type": "secondary_road",
+				"map_position": [
+					5,
+					3
+				]
+			},
+			{
+				"entity_instance_id": "1840",
+				"entity_type": "secondary_road",
+				"map_position": [
+					6,
+					3
+				]
+			},
+			{
+				"entity_instance_id": "1841",
+				"entity_type": "secondary_road",
+				"map_position": [
+					7,
+					3
+				]
+			},
+			{
+				"entity_instance_id": "1842",
+				"entity_type": "primary_road",
+				"map_position": [
+					12,
+					3
+				]
+			},
+			{
+				"entity_instance_id": "1843",
+				"entity_type": "secondary_road",
+				"map_position": [
+					14,
+					3
+				]
+			},
+			{
+				"entity_instance_id": "1844",
+				"entity_type": "wall",
+				"map_position": [
+					18,
+					3
+				]
+			},
+			{
+				"entity_instance_id": "1845",
+				"entity_type": "wall",
+				"map_position": [
+					19,
+					3
+				]
+			},
+			{
+				"entity_instance_id": "1846",
+				"entity_type": "wall",
+				"map_position": [
+					20,
+					3
+				]
+			},
+			{
+				"entity_instance_id": "1847",
+				"entity_type": "wall",
+				"map_position": [
+					21,
+					3
+				]
+			},
+			{
+				"entity_instance_id": "1848",
+				"entity_type": "secondary_road",
+				"map_position": [
+					1,
+					4
+				]
+			},
+			{
+				"entity_instance_id": "1849",
+				"entity_type": "secondary_road",
+				"map_position": [
+					2,
+					4
+				]
+			},
+			{
+				"entity_instance_id": "1850",
+				"entity_type": "secondary_road",
+				"map_position": [
+					5,
+					4
+				]
+			},
+			{
+				"entity_instance_id": "1851",
+				"entity_type": "primary_road",
+				"map_position": [
+					12,
+					4
+				]
+			},
+			{
+				"entity_instance_id": "1852",
+				"entity_type": "secondary_road",
+				"map_position": [
+					14,
+					4
+				]
+			},
+			{
+				"entity_instance_id": "1853",
+				"entity_type": "secondary_road",
+				"map_position": [
+					15,
+					4
+				]
+			},
+			{
+				"entity_instance_id": "1854",
+				"entity_type": "secondary_road",
+				"map_position": [
+					16,
+					4
+				]
+			},
+			{
+				"entity_instance_id": "1855",
+				"entity_type": "secondary_road",
+				"map_position": [
+					17,
+					4
+				]
+			},
+			{
+				"entity_instance_id": "1856",
+				"entity_type": "secondary_road",
+				"map_position": [
+					18,
+					4
+				]
+			},
+			{
+				"entity_instance_id": "1857",
+				"entity_type": "wall",
+				"map_position": [
+					21,
+					4
+				]
+			},
+			{
+				"entity_instance_id": "1858",
+				"entity_type": "secondary_road",
+				"map_position": [
+					2,
+					5
+				]
+			},
+			{
+				"entity_instance_id": "1859",
+				"entity_type": "secondary_road",
+				"map_position": [
+					5,
+					5
+				]
+			},
+			{
+				"entity_instance_id": "1860",
+				"entity_type": "secondary_road",
+				"map_position": [
+					6,
+					5
+				]
+			},
+			{
+				"entity_instance_id": "1861",
+				"entity_type": "secondary_road",
+				"map_position": [
+					7,
+					5
+				]
+			},
+			{
+				"entity_instance_id": "1862",
+				"entity_type": "secondary_road",
+				"map_position": [
+					8,
+					5
+				]
+			},
+			{
+				"entity_instance_id": "1863",
+				"entity_type": "secondary_road",
+				"map_position": [
+					9,
+					5
+				]
+			},
+			{
+				"entity_instance_id": "1864",
+				"entity_type": "secondary_road",
+				"map_position": [
+					10,
+					5
+				]
+			},
+			{
+				"entity_instance_id": "1865",
+				"entity_type": "secondary_road",
+				"map_position": [
+					11,
+					5
+				]
+			},
+			{
+				"entity_instance_id": "1866",
+				"entity_type": "primary_road",
+				"map_position": [
+					12,
+					5
+				]
+			},
+			{
+				"entity_instance_id": "1867",
+				"entity_type": "secondary_road",
+				"map_position": [
+					18,
+					5
+				]
+			},
+			{
+				"entity_instance_id": "1868",
+				"entity_type": "wall",
+				"map_position": [
+					21,
+					5
+				]
+			},
+			{
+				"entity_instance_id": "1869",
+				"entity_type": "wall",
+				"map_position": [
+					22,
+					5
+				]
+			},
+			{
+				"entity_instance_id": "1870",
+				"entity_type": "wall",
+				"map_position": [
+					23,
+					5
+				]
+			},
+			{
+				"entity_instance_id": "1871",
+				"entity_type": "secondary_road",
+				"map_position": [
+					2,
+					6
+				]
+			},
+			{
+				"entity_instance_id": "1872",
+				"entity_type": "secondary_road",
+				"map_position": [
+					3,
+					6
+				]
+			},
+			{
+				"entity_instance_id": "1873",
+				"entity_type": "secondary_road",
+				"map_position": [
+					4,
+					6
+				]
+			},
+			{
+				"entity_instance_id": "1874",
+				"entity_type": "secondary_road",
+				"map_position": [
+					5,
+					6
+				]
+			},
+			{
+				"entity_instance_id": "1875",
+				"entity_type": "secondary_road",
+				"map_position": [
+					6,
+					6
+				]
+			},
+			{
+				"entity_instance_id": "1876",
+				"entity_type": "primary_road",
+				"map_position": [
+					12,
+					6
+				]
+			},
+			{
+				"entity_instance_id": "1877",
+				"entity_type": "secondary_road",
+				"map_position": [
+					18,
+					6
+				]
+			},
+			{
+				"entity_instance_id": "1878",
+				"entity_type": "secondary_road",
+				"map_position": [
+					19,
+					6
+				]
+			},
+			{
+				"entity_instance_id": "1879",
+				"entity_type": "secondary_road",
+				"map_position": [
+					20,
+					6
+				]
+			},
+			{
+				"entity_instance_id": "1880",
+				"entity_type": "secondary_road",
+				"map_position": [
+					21,
+					6
+				]
+			},
+			{
+				"entity_instance_id": "1881",
+				"entity_type": "secondary_road",
+				"map_position": [
+					5,
+					7
+				]
+			},
+			{
+				"entity_instance_id": "1882",
+				"entity_type": "secondary_road",
+				"map_position": [
+					6,
+					7
+				]
+			},
+			{
+				"entity_instance_id": "1883",
+				"entity_type": "primary_road",
+				"map_position": [
+					12,
+					7
+				]
+			},
+			{
+				"entity_instance_id": "1884",
+				"entity_type": "secondary_road",
+				"map_position": [
+					18,
+					7
+				]
+			},
+			{
+				"entity_instance_id": "1885",
+				"entity_type": "secondary_road",
+				"map_position": [
+					5,
+					8
+				]
+			},
+			{
+				"entity_instance_id": "1886",
+				"entity_type": "secondary_road",
+				"map_position": [
+					6,
+					8
+				]
+			},
+			{
+				"entity_instance_id": "1887",
+				"entity_type": "primary_road",
+				"map_position": [
+					12,
+					8
+				]
+			},
+			{
+				"entity_instance_id": "1888",
+				"entity_type": "secondary_road",
+				"map_position": [
+					18,
+					8
+				]
+			},
+			{
+				"entity_instance_id": "1889",
+				"entity_type": "secondary_road",
+				"map_position": [
+					5,
+					9
+				]
+			},
+			{
+				"entity_instance_id": "1890",
+				"entity_type": "secondary_road",
+				"map_position": [
+					6,
+					9
+				]
+			},
+			{
+				"entity_instance_id": "1891",
+				"entity_type": "primary_road",
+				"map_position": [
+					12,
+					9
+				]
+			},
+			{
+				"entity_instance_id": "1892",
+				"entity_type": "secondary_road",
+				"map_position": [
+					18,
+					9
+				]
+			},
+			{
+				"entity_instance_id": "1893",
+				"entity_type": "gate_wall",
+				"map_position": [
+					0,
+					10
+				]
+			},
+			{
+				"entity_instance_id": "1894",
+				"entity_type": "secondary_road",
+				"map_position": [
+					5,
+					10
+				]
+			},
+			{
+				"entity_instance_id": "1895",
+				"entity_type": "secondary_road",
+				"map_position": [
+					6,
+					10
+				]
+			},
+			{
+				"entity_instance_id": "1896",
+				"entity_type": "primary_road",
+				"map_position": [
+					12,
+					10
+				]
+			},
+			{
+				"entity_instance_id": "1897",
+				"entity_type": "secondary_road",
+				"map_position": [
+					13,
+					10
+				]
+			},
+			{
+				"entity_instance_id": "1898",
+				"entity_type": "secondary_road",
+				"map_position": [
+					14,
+					10
+				]
+			},
+			{
+				"entity_instance_id": "1899",
+				"entity_type": "secondary_road",
+				"map_position": [
+					15,
+					10
+				]
+			},
+			{
+				"entity_instance_id": "1900",
+				"entity_type": "secondary_road",
+				"map_position": [
+					16,
+					10
+				]
+			},
+			{
+				"entity_instance_id": "1901",
+				"entity_type": "secondary_road",
+				"map_position": [
+					17,
+					10
+				]
+			},
+			{
+				"entity_instance_id": "1902",
+				"entity_type": "secondary_road",
+				"map_position": [
+					18,
+					10
+				]
+			},
+			{
+				"entity_instance_id": "1903",
+				"entity_type": "gate",
+				"map_position": [
+					0,
+					11
+				]
+			},
+			{
+				"entity_instance_id": "1904",
+				"entity_type": "primary_road",
+				"map_position": [
+					1,
+					11
+				]
+			},
+			{
+				"entity_instance_id": "1905",
+				"entity_type": "primary_road",
+				"map_position": [
+					2,
+					11
+				]
+			},
+			{
+				"entity_instance_id": "1906",
+				"entity_type": "primary_road",
+				"map_position": [
+					3,
+					11
+				]
+			},
+			{
+				"entity_instance_id": "1907",
+				"entity_type": "primary_road",
+				"map_position": [
+					4,
+					11
+				]
+			},
+			{
+				"entity_instance_id": "1908",
+				"entity_type": "primary_road",
+				"map_position": [
+					5,
+					11
+				]
+			},
+			{
+				"entity_instance_id": "1909",
+				"entity_type": "primary_road",
+				"map_position": [
+					6,
+					11
+				]
+			},
+			{
+				"entity_instance_id": "1910",
+				"entity_type": "primary_road",
+				"map_position": [
+					7,
+					11
+				]
+			},
+			{
+				"entity_instance_id": "1911",
+				"entity_type": "primary_road",
+				"map_position": [
+					8,
+					11
+				]
+			},
+			{
+				"entity_instance_id": "1912",
+				"entity_type": "primary_road",
+				"map_position": [
+					9,
+					11
+				]
+			},
+			{
+				"entity_instance_id": "1913",
+				"entity_type": "primary_road",
+				"map_position": [
+					10,
+					11
+				]
+			},
+			{
+				"entity_instance_id": "1914",
+				"entity_type": "primary_road",
+				"map_position": [
+					11,
+					11
+				]
+			},
+			{
+				"entity_instance_id": "1915",
+				"entity_type": "primary_road",
+				"map_position": [
+					12,
+					11
+				]
+			},
+			{
+				"entity_instance_id": "1916",
+				"entity_type": "primary_road",
+				"map_position": [
+					13,
+					11
+				]
+			},
+			{
+				"entity_instance_id": "1917",
+				"entity_type": "primary_road",
+				"map_position": [
+					14,
+					11
+				]
+			},
+			{
+				"entity_instance_id": "1918",
+				"entity_type": "primary_road",
+				"map_position": [
+					15,
+					11
+				]
+			},
+			{
+				"entity_instance_id": "1919",
+				"entity_type": "primary_road",
+				"map_position": [
+					16,
+					11
+				]
+			},
+			{
+				"entity_instance_id": "1920",
+				"entity_type": "primary_road",
+				"map_position": [
+					17,
+					11
+				]
+			},
+			{
+				"entity_instance_id": "1921",
+				"entity_type": "primary_road",
+				"map_position": [
+					18,
+					11
+				]
+			},
+			{
+				"entity_instance_id": "1922",
+				"entity_type": "primary_road",
+				"map_position": [
+					19,
+					11
+				]
+			},
+			{
+				"entity_instance_id": "1923",
+				"entity_type": "primary_road",
+				"map_position": [
+					20,
+					11
+				]
+			},
+			{
+				"entity_instance_id": "1924",
+				"entity_type": "primary_road",
+				"map_position": [
+					21,
+					11
+				]
+			},
+			{
+				"entity_instance_id": "1925",
+				"entity_type": "primary_road",
+				"map_position": [
+					22,
+					11
+				]
+			},
+			{
+				"entity_instance_id": "1926",
+				"entity_type": "gate_wall",
+				"map_position": [
+					0,
+					12
+				]
+			},
+			{
+				"entity_instance_id": "1927",
+				"entity_type": "secondary_road",
+				"map_position": [
+					5,
+					12
+				]
+			},
+			{
+				"entity_instance_id": "1928",
+				"entity_type": "secondary_road",
+				"map_position": [
+					10,
+					12
+				]
+			},
+			{
+				"entity_instance_id": "1929",
+				"entity_type": "primary_road",
+				"map_position": [
+					12,
+					12
+				]
+			},
+			{
+				"entity_instance_id": "1930",
+				"entity_type": "secondary_road",
+				"map_position": [
+					18,
+					12
+				]
+			},
+			{
+				"entity_instance_id": "1931",
+				"entity_type": "secondary_road",
+				"map_position": [
+					22,
+					12
+				]
+			},
+			{
+				"entity_instance_id": "1932",
+				"entity_type": "secondary_road",
+				"map_position": [
+					5,
+					13
+				]
+			},
+			{
+				"entity_instance_id": "1933",
+				"entity_type": "secondary_road",
+				"map_position": [
+					10,
+					13
+				]
+			},
+			{
+				"entity_instance_id": "1934",
+				"entity_type": "primary_road",
+				"map_position": [
+					12,
+					13
+				]
+			},
+			{
+				"entity_instance_id": "1935",
+				"entity_type": "secondary_road",
+				"map_position": [
+					18,
+					13
+				]
+			},
+			{
+				"entity_instance_id": "1936",
+				"entity_type": "secondary_road",
+				"map_position": [
+					22,
+					13
+				]
+			},
+			{
+				"entity_instance_id": "1937",
+				"entity_type": "wall",
+				"map_position": [
+					23,
+					13
+				]
+			},
+			{
+				"entity_instance_id": "1938",
+				"entity_type": "secondary_road",
+				"map_position": [
+					5,
+					14
+				]
+			},
+			{
+				"entity_instance_id": "1939",
+				"entity_type": "secondary_road",
+				"map_position": [
+					10,
+					14
+				]
+			},
+			{
+				"entity_instance_id": "1940",
+				"entity_type": "primary_road",
+				"map_position": [
+					12,
+					14
+				]
+			},
+			{
+				"entity_instance_id": "1941",
+				"entity_type": "secondary_road",
+				"map_position": [
+					18,
+					14
+				]
+			},
+			{
+				"entity_instance_id": "1942",
+				"entity_type": "secondary_road",
+				"map_position": [
+					22,
+					14
+				]
+			},
+			{
+				"entity_instance_id": "1943",
+				"entity_type": "wall",
+				"map_position": [
+					23,
+					14
+				]
+			},
+			{
+				"entity_instance_id": "1944",
+				"entity_type": "secondary_road",
+				"map_position": [
+					5,
+					15
+				]
+			},
+			{
+				"entity_instance_id": "1945",
+				"entity_type": "secondary_road",
+				"map_position": [
+					10,
+					15
+				]
+			},
+			{
+				"entity_instance_id": "1946",
+				"entity_type": "primary_road",
+				"map_position": [
+					12,
+					15
+				]
+			},
+			{
+				"entity_instance_id": "1947",
+				"entity_type": "secondary_road",
+				"map_position": [
+					18,
+					15
+				]
+			},
+			{
+				"entity_instance_id": "1948",
+				"entity_type": "secondary_road",
+				"map_position": [
+					19,
+					15
+				]
+			},
+			{
+				"entity_instance_id": "1949",
+				"entity_type": "secondary_road",
+				"map_position": [
+					20,
+					15
+				]
+			},
+			{
+				"entity_instance_id": "1950",
+				"entity_type": "secondary_road",
+				"map_position": [
+					21,
+					15
+				]
+			},
+			{
+				"entity_instance_id": "1951",
+				"entity_type": "wall",
+				"map_position": [
+					22,
+					15
+				]
+			},
+			{
+				"entity_instance_id": "1952",
+				"entity_type": "wall",
+				"map_position": [
+					23,
+					15
+				]
+			},
+			{
+				"entity_instance_id": "1953",
+				"entity_type": "wall",
+				"map_position": [
+					4,
+					16
+				]
+			},
+			{
+				"entity_instance_id": "1954",
+				"entity_type": "wall",
+				"map_position": [
+					5,
+					16
+				]
+			},
+			{
+				"entity_instance_id": "1955",
+				"entity_type": "wall",
+				"map_position": [
+					6,
+					16
+				]
+			},
+			{
+				"entity_instance_id": "1956",
+				"entity_type": "wall",
+				"map_position": [
+					7,
+					16
+				]
+			},
+			{
+				"entity_instance_id": "1957",
+				"entity_type": "wall",
+				"map_position": [
+					8,
+					16
+				]
+			},
+			{
+				"entity_instance_id": "1958",
+				"entity_type": "wall",
+				"map_position": [
+					9,
+					16
+				]
+			},
+			{
+				"entity_instance_id": "1959",
+				"entity_type": "secondary_road",
+				"map_position": [
+					10,
+					16
+				]
+			},
+			{
+				"entity_instance_id": "1960",
+				"entity_type": "primary_road",
+				"map_position": [
+					12,
+					16
+				]
+			},
+			{
+				"entity_instance_id": "1961",
+				"entity_type": "wall",
+				"map_position": [
+					18,
+					16
+				]
+			},
+			{
+				"entity_instance_id": "1962",
+				"entity_type": "wall",
+				"map_position": [
+					19,
+					16
+				]
+			},
+			{
+				"entity_instance_id": "1963",
+				"entity_type": "wall",
+				"map_position": [
+					20,
+					16
+				]
+			},
+			{
+				"entity_instance_id": "1964",
+				"entity_type": "wall",
+				"map_position": [
+					22,
+					16
+				]
+			},
+			{
+				"entity_instance_id": "1965",
+				"entity_type": "wall",
+				"map_position": [
+					4,
+					17
+				]
+			},
+			{
+				"entity_instance_id": "1966",
+				"entity_type": "wall",
+				"map_position": [
+					9,
+					17
+				]
+			},
+			{
+				"entity_instance_id": "1967",
+				"entity_type": "primary_road",
+				"map_position": [
+					12,
+					17
+				]
+			},
+			{
+				"entity_instance_id": "1968",
+				"entity_type": "secondary_road",
+				"map_position": [
+					13,
+					17
+				]
+			},
+			{
+				"entity_instance_id": "1969",
+				"entity_type": "secondary_road",
+				"map_position": [
+					14,
+					17
+				]
+			},
+			{
+				"entity_instance_id": "1970",
+				"entity_type": "secondary_road",
+				"map_position": [
+					15,
+					17
+				]
+			},
+			{
+				"entity_instance_id": "1971",
+				"entity_type": "secondary_road",
+				"map_position": [
+					16,
+					17
+				]
+			},
+			{
+				"entity_instance_id": "1972",
+				"entity_type": "secondary_road",
+				"map_position": [
+					17,
+					17
+				]
+			},
+			{
+				"entity_instance_id": "1973",
+				"entity_type": "wall",
+				"map_position": [
+					18,
+					17
+				]
+			},
+			{
+				"entity_instance_id": "1974",
+				"entity_type": "wall",
+				"map_position": [
+					20,
+					17
+				]
+			},
+			{
+				"entity_instance_id": "1975",
+				"entity_type": "wall",
+				"map_position": [
+					21,
+					17
+				]
+			},
+			{
+				"entity_instance_id": "1976",
+				"entity_type": "wall",
+				"map_position": [
+					22,
+					17
+				]
+			},
+			{
+				"entity_instance_id": "1977",
+				"entity_type": "wall",
+				"map_position": [
+					4,
+					18
+				]
+			},
+			{
+				"entity_instance_id": "1978",
+				"entity_type": "wall",
+				"map_position": [
+					9,
+					18
+				]
+			},
+			{
+				"entity_instance_id": "1979",
+				"entity_type": "primary_road",
+				"map_position": [
+					12,
+					18
+				]
+			},
+			{
+				"entity_instance_id": "1980",
+				"entity_type": "secondary_road",
+				"map_position": [
+					16,
+					18
+				]
+			},
+			{
+				"entity_instance_id": "1981",
+				"entity_type": "wall",
+				"map_position": [
+					18,
+					18
+				]
+			},
+			{
+				"entity_instance_id": "1982",
+				"entity_type": "wall",
+				"map_position": [
+					4,
+					19
+				]
+			},
+			{
+				"entity_instance_id": "1983",
+				"entity_type": "wall",
+				"map_position": [
+					9,
+					19
+				]
+			},
+			{
+				"entity_instance_id": "1984",
+				"entity_type": "secondary_road",
+				"map_position": [
+					10,
+					19
+				]
+			},
+			{
+				"entity_instance_id": "1985",
+				"entity_type": "secondary_road",
+				"map_position": [
+					11,
+					19
+				]
+			},
+			{
+				"entity_instance_id": "1986",
+				"entity_type": "primary_road",
+				"map_position": [
+					12,
+					19
+				]
+			},
+			{
+				"entity_instance_id": "1987",
+				"entity_type": "secondary_road",
+				"map_position": [
+					16,
+					19
+				]
+			},
+			{
+				"entity_instance_id": "1988",
+				"entity_type": "wall",
+				"map_position": [
+					18,
+					19
+				]
+			},
+			{
+				"entity_instance_id": "1989",
+				"entity_type": "wall",
+				"map_position": [
+					0,
+					20
+				]
+			},
+			{
+				"entity_instance_id": "1990",
+				"entity_type": "wall",
+				"map_position": [
+					1,
+					20
+				]
+			},
+			{
+				"entity_instance_id": "1991",
+				"entity_type": "wall",
+				"map_position": [
+					2,
+					20
+				]
+			},
+			{
+				"entity_instance_id": "1992",
+				"entity_type": "wall",
+				"map_position": [
+					3,
+					20
+				]
+			},
+			{
+				"entity_instance_id": "1993",
+				"entity_type": "wall",
+				"map_position": [
+					4,
+					20
+				]
+			},
+			{
+				"entity_instance_id": "1994",
+				"entity_type": "wall",
+				"map_position": [
+					9,
+					20
+				]
+			},
+			{
+				"entity_instance_id": "1995",
+				"entity_type": "primary_road",
+				"map_position": [
+					12,
+					20
+				]
+			},
+			{
+				"entity_instance_id": "1996",
+				"entity_type": "secondary_road",
+				"map_position": [
+					16,
+					20
+				]
+			},
+			{
+				"entity_instance_id": "1997",
+				"entity_type": "wall",
+				"map_position": [
+					18,
+					20
+				]
+			},
+			{
+				"entity_instance_id": "1998",
+				"entity_type": "wall",
+				"map_position": [
+					9,
+					21
+				]
+			},
+			{
+				"entity_instance_id": "1999",
+				"entity_type": "wall",
+				"map_position": [
+					1,
+					0
+				]
+			},
+			{
+				"entity_instance_id": "2000",
+				"entity_type": "wall",
+				"map_position": [
+					1,
+					-1
+				]
+			},
+			{
+				"entity_instance_id": "2001",
+				"entity_type": "wall",
+				"map_position": [
+					2,
+					-1
+				]
+			},
+			{
+				"entity_instance_id": "2002",
+				"entity_type": "secondary_road",
+				"map_position": [
+					3,
+					0
+				]
+			},
+			{
+				"entity_instance_id": "2003",
+				"entity_type": "wall",
+				"map_position": [
+					3,
+					-1
+				]
+			},
+			{
+				"entity_instance_id": "2004",
+				"entity_type": "secondary_road",
+				"map_position": [
+					4,
+					0
+				]
+			},
+			{
+				"entity_instance_id": "2005",
+				"entity_type": "wall",
+				"map_position": [
+					4,
+					-1
+				]
+			},
+			{
+				"entity_instance_id": "2006",
+				"entity_type": "secondary_road",
+				"map_position": [
+					5,
+					0
+				]
+			},
+			{
+				"entity_instance_id": "2007",
+				"entity_type": "wall",
+				"map_position": [
+					5,
+					-1
+				]
+			},
+			{
+				"entity_instance_id": "2008",
+				"entity_type": "wall",
+				"map_position": [
+					6,
+					0
+				]
+			},
+			{
+				"entity_instance_id": "2009",
+				"entity_type": "wall",
+				"map_position": [
+					6,
+					-1
+				]
+			},
+			{
+				"entity_instance_id": "2010",
+				"entity_type": "wall",
+				"map_position": [
+					7,
+					0
+				]
+			},
+			{
+				"entity_instance_id": "2011",
+				"entity_type": "wall",
+				"map_position": [
+					8,
+					0
+				]
+			},
+			{
+				"entity_instance_id": "2012",
+				"entity_type": "wall",
+				"map_position": [
+					9,
+					0
+				]
+			},
+			{
+				"entity_instance_id": "2013",
+				"entity_type": "wall",
+				"map_position": [
+					10,
+					0
+				]
+			},
+			{
+				"entity_instance_id": "2014",
+				"entity_type": "gate_wall",
+				"map_position": [
+					11,
+					0
+				]
+			},
+			{
+				"entity_instance_id": "2015",
+				"entity_type": "gate",
+				"map_position": [
+					12,
+					0
+				]
+			},
+			{
+				"entity_instance_id": "2016",
+				"entity_type": "wall",
+				"map_position": [
+					15,
+					0
+				]
+			},
+			{
+				"entity_instance_id": "2017",
+				"entity_type": "wall",
+				"map_position": [
+					16,
+					0
+				]
+			},
+			{
+				"entity_instance_id": "2018",
+				"entity_type": "wall",
+				"map_position": [
+					17,
+					0
+				]
+			},
+			{
+				"entity_instance_id": "2019",
+				"entity_type": "wall",
+				"map_position": [
+					18,
+					0
+				]
+			},
+			{
+				"entity_instance_id": "2020",
+				"entity_type": "wall",
+				"map_position": [
+					0,
+					2
+				]
+			},
+			{
+				"entity_instance_id": "2021",
+				"entity_type": "wall",
+				"map_position": [
+					0,
+					3
+				]
+			},
+			{
+				"entity_instance_id": "2022",
+				"entity_type": "wall",
+				"map_position": [
+					0,
+					4
+				]
+			},
+			{
+				"entity_instance_id": "2023",
+				"entity_type": "wall",
+				"map_position": [
+					0,
+					5
+				]
+			},
+			{
+				"entity_instance_id": "2024",
+				"entity_type": "wall",
+				"map_position": [
+					0,
+					6
+				]
+			},
+			{
+				"entity_instance_id": "2025",
+				"entity_type": "wall",
+				"map_position": [
+					23,
+					6
+				]
+			},
+			{
+				"entity_instance_id": "2026",
+				"entity_type": "wall",
+				"map_position": [
+					0,
+					7
+				]
+			},
+			{
+				"entity_instance_id": "2027",
+				"entity_type": "wall",
+				"map_position": [
+					23,
+					7
+				]
+			},
+			{
+				"entity_instance_id": "2028",
+				"entity_type": "wall",
+				"map_position": [
+					0,
+					8
+				]
+			},
+			{
+				"entity_instance_id": "2029",
+				"entity_type": "wall",
+				"map_position": [
+					23,
+					8
+				]
+			},
+			{
+				"entity_instance_id": "2030",
+				"entity_type": "wall",
+				"map_position": [
+					0,
+					9
+				]
+			},
+			{
+				"entity_instance_id": "2031",
+				"entity_type": "wall",
+				"map_position": [
+					23,
+					9
+				]
+			},
+			{
+				"entity_instance_id": "2032",
+				"entity_type": "gate_wall",
+				"map_position": [
+					23,
+					10
+				]
+			},
+			{
+				"entity_instance_id": "2033",
+				"entity_type": "gate",
+				"map_position": [
+					23,
+					11
+				]
+			},
+			{
+				"entity_instance_id": "2034",
+				"entity_type": "gate_wall",
+				"map_position": [
+					23,
+					12
+				]
+			},
+			{
+				"entity_instance_id": "2035",
+				"entity_type": "wall",
+				"map_position": [
+					0,
+					13
+				]
+			},
+			{
+				"entity_instance_id": "2036",
+				"entity_type": "wall",
+				"map_position": [
+					0,
+					14
+				]
+			},
+			{
+				"entity_instance_id": "2037",
+				"entity_type": "wall",
+				"map_position": [
+					0,
+					15
+				]
+			},
+			{
+				"entity_instance_id": "2038",
+				"entity_type": "wall",
+				"map_position": [
+					-1,
+					15
+				]
+			},
+			{
+				"entity_instance_id": "2039",
+				"entity_type": "wall",
+				"map_position": [
+					-2,
+					15
+				]
+			},
+			{
+				"entity_instance_id": "2040",
+				"entity_type": "wall",
+				"map_position": [
+					-3,
+					15
+				]
+			},
+			{
+				"entity_instance_id": "2041",
+				"entity_type": "wall",
+				"map_position": [
+					-4,
+					15
+				]
+			},
+			{
+				"entity_instance_id": "2042",
+				"entity_type": "wall",
+				"map_position": [
+					-4,
+					16
+				]
+			},
+			{
+				"entity_instance_id": "2043",
+				"entity_type": "wall",
+				"map_position": [
+					-1,
+					17
+				]
+			},
+			{
+				"entity_instance_id": "2044",
+				"entity_type": "wall",
+				"map_position": [
+					-2,
+					17
+				]
+			},
+			{
+				"entity_instance_id": "2045",
+				"entity_type": "wall",
+				"map_position": [
+					-3,
+					17
+				]
+			},
+			{
+				"entity_instance_id": "2046",
+				"entity_type": "wall",
+				"map_position": [
+					-4,
+					17
+				]
+			},
+			{
+				"entity_instance_id": "2047",
+				"entity_type": "wall",
+				"map_position": [
+					0,
+					18
+				]
+			},
+			{
+				"entity_instance_id": "2048",
+				"entity_type": "wall",
+				"map_position": [
+					-1,
+					18
+				]
+			},
+			{
+				"entity_instance_id": "2049",
+				"entity_type": "wall",
+				"map_position": [
+					0,
+					19
+				]
+			},
+			{
+				"entity_instance_id": "2050",
+				"entity_type": "wall",
+				"map_position": [
+					10,
+					21
+				]
+			},
+			{
+				"entity_instance_id": "2051",
+				"entity_type": "gate_wall",
+				"map_position": [
+					11,
+					21
+				]
+			},
+			{
+				"entity_instance_id": "2052",
+				"entity_type": "gate",
+				"map_position": [
+					12,
+					21
+				]
+			},
+			{
+				"entity_instance_id": "2053",
+				"entity_type": "gate_wall",
+				"map_position": [
+					13,
+					21
+				]
+			},
+			{
+				"entity_instance_id": "2054",
+				"entity_type": "wall",
+				"map_position": [
+					14,
+					21
+				]
+			},
+			{
+				"entity_instance_id": "2055",
+				"entity_type": "wall",
+				"map_position": [
+					15,
+					21
+				]
+			},
+			{
+				"entity_instance_id": "2056",
+				"entity_type": "wall",
+				"map_position": [
+					16,
+					21
+				]
+			},
+			{
+				"entity_instance_id": "2057",
+				"entity_type": "wall",
+				"map_position": [
+					17,
+					21
+				]
+			},
+			{
+				"entity_instance_id": "2058",
+				"entity_type": "wall",
+				"map_position": [
+					18,
+					21
+				]
+			}
+		],
+		"map_sub_type": "village",
+		"map_type": "town",
+		"name": "test_Village",
+		"size": [
+			0,
+			0
+		]
+	},
+	"metadata": {
+		"config": {
+			"map_data": {
+				"all_walls": [
+					"0,0",
+					"14,0",
+					"0,1",
+					"18,1",
+					"18,2",
+					"18,3",
+					"19,3",
+					"20,3",
+					"21,3",
+					"21,4",
+					"21,5",
+					"22,5",
+					"23,5",
+					"23,13",
+					"23,14",
+					"22,15",
+					"23,15",
+					"4,16",
+					"5,16",
+					"6,16",
+					"7,16",
+					"8,16",
+					"9,16",
+					"18,16",
+					"19,16",
+					"20,16",
+					"22,16",
+					"4,17",
+					"9,17",
+					"18,17",
+					"20,17",
+					"21,17",
+					"22,17",
+					"4,18",
+					"9,18",
+					"18,18",
+					"4,19",
+					"9,19",
+					"18,19",
+					"0,20",
+					"1,20",
+					"2,20",
+					"3,20",
+					"4,20",
+					"9,20",
+					"18,20",
+					"9,21",
+					"1,0",
+					"1,-1",
+					"2,-1",
+					"3,-1",
+					"4,-1",
+					"5,-1",
+					"6,0",
+					"6,-1",
+					"7,0",
+					"8,0",
+					"9,0",
+					"10,0",
+					"15,0",
+					"16,0",
+					"17,0",
+					"18,0",
+					"0,2",
+					"0,3",
+					"0,4",
+					"0,5",
+					"0,6",
+					"23,6",
+					"0,7",
+					"23,7",
+					"0,8",
+					"23,8",
+					"0,9",
+					"23,9",
+					"0,13",
+					"0,14",
+					"0,15",
+					"-1,15",
+					"-2,15",
+					"-3,15",
+					"-4,15",
+					"-4,16",
+					"-1,17",
+					"-2,17",
+					"-3,17",
+					"-4,17",
+					"0,18",
+					"-1,18",
+					"0,19",
+					"10,21",
+					"14,21",
+					"15,21",
+					"16,21",
+					"17,21",
+					"18,21",
+					"11,0",
+					"13,0",
+					"11,21",
+					"13,21",
+					"0,10",
+					"0,12",
+					"23,10",
+					"23,12"
+				],
+				"blocks": {
+					"1": {
+						"nodes": [
+							"7,6",
+							"8,6",
+							"9,6",
+							"10,6",
+							"11,6",
+							"7,7",
+							"8,7",
+							"9,7",
+							"10,7",
+							"11,7",
+							"7,8",
+							"8,8",
+							"9,8",
+							"10,8",
+							"11,8",
+							"7,9",
+							"8,9",
+							"9,9",
+							"10,9",
+							"11,9",
+							"7,10",
+							"8,10",
+							"9,10",
+							"10,10",
+							"11,10"
+						],
+						"position": [
+							7,
+							6
+						],
+						"size": [
+							5,
+							5
+						]
+					},
+					"10": {
+						"nodes": [
+							"7,4"
+						],
+						"position": [
+							7,
+							4
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"11": {
+						"nodes": [
+							"9,4"
+						],
+						"position": [
+							9,
+							4
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"12": {
+						"nodes": [
+							"10,4"
+						],
+						"position": [
+							10,
+							4
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"13": {
+						"nodes": [
+							"13,4"
+						],
+						"position": [
+							13,
+							4
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"14": {
+						"nodes": [
+							"11,4"
+						],
+						"position": [
+							11,
+							4
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"15": {
+						"nodes": [
+							"19,4",
+							"20,4",
+							"19,5",
+							"20,5"
+						],
+						"position": [
+							19,
+							4
+						],
+						"size": [
+							2,
+							2
+						]
+					},
+					"16": {
+						"nodes": [
+							"1,5"
+						],
+						"position": [
+							1,
+							5
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"17": {
+						"nodes": [
+							"13,5",
+							"14,5",
+							"15,5",
+							"16,5",
+							"17,5",
+							"13,6",
+							"14,6",
+							"15,6",
+							"16,6",
+							"17,6",
+							"13,7",
+							"14,7",
+							"15,7",
+							"16,7",
+							"17,7",
+							"13,8",
+							"14,8",
+							"15,8",
+							"16,8",
+							"17,8",
+							"13,9",
+							"14,9",
+							"15,9",
+							"16,9",
+							"17,9"
+						],
+						"position": [
+							13,
+							5
+						],
+						"size": [
+							5,
+							5
+						]
+					},
+					"18": {
+						"nodes": [
+							"1,6"
+						],
+						"position": [
+							1,
+							6
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"19": {
+						"nodes": [
+							"22,6"
+						],
+						"position": [
+							22,
+							6
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"2": {
+						"nodes": [
+							"4,1",
+							"5,1",
+							"4,2",
+							"5,2"
+						],
+						"position": [
+							4,
+							1
+						],
+						"size": [
+							2,
+							2
+						]
+					},
+					"20": {
+						"nodes": [
+							"1,7",
+							"2,7",
+							"3,7",
+							"4,7",
+							"1,8",
+							"2,8",
+							"3,8",
+							"4,8",
+							"1,9",
+							"2,9",
+							"3,9",
+							"4,9",
+							"1,10",
+							"2,10",
+							"3,10",
+							"4,10"
+						],
+						"position": [
+							1,
+							7
+						],
+						"size": [
+							4,
+							4
+						]
+					},
+					"21": {
+						"nodes": [
+							"19,7",
+							"20,7",
+							"21,7",
+							"22,7",
+							"19,8",
+							"20,8",
+							"21,8",
+							"22,8",
+							"19,9",
+							"20,9",
+							"21,9",
+							"22,9",
+							"19,10",
+							"20,10",
+							"21,10",
+							"22,10"
+						],
+						"position": [
+							19,
+							7
+						],
+						"size": [
+							4,
+							4
+						]
+					},
+					"22": {
+						"nodes": [
+							"1,12",
+							"2,12",
+							"3,12",
+							"4,12",
+							"1,13",
+							"2,13",
+							"3,13",
+							"4,13",
+							"1,14",
+							"2,14",
+							"3,14",
+							"4,14",
+							"1,15",
+							"2,15",
+							"3,15",
+							"4,15"
+						],
+						"position": [
+							1,
+							12
+						],
+						"size": [
+							4,
+							4
+						]
+					},
+					"23": {
+						"nodes": [
+							"6,12",
+							"7,12",
+							"8,12",
+							"9,12",
+							"6,13",
+							"7,13",
+							"8,13",
+							"9,13",
+							"6,14",
+							"7,14",
+							"8,14",
+							"9,14",
+							"6,15",
+							"7,15",
+							"8,15",
+							"9,15"
+						],
+						"position": [
+							6,
+							12
+						],
+						"size": [
+							4,
+							4
+						]
+					},
+					"24": {
+						"nodes": [
+							"11,12"
+						],
+						"position": [
+							11,
+							12
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"25": {
+						"nodes": [
+							"13,12",
+							"14,12",
+							"15,12",
+							"16,12",
+							"17,12",
+							"13,13",
+							"14,13",
+							"15,13",
+							"16,13",
+							"17,13",
+							"13,14",
+							"14,14",
+							"15,14",
+							"16,14",
+							"17,14",
+							"13,15",
+							"14,15",
+							"15,15",
+							"16,15",
+							"17,15",
+							"13,16",
+							"14,16",
+							"15,16",
+							"16,16",
+							"17,16"
+						],
+						"position": [
+							13,
+							12
+						],
+						"size": [
+							5,
+							5
+						]
+					},
+					"26": {
+						"nodes": [
+							"19,12",
+							"20,12",
+							"21,12",
+							"19,13",
+							"20,13",
+							"21,13",
+							"19,14",
+							"20,14",
+							"21,14"
+						],
+						"position": [
+							19,
+							12
+						],
+						"size": [
+							3,
+							3
+						]
+					},
+					"27": {
+						"nodes": [
+							"11,13"
+						],
+						"position": [
+							11,
+							13
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"28": {
+						"nodes": [
+							"11,14"
+						],
+						"position": [
+							11,
+							14
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"29": {
+						"nodes": [
+							"11,15"
+						],
+						"position": [
+							11,
+							15
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"3": {
+						"nodes": [
+							"10,1"
+						],
+						"position": [
+							10,
+							1
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"30": {
+						"nodes": [
+							"11,16"
+						],
+						"position": [
+							11,
+							16
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"31": {
+						"nodes": [
+							"21,16"
+						],
+						"position": [
+							21,
+							16
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"32": {
+						"nodes": [
+							"1,17",
+							"2,17",
+							"3,17",
+							"1,18",
+							"2,18",
+							"3,18",
+							"1,19",
+							"2,19",
+							"3,19"
+						],
+						"position": [
+							1,
+							17
+						],
+						"size": [
+							3,
+							3
+						]
+					},
+					"33": {
+						"nodes": [
+							"10,17",
+							"11,17",
+							"10,18",
+							"11,18"
+						],
+						"position": [
+							10,
+							17
+						],
+						"size": [
+							2,
+							2
+						]
+					},
+					"34": {
+						"nodes": [
+							"13,18",
+							"14,18",
+							"15,18",
+							"13,19",
+							"14,19",
+							"15,19",
+							"13,20",
+							"14,20",
+							"15,20"
+						],
+						"position": [
+							13,
+							18
+						],
+						"size": [
+							3,
+							3
+						]
+					},
+					"35": {
+						"nodes": [
+							"17,18"
+						],
+						"position": [
+							17,
+							18
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"36": {
+						"nodes": [
+							"17,19"
+						],
+						"position": [
+							17,
+							19
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"37": {
+						"nodes": [
+							"10,20"
+						],
+						"position": [
+							10,
+							20
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"38": {
+						"nodes": [
+							"11,20"
+						],
+						"position": [
+							11,
+							20
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"39": {
+						"nodes": [
+							"17,20"
+						],
+						"position": [
+							17,
+							20
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"4": {
+						"nodes": [
+							"15,1",
+							"16,1",
+							"17,1",
+							"15,2",
+							"16,2",
+							"17,2",
+							"15,3",
+							"16,3",
+							"17,3"
+						],
+						"position": [
+							15,
+							1
+						],
+						"size": [
+							3,
+							3
+						]
+					},
+					"40": {
+						"nodes": [
+							"2,0"
+						],
+						"position": [
+							2,
+							0
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"41": {
+						"nodes": [
+							"-1,16"
+						],
+						"position": [
+							-1,
+							16
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"42": {
+						"nodes": [
+							"-2,16"
+						],
+						"position": [
+							-2,
+							16
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"43": {
+						"nodes": [
+							"8,4"
+						],
+						"position": [
+							8,
+							4
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"44": {
+						"nodes": [
+							"6,4"
+						],
+						"position": [
+							6,
+							4
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"45": {
+						"nodes": [
+							"10,3"
+						],
+						"position": [
+							10,
+							3
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"46": {
+						"nodes": [
+							"8,3"
+						],
+						"position": [
+							8,
+							3
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"47": {
+						"nodes": [
+							"13,2"
+						],
+						"position": [
+							13,
+							2
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"48": {
+						"nodes": [
+							"13,1"
+						],
+						"position": [
+							13,
+							1
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"49": {
+						"nodes": [
+							"8,1"
+						],
+						"position": [
+							8,
+							1
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"5": {
+						"nodes": [
+							"1,3"
+						],
+						"position": [
+							1,
+							3
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"50": {
+						"nodes": [
+							"7,1"
+						],
+						"position": [
+							7,
+							1
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"51": {
+						"nodes": [
+							"2,1"
+						],
+						"position": [
+							2,
+							1
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"52": {
+						"nodes": [
+							"1,1"
+						],
+						"position": [
+							1,
+							1
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"53": {
+						"nodes": [
+							"0,16"
+						],
+						"position": [
+							0,
+							16
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"54": {
+						"nodes": [
+							"0,17"
+						],
+						"position": [
+							0,
+							17
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"55": {
+						"nodes": [
+							"1,16"
+						],
+						"position": [
+							1,
+							16
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"56": {
+						"nodes": [
+							"2,16"
+						],
+						"position": [
+							2,
+							16
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"57": {
+						"nodes": [
+							"3,16"
+						],
+						"position": [
+							3,
+							16
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"58": {
+						"nodes": [
+							"-3,16"
+						],
+						"position": [
+							-3,
+							16
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"6": {
+						"nodes": [
+							"9,3"
+						],
+						"position": [
+							9,
+							3
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"7": {
+						"nodes": [
+							"13,3"
+						],
+						"position": [
+							13,
+							3
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"8": {
+						"nodes": [
+							"11,3"
+						],
+						"position": [
+							11,
+							3
+						],
+						"size": [
+							1,
+							1
+						]
+					},
+					"9": {
+						"nodes": [
+							"3,4",
+							"4,4",
+							"3,5",
+							"4,5"
+						],
+						"position": [
+							3,
+							4
+						],
+						"size": [
+							2,
+							2
+						]
+					}
+				},
+				"center": [
+					12,
+					11
+				],
+				"edges": [
+					"0,0",
+					"13,0",
+					"14,0",
+					"0,1",
+					"18,1",
+					"18,2",
+					"18,3",
+					"19,3",
+					"20,3",
+					"21,3",
+					"21,4",
+					"21,5",
+					"22,5",
+					"23,5",
+					"0,10",
+					"0,11",
+					"0,12",
+					"23,13",
+					"23,14",
+					"22,15",
+					"23,15",
+					"4,16",
+					"5,16",
+					"6,16",
+					"7,16",
+					"8,16",
+					"9,16",
+					"18,16",
+					"19,16",
+					"20,16",
+					"22,16",
+					"4,17",
+					"9,17",
+					"18,17",
+					"20,17",
+					"21,17",
+					"22,17",
+					"4,18",
+					"9,18",
+					"18,18",
+					"4,19",
+					"9,19",
+					"18,19",
+					"0,20",
+					"1,20",
+					"2,20",
+					"3,20",
+					"4,20",
+					"9,20",
+					"18,20",
+					"9,21",
+					"1,0",
+					"1,-1",
+					"2,-1",
+					"3,-1",
+					"4,-1",
+					"5,-1",
+					"6,0",
+					"6,-1",
+					"7,0",
+					"8,0",
+					"9,0",
+					"10,0",
+					"11,0",
+					"12,0",
+					"15,0",
+					"16,0",
+					"17,0",
+					"18,0",
+					"0,2",
+					"0,3",
+					"0,4",
+					"0,5",
+					"0,6",
+					"23,6",
+					"0,7",
+					"23,7",
+					"0,8",
+					"23,8",
+					"0,9",
+					"23,9",
+					"23,10",
+					"23,11",
+					"23,12",
+					"0,13",
+					"0,14",
+					"0,15",
+					"-1,15",
+					"-2,15",
+					"-3,15",
+					"-4,15",
+					"-4,16",
+					"-1,17",
+					"-2,17",
+					"-3,17",
+					"-4,17",
+					"0,18",
+					"-1,18",
+					"0,19",
+					"10,21",
+					"11,21",
+					"12,21",
+					"13,21",
+					"14,21",
+					"15,21",
+					"16,21",
+					"17,21",
+					"18,21"
+				],
+				"gate_walls": [
+					"11,0",
+					"13,0",
+					"11,21",
+					"13,21",
+					"0,10",
+					"0,12",
+					"23,10",
+					"23,12"
+				],
+				"gates": [
+					"12,0",
+					"12,21",
+					"0,11",
+					"23,11"
+				],
+				"mask": [
+					"0,0",
+					"13,0",
+					"14,0",
+					"0,1",
+					"1,1",
+					"2,1",
+					"3,1",
+					"4,1",
+					"5,1",
+					"6,1",
+					"7,1",
+					"8,1",
+					"9,1",
+					"10,1",
+					"11,1",
+					"12,1",
+					"13,1",
+					"14,1",
+					"15,1",
+					"16,1",
+					"17,1",
+					"18,1",
+					"1,2",
+					"2,2",
+					"3,2",
+					"4,2",
+					"5,2",
+					"6,2",
+					"7,2",
+					"8,2",
+					"9,2",
+					"10,2",
+					"11,2",
+					"12,2",
+					"13,2",
+					"14,2",
+					"15,2",
+					"16,2",
+					"17,2",
+					"18,2",
+					"1,3",
+					"2,3",
+					"3,3",
+					"4,3",
+					"5,3",
+					"6,3",
+					"7,3",
+					"8,3",
+					"9,3",
+					"10,3",
+					"11,3",
+					"12,3",
+					"13,3",
+					"14,3",
+					"15,3",
+					"16,3",
+					"17,3",
+					"18,3",
+					"19,3",
+					"20,3",
+					"21,3",
+					"1,4",
+					"2,4",
+					"3,4",
+					"4,4",
+					"5,4",
+					"6,4",
+					"7,4",
+					"8,4",
+					"9,4",
+					"10,4",
+					"11,4",
+					"12,4",
+					"13,4",
+					"14,4",
+					"15,4",
+					"16,4",
+					"17,4",
+					"18,4",
+					"19,4",
+					"20,4",
+					"21,4",
+					"1,5",
+					"2,5",
+					"3,5",
+					"4,5",
+					"5,5",
+					"6,5",
+					"7,5",
+					"8,5",
+					"9,5",
+					"10,5",
+					"11,5",
+					"12,5",
+					"13,5",
+					"14,5",
+					"15,5",
+					"16,5",
+					"17,5",
+					"18,5",
+					"19,5",
+					"20,5",
+					"21,5",
+					"22,5",
+					"23,5",
+					"1,6",
+					"2,6",
+					"3,6",
+					"4,6",
+					"5,6",
+					"6,6",
+					"7,6",
+					"8,6",
+					"9,6",
+					"10,6",
+					"11,6",
+					"12,6",
+					"13,6",
+					"14,6",
+					"15,6",
+					"16,6",
+					"17,6",
+					"18,6",
+					"19,6",
+					"20,6",
+					"21,6",
+					"22,6",
+					"1,7",
+					"2,7",
+					"3,7",
+					"4,7",
+					"5,7",
+					"6,7",
+					"7,7",
+					"8,7",
+					"9,7",
+					"10,7",
+					"11,7",
+					"12,7",
+					"13,7",
+					"14,7",
+					"15,7",
+					"16,7",
+					"17,7",
+					"18,7",
+					"19,7",
+					"20,7",
+					"21,7",
+					"22,7",
+					"1,8",
+					"2,8",
+					"3,8",
+					"4,8",
+					"5,8",
+					"6,8",
+					"7,8",
+					"8,8",
+					"9,8",
+					"10,8",
+					"11,8",
+					"12,8",
+					"13,8",
+					"14,8",
+					"15,8",
+					"16,8",
+					"17,8",
+					"18,8",
+					"19,8",
+					"20,8",
+					"21,8",
+					"22,8",
+					"1,9",
+					"2,9",
+					"3,9",
+					"4,9",
+					"5,9",
+					"6,9",
+					"7,9",
+					"8,9",
+					"9,9",
+					"10,9",
+					"11,9",
+					"12,9",
+					"13,9",
+					"14,9",
+					"15,9",
+					"16,9",
+					"17,9",
+					"18,9",
+					"19,9",
+					"20,9",
+					"21,9",
+					"22,9",
+					"0,10",
+					"1,10",
+					"2,10",
+					"3,10",
+					"4,10",
+					"5,10",
+					"6,10",
+					"7,10",
+					"8,10",
+					"9,10",
+					"10,10",
+					"11,10",
+					"12,10",
+					"13,10",
+					"14,10",
+					"15,10",
+					"16,10",
+					"17,10",
+					"18,10",
+					"19,10",
+					"20,10",
+					"21,10",
+					"22,10",
+					"0,11",
+					"1,11",
+					"2,11",
+					"3,11",
+					"4,11",
+					"5,11",
+					"6,11",
+					"7,11",
+					"8,11",
+					"9,11",
+					"10,11",
+					"11,11",
+					"12,11",
+					"13,11",
+					"14,11",
+					"15,11",
+					"16,11",
+					"17,11",
+					"18,11",
+					"19,11",
+					"20,11",
+					"21,11",
+					"22,11",
+					"0,12",
+					"1,12",
+					"2,12",
+					"3,12",
+					"4,12",
+					"5,12",
+					"6,12",
+					"7,12",
+					"8,12",
+					"9,12",
+					"10,12",
+					"11,12",
+					"12,12",
+					"13,12",
+					"14,12",
+					"15,12",
+					"16,12",
+					"17,12",
+					"18,12",
+					"19,12",
+					"20,12",
+					"21,12",
+					"22,12",
+					"1,13",
+					"2,13",
+					"3,13",
+					"4,13",
+					"5,13",
+					"6,13",
+					"7,13",
+					"8,13",
+					"9,13",
+					"10,13",
+					"11,13",
+					"12,13",
+					"13,13",
+					"14,13",
+					"15,13",
+					"16,13",
+					"17,13",
+					"18,13",
+					"19,13",
+					"20,13",
+					"21,13",
+					"22,13",
+					"23,13",
+					"1,14",
+					"2,14",
+					"3,14",
+					"4,14",
+					"5,14",
+					"6,14",
+					"7,14",
+					"8,14",
+					"9,14",
+					"10,14",
+					"11,14",
+					"12,14",
+					"13,14",
+					"14,14",
+					"15,14",
+					"16,14",
+					"17,14",
+					"18,14",
+					"19,14",
+					"20,14",
+					"21,14",
+					"22,14",
+					"23,14",
+					"1,15",
+					"2,15",
+					"3,15",
+					"4,15",
+					"5,15",
+					"6,15",
+					"7,15",
+					"8,15",
+					"9,15",
+					"10,15",
+					"11,15",
+					"12,15",
+					"13,15",
+					"14,15",
+					"15,15",
+					"16,15",
+					"17,15",
+					"18,15",
+					"19,15",
+					"20,15",
+					"21,15",
+					"22,15",
+					"23,15",
+					"1,16",
+					"2,16",
+					"3,16",
+					"4,16",
+					"5,16",
+					"6,16",
+					"7,16",
+					"8,16",
+					"9,16",
+					"10,16",
+					"11,16",
+					"12,16",
+					"13,16",
+					"14,16",
+					"15,16",
+					"16,16",
+					"17,16",
+					"18,16",
+					"19,16",
+					"20,16",
+					"21,16",
+					"22,16",
+					"1,17",
+					"2,17",
+					"3,17",
+					"4,17",
+					"9,17",
+					"10,17",
+					"11,17",
+					"12,17",
+					"13,17",
+					"14,17",
+					"15,17",
+					"16,17",
+					"17,17",
+					"18,17",
+					"20,17",
+					"21,17",
+					"22,17",
+					"1,18",
+					"2,18",
+					"3,18",
+					"4,18",
+					"9,18",
+					"10,18",
+					"11,18",
+					"12,18",
+					"13,18",
+					"14,18",
+					"15,18",
+					"16,18",
+					"17,18",
+					"18,18",
+					"1,19",
+					"2,19",
+					"3,19",
+					"4,19",
+					"9,19",
+					"10,19",
+					"11,19",
+					"12,19",
+					"13,19",
+					"14,19",
+					"15,19",
+					"16,19",
+					"17,19",
+					"18,19",
+					"0,20",
+					"1,20",
+					"2,20",
+					"3,20",
+					"4,20",
+					"9,20",
+					"10,20",
+					"11,20",
+					"12,20",
+					"13,20",
+					"14,20",
+					"15,20",
+					"16,20",
+					"17,20",
+					"18,20",
+					"9,21",
+					"1,0",
+					"1,-1",
+					"2,0",
+					"2,-1",
+					"3,0",
+					"3,-1",
+					"4,0",
+					"4,-1",
+					"5,0",
+					"5,-1",
+					"6,0",
+					"6,-1",
+					"7,0",
+					"8,0",
+					"9,0",
+					"10,0",
+					"11,0",
+					"12,0",
+					"15,0",
+					"16,0",
+					"17,0",
+					"18,0",
+					"0,2",
+					"0,3",
+					"0,4",
+					"0,5",
+					"0,6",
+					"23,6",
+					"0,7",
+					"23,7",
+					"0,8",
+					"23,8",
+					"0,9",
+					"23,9",
+					"23,10",
+					"23,11",
+					"23,12",
+					"0,13",
+					"0,14",
+					"0,15",
+					"-1,15",
+					"-2,15",
+					"-3,15",
+					"-4,15",
+					"0,16",
+					"-1,16",
+					"-2,16",
+					"-3,16",
+					"-4,16",
+					"0,17",
+					"-1,17",
+					"-2,17",
+					"-3,17",
+					"-4,17",
+					"0,18",
+					"-1,18",
+					"0,19",
+					"10,21",
+					"11,21",
+					"12,21",
+					"13,21",
+					"14,21",
+					"15,21",
+					"16,21",
+					"17,21",
+					"18,21"
+				],
+				"nodes": [
+					"0,0",
+					"13,0",
+					"14,0",
+					"0,1",
+					"1,1",
+					"2,1",
+					"3,1",
+					"4,1",
+					"5,1",
+					"6,1",
+					"7,1",
+					"8,1",
+					"9,1",
+					"10,1",
+					"11,1",
+					"12,1",
+					"13,1",
+					"14,1",
+					"15,1",
+					"16,1",
+					"17,1",
+					"18,1",
+					"1,2",
+					"2,2",
+					"3,2",
+					"4,2",
+					"5,2",
+					"6,2",
+					"7,2",
+					"8,2",
+					"9,2",
+					"10,2",
+					"11,2",
+					"12,2",
+					"13,2",
+					"14,2",
+					"15,2",
+					"16,2",
+					"17,2",
+					"18,2",
+					"1,3",
+					"2,3",
+					"3,3",
+					"4,3",
+					"5,3",
+					"6,3",
+					"7,3",
+					"8,3",
+					"9,3",
+					"10,3",
+					"11,3",
+					"12,3",
+					"13,3",
+					"14,3",
+					"15,3",
+					"16,3",
+					"17,3",
+					"18,3",
+					"19,3",
+					"20,3",
+					"21,3",
+					"1,4",
+					"2,4",
+					"3,4",
+					"4,4",
+					"5,4",
+					"6,4",
+					"7,4",
+					"8,4",
+					"9,4",
+					"10,4",
+					"11,4",
+					"12,4",
+					"13,4",
+					"14,4",
+					"15,4",
+					"16,4",
+					"17,4",
+					"18,4",
+					"19,4",
+					"20,4",
+					"21,4",
+					"1,5",
+					"2,5",
+					"3,5",
+					"4,5",
+					"5,5",
+					"6,5",
+					"7,5",
+					"8,5",
+					"9,5",
+					"10,5",
+					"11,5",
+					"12,5",
+					"13,5",
+					"14,5",
+					"15,5",
+					"16,5",
+					"17,5",
+					"18,5",
+					"19,5",
+					"20,5",
+					"21,5",
+					"22,5",
+					"23,5",
+					"1,6",
+					"2,6",
+					"3,6",
+					"4,6",
+					"5,6",
+					"6,6",
+					"7,6",
+					"8,6",
+					"9,6",
+					"10,6",
+					"11,6",
+					"12,6",
+					"13,6",
+					"14,6",
+					"15,6",
+					"16,6",
+					"17,6",
+					"18,6",
+					"19,6",
+					"20,6",
+					"21,6",
+					"22,6",
+					"1,7",
+					"2,7",
+					"3,7",
+					"4,7",
+					"5,7",
+					"6,7",
+					"7,7",
+					"8,7",
+					"9,7",
+					"10,7",
+					"11,7",
+					"12,7",
+					"13,7",
+					"14,7",
+					"15,7",
+					"16,7",
+					"17,7",
+					"18,7",
+					"19,7",
+					"20,7",
+					"21,7",
+					"22,7",
+					"1,8",
+					"2,8",
+					"3,8",
+					"4,8",
+					"5,8",
+					"6,8",
+					"7,8",
+					"8,8",
+					"9,8",
+					"10,8",
+					"11,8",
+					"12,8",
+					"13,8",
+					"14,8",
+					"15,8",
+					"16,8",
+					"17,8",
+					"18,8",
+					"19,8",
+					"20,8",
+					"21,8",
+					"22,8",
+					"1,9",
+					"2,9",
+					"3,9",
+					"4,9",
+					"5,9",
+					"6,9",
+					"7,9",
+					"8,9",
+					"9,9",
+					"10,9",
+					"11,9",
+					"12,9",
+					"13,9",
+					"14,9",
+					"15,9",
+					"16,9",
+					"17,9",
+					"18,9",
+					"19,9",
+					"20,9",
+					"21,9",
+					"22,9",
+					"0,10",
+					"1,10",
+					"2,10",
+					"3,10",
+					"4,10",
+					"5,10",
+					"6,10",
+					"7,10",
+					"8,10",
+					"9,10",
+					"10,10",
+					"11,10",
+					"12,10",
+					"13,10",
+					"14,10",
+					"15,10",
+					"16,10",
+					"17,10",
+					"18,10",
+					"19,10",
+					"20,10",
+					"21,10",
+					"22,10",
+					"0,11",
+					"1,11",
+					"2,11",
+					"3,11",
+					"4,11",
+					"5,11",
+					"6,11",
+					"7,11",
+					"8,11",
+					"9,11",
+					"10,11",
+					"11,11",
+					"12,11",
+					"13,11",
+					"14,11",
+					"15,11",
+					"16,11",
+					"17,11",
+					"18,11",
+					"19,11",
+					"20,11",
+					"21,11",
+					"22,11",
+					"0,12",
+					"1,12",
+					"2,12",
+					"3,12",
+					"4,12",
+					"5,12",
+					"6,12",
+					"7,12",
+					"8,12",
+					"9,12",
+					"10,12",
+					"11,12",
+					"12,12",
+					"13,12",
+					"14,12",
+					"15,12",
+					"16,12",
+					"17,12",
+					"18,12",
+					"19,12",
+					"20,12",
+					"21,12",
+					"22,12",
+					"1,13",
+					"2,13",
+					"3,13",
+					"4,13",
+					"5,13",
+					"6,13",
+					"7,13",
+					"8,13",
+					"9,13",
+					"10,13",
+					"11,13",
+					"12,13",
+					"13,13",
+					"14,13",
+					"15,13",
+					"16,13",
+					"17,13",
+					"18,13",
+					"19,13",
+					"20,13",
+					"21,13",
+					"22,13",
+					"23,13",
+					"1,14",
+					"2,14",
+					"3,14",
+					"4,14",
+					"5,14",
+					"6,14",
+					"7,14",
+					"8,14",
+					"9,14",
+					"10,14",
+					"11,14",
+					"12,14",
+					"13,14",
+					"14,14",
+					"15,14",
+					"16,14",
+					"17,14",
+					"18,14",
+					"19,14",
+					"20,14",
+					"21,14",
+					"22,14",
+					"23,14",
+					"1,15",
+					"2,15",
+					"3,15",
+					"4,15",
+					"5,15",
+					"6,15",
+					"7,15",
+					"8,15",
+					"9,15",
+					"10,15",
+					"11,15",
+					"12,15",
+					"13,15",
+					"14,15",
+					"15,15",
+					"16,15",
+					"17,15",
+					"18,15",
+					"19,15",
+					"20,15",
+					"21,15",
+					"22,15",
+					"23,15",
+					"1,16",
+					"2,16",
+					"3,16",
+					"4,16",
+					"5,16",
+					"6,16",
+					"7,16",
+					"8,16",
+					"9,16",
+					"10,16",
+					"11,16",
+					"12,16",
+					"13,16",
+					"14,16",
+					"15,16",
+					"16,16",
+					"17,16",
+					"18,16",
+					"19,16",
+					"20,16",
+					"21,16",
+					"22,16",
+					"1,17",
+					"2,17",
+					"3,17",
+					"4,17",
+					"9,17",
+					"10,17",
+					"11,17",
+					"12,17",
+					"13,17",
+					"14,17",
+					"15,17",
+					"16,17",
+					"17,17",
+					"18,17",
+					"20,17",
+					"21,17",
+					"22,17",
+					"1,18",
+					"2,18",
+					"3,18",
+					"4,18",
+					"9,18",
+					"10,18",
+					"11,18",
+					"12,18",
+					"13,18",
+					"14,18",
+					"15,18",
+					"16,18",
+					"17,18",
+					"18,18",
+					"1,19",
+					"2,19",
+					"3,19",
+					"4,19",
+					"9,19",
+					"10,19",
+					"11,19",
+					"12,19",
+					"13,19",
+					"14,19",
+					"15,19",
+					"16,19",
+					"17,19",
+					"18,19",
+					"0,20",
+					"1,20",
+					"2,20",
+					"3,20",
+					"4,20",
+					"9,20",
+					"10,20",
+					"11,20",
+					"12,20",
+					"13,20",
+					"14,20",
+					"15,20",
+					"16,20",
+					"17,20",
+					"18,20",
+					"9,21",
+					"1,0",
+					"1,-1",
+					"2,0",
+					"2,-1",
+					"3,0",
+					"3,-1",
+					"4,0",
+					"4,-1",
+					"5,0",
+					"5,-1",
+					"6,0",
+					"6,-1",
+					"7,0",
+					"8,0",
+					"9,0",
+					"10,0",
+					"11,0",
+					"12,0",
+					"15,0",
+					"16,0",
+					"17,0",
+					"18,0",
+					"0,2",
+					"0,3",
+					"0,4",
+					"0,5",
+					"0,6",
+					"23,6",
+					"0,7",
+					"23,7",
+					"0,8",
+					"23,8",
+					"0,9",
+					"23,9",
+					"23,10",
+					"23,11",
+					"23,12",
+					"0,13",
+					"0,14",
+					"0,15",
+					"-1,15",
+					"-2,15",
+					"-3,15",
+					"-4,15",
+					"0,16",
+					"-1,16",
+					"-2,16",
+					"-3,16",
+					"-4,16",
+					"0,17",
+					"-1,17",
+					"-2,17",
+					"-3,17",
+					"-4,17",
+					"0,18",
+					"-1,18",
+					"0,19",
+					"10,21",
+					"11,21",
+					"12,21",
+					"13,21",
+					"14,21",
+					"15,21",
+					"16,21",
+					"17,21",
+					"18,21"
+				],
+				"primary_road": [
+					"12,11",
+					"12,10",
+					"12,9",
+					"12,8",
+					"12,7",
+					"12,6",
+					"12,5",
+					"12,4",
+					"12,3",
+					"12,2",
+					"12,1",
+					"12,12",
+					"12,13",
+					"12,14",
+					"12,15",
+					"12,16",
+					"12,17",
+					"12,18",
+					"12,19",
+					"12,20",
+					"11,11",
+					"10,11",
+					"9,11",
+					"8,11",
+					"7,11",
+					"6,11",
+					"5,11",
+					"4,11",
+					"3,11",
+					"2,11",
+					"1,11",
+					"13,11",
+					"14,11",
+					"15,11",
+					"16,11",
+					"17,11",
+					"18,11",
+					"19,11",
+					"20,11",
+					"21,11",
+					"22,11"
+				],
+				"secondary_roads": [
+					"6,5",
+					"7,5",
+					"8,5",
+					"9,5",
+					"10,5",
+					"11,5",
+					"6,6",
+					"6,7",
+					"6,8",
+					"6,9",
+					"6,10",
+					"3,0",
+					"4,0",
+					"5,0",
+					"3,1",
+					"6,1",
+					"3,2",
+					"6,2",
+					"3,3",
+					"4,3",
+					"5,3",
+					"6,3",
+					"9,1",
+					"11,1",
+					"9,2",
+					"10,2",
+					"11,2",
+					"14,1",
+					"14,2",
+					"14,3",
+					"14,4",
+					"15,4",
+					"16,4",
+					"17,4",
+					"18,4",
+					"1,2",
+					"2,2",
+					"2,3",
+					"1,4",
+					"2,4",
+					"5,4",
+					"2,5",
+					"5,5",
+					"2,6",
+					"3,6",
+					"4,6",
+					"5,6",
+					"18,5",
+					"18,6",
+					"19,6",
+					"20,6",
+					"21,6",
+					"18,7",
+					"18,8",
+					"18,9",
+					"13,10",
+					"14,10",
+					"15,10",
+					"16,10",
+					"17,10",
+					"18,10",
+					"5,7",
+					"5,8",
+					"5,9",
+					"5,10",
+					"5,12",
+					"5,13",
+					"5,14",
+					"5,15",
+					"10,12",
+					"10,13",
+					"10,14",
+					"10,15",
+					"10,16",
+					"18,12",
+					"18,13",
+					"18,14",
+					"18,15",
+					"13,17",
+					"14,17",
+					"15,17",
+					"16,17",
+					"17,17",
+					"22,12",
+					"22,13",
+					"22,14",
+					"19,15",
+					"20,15",
+					"21,15",
+					"10,19",
+					"11,19",
+					"16,18",
+					"16,19",
+					"16,20",
+					"7,2",
+					"8,2",
+					"7,3"
+				],
+				"total_nodes": {
+					"-1,15": {
+						"type": "wall"
+					},
+					"-1,16": {
+						"type": "mask"
+					},
+					"-1,17": {
+						"type": "wall"
+					},
+					"-1,18": {
+						"type": "wall"
+					},
+					"-2,15": {
+						"type": "wall"
+					},
+					"-2,16": {
+						"type": "mask"
+					},
+					"-2,17": {
+						"type": "wall"
+					},
+					"-3,15": {
+						"type": "wall"
+					},
+					"-3,16": {
+						"type": "mask"
+					},
+					"-3,17": {
+						"type": "wall"
+					},
+					"-4,15": {
+						"type": "wall"
+					},
+					"-4,16": {
+						"type": "wall"
+					},
+					"-4,17": {
+						"type": "wall"
+					},
+					"0,0": {
+						"type": "wall"
+					},
+					"0,1": {
+						"type": "wall"
+					},
+					"0,10": {
+						"type": "gate_wall"
+					},
+					"0,11": {
+						"type": "gate"
+					},
+					"0,12": {
+						"type": "gate_wall"
+					},
+					"0,13": {
+						"type": "wall"
+					},
+					"0,14": {
+						"type": "wall"
+					},
+					"0,15": {
+						"type": "wall"
+					},
+					"0,16": {
+						"type": "mask"
+					},
+					"0,17": {
+						"type": "mask"
+					},
+					"0,18": {
+						"type": "wall"
+					},
+					"0,19": {
+						"type": "wall"
+					},
+					"0,2": {
+						"type": "wall"
+					},
+					"0,20": {
+						"type": "wall"
+					},
+					"0,3": {
+						"type": "wall"
+					},
+					"0,4": {
+						"type": "wall"
+					},
+					"0,5": {
+						"type": "wall"
+					},
+					"0,6": {
+						"type": "wall"
+					},
+					"0,7": {
+						"type": "wall"
+					},
+					"0,8": {
+						"type": "wall"
+					},
+					"0,9": {
+						"type": "wall"
+					},
+					"1,-1": {
+						"type": "wall"
+					},
+					"1,0": {
+						"type": "wall"
+					},
+					"1,1": {
+						"type": "mask"
+					},
+					"1,10": {
+						"type": "mask"
+					},
+					"1,11": {
+						"type": "primary_road"
+					},
+					"1,12": {
+						"type": "mask"
+					},
+					"1,13": {
+						"type": "mask"
+					},
+					"1,14": {
+						"type": "mask"
+					},
+					"1,15": {
+						"type": "mask"
+					},
+					"1,16": {
+						"type": "mask"
+					},
+					"1,17": {
+						"type": "mask"
+					},
+					"1,18": {
+						"type": "mask"
+					},
+					"1,19": {
+						"type": "mask"
+					},
+					"1,2": {
+						"type": "secondary_road"
+					},
+					"1,20": {
+						"type": "wall"
+					},
+					"1,3": {
+						"type": "mask"
+					},
+					"1,4": {
+						"type": "secondary_road"
+					},
+					"1,5": {
+						"type": "mask"
+					},
+					"1,6": {
+						"type": "mask"
+					},
+					"1,7": {
+						"type": "mask"
+					},
+					"1,8": {
+						"type": "mask"
+					},
+					"1,9": {
+						"type": "mask"
+					},
+					"10,0": {
+						"type": "wall"
+					},
+					"10,1": {
+						"type": "mask"
+					},
+					"10,10": {
+						"type": "mask"
+					},
+					"10,11": {
+						"type": "primary_road"
+					},
+					"10,12": {
+						"type": "secondary_road"
+					},
+					"10,13": {
+						"type": "secondary_road"
+					},
+					"10,14": {
+						"type": "secondary_road"
+					},
+					"10,15": {
+						"type": "secondary_road"
+					},
+					"10,16": {
+						"type": "secondary_road"
+					},
+					"10,17": {
+						"type": "mask"
+					},
+					"10,18": {
+						"type": "mask"
+					},
+					"10,19": {
+						"type": "secondary_road"
+					},
+					"10,2": {
+						"type": "secondary_road"
+					},
+					"10,20": {
+						"type": "mask"
+					},
+					"10,21": {
+						"type": "wall"
+					},
+					"10,3": {
+						"type": "mask"
+					},
+					"10,4": {
+						"type": "mask"
+					},
+					"10,5": {
+						"type": "secondary_road"
+					},
+					"10,6": {
+						"type": "mask"
+					},
+					"10,7": {
+						"type": "mask"
+					},
+					"10,8": {
+						"type": "mask"
+					},
+					"10,9": {
+						"type": "mask"
+					},
+					"11,0": {
+						"type": "gate_wall"
+					},
+					"11,1": {
+						"type": "secondary_road"
+					},
+					"11,10": {
+						"type": "mask"
+					},
+					"11,11": {
+						"type": "primary_road"
+					},
+					"11,12": {
+						"type": "mask"
+					},
+					"11,13": {
+						"type": "mask"
+					},
+					"11,14": {
+						"type": "mask"
+					},
+					"11,15": {
+						"type": "mask"
+					},
+					"11,16": {
+						"type": "mask"
+					},
+					"11,17": {
+						"type": "mask"
+					},
+					"11,18": {
+						"type": "mask"
+					},
+					"11,19": {
+						"type": "secondary_road"
+					},
+					"11,2": {
+						"type": "secondary_road"
+					},
+					"11,20": {
+						"type": "mask"
+					},
+					"11,21": {
+						"type": "gate_wall"
+					},
+					"11,3": {
+						"type": "mask"
+					},
+					"11,4": {
+						"type": "mask"
+					},
+					"11,5": {
+						"type": "secondary_road"
+					},
+					"11,6": {
+						"type": "mask"
+					},
+					"11,7": {
+						"type": "mask"
+					},
+					"11,8": {
+						"type": "mask"
+					},
+					"11,9": {
+						"type": "mask"
+					},
+					"12,0": {
+						"type": "gate"
+					},
+					"12,1": {
+						"type": "primary_road"
+					},
+					"12,10": {
+						"type": "primary_road"
+					},
+					"12,11": {
+						"type": "primary_road"
+					},
+					"12,12": {
+						"type": "primary_road"
+					},
+					"12,13": {
+						"type": "primary_road"
+					},
+					"12,14": {
+						"type": "primary_road"
+					},
+					"12,15": {
+						"type": "primary_road"
+					},
+					"12,16": {
+						"type": "primary_road"
+					},
+					"12,17": {
+						"type": "primary_road"
+					},
+					"12,18": {
+						"type": "primary_road"
+					},
+					"12,19": {
+						"type": "primary_road"
+					},
+					"12,2": {
+						"type": "primary_road"
+					},
+					"12,20": {
+						"type": "primary_road"
+					},
+					"12,21": {
+						"type": "gate"
+					},
+					"12,3": {
+						"type": "primary_road"
+					},
+					"12,4": {
+						"type": "primary_road"
+					},
+					"12,5": {
+						"type": "primary_road"
+					},
+					"12,6": {
+						"type": "primary_road"
+					},
+					"12,7": {
+						"type": "primary_road"
+					},
+					"12,8": {
+						"type": "primary_road"
+					},
+					"12,9": {
+						"type": "primary_road"
+					},
+					"13,0": {
+						"type": "gate_wall"
+					},
+					"13,1": {
+						"type": "mask"
+					},
+					"13,10": {
+						"type": "secondary_road"
+					},
+					"13,11": {
+						"type": "primary_road"
+					},
+					"13,12": {
+						"type": "mask"
+					},
+					"13,13": {
+						"type": "mask"
+					},
+					"13,14": {
+						"type": "mask"
+					},
+					"13,15": {
+						"type": "mask"
+					},
+					"13,16": {
+						"type": "mask"
+					},
+					"13,17": {
+						"type": "secondary_road"
+					},
+					"13,18": {
+						"type": "mask"
+					},
+					"13,19": {
+						"type": "mask"
+					},
+					"13,2": {
+						"type": "mask"
+					},
+					"13,20": {
+						"type": "mask"
+					},
+					"13,21": {
+						"type": "gate_wall"
+					},
+					"13,3": {
+						"type": "mask"
+					},
+					"13,4": {
+						"type": "mask"
+					},
+					"13,5": {
+						"type": "mask"
+					},
+					"13,6": {
+						"type": "mask"
+					},
+					"13,7": {
+						"type": "mask"
+					},
+					"13,8": {
+						"type": "mask"
+					},
+					"13,9": {
+						"type": "mask"
+					},
+					"14,0": {
+						"type": "wall"
+					},
+					"14,1": {
+						"type": "secondary_road"
+					},
+					"14,10": {
+						"type": "secondary_road"
+					},
+					"14,11": {
+						"type": "primary_road"
+					},
+					"14,12": {
+						"type": "mask"
+					},
+					"14,13": {
+						"type": "mask"
+					},
+					"14,14": {
+						"type": "mask"
+					},
+					"14,15": {
+						"type": "mask"
+					},
+					"14,16": {
+						"type": "mask"
+					},
+					"14,17": {
+						"type": "secondary_road"
+					},
+					"14,18": {
+						"type": "mask"
+					},
+					"14,19": {
+						"type": "mask"
+					},
+					"14,2": {
+						"type": "secondary_road"
+					},
+					"14,20": {
+						"type": "mask"
+					},
+					"14,21": {
+						"type": "wall"
+					},
+					"14,3": {
+						"type": "secondary_road"
+					},
+					"14,4": {
+						"type": "secondary_road"
+					},
+					"14,5": {
+						"type": "mask"
+					},
+					"14,6": {
+						"type": "mask"
+					},
+					"14,7": {
+						"type": "mask"
+					},
+					"14,8": {
+						"type": "mask"
+					},
+					"14,9": {
+						"type": "mask"
+					},
+					"15,0": {
+						"type": "wall"
+					},
+					"15,1": {
+						"type": "mask"
+					},
+					"15,10": {
+						"type": "secondary_road"
+					},
+					"15,11": {
+						"type": "primary_road"
+					},
+					"15,12": {
+						"type": "mask"
+					},
+					"15,13": {
+						"type": "mask"
+					},
+					"15,14": {
+						"type": "mask"
+					},
+					"15,15": {
+						"type": "mask"
+					},
+					"15,16": {
+						"type": "mask"
+					},
+					"15,17": {
+						"type": "secondary_road"
+					},
+					"15,18": {
+						"type": "mask"
+					},
+					"15,19": {
+						"type": "mask"
+					},
+					"15,2": {
+						"type": "mask"
+					},
+					"15,20": {
+						"type": "mask"
+					},
+					"15,21": {
+						"type": "wall"
+					},
+					"15,3": {
+						"type": "mask"
+					},
+					"15,4": {
+						"type": "secondary_road"
+					},
+					"15,5": {
+						"type": "mask"
+					},
+					"15,6": {
+						"type": "mask"
+					},
+					"15,7": {
+						"type": "mask"
+					},
+					"15,8": {
+						"type": "mask"
+					},
+					"15,9": {
+						"type": "mask"
+					},
+					"16,0": {
+						"type": "wall"
+					},
+					"16,1": {
+						"type": "mask"
+					},
+					"16,10": {
+						"type": "secondary_road"
+					},
+					"16,11": {
+						"type": "primary_road"
+					},
+					"16,12": {
+						"type": "mask"
+					},
+					"16,13": {
+						"type": "mask"
+					},
+					"16,14": {
+						"type": "mask"
+					},
+					"16,15": {
+						"type": "mask"
+					},
+					"16,16": {
+						"type": "mask"
+					},
+					"16,17": {
+						"type": "secondary_road"
+					},
+					"16,18": {
+						"type": "secondary_road"
+					},
+					"16,19": {
+						"type": "secondary_road"
+					},
+					"16,2": {
+						"type": "mask"
+					},
+					"16,20": {
+						"type": "secondary_road"
+					},
+					"16,21": {
+						"type": "wall"
+					},
+					"16,3": {
+						"type": "mask"
+					},
+					"16,4": {
+						"type": "secondary_road"
+					},
+					"16,5": {
+						"type": "mask"
+					},
+					"16,6": {
+						"type": "mask"
+					},
+					"16,7": {
+						"type": "mask"
+					},
+					"16,8": {
+						"type": "mask"
+					},
+					"16,9": {
+						"type": "mask"
+					},
+					"17,0": {
+						"type": "wall"
+					},
+					"17,1": {
+						"type": "mask"
+					},
+					"17,10": {
+						"type": "secondary_road"
+					},
+					"17,11": {
+						"type": "primary_road"
+					},
+					"17,12": {
+						"type": "mask"
+					},
+					"17,13": {
+						"type": "mask"
+					},
+					"17,14": {
+						"type": "mask"
+					},
+					"17,15": {
+						"type": "mask"
+					},
+					"17,16": {
+						"type": "mask"
+					},
+					"17,17": {
+						"type": "secondary_road"
+					},
+					"17,18": {
+						"type": "mask"
+					},
+					"17,19": {
+						"type": "mask"
+					},
+					"17,2": {
+						"type": "mask"
+					},
+					"17,20": {
+						"type": "mask"
+					},
+					"17,21": {
+						"type": "wall"
+					},
+					"17,3": {
+						"type": "mask"
+					},
+					"17,4": {
+						"type": "secondary_road"
+					},
+					"17,5": {
+						"type": "mask"
+					},
+					"17,6": {
+						"type": "mask"
+					},
+					"17,7": {
+						"type": "mask"
+					},
+					"17,8": {
+						"type": "mask"
+					},
+					"17,9": {
+						"type": "mask"
+					},
+					"18,0": {
+						"type": "wall"
+					},
+					"18,1": {
+						"type": "wall"
+					},
+					"18,10": {
+						"type": "secondary_road"
+					},
+					"18,11": {
+						"type": "primary_road"
+					},
+					"18,12": {
+						"type": "secondary_road"
+					},
+					"18,13": {
+						"type": "secondary_road"
+					},
+					"18,14": {
+						"type": "secondary_road"
+					},
+					"18,15": {
+						"type": "secondary_road"
+					},
+					"18,16": {
+						"type": "wall"
+					},
+					"18,17": {
+						"type": "wall"
+					},
+					"18,18": {
+						"type": "wall"
+					},
+					"18,19": {
+						"type": "wall"
+					},
+					"18,2": {
+						"type": "wall"
+					},
+					"18,20": {
+						"type": "wall"
+					},
+					"18,21": {
+						"type": "wall"
+					},
+					"18,3": {
+						"type": "wall"
+					},
+					"18,4": {
+						"type": "secondary_road"
+					},
+					"18,5": {
+						"type": "secondary_road"
+					},
+					"18,6": {
+						"type": "secondary_road"
+					},
+					"18,7": {
+						"type": "secondary_road"
+					},
+					"18,8": {
+						"type": "secondary_road"
+					},
+					"18,9": {
+						"type": "secondary_road"
+					},
+					"19,10": {
+						"type": "mask"
+					},
+					"19,11": {
+						"type": "primary_road"
+					},
+					"19,12": {
+						"type": "mask"
+					},
+					"19,13": {
+						"type": "mask"
+					},
+					"19,14": {
+						"type": "mask"
+					},
+					"19,15": {
+						"type": "secondary_road"
+					},
+					"19,16": {
+						"type": "wall"
+					},
+					"19,3": {
+						"type": "wall"
+					},
+					"19,4": {
+						"type": "mask"
+					},
+					"19,5": {
+						"type": "mask"
+					},
+					"19,6": {
+						"type": "secondary_road"
+					},
+					"19,7": {
+						"type": "mask"
+					},
+					"19,8": {
+						"type": "mask"
+					},
+					"19,9": {
+						"type": "mask"
+					},
+					"2,-1": {
+						"type": "wall"
+					},
+					"2,0": {
+						"type": "mask"
+					},
+					"2,1": {
+						"type": "mask"
+					},
+					"2,10": {
+						"type": "mask"
+					},
+					"2,11": {
+						"type": "primary_road"
+					},
+					"2,12": {
+						"type": "mask"
+					},
+					"2,13": {
+						"type": "mask"
+					},
+					"2,14": {
+						"type": "mask"
+					},
+					"2,15": {
+						"type": "mask"
+					},
+					"2,16": {
+						"type": "mask"
+					},
+					"2,17": {
+						"type": "mask"
+					},
+					"2,18": {
+						"type": "mask"
+					},
+					"2,19": {
+						"type": "mask"
+					},
+					"2,2": {
+						"type": "secondary_road"
+					},
+					"2,20": {
+						"type": "wall"
+					},
+					"2,3": {
+						"type": "secondary_road"
+					},
+					"2,4": {
+						"type": "secondary_road"
+					},
+					"2,5": {
+						"type": "secondary_road"
+					},
+					"2,6": {
+						"type": "secondary_road"
+					},
+					"2,7": {
+						"type": "mask"
+					},
+					"2,8": {
+						"type": "mask"
+					},
+					"2,9": {
+						"type": "mask"
+					},
+					"20,10": {
+						"type": "mask"
+					},
+					"20,11": {
+						"type": "primary_road"
+					},
+					"20,12": {
+						"type": "mask"
+					},
+					"20,13": {
+						"type": "mask"
+					},
+					"20,14": {
+						"type": "mask"
+					},
+					"20,15": {
+						"type": "secondary_road"
+					},
+					"20,16": {
+						"type": "wall"
+					},
+					"20,17": {
+						"type": "wall"
+					},
+					"20,3": {
+						"type": "wall"
+					},
+					"20,4": {
+						"type": "mask"
+					},
+					"20,5": {
+						"type": "mask"
+					},
+					"20,6": {
+						"type": "secondary_road"
+					},
+					"20,7": {
+						"type": "mask"
+					},
+					"20,8": {
+						"type": "mask"
+					},
+					"20,9": {
+						"type": "mask"
+					},
+					"21,10": {
+						"type": "mask"
+					},
+					"21,11": {
+						"type": "primary_road"
+					},
+					"21,12": {
+						"type": "mask"
+					},
+					"21,13": {
+						"type": "mask"
+					},
+					"21,14": {
+						"type": "mask"
+					},
+					"21,15": {
+						"type": "secondary_road"
+					},
+					"21,16": {
+						"type": "mask"
+					},
+					"21,17": {
+						"type": "wall"
+					},
+					"21,3": {
+						"type": "wall"
+					},
+					"21,4": {
+						"type": "wall"
+					},
+					"21,5": {
+						"type": "wall"
+					},
+					"21,6": {
+						"type": "secondary_road"
+					},
+					"21,7": {
+						"type": "mask"
+					},
+					"21,8": {
+						"type": "mask"
+					},
+					"21,9": {
+						"type": "mask"
+					},
+					"22,10": {
+						"type": "mask"
+					},
+					"22,11": {
+						"type": "primary_road"
+					},
+					"22,12": {
+						"type": "secondary_road"
+					},
+					"22,13": {
+						"type": "secondary_road"
+					},
+					"22,14": {
+						"type": "secondary_road"
+					},
+					"22,15": {
+						"type": "wall"
+					},
+					"22,16": {
+						"type": "wall"
+					},
+					"22,17": {
+						"type": "wall"
+					},
+					"22,5": {
+						"type": "wall"
+					},
+					"22,6": {
+						"type": "mask"
+					},
+					"22,7": {
+						"type": "mask"
+					},
+					"22,8": {
+						"type": "mask"
+					},
+					"22,9": {
+						"type": "mask"
+					},
+					"23,10": {
+						"type": "gate_wall"
+					},
+					"23,11": {
+						"type": "gate"
+					},
+					"23,12": {
+						"type": "gate_wall"
+					},
+					"23,13": {
+						"type": "wall"
+					},
+					"23,14": {
+						"type": "wall"
+					},
+					"23,15": {
+						"type": "wall"
+					},
+					"23,5": {
+						"type": "wall"
+					},
+					"23,6": {
+						"type": "wall"
+					},
+					"23,7": {
+						"type": "wall"
+					},
+					"23,8": {
+						"type": "wall"
+					},
+					"23,9": {
+						"type": "wall"
+					},
+					"3,-1": {
+						"type": "wall"
+					},
+					"3,0": {
+						"type": "secondary_road"
+					},
+					"3,1": {
+						"type": "secondary_road"
+					},
+					"3,10": {
+						"type": "mask"
+					},
+					"3,11": {
+						"type": "primary_road"
+					},
+					"3,12": {
+						"type": "mask"
+					},
+					"3,13": {
+						"type": "mask"
+					},
+					"3,14": {
+						"type": "mask"
+					},
+					"3,15": {
+						"type": "mask"
+					},
+					"3,16": {
+						"type": "mask"
+					},
+					"3,17": {
+						"type": "mask"
+					},
+					"3,18": {
+						"type": "mask"
+					},
+					"3,19": {
+						"type": "mask"
+					},
+					"3,2": {
+						"type": "secondary_road"
+					},
+					"3,20": {
+						"type": "wall"
+					},
+					"3,3": {
+						"type": "secondary_road"
+					},
+					"3,4": {
+						"type": "mask"
+					},
+					"3,5": {
+						"type": "mask"
+					},
+					"3,6": {
+						"type": "secondary_road"
+					},
+					"3,7": {
+						"type": "mask"
+					},
+					"3,8": {
+						"type": "mask"
+					},
+					"3,9": {
+						"type": "mask"
+					},
+					"4,-1": {
+						"type": "wall"
+					},
+					"4,0": {
+						"type": "secondary_road"
+					},
+					"4,1": {
+						"type": "mask"
+					},
+					"4,10": {
+						"type": "mask"
+					},
+					"4,11": {
+						"type": "primary_road"
+					},
+					"4,12": {
+						"type": "mask"
+					},
+					"4,13": {
+						"type": "mask"
+					},
+					"4,14": {
+						"type": "mask"
+					},
+					"4,15": {
+						"type": "mask"
+					},
+					"4,16": {
+						"type": "wall"
+					},
+					"4,17": {
+						"type": "wall"
+					},
+					"4,18": {
+						"type": "wall"
+					},
+					"4,19": {
+						"type": "wall"
+					},
+					"4,2": {
+						"type": "mask"
+					},
+					"4,20": {
+						"type": "wall"
+					},
+					"4,3": {
+						"type": "secondary_road"
+					},
+					"4,4": {
+						"type": "mask"
+					},
+					"4,5": {
+						"type": "mask"
+					},
+					"4,6": {
+						"type": "secondary_road"
+					},
+					"4,7": {
+						"type": "mask"
+					},
+					"4,8": {
+						"type": "mask"
+					},
+					"4,9": {
+						"type": "mask"
+					},
+					"5,-1": {
+						"type": "wall"
+					},
+					"5,0": {
+						"type": "secondary_road"
+					},
+					"5,1": {
+						"type": "mask"
+					},
+					"5,10": {
+						"type": "secondary_road"
+					},
+					"5,11": {
+						"type": "primary_road"
+					},
+					"5,12": {
+						"type": "secondary_road"
+					},
+					"5,13": {
+						"type": "secondary_road"
+					},
+					"5,14": {
+						"type": "secondary_road"
+					},
+					"5,15": {
+						"type": "secondary_road"
+					},
+					"5,16": {
+						"type": "wall"
+					},
+					"5,2": {
+						"type": "mask"
+					},
+					"5,3": {
+						"type": "secondary_road"
+					},
+					"5,4": {
+						"type": "secondary_road"
+					},
+					"5,5": {
+						"type": "secondary_road"
+					},
+					"5,6": {
+						"type": "secondary_road"
+					},
+					"5,7": {
+						"type": "secondary_road"
+					},
+					"5,8": {
+						"type": "secondary_road"
+					},
+					"5,9": {
+						"type": "secondary_road"
+					},
+					"6,-1": {
+						"type": "wall"
+					},
+					"6,0": {
+						"type": "wall"
+					},
+					"6,1": {
+						"type": "secondary_road"
+					},
+					"6,10": {
+						"type": "secondary_road"
+					},
+					"6,11": {
+						"type": "primary_road"
+					},
+					"6,12": {
+						"type": "mask"
+					},
+					"6,13": {
+						"type": "mask"
+					},
+					"6,14": {
+						"type": "mask"
+					},
+					"6,15": {
+						"type": "mask"
+					},
+					"6,16": {
+						"type": "wall"
+					},
+					"6,2": {
+						"type": "secondary_road"
+					},
+					"6,3": {
+						"type": "secondary_road"
+					},
+					"6,4": {
+						"type": "mask"
+					},
+					"6,5": {
+						"type": "secondary_road"
+					},
+					"6,6": {
+						"type": "secondary_road"
+					},
+					"6,7": {
+						"type": "secondary_road"
+					},
+					"6,8": {
+						"type": "secondary_road"
+					},
+					"6,9": {
+						"type": "secondary_road"
+					},
+					"7,0": {
+						"type": "wall"
+					},
+					"7,1": {
+						"type": "mask"
+					},
+					"7,10": {
+						"type": "mask"
+					},
+					"7,11": {
+						"type": "primary_road"
+					},
+					"7,12": {
+						"type": "mask"
+					},
+					"7,13": {
+						"type": "mask"
+					},
+					"7,14": {
+						"type": "mask"
+					},
+					"7,15": {
+						"type": "mask"
+					},
+					"7,16": {
+						"type": "wall"
+					},
+					"7,2": {
+						"type": "secondary_road"
+					},
+					"7,3": {
+						"type": "secondary_road"
+					},
+					"7,4": {
+						"type": "mask"
+					},
+					"7,5": {
+						"type": "secondary_road"
+					},
+					"7,6": {
+						"type": "mask"
+					},
+					"7,7": {
+						"type": "mask"
+					},
+					"7,8": {
+						"type": "mask"
+					},
+					"7,9": {
+						"type": "mask"
+					},
+					"8,0": {
+						"type": "wall"
+					},
+					"8,1": {
+						"type": "mask"
+					},
+					"8,10": {
+						"type": "mask"
+					},
+					"8,11": {
+						"type": "primary_road"
+					},
+					"8,12": {
+						"type": "mask"
+					},
+					"8,13": {
+						"type": "mask"
+					},
+					"8,14": {
+						"type": "mask"
+					},
+					"8,15": {
+						"type": "mask"
+					},
+					"8,16": {
+						"type": "wall"
+					},
+					"8,2": {
+						"type": "secondary_road"
+					},
+					"8,3": {
+						"type": "mask"
+					},
+					"8,4": {
+						"type": "mask"
+					},
+					"8,5": {
+						"type": "secondary_road"
+					},
+					"8,6": {
+						"type": "mask"
+					},
+					"8,7": {
+						"type": "mask"
+					},
+					"8,8": {
+						"type": "mask"
+					},
+					"8,9": {
+						"type": "mask"
+					},
+					"9,0": {
+						"type": "wall"
+					},
+					"9,1": {
+						"type": "secondary_road"
+					},
+					"9,10": {
+						"type": "mask"
+					},
+					"9,11": {
+						"type": "primary_road"
+					},
+					"9,12": {
+						"type": "mask"
+					},
+					"9,13": {
+						"type": "mask"
+					},
+					"9,14": {
+						"type": "mask"
+					},
+					"9,15": {
+						"type": "mask"
+					},
+					"9,16": {
+						"type": "wall"
+					},
+					"9,17": {
+						"type": "wall"
+					},
+					"9,18": {
+						"type": "wall"
+					},
+					"9,19": {
+						"type": "wall"
+					},
+					"9,2": {
+						"type": "secondary_road"
+					},
+					"9,20": {
+						"type": "wall"
+					},
+					"9,21": {
+						"type": "wall"
+					},
+					"9,3": {
+						"type": "mask"
+					},
+					"9,4": {
+						"type": "mask"
+					},
+					"9,5": {
+						"type": "secondary_road"
+					},
+					"9,6": {
+						"type": "mask"
+					},
+					"9,7": {
+						"type": "mask"
+					},
+					"9,8": {
+						"type": "mask"
+					},
+					"9,9": {
+						"type": "mask"
+					}
+				},
+				"walls": [
+					"0,0",
+					"14,0",
+					"0,1",
+					"18,1",
+					"18,2",
+					"18,3",
+					"19,3",
+					"20,3",
+					"21,3",
+					"21,4",
+					"21,5",
+					"22,5",
+					"23,5",
+					"23,13",
+					"23,14",
+					"22,15",
+					"23,15",
+					"4,16",
+					"5,16",
+					"6,16",
+					"7,16",
+					"8,16",
+					"9,16",
+					"18,16",
+					"19,16",
+					"20,16",
+					"22,16",
+					"4,17",
+					"9,17",
+					"18,17",
+					"20,17",
+					"21,17",
+					"22,17",
+					"4,18",
+					"9,18",
+					"18,18",
+					"4,19",
+					"9,19",
+					"18,19",
+					"0,20",
+					"1,20",
+					"2,20",
+					"3,20",
+					"4,20",
+					"9,20",
+					"18,20",
+					"9,21",
+					"1,0",
+					"1,-1",
+					"2,-1",
+					"3,-1",
+					"4,-1",
+					"5,-1",
+					"6,0",
+					"6,-1",
+					"7,0",
+					"8,0",
+					"9,0",
+					"10,0",
+					"15,0",
+					"16,0",
+					"17,0",
+					"18,0",
+					"0,2",
+					"0,3",
+					"0,4",
+					"0,5",
+					"0,6",
+					"23,6",
+					"0,7",
+					"23,7",
+					"0,8",
+					"23,8",
+					"0,9",
+					"23,9",
+					"0,13",
+					"0,14",
+					"0,15",
+					"-1,15",
+					"-2,15",
+					"-3,15",
+					"-4,15",
+					"-4,16",
+					"-1,17",
+					"-2,17",
+					"-3,17",
+					"-4,17",
+					"0,18",
+					"-1,18",
+					"0,19",
+					"10,21",
+					"14,21",
+					"15,21",
+					"16,21",
+					"17,21",
+					"18,21"
+				]
+			},
+			"name": "test_Village"
+		},
+		"generate_at": "2026-03-16T06:58:30",
+		"version": "1.0.0"
+	}
+}

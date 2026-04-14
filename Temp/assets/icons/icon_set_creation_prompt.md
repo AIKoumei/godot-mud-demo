@@ -25,13 +25,13 @@ Use a limited color palette with deep blue (#0F172A), medium blue (#3B82F6), lig
 
 ### Key Elements
 
-1. **Style Specification**:
+#  **Style Specification**:
    - 8-bit pixel art
    - Retro operating system aesthetic
    - Clean, simple design
    - 32x32 pixels per icon
 
-2. **Icon Content**:
+#  **Icon Content**:
    - File Explorer folder (gray with document symbol)
    - System folder (blue with gear symbol)
    - Document file (white paper with lines)
@@ -41,7 +41,7 @@ Use a limited color palette with deep blue (#0F172A), medium blue (#3B82F6), lig
    - Trash bin (gray bin)
    - Music file (musical note)
 
-3. **Color Palette**:
+#  **Color Palette**:
    - Deep blue (#0F172A)
    - Medium blue (#3B82F6)
    - Light gray (#94A3B8)
@@ -49,17 +49,17 @@ Use a limited color palette with deep blue (#0F172A), medium blue (#3B82F6), lig
 
 ### Rationale
 
-1. **Style Choice**:
+#  **Style Choice**:
    - 8-bit pixel art aligns with the overall project aesthetic
    - Simple design ensures icons are recognizable at small sizes
    - 32x32 pixel size is appropriate for desktop icons
 
-2. **Icon Selection**:
+#  **Icon Selection**:
    - Covers common system functions (File Explorer, Settings, Help)
    - Includes common file types (Document, Text, Music)
    - Represents essential UI elements (Folders, Trash bin)
 
-3. **Color Selection**:
+#  **Color Selection**:
    - Limited palette ensures visual consistency
    - Blue tones convey a technological, retro computing feel
    - High contrast between colors ensures good visibility
@@ -67,17 +67,17 @@ Use a limited color palette with deep blue (#0F172A), medium blue (#3B82F6), lig
 
 ## Generation Process
 
-1. **Prompt Refinement**:
+#  **Prompt Refinement**:
    - Initial prompt was tested and refined to ensure all requirements were clear
    - Specific dimensions and color codes were added for precision
    - Icon details were made explicit to avoid ambiguity
 
-2. **Image Generation**:
+#  **Image Generation**:
    - Used an AI image generation tool specialized in pixel art
    - Generated image was reviewed for adherence to requirements
    - Adjustments were made to the prompt based on initial results
 
-3. **Finalization**:
+#  **Finalization**:
    - The generated image was saved as `icon_set.png`
    - Documentation was created to explain the icon set
    - Usage guidelines were developed for consistent implementation

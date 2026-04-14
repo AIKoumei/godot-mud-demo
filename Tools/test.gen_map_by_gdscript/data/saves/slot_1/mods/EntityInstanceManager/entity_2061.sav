@@ -1,0 +1,21 @@
+{
+	"_source_mod": "EntityManager",
+	"attributes": {
+		"description": "这是一片深海。",
+		"encounter_id_list": [],
+		"height_level": 0,
+		"map_cell_type": "abyssal_sea",
+		"map_position": [
+			0,
+			2
+		],
+		"passable": {
+
+		}
+	},
+	"entity_id": "map_cell_abyssal_sea",
+	"entity_instance_id": "2061",
+	"entity_type": "abyssal_sea",
+	"instance_id": "2061",
+	"type": "abyssal_sea"
+}

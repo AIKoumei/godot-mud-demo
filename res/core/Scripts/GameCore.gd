@@ -13,6 +13,8 @@ var mod_manager = ModManager.new()
 @export var SceneStateMachine = null
 
 var ArrayTools = _ArrayTools.new()
+var DictionaryTools = _DictionaryTools.new()
+var BaseTools = _BaseTools.new()
 var Settings = _Settings.new()
 
 

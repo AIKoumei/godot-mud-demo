@@ -1,0 +1,1414 @@
+{
+	"data": {
+		"blocks": {
+
+		},
+		"encounters": {
+
+		},
+		"height_levels": [
+			[
+				0,
+				0,
+				0,
+				1,
+				2,
+				2,
+				1,
+				1
+			],
+			[
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				2,
+				2
+			],
+			[
+				3,
+				3,
+				3,
+				3,
+				4,
+				4,
+				3,
+				2
+			],
+			[
+				3,
+				3,
+				4,
+				5,
+				6,
+				6,
+				4,
+				3
+			],
+			[
+				3,
+				3,
+				4,
+				4,
+				4,
+				4,
+				5,
+				4
+			],
+			[
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				4,
+				4
+			],
+			[
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				4
+			],
+			[
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3
+			]
+		],
+		"map_id": "test_River",
+		"map_name": "test_River",
+		"map_nodes": [
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片深海。",
+					"encounter_id_list": [],
+					"height_level": 0,
+					"map_cell_type": "abyssal_sea",
+					"map_position": [
+						0,
+						0
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_abyssal_sea",
+				"entity_type": "abyssal_sea",
+				"type": "abyssal_sea"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片深海。",
+					"encounter_id_list": [],
+					"height_level": 0,
+					"map_cell_type": "abyssal_sea",
+					"map_position": [
+						0,
+						1
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_abyssal_sea",
+				"entity_type": "abyssal_sea",
+				"type": "abyssal_sea"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片深海。",
+					"encounter_id_list": [],
+					"height_level": 0,
+					"map_cell_type": "abyssal_sea",
+					"map_position": [
+						0,
+						2
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_abyssal_sea",
+				"entity_type": "abyssal_sea",
+				"type": "abyssal_sea"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片沿海海域。",
+					"encounter_id_list": [],
+					"height_level": 1,
+					"map_cell_type": "coastal_sea",
+					"map_position": [
+						0,
+						3
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_coastal_sea",
+				"entity_type": "coastal_sea",
+				"type": "coastal_sea"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平地。",
+					"encounter_id_list": [],
+					"height_level": 2,
+					"map_cell_type": "flat",
+					"map_position": [
+						0,
+						4
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_flat",
+				"entity_type": "flat",
+				"type": "flat"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平地。",
+					"encounter_id_list": [],
+					"height_level": 2,
+					"map_cell_type": "flat",
+					"map_position": [
+						0,
+						5
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_flat",
+				"entity_type": "flat",
+				"type": "flat"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片沿海海域。",
+					"encounter_id_list": [],
+					"height_level": 1,
+					"map_cell_type": "coastal_sea",
+					"map_position": [
+						0,
+						6
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_coastal_sea",
+				"entity_type": "coastal_sea",
+				"type": "coastal_sea"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片沿海海域。",
+					"encounter_id_list": [],
+					"height_level": 1,
+					"map_cell_type": "coastal_sea",
+					"map_position": [
+						0,
+						7
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_coastal_sea",
+				"entity_type": "coastal_sea",
+				"type": "coastal_sea"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平地。",
+					"encounter_id_list": [],
+					"height_level": 2,
+					"map_cell_type": "flat",
+					"map_position": [
+						1,
+						0
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_flat",
+				"entity_type": "flat",
+				"type": "flat"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平地。",
+					"encounter_id_list": [],
+					"height_level": 2,
+					"map_cell_type": "flat",
+					"map_position": [
+						1,
+						1
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_flat",
+				"entity_type": "flat",
+				"type": "flat"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平地。",
+					"encounter_id_list": [],
+					"height_level": 2,
+					"map_cell_type": "flat",
+					"map_position": [
+						1,
+						2
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_flat",
+				"entity_type": "flat",
+				"type": "flat"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平原。",
+					"encounter_id_list": [],
+					"height_level": 3,
+					"map_cell_type": "plain",
+					"map_position": [
+						1,
+						3
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_plain",
+				"entity_type": "plain",
+				"type": "plain"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平原。",
+					"encounter_id_list": [],
+					"height_level": 3,
+					"map_cell_type": "plain",
+					"map_position": [
+						1,
+						4
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_plain",
+				"entity_type": "plain",
+				"type": "plain"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平原。",
+					"encounter_id_list": [],
+					"height_level": 3,
+					"map_cell_type": "plain",
+					"map_position": [
+						1,
+						5
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_plain",
+				"entity_type": "plain",
+				"type": "plain"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平地。",
+					"encounter_id_list": [],
+					"height_level": 2,
+					"map_cell_type": "flat",
+					"map_position": [
+						1,
+						6
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_flat",
+				"entity_type": "flat",
+				"type": "flat"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平地。",
+					"encounter_id_list": [],
+					"height_level": 2,
+					"map_cell_type": "flat",
+					"map_position": [
+						1,
+						7
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_flat",
+				"entity_type": "flat",
+				"type": "flat"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平原。",
+					"encounter_id_list": [],
+					"height_level": 3,
+					"map_cell_type": "plain",
+					"map_position": [
+						2,
+						0
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_plain",
+				"entity_type": "plain",
+				"type": "plain"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平原。",
+					"encounter_id_list": [],
+					"height_level": 3,
+					"map_cell_type": "plain",
+					"map_position": [
+						2,
+						1
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_plain",
+				"entity_type": "plain",
+				"type": "plain"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平原。",
+					"encounter_id_list": [],
+					"height_level": 3,
+					"map_cell_type": "plain",
+					"map_position": [
+						2,
+						2
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_plain",
+				"entity_type": "plain",
+				"type": "plain"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平原。",
+					"encounter_id_list": [],
+					"height_level": 3,
+					"map_cell_type": "plain",
+					"map_position": [
+						2,
+						3
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_plain",
+				"entity_type": "plain",
+				"type": "plain"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片丘陵。",
+					"encounter_id_list": [],
+					"height_level": 4,
+					"map_cell_type": "hill",
+					"map_position": [
+						2,
+						4
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_hill",
+				"entity_type": "hill",
+				"type": "hill"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片丘陵。",
+					"encounter_id_list": [],
+					"height_level": 4,
+					"map_cell_type": "hill",
+					"map_position": [
+						2,
+						5
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_hill",
+				"entity_type": "hill",
+				"type": "hill"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平原。",
+					"encounter_id_list": [],
+					"height_level": 3,
+					"map_cell_type": "plain",
+					"map_position": [
+						2,
+						6
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_plain",
+				"entity_type": "plain",
+				"type": "plain"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平地。",
+					"encounter_id_list": [],
+					"height_level": 2,
+					"map_cell_type": "flat",
+					"map_position": [
+						2,
+						7
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_flat",
+				"entity_type": "flat",
+				"type": "flat"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平原。",
+					"encounter_id_list": [],
+					"height_level": 3,
+					"map_cell_type": "plain",
+					"map_position": [
+						3,
+						0
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_plain",
+				"entity_type": "plain",
+				"type": "plain"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平原。",
+					"encounter_id_list": [],
+					"height_level": 3,
+					"map_cell_type": "plain",
+					"map_position": [
+						3,
+						1
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_plain",
+				"entity_type": "plain",
+				"type": "plain"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片丘陵。",
+					"encounter_id_list": [],
+					"height_level": 4,
+					"map_cell_type": "hill",
+					"map_position": [
+						3,
+						2
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_hill",
+				"entity_type": "hill",
+				"type": "hill"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个山坡。",
+					"encounter_id_list": [],
+					"height_level": 5,
+					"map_cell_type": "mountain_slope",
+					"map_position": [
+						3,
+						3
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_mountain_slope",
+				"entity_type": "mountain_slope",
+				"type": "mountain_slope"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一座山峰。",
+					"encounter_id_list": [],
+					"height_level": 6,
+					"map_cell_type": "peak",
+					"map_position": [
+						3,
+						4
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_peak",
+				"entity_type": "peak",
+				"type": "peak"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一座山峰。",
+					"encounter_id_list": [],
+					"height_level": 6,
+					"map_cell_type": "peak",
+					"map_position": [
+						3,
+						5
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_peak",
+				"entity_type": "peak",
+				"type": "peak"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片丘陵。",
+					"encounter_id_list": [],
+					"height_level": 4,
+					"map_cell_type": "hill",
+					"map_position": [
+						3,
+						6
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_hill",
+				"entity_type": "hill",
+				"type": "hill"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平原。",
+					"encounter_id_list": [],
+					"height_level": 3,
+					"map_cell_type": "plain",
+					"map_position": [
+						3,
+						7
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_plain",
+				"entity_type": "plain",
+				"type": "plain"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平原。",
+					"encounter_id_list": [],
+					"height_level": 3,
+					"map_cell_type": "plain",
+					"map_position": [
+						4,
+						0
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_plain",
+				"entity_type": "plain",
+				"type": "plain"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平原。",
+					"encounter_id_list": [],
+					"height_level": 3,
+					"map_cell_type": "plain",
+					"map_position": [
+						4,
+						1
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_plain",
+				"entity_type": "plain",
+				"type": "plain"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片丘陵。",
+					"encounter_id_list": [],
+					"height_level": 4,
+					"map_cell_type": "hill",
+					"map_position": [
+						4,
+						2
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_hill",
+				"entity_type": "hill",
+				"type": "hill"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片丘陵。",
+					"encounter_id_list": [],
+					"height_level": 4,
+					"map_cell_type": "hill",
+					"map_position": [
+						4,
+						3
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_hill",
+				"entity_type": "hill",
+				"type": "hill"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片丘陵。",
+					"encounter_id_list": [],
+					"height_level": 4,
+					"map_cell_type": "hill",
+					"map_position": [
+						4,
+						4
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_hill",
+				"entity_type": "hill",
+				"type": "hill"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片丘陵。",
+					"encounter_id_list": [],
+					"height_level": 4,
+					"map_cell_type": "hill",
+					"map_position": [
+						4,
+						5
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_hill",
+				"entity_type": "hill",
+				"type": "hill"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个山坡。",
+					"encounter_id_list": [],
+					"height_level": 5,
+					"map_cell_type": "mountain_slope",
+					"map_position": [
+						4,
+						6
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_mountain_slope",
+				"entity_type": "mountain_slope",
+				"type": "mountain_slope"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片丘陵。",
+					"encounter_id_list": [],
+					"height_level": 4,
+					"map_cell_type": "hill",
+					"map_position": [
+						4,
+						7
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_hill",
+				"entity_type": "hill",
+				"type": "hill"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平原。",
+					"encounter_id_list": [],
+					"height_level": 3,
+					"map_cell_type": "plain",
+					"map_position": [
+						5,
+						0
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_plain",
+				"entity_type": "plain",
+				"type": "plain"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平原。",
+					"encounter_id_list": [],
+					"height_level": 3,
+					"map_cell_type": "plain",
+					"map_position": [
+						5,
+						1
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_plain",
+				"entity_type": "plain",
+				"type": "plain"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平原。",
+					"encounter_id_list": [],
+					"height_level": 3,
+					"map_cell_type": "plain",
+					"map_position": [
+						5,
+						2
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_plain",
+				"entity_type": "plain",
+				"type": "plain"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平原。",
+					"encounter_id_list": [],
+					"height_level": 3,
+					"map_cell_type": "plain",
+					"map_position": [
+						5,
+						3
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_plain",
+				"entity_type": "plain",
+				"type": "plain"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平原。",
+					"encounter_id_list": [],
+					"height_level": 3,
+					"map_cell_type": "plain",
+					"map_position": [
+						5,
+						4
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_plain",
+				"entity_type": "plain",
+				"type": "plain"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平原。",
+					"encounter_id_list": [],
+					"height_level": 3,
+					"map_cell_type": "plain",
+					"map_position": [
+						5,
+						5
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_plain",
+				"entity_type": "plain",
+				"type": "plain"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片丘陵。",
+					"encounter_id_list": [],
+					"height_level": 4,
+					"map_cell_type": "hill",
+					"map_position": [
+						5,
+						6
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_hill",
+				"entity_type": "hill",
+				"type": "hill"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片丘陵。",
+					"encounter_id_list": [],
+					"height_level": 4,
+					"map_cell_type": "hill",
+					"map_position": [
+						5,
+						7
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_hill",
+				"entity_type": "hill",
+				"type": "hill"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平原。",
+					"encounter_id_list": [],
+					"height_level": 3,
+					"map_cell_type": "plain",
+					"map_position": [
+						6,
+						0
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_plain",
+				"entity_type": "plain",
+				"type": "plain"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平原。",
+					"encounter_id_list": [],
+					"height_level": 3,
+					"map_cell_type": "plain",
+					"map_position": [
+						6,
+						1
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_plain",
+				"entity_type": "plain",
+				"type": "plain"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平原。",
+					"encounter_id_list": [],
+					"height_level": 3,
+					"map_cell_type": "plain",
+					"map_position": [
+						6,
+						2
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_plain",
+				"entity_type": "plain",
+				"type": "plain"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平原。",
+					"encounter_id_list": [],
+					"height_level": 3,
+					"map_cell_type": "plain",
+					"map_position": [
+						6,
+						3
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_plain",
+				"entity_type": "plain",
+				"type": "plain"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平原。",
+					"encounter_id_list": [],
+					"height_level": 3,
+					"map_cell_type": "plain",
+					"map_position": [
+						6,
+						4
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_plain",
+				"entity_type": "plain",
+				"type": "plain"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平原。",
+					"encounter_id_list": [],
+					"height_level": 3,
+					"map_cell_type": "plain",
+					"map_position": [
+						6,
+						5
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_plain",
+				"entity_type": "plain",
+				"type": "plain"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平原。",
+					"encounter_id_list": [],
+					"height_level": 3,
+					"map_cell_type": "plain",
+					"map_position": [
+						6,
+						6
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_plain",
+				"entity_type": "plain",
+				"type": "plain"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片丘陵。",
+					"encounter_id_list": [],
+					"height_level": 4,
+					"map_cell_type": "hill",
+					"map_position": [
+						6,
+						7
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_hill",
+				"entity_type": "hill",
+				"type": "hill"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平地。",
+					"encounter_id_list": [],
+					"height_level": 2,
+					"map_cell_type": "flat",
+					"map_position": [
+						7,
+						0
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_flat",
+				"entity_type": "flat",
+				"type": "flat"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平原。",
+					"encounter_id_list": [],
+					"height_level": 3,
+					"map_cell_type": "plain",
+					"map_position": [
+						7,
+						1
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_plain",
+				"entity_type": "plain",
+				"type": "plain"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平原。",
+					"encounter_id_list": [],
+					"height_level": 3,
+					"map_cell_type": "plain",
+					"map_position": [
+						7,
+						2
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_plain",
+				"entity_type": "plain",
+				"type": "plain"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平原。",
+					"encounter_id_list": [],
+					"height_level": 3,
+					"map_cell_type": "plain",
+					"map_position": [
+						7,
+						3
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_plain",
+				"entity_type": "plain",
+				"type": "plain"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平原。",
+					"encounter_id_list": [],
+					"height_level": 3,
+					"map_cell_type": "plain",
+					"map_position": [
+						7,
+						4
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_plain",
+				"entity_type": "plain",
+				"type": "plain"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平原。",
+					"encounter_id_list": [],
+					"height_level": 3,
+					"map_cell_type": "plain",
+					"map_position": [
+						7,
+						5
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_plain",
+				"entity_type": "plain",
+				"type": "plain"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平原。",
+					"encounter_id_list": [],
+					"height_level": 3,
+					"map_cell_type": "plain",
+					"map_position": [
+						7,
+						6
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_plain",
+				"entity_type": "plain",
+				"type": "plain"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一片平原。",
+					"encounter_id_list": [],
+					"height_level": 3,
+					"map_cell_type": "plain",
+					"map_position": [
+						7,
+						7
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_plain",
+				"entity_type": "plain",
+				"type": "plain"
+			}
+		],
+		"map_sub_type": "land",
+		"map_type": "wilderness",
+		"name": "test_River",
+		"size": [
+			8,
+			8
+		]
+	},
+	"metadata": {
+		"config": {
+			"map_data": {
+				"final_height_level": [
+					[
+						0,
+						0,
+						0,
+						1,
+						2,
+						2,
+						1,
+						1
+					],
+					[
+						2,
+						2,
+						2,
+						3,
+						3,
+						3,
+						2,
+						2
+					],
+					[
+						3,
+						3,
+						3,
+						3,
+						4,
+						4,
+						3,
+						2
+					],
+					[
+						3,
+						3,
+						4,
+						5,
+						6,
+						6,
+						4,
+						3
+					],
+					[
+						3,
+						3,
+						4,
+						4,
+						4,
+						4,
+						5,
+						4
+					],
+					[
+						3,
+						3,
+						3,
+						3,
+						3,
+						3,
+						4,
+						4
+					],
+					[
+						3,
+						3,
+						3,
+						3,
+						3,
+						3,
+						3,
+						4
+					],
+					[
+						2,
+						3,
+						3,
+						3,
+						3,
+						3,
+						3,
+						3
+					]
+				],
+				"size": [
+					8,
+					8
+				]
+			},
+			"name": "test_River"
+		},
+		"generate_at": "2026-03-16T12:33:51",
+		"version": "1.0.0"
+	}
+}

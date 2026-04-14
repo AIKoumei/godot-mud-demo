@@ -44,35 +44,35 @@ func on_mod_event(_mod_name: String, event_name: String, event_data: Dictionary)
 ## 生命周期：模块脚本被挂载到场景节点时调用
 ## ---------------------------------------------------------
 func _on_mod_init() -> void:
-	print("[%s] 初始化模块" % mod_name)
+	prints("[%s] 初始化模块" % mod_name)
 	# 子类实现
 	pass
 
 
 ## 生命周期：模块启用（入口场景实例化后）
 func _on_mod_enable() -> void:
-	print("[%s] 模块已启用" % mod_name)
+	prints("[%s] 模块已启用" % mod_name)
 	# 子类实现
 	pass
 
 
 ## 生命周期：模块禁用（未来支持）
 func _on_mod_disable() -> void:
-	print("[%s] 模块已禁用" % mod_name)
+	prints("[%s] 模块已禁用" % mod_name)
 	# 子类实现
 	pass
 
 
 ## 生命周期：模块加载
 func _on_mod_load() -> bool:
-	print("[%s] 模块已加载" % mod_name)
+	prints("[%s] 模块已加载" % mod_name)
 	# 子类实现
 	return true
 
 
 ## 生命周期：模块卸载（场景被移除前）
 func _on_mod_unload() -> void:
-	print("[%s] 模块卸载中" % mod_name)
+	prints("[%s] 模块卸载中" % mod_name)
 	# 子类实现
 	pass
 
@@ -81,7 +81,7 @@ func _on_mod_unload() -> void:
 ## 处理游戏事件，供 mod 重写
 ## ---------------------------------------------------------
 func _on_mod_event(_mod_name: String, event_name: String, event_data: Dictionary) -> void:
-	print("[Mod:%s] 收到消息: [%s:%s]" % [mod_name, _mod_name, event_name])
+	prints("[Mod:%s] 收到消息: [%s:%s]" % [mod_name, _mod_name, event_name])
 	# 子类实现
 	pass
 

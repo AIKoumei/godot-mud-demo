@@ -116,10 +116,10 @@ func get_file_icon(file_type: String) -> Rect2:
 
 ### Extending the Icon Set
 To add new icons to the set:
-1. Maintain the 32x32 pixel size per icon
-2. Follow the established color palette
-3. Add new icons in the next available position in the grid
-4. Update this documentation with new icon details
+#  Maintain the 32x32 pixel size per icon
+#  Follow the established color palette
+#  Add new icons in the next available position in the grid
+#  Update this documentation with new icon details
 5. Update the `icon_set_explanation.md` file
 
 ### Maintenance

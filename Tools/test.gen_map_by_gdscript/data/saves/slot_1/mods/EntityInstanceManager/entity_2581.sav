@@ -1,0 +1,24 @@
+{
+	"_source_mod": "EntityManager",
+	"attributes": {
+		"description": "这是一个默认的门。",
+		"encounter_id_list": [],
+		"map_cell_type": "gate",
+		"map_position": [
+			12,
+			0
+		],
+		"passable": {
+
+		},
+		"portal": [],
+		"roles": [
+			"gate"
+		]
+	},
+	"entity_id": "default_gate",
+	"entity_instance_id": "2581",
+	"entity_type": "gate",
+	"instance_id": "2581",
+	"type": "gate"
+}

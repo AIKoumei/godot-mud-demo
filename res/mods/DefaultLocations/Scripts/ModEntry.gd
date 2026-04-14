@@ -39,24 +39,24 @@ var _relationships_data: Dictionary = {}   # 存储解析后的关系数据
 func _on_mod_load() -> bool:
 	print("[DefaultLocations] 加载基础地点数据...")
 
-	var json_path := "%s/Data/Locations.json" % get_mod_path()
-	var file := FileAccess.open(json_path, FileAccess.READ)
-
-	if file == null:
-		push_warning("[DefaultLocations] 无法读取地点文件: %s" % json_path)
-		return false
-
-	var parsed = JSON.parse_string(file.get_as_text())
-	if typeof(parsed) != TYPE_DICTIONARY:
-		push_warning("[DefaultLocations] JSON 格式错误: %s" % json_path)
-		return false
-
-	# 解析新的 JSON 结构
-	var data_section: Dictionary = parsed.get("data", {})
-	_locations_data = data_section.get("locations", {})
-	_relationships_data = data_section.get("relationships", {})
-
-	print("[DefaultLocations] JSON 加载完成，共 %d 个地点，%d 个关系" % [_locations_data.size(), _relationships_data.size()])
+	#var json_path := "%s/Data/Locations.json" % get_mod_path()
+	#var file := FileAccess.open(json_path, FileAccess.READ)
+#
+	#if file == null:
+		#push_warning("[DefaultLocations] 无法读取地点文件: %s" % json_path)
+		#return false
+#
+	#var parsed = JSON.parse_string(file.get_as_text())
+	#if typeof(parsed) != TYPE_DICTIONARY:
+		#push_warning("[DefaultLocations] JSON 格式错误: %s" % json_path)
+		#return false
+#
+	## 解析新的 JSON 结构
+	#var data_section: Dictionary = parsed.get("data", {})
+	#_locations_data = data_section.get("locations", {})
+	#_relationships_data = data_section.get("relationships", {})
+#
+	#print("[DefaultLocations] JSON 加载完成，共 %d 个地点，%d 个关系" % [_locations_data.size(), _relationships_data.size()])
 	return true
 
 
@@ -70,7 +70,7 @@ func _on_mod_enable() -> void:
 	var json_path := "%s/Data/Locations.json" % get_mod_path()
 	var ok = GameCore.mod_manager.call_mod(
 		"LocationManager",
-		"register_locations_from_json",
+		"regist_locations_from_json",
 		json_path
 	)
 

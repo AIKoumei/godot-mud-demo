@@ -1,0 +1,21 @@
+{
+	"_source_mod": "EntityManager",
+	"attributes": {
+		"description": "这是一个山坡。",
+		"encounter_id_list": [],
+		"height_level": 5,
+		"map_cell_type": "mountain_slope",
+		"map_position": [
+			3,
+			3
+		],
+		"passable": {
+
+		}
+	},
+	"entity_id": "map_cell_mountain_slope",
+	"entity_instance_id": "2716",
+	"entity_type": "mountain_slope",
+	"instance_id": "2716",
+	"type": "mountain_slope"
+}

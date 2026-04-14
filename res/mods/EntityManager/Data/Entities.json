@@ -1,0 +1,720 @@
+{
+    "metadata": {
+        "version": "1.0.0",
+        "generate_at": "2026-03-19 03:33:58"
+    },
+    "data": {
+        "entities": {
+            "ground_level_ground": {
+                "entity_type": "ground_level",
+                "attributes": {
+                    "description": "这是一个普通的地面。"
+                }
+            },
+            "plain": {
+                "entity_type": "plain",
+                "attributes": {
+                    "description": "这是一个普通的地面。",
+                    "passable": {
+                        "default": {
+                            "has_action": "move"
+                        }
+                    }
+                }
+            },
+            "terrain_plain": {
+                "entity_type": "plain",
+                "attributes": {
+                    "description": "平原，无阻挡，基础移动地形。",
+                    "passable": {
+                        "default": {
+                            "has_action": "move"
+                        }
+                    }
+                }
+            },
+            "terrain_mountain": {
+                "entity_type": "mountain",
+                "attributes": {
+                    "description": "山地 / 岩石，高阻挡。",
+                    "passable": {
+                        "false": {}
+                    }
+                }
+            },
+            "terrain_dirt": {
+                "entity_type": "dirt",
+                "attributes": {
+                    "description": "土路 / 泥地，无阻挡，偏野外场景。",
+                    "passable": {
+                        "default": {
+                            "has_action": "move"
+                        }
+                    }
+                }
+            },
+            "terrain_sand": {
+                "entity_type": "sand",
+                "attributes": {
+                    "description": "沙地 / 荒漠。",
+                    "passable": {
+                        "default": {
+                            "has_action": "move"
+                        }
+                    }
+                }
+            },
+            "terrain_water": {
+                "entity_type": "water",
+                "attributes": {
+                    "description": "水域（浅）。",
+                    "passable": {
+                        "default": {
+                            "has_action": "move"
+                        }
+                    }
+                }
+            },
+            "terrain_deep_water": {
+                "entity_type": "deep_water",
+                "attributes": {
+                    "description": "水域（深），深水 / 海洋。",
+                    "passable": {
+                        "false": {}
+                    }
+                }
+            },
+            "terrain_snow": {
+                "entity_type": "snow",
+                "attributes": {
+                    "description": "雪地，全类型可通行但减速。",
+                    "passable": {
+                        "default": {
+                            "has_action": "move"
+                        }
+                    }
+                }
+            },
+            "terrain_ice": {
+                "entity_type": "ice",
+                "attributes": {
+                    "description": "冰面。",
+                    "passable": {
+                        "default": {
+                            "has_action": "move"
+                        }
+                    }
+                }
+            },
+            "terrain_swamp": {
+                "entity_type": "swamp",
+                "attributes": {
+                    "description": "沼泽，减速。",
+                    "passable": {
+                        "default": {
+                            "has_action": "move"
+                        }
+                    }
+                }
+            },
+            "terrain_lava": {
+                "entity_type": "lava",
+                "attributes": {
+                    "description": "熔岩。",
+                    "passable": {
+                        "false": {}
+                    }
+                }
+            },
+            "vegetation_grass": {
+                "entity_type": "grass",
+                "attributes": {
+                    "description": "草地。",
+                    "passable": {
+                        "default": {
+                            "has_action": "move"
+                        }
+                    }
+                }
+            },
+            "vegetation_tree": {
+                "entity_type": "tree",
+                "attributes": {
+                    "description": "树木。",
+                    "passable": {
+                        "false": {}
+                    }
+                }
+            },
+            "vegetation_bush": {
+                "entity_type": "bush",
+                "attributes": {
+                    "description": "灌木丛。",
+                    "passable": {
+                        "default": {
+                            "has_action": "move"
+                        }
+                    }
+                }
+            },
+            "building_floor": {
+                "entity_type": "floor",
+                "attributes": {
+                    "description": "地板。",
+                    "passable": {
+                        "default": {
+                            "has_action": "move"
+                        }
+                    }
+                }
+            },
+            "building_wall": {
+                "entity_type": "wall",
+                "attributes": {
+                    "description": "墙壁。",
+                    "passable": {
+                        "false": {}
+                    }
+                }
+            },
+            "building_door": {
+                "entity_type": "door",
+                "attributes": {
+                    "description": "门。",
+                    "passable": {
+                        "default": {
+                            "has_action": "move"
+                        }
+                    }
+                }
+            },
+            "building_item_shop": {
+                "entity_type": "building",
+                "attributes": {
+                    "description": "这是一间道具商店。",
+                    "required": {
+                        "entity_type": {
+                            "shopkeeper": {},
+                            "vending_machine": {}
+                        },
+                        "entity_id": {
+                            "health_potion": {}
+                        }
+                    }
+                }
+            },
+            "building_equipment_shop": {
+                "entity_type": "building",
+                "attributes": {
+                    "description": "这是一间装备商店。",
+                    "required": {
+                        "entity_type": {
+                            "blacksmith": {}
+                        },
+                        "entity_id": {
+                            "sword": {}
+                        }
+                    }
+                }
+            },
+            "building_quest_center": {
+                "entity_type": "building",
+                "attributes": {
+                    "description": "这是一间任务中心。",
+                    "required": {
+                        "entity_type": {
+                            "quest_master": {}
+                        },
+                        "entity_id": {
+                            "spell_book": {}
+                        }
+                    }
+                }
+            },
+            "building_training_center": {
+                "entity_type": "building",
+                "attributes": {
+                    "description": "这是一间训练中心。",
+                    "required": {
+                        "entity_type": {
+                            "trainer": {}
+                        }
+                    }
+                }
+            },
+            "building_home_shop": {
+                "entity_type": "building",
+                "attributes": {
+                    "description": "这是一间家园商店。",
+                    "required": {
+                        "entity_type": {
+                            "interior_designer": {}
+                        }
+                    }
+                }
+            },
+            "building_union_room": {
+                "entity_type": "building",
+                "attributes": {
+                    "description": "这是一间联盟大厅。",
+                    "required": {
+                        "entity_type": {
+                            "union_master": {}
+                        }
+                    }
+                }
+            },
+            "building_home": {
+                "entity_type": "building",
+                "attributes": {
+                    "description": "这是一间家园。"
+                }
+            },
+            "player": {
+                "entity_type": "human",
+                "attributes": {
+                    "description": "这是一个玩家。",
+                    "roles": [
+                        "player",
+                        "human"
+                    ]
+                }
+            },
+            "shopkeeper": {
+                "entity_type": "human",
+                "attributes": {
+                    "description": "这是一个商店老板。",
+                    "roles": [
+                        "shopkeeper",
+                        "human"
+                    ]
+                }
+            },
+            "vending_machine": {
+                "entity_type": "decoration",
+                "attributes": {
+                    "description": "这是一个自动售货机。",
+                    "roles": [
+                        "vending_machine",
+                        "decoration"
+                    ]
+                }
+            },
+            "blacksmith": {
+                "entity_type": "human",
+                "attributes": {
+                    "description": "这是一个铁匠。",
+                    "roles": [
+                        "blacksmith",
+                        "human"
+                    ]
+                }
+            },
+            "trainer": {
+                "entity_type": "human",
+                "attributes": {
+                    "description": "这是一个教官。",
+                    "roles": [
+                        "trainer",
+                        "human"
+                    ]
+                }
+            },
+            "interior_designer": {
+                "entity_type": "human",
+                "attributes": {
+                    "description": "这是一个家园设计师。",
+                    "roles": [
+                        "interior_designer",
+                        "human"
+                    ]
+                }
+            },
+            "union_master": {
+                "entity_type": "human",
+                "attributes": {
+                    "description": "这是一个联盟主。",
+                    "roles": [
+                        "union_master",
+                        "human"
+                    ]
+                }
+            },
+            "quest_master": {
+                "entity_type": "human",
+                "attributes": {
+                    "description": "这是一个任务大师。",
+                    "roles": [
+                        "quest_master",
+                        "human"
+                    ]
+                }
+            },
+            "default_wall": {
+                "entity_type": "wall",
+                "attributes": {
+                    "description": "这是一个默认的墙。",
+                    "roles": [
+                        "wall"
+                    ],
+                    "passable": {
+                        "false": {}
+                    }
+                }
+            },
+            "default_door": {
+                "entity_type": "door",
+                "attributes": {
+                    "description": "这是一个默认的门。",
+                    "roles": [
+                        "door"
+                    ],
+                    "passable": {
+                        "default": {
+                            "has_action": "move"
+                        }
+                    }
+                }
+            },
+            "default_gate": {
+                "entity_type": "gate",
+                "attributes": {
+                    "description": "这是一个默认的城门。",
+                    "portal": [],
+                    "roles": [
+                        "gate"
+                    ],
+                    "passable": {
+                        "default": {
+                            "has_action": "move"
+                        }
+                    }
+                }
+            },
+            "default_gate_wall": {
+                "entity_type": "gate_wall",
+                "attributes": {
+                    "description": "这是一个默认的城门墙。",
+                    "roles": [
+                        "gate_wall"
+                    ],
+                    "passable": {
+                        "false": {}
+                    }
+                }
+            },
+            "exit": {
+                "entity_type": "exit",
+                "attributes": {
+                    "description": "地图出口。",
+                    "portal": [
+                        "next_map"
+                    ]
+                }
+            },
+            "health_potion": {
+                "entity_type": "potion.item",
+                "attributes": {
+                    "description": "治疗药水。",
+                    "roles": [
+                        "potion",
+                        "item"
+                    ]
+                }
+            },
+            "sword": {
+                "entity_type": "weapon.item",
+                "attributes": {
+                    "description": "剑。",
+                    "roles": [
+                        "weapon",
+                        "item"
+                    ]
+                }
+            },
+            "spell_book": {
+                "entity_type": "book.item",
+                "attributes": {
+                    "description": "法术书。",
+                    "roles": [
+                        "book",
+                        "item"
+                    ]
+                }
+            }
+        },
+        "entity_types": {
+            "map_entity": {
+                "entity_type": "map_entity",
+                "render_order": 0,
+                "child_entity_type": [
+                    "ground_level",
+                    "entity_level",
+                    "cover_level"
+                ]
+            },
+            "ground_level": {
+                "entity_type": "ground_level",
+                "render_order": 1000,
+                "parent_entity_type": [
+                    "map_entity"
+                ],
+                "child_entity_type": [
+                    "terrain",
+                    "vegetation",
+                    "building"
+                ]
+            },
+            "terrain": {
+                "entity_type": "terrain",
+                "render_order": 1200,
+                "parent_entity_type": [
+                    "ground_level"
+                ],
+                "child_entity_type": [
+                    "plain",
+                    "mountain",
+                    "dirt",
+                    "sand",
+                    "water",
+                    "deep_water",
+                    "snow",
+                    "ice",
+                    "swamp",
+                    "lava"
+                ]
+            },
+            "vegetation": {
+                "entity_type": "vegetation",
+                "render_order": 1400,
+                "parent_entity_type": [
+                    "ground_level"
+                ],
+                "child_entity_type": [
+                    "grass",
+                    "tree",
+                    "bush"
+                ]
+            },
+            "building": {
+                "entity_type": "building",
+                "render_order": 1600,
+                "parent_entity_type": [
+                    "ground_level"
+                ],
+                "child_entity_type": [
+                    "floor",
+                    "wall",
+                    "door",
+                    "decoration"
+                ]
+            },
+            "entity_level": {
+                "entity_type": "entity_level",
+                "render_order": 3000,
+                "parent_entity_type": [
+                    "map_entity"
+                ],
+                "child_entity_type": [
+                    "human",
+                    "digimon",
+                    "item"
+                ]
+            },
+            "door": {
+                "entity_type": "door",
+                "parent_entity_type": [
+                    "building"
+                ],
+                "child_entity_type": [
+                    "gate"
+                ]
+            },
+            "wall": {
+                "entity_type": "wall",
+                "parent_entity_type": [
+                    "building"
+                ],
+                "child_entity_type": [
+                    "gate_wall"
+                ]
+            },
+            "decoration": {
+                "entity_type": "decoration",
+                "parent_entity_type": [
+                    "building"
+                ]
+            },
+            "gate": {
+                "entity_type": "gate",
+                "parent_entity_type": [
+                    "door"
+                ]
+            },
+            "gate_wall": {
+                "entity_type": "gate_wall",
+                "parent_entity_type": [
+                    "wall"
+                ]
+            },
+            "human": {
+                "entity_type": "human",
+                "render_order": 3100,
+                "parent_entity_type": [
+                    "entity_level"
+                ]
+            },
+            "digimon": {
+                "entity_type": "digimon",
+                "render_order": 3200,
+                "parent_entity_type": [
+                    "entity_level"
+                ]
+            },
+            "item": {
+                "entity_type": "item",
+                "render_order": 3300,
+                "parent_entity_type": [
+                    "entity_level"
+                ],
+                "child_entity_type": [
+                    "portal.item",
+                    "potion.item",
+                    "weapon.item",
+                    "book.item",
+                    "decoration.item"
+                ]
+            },
+            "cover_level": {
+                "entity_type": "cover_level",
+                "render_order": 10000,
+                "parent_entity_type": [
+                    "map_entity"
+                ],
+                "child_entity_type": [
+                    "exit"
+                ]
+            },
+            "plain": {
+                "entity_type": "plain",
+                "parent_entity_type": [
+                    "terrain"
+                ]
+            },
+            "mountain": {
+                "entity_type": "mountain",
+                "parent_entity_type": [
+                    "terrain"
+                ]
+            },
+            "dirt": {
+                "entity_type": "dirt",
+                "parent_entity_type": [
+                    "terrain"
+                ]
+            },
+            "sand": {
+                "entity_type": "sand",
+                "parent_entity_type": [
+                    "terrain"
+                ]
+            },
+            "water": {
+                "entity_type": "water",
+                "parent_entity_type": [
+                    "terrain"
+                ]
+            },
+            "deep_water": {
+                "entity_type": "deep_water",
+                "parent_entity_type": [
+                    "terrain"
+                ]
+            },
+            "snow": {
+                "entity_type": "snow",
+                "parent_entity_type": [
+                    "terrain"
+                ]
+            },
+            "ice": {
+                "entity_type": "ice",
+                "parent_entity_type": [
+                    "terrain"
+                ]
+            },
+            "swamp": {
+                "entity_type": "swamp",
+                "parent_entity_type": [
+                    "terrain"
+                ]
+            },
+            "lava": {
+                "entity_type": "lava",
+                "parent_entity_type": [
+                    "terrain"
+                ]
+            },
+            "grass": {
+                "entity_type": "grass",
+                "parent_entity_type": [
+                    "vegetation"
+                ]
+            },
+            "tree": {
+                "entity_type": "tree",
+                "parent_entity_type": [
+                    "vegetation"
+                ]
+            },
+            "bush": {
+                "entity_type": "bush",
+                "parent_entity_type": [
+                    "vegetation"
+                ]
+            },
+            "floor": {
+                "entity_type": "floor",
+                "parent_entity_type": [
+                    "building"
+                ]
+            },
+            "exit": {
+                "entity_type": "exit",
+                "parent_entity_type": [
+                    "cover_level"
+                ]
+            },
+            "portal.item": {
+                "entity_type": "portal.item",
+                "parent_entity_type": [
+                    "item"
+                ]
+            },
+            "potion.item": {
+                "entity_type": "potion.item",
+                "parent_entity_type": [
+                    "item"
+                ]
+            },
+            "weapon.item": {
+                "entity_type": "weapon.item",
+                "parent_entity_type": [
+                    "item"
+                ]
+            },
+            "book.item": {
+                "entity_type": "book.item",
+                "parent_entity_type": [
+                    "item"
+                ]
+            },
+            "decoration.item": {
+                "entity_type": "decoration.item",
+                "parent_entity_type": [
+                    "item"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+	"_source_mod": "EntityManager",
+	"attributes": {
+		"description": "这是一片平地。",
+		"encounter_id_list": [],
+		"height_level": 2,
+		"map_cell_type": "flat",
+		"map_position": [
+			7,
+			0
+		],
+		"passable": {
+
+		}
+	},
+	"entity_id": "map_cell_flat",
+	"entity_instance_id": "2179",
+	"entity_type": "flat",
+	"instance_id": "2179",
+	"type": "flat"
+}

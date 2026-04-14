@@ -1,33 +1,115 @@
-[gd_scene load_steps=4 format=3 uid="uid://lbwbdbw73o68"]
+[gd_scene format=3 uid="uid://lbwbdbw73o68"]
 
 [ext_resource type="Texture2D" uid="uid://dng05ldoakroh" path="res://icon.svg" id="1_neonw"]
 [ext_resource type="Script" uid="uid://b3mxd4iwdorka" path="res://res/mods/WorldSceneManager/Scripts/Core/WorldMapScene.gd" id="1_y35sj"]
 [ext_resource type="TileSet" uid="uid://vh2yajycgo2h" path="res://res/core/Sprites/Tileset/hex_map_64x64/map_64x64.tres" id="2_n7rv2"]
+[ext_resource type="Texture2D" uid="uid://dsfnasgpryy2v" path="res://res/mods/WorldSceneManager/Sprites/Scene/Tileset/path.png" id="2_u77wj"]
+[ext_resource type="Texture2D" uid="uid://bgwse55f4mo2k" path="res://Temp/bt-demo/assets/spirits/icon/Back-Music-icon.png" id="3_gug54"]
+[ext_resource type="PackedScene" uid="uid://d3pfi55plm5fd" path="res://res/mods/WorldSceneManager/Scenes/GameScenes/MapMudCell.tscn" id="5_d3fis"]
 
-[node name="WorldRoot" type="Node2D"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d3fis"]
+texture = ExtResource("2_u77wj")
+texture_region_size = Vector2i(64, 64)
+use_texture_padding = false
+0:0/0 = 0
+1:0/0 = 0
+2:0/next_alternative_id = 2
+2:0/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+0:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_gug54"]
+tile_size = Vector2i(32, 32)
+sources/0 = SubResource("TileSetAtlasSource_d3fis")
+
+[node name="WorldRoot" type="Node2D" unique_id=1043215601]
 light_mask = 2
 visibility_layer = 2
 script = ExtResource("1_y35sj")
 
-[node name="MapLayer" type="Node2D" parent="."]
+[node name="MapLayer" type="Node2D" parent="." unique_id=2032816799]
 light_mask = 2
 visibility_layer = 2
 
-[node name="PathLayer" type="TileMapLayer" parent="MapLayer"]
+[node name="PathLayer" type="TileMapLayer" parent="MapLayer" unique_id=1696118781]
+light_mask = 2
+visibility_layer = 2
+position = Vector2(16, 16)
+tile_set = SubResource("TileSet_gug54")
+
+[node name="GroundLayer" type="TileMapLayer" parent="MapLayer" unique_id=81068236]
 light_mask = 2
 visibility_layer = 2
 tile_set = ExtResource("2_n7rv2")
 
-[node name="GroundLayer" type="TileMapLayer" parent="MapLayer"]
+[node name="EntityGroundLayer" type="TileMapLayer" parent="MapLayer" unique_id=1894915681]
 light_mask = 2
 visibility_layer = 2
-tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 239, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 239, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 239, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 239, 0, 0, 0, 0, 0, 0, 0)
 tile_set = ExtResource("2_n7rv2")
 
-[node name="MapCellLayer" type="Node2D" parent="MapLayer"]
+[node name="EntityObjLayer" type="Node2D" parent="MapLayer" unique_id=1672976516]
+light_mask = 2
+visibility_layer = 2
 
-[node name="TestSprite2D" type="Sprite2D" parent="."]
+[node name="EntityCoverLayer" type="TileMapLayer" parent="MapLayer" unique_id=1426277069]
+light_mask = 2
+visibility_layer = 2
+tile_set = ExtResource("2_n7rv2")
+
+[node name="SelectedPathLayer" type="Node2D" parent="MapLayer" unique_id=629794567]
+light_mask = 2
+visibility_layer = 2
+
+[node name="Selected" type="TextureRect" parent="MapLayer/SelectedPathLayer" unique_id=1204866424]
+visible = false
+light_mask = 2
+visibility_layer = 2
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 32.0
+offset_bottom = 32.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_gug54")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="EntityLayer" type="Node2D" parent="MapLayer" unique_id=597786008]
+light_mask = 2
+visibility_layer = 2
+
+[node name="TestSprite2D" type="Sprite2D" parent="." unique_id=1590948960]
+visible = false
 light_mask = 2
 visibility_layer = 2
 position = Vector2(33, 159)
 texture = ExtResource("1_neonw")
+
+[node name="MapMudCell" parent="." unique_id=174566045 instance=ExtResource("5_d3fis")]
+visible = false
+position = Vector2(32, 30)
+
+[node name="CameraRoot" type="Node2D" parent="." unique_id=611831114]
+
+[node name="Camera2D" type="Camera2D" parent="CameraRoot" unique_id=1360998814]
+position = Vector2(0, -1)
+zoom = Vector2(0.27, 0.27)
+limit_enabled = false
+limit_left = 0
+limit_top = 0
+limit_right = 1024
+limit_bottom = 576
+position_smoothing_enabled = true
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+drag_left_margin = 0.1
+drag_top_margin = 0.1
+drag_right_margin = 0.1
+drag_bottom_margin = 0.1
+editor_draw_drag_margin = true

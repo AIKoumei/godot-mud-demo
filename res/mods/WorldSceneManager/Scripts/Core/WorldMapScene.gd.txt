@@ -1,0 +1,411 @@
+extends Node2D
+class_name WorldMapScene
+
+# ---------------------------------------------------------
+# 节点引用
+# ---------------------------------------------------------
+@onready var PathLayer: TileMapLayer = $MapLayer/PathLayer
+@onready var GroundLayer: TileMapLayer = $MapLayer/GroundLayer
+@onready var EntityLayer: Node2D = $MapLayer/EntityLayer
+
+var entity_node_player = null
+
+# 用 GroundLayer 作为 tilemap（用于 map_to_local）
+@onready var tilemap: TileMapLayer = GroundLayer
+@export_category("Camera")
+@onready var camera_root:Node2D = $CameraRoot
+@onready var camera:Camera2D = $CameraRoot/Camera2D
+## 用于控制摄像机的移动
+@export var camera_settings = {
+	"target":null,
+	"target_position":null,
+	"is_moving":false,
+}
+
+# MapMudCell 场景（运行时加载）
+var MudCellScene: PackedScene = null
+
+# 存储 pos -> MapMudCell
+var _cells: Dictionary = {}
+
+# mod 根路径（用于加载图标）
+var mod_root_path: String = ""
+
+const BUILDING_TYPES = {
+	"item_shop": {
+		"name": "道具商店",
+		"required": {
+			"entity_type": { "shopkeeper": {}, "vending_machine": {} },
+			"entity": {} 
+		}
+	},
+	"equipment_shop": {
+		"name": "装备商店",
+		"required": {
+			"entity_type": { "blacksmith": {} },
+			"entity": {}
+		}
+	},
+	"quest_center": {
+		"name": "任务中心",
+		"required": {
+			"entity_type": { "quest_master": {} },
+			"entity": {}
+		}
+	},
+	"training_center": {
+		"name": "训练中心",
+		"required": {
+			"entity_type": { "trainer": {} },
+			"entity": {}
+		}
+	},
+	"home_shop": {
+		"name": "家园商店",
+		"required": {
+			"entity_type": { "interior_designer": {} },
+			"entity": {}
+		}
+	},
+	"home": {
+		"name": "家园",
+		"required": { "entity_type": {}, "entity": {} }
+	},
+	"union_room": {
+		"name": "联盟大厅",
+		"required": { "entity_type": {}, "entity": {} }
+	}
+}
+
+
+# ---------------------------------------------------------
+# 生命周期
+# ---------------------------------------------------------
+func _ready() -> void:
+	var parent = self.get_parent()
+	if parent.has_signal("on_input_event"):
+		parent.on_input_event.connect(_on_input_event)
+	
+	for key in BUILDING_TYPES.keys():
+		if not room_type_to_tile_id.has(key):
+			room_type_to_tile_id[key] = room_type_to_tile_id["building"]
+	_load_mud_cell_scene()
+
+
+# ---------------------------------------------------------
+# 加载 MapMudCell.tscn（避免 preload 崩溃）
+# ---------------------------------------------------------
+func _load_mud_cell_scene() -> void:
+	var path := "res://res/mods/WorldSceneManager/Scenes/GameScenes/MapMudCell.tscn"
+
+
+	if not ResourceLoader.exists(path):
+		push_error("[WorldMapScene] MapMudCell.tscn not found: %s" % path)
+		return
+
+	var res := ResourceLoader.load(path)
+	if res is PackedScene:
+		MudCellScene = res
+	else:
+		push_error("[WorldMapScene] Failed to load MapMudCell.tscn: %s" % path)
+
+
+# ---------------------------------------------------------
+# 设置 mod 根目录
+# ---------------------------------------------------------
+func set_mod_root(path: String) -> void:
+	mod_root_path = path
+
+
+# ---------------------------------------------------------
+# 渲染入口
+# ---------------------------------------------------------
+var connection_to_tile_id_pos = {
+	1:Vector2i(0,1),#北
+	2:Vector2i(1,0),#西
+	4:Vector2i(1,1),#南
+	8:Vector2i(0,0),#东
+	5:Vector2i(2,1),#北南
+	10:Vector2i(2,0),#东西
+}
+
+var room_type_to_tile_id = {
+	"cneter":239,
+	"road":242,
+	"secondary_road":242,
+	"building":232,
+	"building_entrance":234,
+	"wall":230,
+	"gate":237,
+}
+
+func render_from_instance(location_id: String) -> void:
+	# 通过 WorldMapInstanceManager.get_instance 获取目标地图实例
+	var map_instance = GameCore.mod_manager.call_mod(
+		"WorldMapInstanceManager",
+		"get_instance",
+		location_id
+	) as Dictionary
+	
+	if map_instance and not map_instance.is_empty():
+		## 渲染路径连接
+		#var path_connection_indexer = map_instance.get("data",{}).get("path_connection_indexer", {})
+		#for pos_key in path_connection_indexer.keys():
+			#var connection = path_connection_indexer[pos_key] as int
+			#if connection_to_tile_id_pos.has(connection):
+				#var pos_str = pos_key.split(",")
+				#var pos_vec = Vector2i(int(pos_str[0]),int(pos_str[1]))
+				#PathLayer.set_cell(pos_vec, 0, connection_to_tile_id_pos[connection])
+		
+		# 遍历 map_instance.data.map_nodes 渲染实体
+		var map_nodes = map_instance.get("data",{}).get("map_nodes", {})
+		for node in map_nodes:
+			# 检查 node.type 是否是 map_cell 类型
+			if GameCore.mod_manager.call_mod("EntityInstanceManager", "is_entity_type", node.type, "map_cell"):
+				# 通过 node.entity_instance_id 从 EntityInstanceManager 获取实体实例数据
+				var entity_instance_id = node.get("entity_instance_id", "")
+				if entity_instance_id != "":
+					var entity_instance = GameCore.mod_manager.call_mod("EntityInstanceManager", "get_entity", entity_instance_id)
+					if entity_instance and not entity_instance.is_empty():
+						# 获取地图位置
+						var pos = entity_instance.get("map_position", Vector2i(0, 0))
+						var pos_vec = Vector2i(pos.x, pos.y)
+						
+						# 渲染 entity
+						if entity_instance.has("type"):
+							GroundLayer.set_cell(pos_vec, map_type_to_tile_id.get(entity_instance.type, 0), Vector2i.ZERO)
+		
+		# 渲染 player
+		# 通过 PlayerManager 获取玩家实体实例
+		var player_instance_id = GameCore.mod_manager.call_mod("PlayerManager", "get_player_entity_instance_id")
+		if player_instance_id != "":
+			# 获取玩家实体数据
+			var player_entity = GameCore.mod_manager.call_mod("EntityInstanceManager", "get_entity", player_instance_id)
+			if player_entity and not player_entity.is_empty():
+				# 获取地图位置
+				var pos = player_entity.get("map_position", Vector2i(0, 0))
+				var pos_vec = Vector2i(pos.x, pos.y)
+				
+				# 通过 CachePoolManager 获取或创建 MapMudCell
+				var map_mud_cell_path = "res://res/mods/WorldSceneManager/Scenes/GameScenes/MapMudCell.tscn"
+				var map_mud_cell = GameCore.mod_manager.call_mod("CachePoolManager", "get_cached", map_mud_cell_path)
+				
+				# 如果缓存中没有，创建新的
+				if map_mud_cell == null:
+					if MudCellScene != null:
+						map_mud_cell = MudCellScene.instantiate()
+					else:
+						# 作为后备，直接加载
+						var scene = load(map_mud_cell_path)
+						if scene != null:
+							map_mud_cell = scene.instantiate()
+				
+				if map_mud_cell != null:
+					# 设置节点位置
+					map_mud_cell.position = tilemap.map_to_local(pos_vec)
+					# 挂到 EntityLayer 下
+					EntityLayer.add_child(map_mud_cell)
+					
+					entity_node_player = map_mud_cell
+					camera_settings.target = entity_node_player
+		
+		print("[WorldMapScene] 渲染地图: %s" % location_id)
+	else:
+		print("[WorldMapScene] 地图实例不存在: %s" % location_id)
+
+
+# ---------------------------------------------------------
+# 渲染 path + ground
+# ---------------------------------------------------------
+func _render_path_and_ground(map_data: Array) -> void:
+	PathLayer.clear()
+	#GroundLayer.clear()
+
+	for cell_raw: Variant in map_data:
+		if not (cell_raw is Dictionary):
+			continue
+
+		var cell: Dictionary = cell_raw
+		var pos := Vector2i(cell.get("x", 0), cell.get("y", 0))
+
+		# ground
+		var tile_type := String(cell.get("tile", ""))
+		var ground_id := _get_ground_tile_id(tile_type)
+		if ground_id != -1:
+			GroundLayer.set_cell(pos, ground_id)
+
+		# path
+		if cell.has("path"):
+			var path_info: Dictionary = cell["path"]
+			var path_id := _get_path_tile_id(path_info)
+			if path_id != -1:
+				PathLayer.set_cell(pos, path_id)
+	
+	print(GroundLayer.tile_set.get_source_count())
+	GroundLayer.set_cell(Vector2i(0,1), 241, Vector2i.ZERO)
+	GroundLayer.set_cell(Vector2i(1,1), 241)
+
+
+func _get_ground_tile_id(tile_type: String) -> int:
+	match tile_type:
+		"water": return 0
+		"deep_water": return 1
+		"sand": return 2
+		"lava": return 3
+		"volcano_road": return 4
+		"grass": return 5
+		_: return -1
+
+
+func _get_path_tile_id(path_info: Dictionary) -> int:
+	var dir := String(path_info.get("dir", ""))
+	match dir:
+		"N": return 0
+		"S": return 1
+		"E": return 2
+		"W": return 3
+		_: return -1
+
+
+# ---------------------------------------------------------
+# 渲染 info 层（MapMudCell）
+# ---------------------------------------------------------
+func _render_info_cells(map_data: Array, entity_instances: Array = []) -> void:
+	if MudCellScene == null:
+		push_error("[WorldMapScene] MudCellScene is null, cannot instantiate.")
+		return
+
+	# 渲染地图原有的实体和标记
+	for cell_raw: Variant in map_data:
+		if not (cell_raw is Dictionary):
+			continue
+
+		var cell: Dictionary = cell_raw
+
+		if not (cell.has("entity") or cell.has("flag")):
+			continue
+
+		var pos := Vector2i(cell.get("x", 0), cell.get("y", 0))
+
+		# 实例化 MapMudCell.tscn
+		var mud_cell: MapMudCell = MudCellScene.instantiate()
+		mud_cell.position = tilemap.map_to_local(pos)
+
+		if cell.has("entity"):
+			_render_entity(mud_cell, cell["entity"])
+
+		if cell.has("flag"):
+			_render_flag(mud_cell, cell["flag"], pos)
+
+		EntityLayer.add_child(mud_cell)
+		_cells[pos] = mud_cell
+
+	# 渲染从 EntityInstanceManager 获取的实体实例
+	for entity in entity_instances:
+		var entity_map_data = entity.get("attributes", {}).get("map_data", {})
+		var pos = entity_map_data.get("position", Vector2i(0, 0))
+		
+		# 检查该位置是否已有单元格
+		if not _cells.has(pos):
+			# 实例化 MapMudCell.tscn
+			var mud_cell: MapMudCell = MudCellScene.instantiate()
+			mud_cell.position = tilemap.map_to_local(pos)
+			EntityLayer.add_child(mud_cell)
+			_cells[pos] = mud_cell
+		
+		# 渲染实体
+		if _cells.has(pos):
+			var mud_cell = _cells[pos]
+			# 构建实体数据
+			var entity_data = {
+				"type": entity.get("entity_type", "unknown")
+			}
+			_render_entity(mud_cell, entity_data)
+
+
+# ---------------------------------------------------------
+# 渲染 entity
+# ---------------------------------------------------------
+func _render_entity(mud_cell: MapMudCell, entity_data: Dictionary) -> void:
+	var entity_type := String(entity_data.get("type", ""))
+	var path := "%s/Sprites/WorldMap/Icon/%s.png" % [mod_root_path, entity_type]
+	mud_cell.set_entity_icon(path)
+
+
+# ---------------------------------------------------------
+# 渲染 flag
+# ---------------------------------------------------------
+func _render_flag(mud_cell: MapMudCell, flag_data: Dictionary, pos: Vector2i) -> void:
+	var flag_type := String(flag_data.get("type", ""))
+	var path := "%s/Sprites/WorldMap/Icon/%s.png" % [mod_root_path, flag_type]
+
+	var size := tilemap.tile_set.tile_size
+	var offset := Vector2(size.x * 0.4, -size.y * 0.4)
+
+	mud_cell.set_flag_icon(path, offset)
+
+
+# ---------------------------------------------------------
+# 清理
+# ---------------------------------------------------------
+func _clear_all() -> void:
+	#PathLayer.clear()
+	#GroundLayer.clear()
+
+	for n in EntityLayer.get_children():
+		n.queue_free()
+
+	_cells.clear()
+
+# ---------------------------------------------------------
+# 摄像机跟踪
+# ---------------------------------------------------------
+func _process(delta: float) -> void:
+	# 平滑移动速度
+	const SMOOTH_SPEED = 5.0
+	
+	# 检查 target 是否存在
+	if camera_settings.get("target", null) != null:
+		var target_global_pos = camera_settings["target"].global_position
+		target_global_pos = camera_root.to_global(camera_root.to_local(target_global_pos) + Vector2(32,32))
+		
+		# 检查 target 的位置是否发生变化
+		if camera_settings["target_position"] == null or target_global_pos != camera_settings["target_position"] or camera_root.global_position.distance_to(camera_settings["target_position"]) > 1.0:
+			# 更新 target_position
+			camera_settings["target_position"] = target_global_pos
+			# 平滑移动摄像机父节点
+			camera_root.global_position = camera_root.global_position.lerp(target_global_pos, SMOOTH_SPEED * delta)
+	else:
+		# 检查是否有 target_position 并且 is_moving 为 false
+		if camera_settings["target_position"] != null and not camera_settings["is_moving"]:
+			# 平滑移动摄像机父节点到 target_position
+			var new_position = camera_root.global_position.lerp(camera_settings["target_position"], SMOOTH_SPEED * delta)
+			new_position = camera_root.to_local(new_position) + Vector2(32,32)
+			camera_root.position = new_position
+			
+			# 检查是否已经到达目标位置
+			if camera_root.global_position.distance_to(camera_settings["target_position"]) < 1.0:
+				# 到达目标位置，置空 target_position
+				camera_settings["target_position"] = null
+				camera_settings["is_moving"] = false
+
+func _on_input_event(event: InputEvent):
+	prints("_on_input_event", event)
+
+var selected_position = null
+@onready var selected_img = $MapLayer/SelectedPathLayer/Selected
+
+func _input(event: InputEvent) -> void:
+	if event is InputEventMouseButton:
+		#prints("_input : InputEventMouseButton", event)
+		if event.button_index == MOUSE_BUTTON_LEFT:
+			if event.pressed:
+				if not selected_position:
+					prints("_input : InputEventMouseButton", event)
+					#var mouse_position = event.global_position
+					#var ground_position = GroundLayer.to_local(mouse_position)
+					var ground_position = GroundLayer.get_local_mouse_position()
+					var map_position = GroundLayer.local_to_map(ground_position)
+					prints("map_position", map_position, GameCore.BaseTools.veci_to_pos_str(map_position))
+					selected_img.visible = true
+					selected_img.global_position = GroundLayer.to_global(GroundLayer.map_to_local(map_position)-Vector2(32,32))

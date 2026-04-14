@@ -1,0 +1,301 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generated_at": "2026-03-05 00:00:00",
+    "total_locations": 17,
+    "total_relationships": 0
+  },
+  "data": {
+    "locations": {
+      "test_World": {
+        "name": "test_World",
+        "Kanji/Kana": {
+          "content": "",
+          "url": ""
+        },
+        "inhabitants": {},
+        "url": "",
+        "introduce": "Test world location",
+        "description": "A test world location for development purposes",
+        "type": {
+          "content": "World",
+          "url": ""
+        },
+        "location_level_type": "World",
+        "mud_map_type": "wilderness"
+      },
+      "test_Continent": {
+        "name": "test_Continent",
+        "Kanji/Kana": {
+          "content": "",
+          "url": ""
+        },
+        "inhabitants": {},
+        "url": "",
+        "introduce": "Test continent location",
+        "description": "A test continent location for development purposes",
+        "type": {
+          "content": "Continent",
+          "url": ""
+        },
+        "location_level_type": "Continent",
+        "mud_map_type": "wilderness"
+      },
+      "test_Region": {
+        "name": "test_Region",
+        "Kanji/Kana": {
+          "content": "",
+          "url": ""
+        },
+        "inhabitants": {},
+        "url": "",
+        "introduce": "Test region location",
+        "description": "A test region location for development purposes",
+        "type": {
+          "content": "Region",
+          "url": ""
+        },
+        "location_level_type": "Region",
+        "mud_map_type": "wilderness"
+      },
+      "test_Area": {
+        "name": "test_Area",
+        "Kanji/Kana": {
+          "content": "",
+          "url": ""
+        },
+        "inhabitants": {},
+        "url": "",
+        "introduce": "Test area location",
+        "description": "A test area location for development purposes",
+        "type": {
+          "content": "Area",
+          "url": ""
+        },
+        "location_level_type": "Area",
+        "mud_map_type": "wilderness"
+      },
+      "test_Location": {
+        "name": "test_Location",
+        "Kanji/Kana": {
+          "content": "",
+          "url": ""
+        },
+        "inhabitants": {},
+        "url": "",
+        "introduce": "Test location",
+        "description": "A test location for development purposes",
+        "type": {
+          "content": "Location",
+          "url": ""
+        },
+        "location_level_type": "Location",
+        "mud_map_type": "wilderness"
+      },
+      "test_City": {
+        "name": "test_City",
+        "Kanji/Kana": {
+          "content": "",
+          "url": ""
+        },
+        "inhabitants": {},
+        "url": "",
+        "introduce": "Test city location",
+        "description": "A test city location for development purposes",
+        "type": {
+          "content": "City",
+          "url": ""
+        },
+        "location_level_type": "Location",
+        "mud_map_type": "town"
+      },
+      "test_Town": {
+        "name": "test_Town",
+        "Kanji/Kana": {
+          "content": "",
+          "url": ""
+        },
+        "inhabitants": {},
+        "url": "",
+        "introduce": "Test town location",
+        "description": "A test town location for development purposes",
+        "type": {
+          "content": "Town",
+          "url": ""
+        },
+        "location_level_type": "Location",
+        "mud_map_type": "town"
+      },
+      "test_Village": {
+        "name": "test_Village",
+        "Kanji/Kana": {
+          "content": "",
+          "url": ""
+        },
+        "inhabitants": {},
+        "url": "",
+        "introduce": "Test village location",
+        "description": "A test village location for development purposes",
+        "type": {
+          "content": "Village",
+          "url": ""
+        },
+        "location_level_type": "Location",
+        "mud_map_type": "town"
+      },
+      "test_Mountain": {
+        "name": "test_Mountain",
+        "Kanji/Kana": {
+          "content": "",
+          "url": ""
+        },
+        "inhabitants": {},
+        "url": "",
+        "introduce": "Test mountain location",
+        "description": "A test mountain location for development purposes",
+        "type": {
+          "content": "Mountain",
+          "url": ""
+        },
+        "location_level_type": "Location",
+        "mud_map_type": "wilderness"
+      },
+      "test_Forest": {
+        "name": "test_Forest",
+        "Kanji/Kana": {
+          "content": "",
+          "url": ""
+        },
+        "inhabitants": {},
+        "url": "",
+        "introduce": "Test forest location",
+        "description": "A test forest location for development purposes",
+        "type": {
+          "content": "Forest",
+          "url": ""
+        },
+        "location_level_type": "Location",
+        "mud_map_type": "wilderness"
+      },
+      "test_Jungle": {
+        "name": "test_Jungle",
+        "Kanji/Kana": {
+          "content": "",
+          "url": ""
+        },
+        "inhabitants": {},
+        "url": "",
+        "introduce": "Test jungle location",
+        "description": "A test jungle location for development purposes",
+        "type": {
+          "content": "Jungle",
+          "url": ""
+        },
+        "location_level_type": "Location",
+        "mud_map_type": "wilderness"
+      },
+      "test_See": {
+        "name": "test_See",
+        "Kanji/Kana": {
+          "content": "",
+          "url": ""
+        },
+        "inhabitants": {},
+        "url": "",
+        "introduce": "Test sea location",
+        "description": "A test sea location for development purposes",
+        "type": {
+          "content": "Sea",
+          "url": ""
+        },
+        "location_level_type": "Location",
+        "mud_map_type": "wilderness"
+      },
+      "test_River": {
+        "name": "test_River",
+        "Kanji/Kana": {
+          "content": "",
+          "url": ""
+        },
+        "inhabitants": {},
+        "url": "",
+        "introduce": "Test river location",
+        "description": "A test river location for development purposes",
+        "type": {
+          "content": "River",
+          "url": ""
+        },
+        "location_level_type": "Location",
+        "mud_map_type": "wilderness"
+      },
+      "test_Cave": {
+        "name": "test_Cave",
+        "Kanji/Kana": {
+          "content": "",
+          "url": ""
+        },
+        "inhabitants": {},
+        "url": "",
+        "introduce": "Test cave location",
+        "description": "A test cave location for development purposes",
+        "type": {
+          "content": "Cave",
+          "url": ""
+        },
+        "location_level_type": "Location",
+        "mud_map_type": "town"
+      },
+      "test_Volcano": {
+        "name": "test_Volcano",
+        "Kanji/Kana": {
+          "content": "",
+          "url": ""
+        },
+        "inhabitants": {},
+        "url": "",
+        "introduce": "Test volcano location",
+        "description": "A test volcano location for development purposes",
+        "type": {
+          "content": "Volcano",
+          "url": ""
+        },
+        "location_level_type": "Location",
+        "mud_map_type": "wilderness"
+      },
+      "test_Snow": {
+        "name": "test_Snow",
+        "Kanji/Kana": {
+          "content": "",
+          "url": ""
+        },
+        "inhabitants": {},
+        "url": "",
+        "introduce": "Test snow location",
+        "description": "A test snow location for development purposes",
+        "type": {
+          "content": "Snow",
+          "url": ""
+        },
+        "location_level_type": "Location",
+        "mud_map_type": "wilderness"
+      },
+      "test_Swamp": {
+        "name": "test_Swamp",
+        "Kanji/Kana": {
+          "content": "",
+          "url": ""
+        },
+        "inhabitants": {},
+        "url": "",
+        "introduce": "Test swamp location",
+        "description": "A test swamp location for development purposes",
+        "type": {
+          "content": "Swamp",
+          "url": ""
+        },
+        "location_level_type": "Location",
+        "mud_map_type": "wilderness"
+      }
+    }
+  }
+}

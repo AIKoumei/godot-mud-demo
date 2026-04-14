@@ -33,7 +33,6 @@ func _on_mod_load() -> bool:
 func set_root_node(root: Node) -> void:
 	_root_node = root
 
-
 # ---------------------------------------------------------
 # 加载 location 的世界场景（可视化层）
 # ---------------------------------------------------------
@@ -59,11 +58,11 @@ func load_scene_for_location(location_id: String) -> bool:
 			wms = scene_res.instantiate()
 		wms.name = "WorldMapScene"
 
-		# 设置 mod 根目录（图标路径依赖）
-		var mod_root_raw: Variant = GameCore.mod_manager.call_mod("ModInfo", "get_mod_root_path")
-		if mod_root_raw is String:
-			var mod_root: String = mod_root_raw
-			wms.set_mod_root(mod_root)
+		## 设置 mod 根目录（图标路径依赖）
+		#var mod_root_raw: Variant = GameCore.mod_manager.call_mod("ModInfo", "get_mod_root_path")
+		#if mod_root_raw is String:
+			#var mod_root: String = mod_root_raw
+			#wms.set_mod_root(mod_root)
 
 		_root_node.add_child(wms)
 		_world_map_scene = wms
@@ -91,8 +90,8 @@ func spawn_player_at(player_instance_id: String, start_point: Dictionary) -> boo
 
 	# 2. 获取玩家实例数据
 	var inst_raw: Variant = GameCore.mod_manager.call_mod(
-		"UnitInstanceManager",
-		"get_instance",
+		"EntityInstanceManager",
+		"get_entity",
 		player_instance_id
 	)
 

@@ -6,6 +6,7 @@
 [sub_resource type="GDScript" id="GDScript_sp5hi"]
 script/source = "extends SubViewport
 
+signal on_input_event(event: InputEvent)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -109,9 +110,9 @@ theme_override_constants/margin_bottom = 8
 
 [node name="FieldView" type="Control" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/FieldMargin" unique_id=1169918027]
 layout_mode = 2
+mouse_filter = 2
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/FieldMargin/FieldView" unique_id=1346381710]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -124,16 +125,18 @@ stretch = true
 handle_input_locally = false
 canvas_cull_mask = 4293918722
 size = Vector2i(728, 508)
-render_target_update_mode = 0
+render_target_update_mode = 4
 script = SubResource("GDScript_sp5hi")
 
 [node name="SubViewportView" type="TextureRect" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/FieldMargin/FieldView" unique_id=776869126]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = SubResource("ViewportTexture_sp5hi")
 
 [node name="MapEntityPanel" type="MarginContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel" unique_id=1871680401]
@@ -161,7 +164,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-color = Color(0.33333334, 0.33333334, 0.33333334, 0.33333334)
+color = Color(0, 0.5921569, 0.7411765, 0.13725491)
 
 [node name="ContentMarginContainer" type="MarginContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content" unique_id=1160391025]
 visible = false
@@ -187,7 +190,7 @@ size_flags_vertical = 3
 [node name="FoldableContainer" type="FoldableContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer" unique_id=246590577]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_vertical = 3
+size_flags_vertical = 0
 
 [node name="GridContainer" type="GridContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer/FoldableContainer" unique_id=1337879557]
 layout_mode = 2
@@ -232,7 +235,7 @@ layout_mode = 2
 [node name="FoldableContainer2" type="FoldableContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer" unique_id=890369066]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_vertical = 3
+size_flags_vertical = 0
 
 [node name="GridContainer" type="GridContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer/FoldableContainer2" unique_id=1925455557]
 layout_mode = 2
@@ -277,7 +280,7 @@ layout_mode = 2
 [node name="FoldableContainer3" type="FoldableContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer" unique_id=346463641]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_vertical = 3
+size_flags_vertical = 0
 
 [node name="GridContainer" type="GridContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/ContentMarginContainer/ScrollContainer/VBoxContainer/FoldableContainer3" unique_id=1021268858]
 layout_mode = 2
@@ -342,7 +345,7 @@ size_flags_vertical = 3
 [node name="FoldableContainer" type="FoldableContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer" unique_id=353534509]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_vertical = 3
+size_flags_vertical = 0
 
 [node name="GridContainer" type="GridContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer/FoldableContainer" unique_id=1627028906]
 layout_mode = 2
@@ -387,7 +390,7 @@ layout_mode = 2
 [node name="FoldableContainer2" type="FoldableContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer" unique_id=290969274]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_vertical = 3
+size_flags_vertical = 0
 
 [node name="GridContainer" type="GridContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer/FoldableContainer2" unique_id=1110564647]
 layout_mode = 2
@@ -432,7 +435,7 @@ layout_mode = 2
 [node name="FoldableContainer3" type="FoldableContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer" unique_id=1990283657]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_vertical = 3
+size_flags_vertical = 0
 
 [node name="GridContainer" type="GridContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MapEntityPanel/Content/TestContainer/ScrollContainer/VBoxContainer/FoldableContainer3" unique_id=127342454]
 layout_mode = 2
@@ -523,7 +526,7 @@ theme_override_constants/margin_bottom = 8
 [node name="BGColorRect" type="ColorRect" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MessageMargin" unique_id=701603240]
 layout_mode = 2
 mouse_filter = 2
-color = Color(0.33333334, 0.33333334, 0.33333334, 0.33333334)
+color = Color(1.2513996e-06, 0.5909795, 0.74138755, 0.13725491)
 
 [node name="MarginContainer" type="MarginContainer" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MessageMargin" unique_id=962960651]
 layout_mode = 2
@@ -535,6 +538,7 @@ theme_override_constants/margin_bottom = 8
 
 [node name="MessageLog" type="RichTextLabel" parent="MarginRoot/VBoxRoot/MainRow/FieldPanel/MessageMargin/MarginContainer" unique_id=458485237]
 layout_mode = 2
+mouse_filter = 2
 text = "- 你来到日光平原，阳光十分温暖
 - 亚古兽似乎发现了什么"
 

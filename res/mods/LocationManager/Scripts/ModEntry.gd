@@ -27,11 +27,11 @@
 ## }
 ##
 ## 支持的层级类型：
-## - World：世界层级
-## - Continent：大陆层级
-## - Region：区域层级
-## - Area：地区层级
-## - Location：地点层级
+## - World ： 世界层级
+## - Continent ： 大陆层级
+## - Region ： 区域层级
+## - Area ： 地区层级
+## - Location ： 地点层级
 ##
 ## ---------------------------------------------------------
 ## 可能涉及的外部模块（交互提示）
@@ -80,6 +80,20 @@ func _on_mod_init() -> void:
 	_init_type_buckets()
 
 
+func _on_mod_enable() -> void:
+	# 加载 Locations.json 文件
+	var mod_path = GameCore.mod_manager.loaded_mods.get("LocationManager", null)
+	if mod_path != null:
+		var json_path = mod_path.path + "/Data/Locations.json"
+		var success = regist_from_json(json_path)
+		if success:
+			print("[LocationManager] 成功加载 Locations.json 文件")
+		else:
+			print("[LocationManager] 加载 Locations.json 文件失败")
+	else:
+		print("[LocationManager] 无法获取模块路径")
+
+
 func _init_type_buckets() -> void:
 	# 初始化层级类型桶
 	var level_types: Array = [
@@ -114,7 +128,7 @@ func register_location(data: Dictionary) -> void:
 
 	var id: String = str(data["id"])
 	var type_name: String = str(data["type"].get("content", "Unknown")) if typeof(data["type"]) == TYPE_DICTIONARY else str(data["type"])
-	var level_type: String = str(data.get("location level type", "Location"))
+	var level_type: String = str(data.get("location_level_type", "Location"))
 
 	locations[id] = data
 
@@ -159,7 +173,6 @@ func register_locations_from_json(json_path: String) -> bool:
 	# 解析新的 JSON 结构
 	var data_section: Dictionary = parsed.get("data", {})
 	var locations_section: Dictionary = data_section.get("locations", {})
-	var relationships_section: Dictionary = data_section.get("relationships", {})
 
 	if locations_section.is_empty():
 		push_warning("[LocationManager] JSON 文件中未找到 locations 数据: " + json_path)
@@ -171,21 +184,71 @@ func register_locations_from_json(json_path: String) -> bool:
 			loc_data["id"] = location_id
 		register_location(loc_data)
 
-	# 处理地点关系数据
-	if not relationships_section.is_empty():
-		for parent_id in relationships_section.keys():
-			var children: Array = relationships_section[parent_id]
-			for child_id in children:
-				if locations.has(child_id):
-					# 构建父子关系映射
-					var child_arr: Array = children_map.get(parent_id, [])
-					if child_id not in child_arr:
-						child_arr.append(child_id)
-						children_map[parent_id] = child_arr
-
-	push_warning("[LocationManager] 从 JSON 文件成功注册 %d 个地点: " + str(locations_section.size()) + " - " + json_path)
+	print("[LocationManager] 从 JSON 文件成功注册 %s 个地点 " % str(locations_section.size()) + " - " + json_path)
 	
 	return true
+
+
+func regist_relationships_from_json(json_path: String) -> bool:
+	"""
+	通过文件内容，注册所有 location 的关系配置
+	"""
+	var file: FileAccess = FileAccess.open(json_path, FileAccess.READ)
+	if file == null:
+		push_error("[LocationManager] 无法读取 JSON 文件: " + json_path)
+		return false
+
+	var content: String = file.get_as_text()
+	var parsed: Variant = JSON.parse_string(content)
+
+	if typeof(parsed) != TYPE_DICTIONARY:
+		push_error("[LocationManager] JSON 格式错误: " + json_path)
+		return false
+
+	# 解析新的 JSON 结构
+	var data_section: Dictionary = parsed.get("data", {})
+	var relationships_section: Dictionary = data_section.get("relationships", {})
+
+	if relationships_section.is_empty():
+		push_warning("[LocationManager] JSON 文件中未找到 relationships 数据: " + json_path)
+		return false
+
+	# 处理地点关系数据
+	for parent_id in relationships_section.keys():
+		var children: Array = relationships_section[parent_id]
+		for child_id in children:
+			if locations.has(child_id):
+				# 构建父子关系映射
+				var child_arr: Array = children_map.get(parent_id, [])
+				if child_id not in child_arr:
+					child_arr.append(child_id)
+					children_map[parent_id] = child_arr
+
+	print("[LocationManager] 从 JSON 文件成功注册 %s 个关系 " % str(relationships_section.size()) + " - " + json_path)
+	
+	return true
+
+
+func regist_from_json(json_path: String) -> bool:
+	"""
+	通过文件内容，注册所有的配置
+	包括 location 的配置
+	包括 location 的关系配置
+	"""
+	# 注册地点配置
+	var locations_registered: bool = register_locations_from_json(json_path)
+	# 注册关系配置
+	var relationships_registered: bool = regist_relationships_from_json(json_path)
+	
+	return locations_registered or relationships_registered
+
+
+# 兼容方法，保持与 README.md 中的方法名称一致
+func regist_locations_from_json(json_path: String) -> bool:
+	"""
+	通过文件内容，注册所有 location 的配置
+	"""
+	return register_locations_from_json(json_path)
 
 
 func get_location(location_id: String) -> Dictionary:
@@ -240,7 +303,7 @@ func get_locations_by_level_hierarchy(level_type: String) -> Array:
 	
 	for id in locations.keys():
 		var data: Dictionary = locations[id]
-		var loc_level: String = str(data.get("location level type", "Location"))
+		var loc_level: String = str(data.get("location_level_type", "Location"))
 		var loc_index: int = level_order.find(loc_level)
 		if loc_index >= level_index:
 			result.append(id)
@@ -279,6 +342,89 @@ func get_location_by_name(name: String) -> Array:
 		if str(data.get("name", "")).to_lower() == name.to_lower():
 			result.append(id)
 	return result
+
+
+# Location 管理功能
+
+## 删除指定地点
+func remove_location(location_id: String) -> bool:
+	if not locations.has(location_id):
+		push_error("[LocationManager] 删除地点失败：地点不存在")
+		return false
+
+	# 从主字典中删除
+	var loc_data: Dictionary = locations[location_id]
+	locations.erase(location_id)
+
+	# 从类型分类中删除
+	var type_name: String = str(loc_data["type"].get("content", "Unknown")) if typeof(loc_data["type"]) == TYPE_DICTIONARY else str(loc_data["type"])
+	if locations_by_type.has(type_name):
+		var type_arr: Array = locations_by_type[type_name]
+		if location_id in type_arr:
+			type_arr.erase(location_id)
+			if type_arr.is_empty():
+				locations_by_type.erase(type_name)
+			else:
+				locations_by_type[type_name] = type_arr
+
+	# 从层级类型分类中删除
+	var level_type: String = str(loc_data.get("location_level_type", "Location"))
+	if locations_by_level_type.has(level_type):
+		var level_arr: Array = locations_by_level_type[level_type]
+		if location_id in level_arr:
+			level_arr.erase(location_id)
+			if level_arr.is_empty():
+				locations_by_level_type.erase(level_type)
+			else:
+				locations_by_level_type[level_type] = level_arr
+
+	# 从居民分类中删除
+	if loc_data.has("inhabitants"):
+		var inhabitants: Dictionary = loc_data["inhabitants"]
+		for inhabitant in inhabitants.keys():
+			if locations_by_inhabitant.has(inhabitant):
+				var inhabitant_arr: Array = locations_by_inhabitant[inhabitant]
+				if location_id in inhabitant_arr:
+					inhabitant_arr.erase(location_id)
+					if inhabitant_arr.is_empty():
+						locations_by_inhabitant.erase(inhabitant)
+					else:
+						locations_by_inhabitant[inhabitant] = inhabitant_arr
+
+	# 从关系中删除（作为子地点）
+	for parent_id in children_map.keys():
+		var children: Array = children_map[parent_id]
+		if location_id in children:
+			children.erase(location_id)
+			if children.is_empty():
+				children_map.erase(parent_id)
+			else:
+				children_map[parent_id] = children
+
+	# 从关系中删除（作为父地点）
+	if children_map.has(location_id):
+		children_map.erase(location_id)
+
+	print("[LocationManager] 成功删除地点: " + location_id)
+	return true
+
+## 更新指定地点
+func update_location(location_id: String, new_data: Dictionary) -> bool:
+	if not locations.has(location_id):
+		push_error("[LocationManager] 更新地点失败：地点不存在")
+		return false
+
+	# 先删除旧地点
+	var removed: bool = remove_location(location_id)
+	if not removed:
+		return false
+
+	# 再添加新地点
+	new_data["id"] = location_id
+	register_location(new_data)
+
+	print("[LocationManager] 成功更新地点: " + location_id)
+	return true
 
 
 # Relationship 管理功能

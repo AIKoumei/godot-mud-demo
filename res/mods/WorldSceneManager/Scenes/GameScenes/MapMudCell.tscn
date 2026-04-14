@@ -1,36 +1,77 @@
-[gd_scene load_steps=3 format=3 uid="uid://d3pfi55plm5fd"]
+[gd_scene format=3 uid="uid://d3pfi55plm5fd"]
 
 [ext_resource type="Script" uid="uid://dqrf1ikp37ur5" path="res://res/mods/WorldSceneManager/Scripts/Core/MapMudCell.gd" id="1_0aj7n"]
 [ext_resource type="Texture2D" uid="uid://dng05ldoakroh" path="res://icon.svg" id="3_l6hxe"]
 
-[node name="MapMudCell" type="Node2D"]
+[node name="MapMudCell" type="Node2D" unique_id=174566045]
 light_mask = 2
 visibility_layer = 2
 script = ExtResource("1_0aj7n")
 
-[node name="InfoLayer" type="Node2D" parent="."]
+[node name="InfoLayer" type="Node2D" parent="." unique_id=417014035]
 light_mask = 2
 visibility_layer = 2
 
-[node name="MapUnit" type="Node2D" parent="."]
+[node name="MapUnit" type="Node2D" parent="." unique_id=1768910526]
 light_mask = 2
 visibility_layer = 2
 
-[node name="Icon" type="Sprite2D" parent="MapUnit"]
-light_mask = 2
-visibility_layer = 2
-texture = ExtResource("3_l6hxe")
-
-[node name="MapTag" type="Node2D" parent="."]
-light_mask = 2
-visibility_layer = 2
-
-[node name="Icon" type="Sprite2D" parent="MapTag"]
+[node name="IconSprite2D" type="Sprite2D" parent="MapUnit" unique_id=1032364469]
+visible = false
 light_mask = 2
 visibility_layer = 2
 texture = ExtResource("3_l6hxe")
 
-[node name="TestSprite2D" type="Sprite2D" parent="."]
+[node name="Icon" type="TextureRect" parent="MapUnit" unique_id=1759997449]
+light_mask = 2
+visibility_layer = 2
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 16.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_l6hxe")
+expand_mode = 1
+stretch_mode = 4
+metadata/_edit_use_anchors_ = true
+
+[node name="MapTag" type="Node2D" parent="." unique_id=370268982]
+light_mask = 2
+visibility_layer = 2
+
+[node name="IconSprite2D" type="Sprite2D" parent="MapTag" unique_id=190335849]
+visible = false
+light_mask = 2
+visibility_layer = 2
+texture = ExtResource("3_l6hxe")
+
+[node name="Icon" type="TextureRect" parent="MapTag" unique_id=1785901984]
+light_mask = 2
+visibility_layer = 2
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 16.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_l6hxe")
+expand_mode = 1
+stretch_mode = 4
+metadata/_edit_use_anchors_ = true
+
+[node name="TestSprite2D" type="Sprite2D" parent="." unique_id=1587099678]
+visible = false
 light_mask = 2
 visibility_layer = 2
 texture = ExtResource("3_l6hxe")

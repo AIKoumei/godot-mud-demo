@@ -45,8 +45,16 @@ func _on_mod_event(_mod_name: String, event_name: String, event_data: Dictionary
 		var map_name = event_data.get("map_name", "")
 		refined_maps_count += 1
 		set_message("细化模板 Digimon World（%s/%s），地点 %s" % [refined_maps_count, locations_count, map_name])
-	#elif _mod_name == "WorldMapInstanceManager" and event_name == "after_gen_all_locations_finished":
-		#GameCore.mod_manager.call_mod("WorldMapInstanceManager", "save_all_location_instances")
+	elif _mod_name == "WorldMapInstanceManager":
+		if event_name == "after_gen_all_locations_finished":
+			init_player_data()
+		if event_name == "init_one_mud_map_entities":
+			set_message("生成地图实体 Digimon World（%s/%s），地点 %s" % [event_data.get("cur_index",0)
+				, event_data.get("total_index",0), event_data.get("map_name","unknown map")])
+
+
+func init_player_data() -> void:
+	pass
 
 
 func set_message(msg) -> void:

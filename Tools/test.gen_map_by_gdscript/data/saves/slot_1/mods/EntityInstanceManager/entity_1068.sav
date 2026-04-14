@@ -1,0 +1,21 @@
+{
+	"_source_mod": "EntityManager",
+	"attributes": {
+		"description": "这是一片沿海海域。",
+		"encounter_id_list": [],
+		"height_level": 1,
+		"map_cell_type": "coastal_sea",
+		"map_position": [
+			0,
+			3
+		],
+		"passable": {
+
+		}
+	},
+	"entity_id": "map_cell_coastal_sea",
+	"entity_instance_id": "1068",
+	"entity_type": "coastal_sea",
+	"instance_id": "1068",
+	"type": "coastal_sea"
+}

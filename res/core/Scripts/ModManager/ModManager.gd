@@ -276,7 +276,8 @@ func load_mod(mod_name: String, mods_path: String = MODS_ROOT) -> bool:
 	var final_config := merge_user_and_default(default_config, user_config, "config", mod_name)
 
 	# 写回 user（保证 user 始终最新）
-	save_json_user(user_config_path, final_config)
+	# TODO 调试中，暂时注释掉
+	#save_json_user(user_config_path, final_config)
 
 	loaded_mods[mod_name] = {
 		"config": final_config,
@@ -477,6 +478,9 @@ func call_mod(mod_name: String, method: String, ...args) -> Variant:
 		push_error("[ModManager] Mod %s does not implement method %s" % [mod_name, method])
 		return null
 
+	if method == "get_entity":
+		prints(method, args)
+		
 	return scene.callv(method, args)
 
 
@@ -600,32 +604,37 @@ func emit_mod_event(from_mod: String, event_name: String, event_data: Dictionary
 
 	targets = targets.duplicate()
 	targets = GameCore.ArrayTools.deduplicate(targets)
-
+	
 	var to_remove: Array = []
 
 	for mod_name in targets:
-		if not loaded_mods.has(mod_name):
-			continue
+			if not loaded_mods.has(mod_name):
+					continue
 
-		var mod_info = loaded_mods[mod_name]
-		if not mod_info.enabled:
-			continue
+			var mod_info = loaded_mods[mod_name]
+			if not mod_info.enabled:
+					continue
 
-		var scene: Node = mod_info.scene
-		if scene == null or not is_instance_valid(scene):
-			continue
+			var scene: Node = mod_info.scene
+			if scene == null or not is_instance_valid(scene):
+					continue
 
-		var matched_filter := _match_filter_for_mod(mod_name, from_mod, event_name)
-		if matched_filter == null:
-			continue
+			var matched_filter := _match_filter_for_mod(mod_name, from_mod, event_name)
+			if matched_filter == null:
+					continue
 
-		# 分发事件
-		scene.call_deferred("on_mod_event", from_mod, event_name, event_data)
+			# 分发事件
+			scene.call_deferred("on_mod_event", from_mod, event_name, event_data)
 
-		# Once 自动移除
-		if matched_filter.listen_type == ModEventListenerFilter.ListenType.ONCE:
-			to_remove.append({"mod": mod_name, "filter": matched_filter})
+			# Once 自动移除
+			if matched_filter.listen_type == ModEventListenerFilter.ListenType.ONCE:
+					to_remove.append({"mod": mod_name, "filter": matched_filter})
 
 	# 移除一次性监听器
 	for item in to_remove:
-		unregister_mod_event_listener(item.mod, item.filter)
+			unregister_mod_event_listener(item.mod, item.filter)
+
+
+
+func emit_ui_scene_event(event_name: String, event_data: Dictionary = {}) -> void:
+	return emit_mod_event("GameCore.UIScene", event_name, event_data)

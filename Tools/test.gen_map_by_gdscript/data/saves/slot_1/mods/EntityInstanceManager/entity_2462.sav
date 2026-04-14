@@ -1,0 +1,20 @@
+{
+	"_source_mod": "EntityManager",
+	"attributes": {
+		"description": "这是一条主要道路。",
+		"encounter_id_list": [],
+		"map_cell_type": "primary_road",
+		"map_position": [
+			12,
+			10
+		],
+		"passable": {
+
+		}
+	},
+	"entity_id": "map_cell_primary_road",
+	"entity_instance_id": "2462",
+	"entity_type": "primary_road",
+	"instance_id": "2462",
+	"type": "primary_road"
+}

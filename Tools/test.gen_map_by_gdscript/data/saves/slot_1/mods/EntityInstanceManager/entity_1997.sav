@@ -1,0 +1,25 @@
+{
+	"_source_mod": "EntityManager",
+	"attributes": {
+		"description": "这是一个默认的墙。",
+		"encounter_id_list": [],
+		"map_cell_type": "wall",
+		"map_position": [
+			18,
+			20
+		],
+		"passable": {
+			"false": {
+
+			}
+		},
+		"roles": [
+			"wall"
+		]
+	},
+	"entity_id": "default_wall",
+	"entity_instance_id": "1997",
+	"entity_type": "wall",
+	"instance_id": "1997",
+	"type": "wall"
+}

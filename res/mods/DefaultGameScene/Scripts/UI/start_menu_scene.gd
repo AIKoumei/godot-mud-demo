@@ -12,11 +12,11 @@ func _process(delta: float) -> void:
 
 
 func _on_new_game_pressed() -> void:
+	GameCore.mod_manager.call_mod("GameManager", "new_game")
+	## TODO 先给个默认 slot
+	#GameCore.Settings.GameSettings.GameSlot = 1
+	#GameCore.mod_manager.call_mod("DefaultGameScene", "change_scene", "NewGameScene")
 	pass # Replace with function body.
-	GameCore.mod_manager.call_mod("DefaultGameScene", "change_scene", "NewGameScene")
-	#GameCore.mod_manager.call_mod("GameManager", "new_game")
-	# TODO 先给个默认 slot
-	GameCore.Settings.GameSettings.GameSlot = 1
 
 
 func _on_load_game_pressed() -> void:

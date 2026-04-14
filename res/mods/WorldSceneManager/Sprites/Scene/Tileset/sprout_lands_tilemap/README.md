@@ -8,18 +8,18 @@ For Godot 4.3. Made in collaboration with [Cup Nooble](https://cupnooble.itch.io
 Start building worlds with the free [Sprout Lands Asset Pack](https://cupnooble.itch.io/sprout-lands-asset-pack) right away.
 
 ## Requirements
-1. Download and run [Godot](https://godotengine.org/).
-2. Start a new project and have it open.
+#  Download and run [Godot](https://godotengine.org/).
+#  Start a new project and have it open.
   
 ## Installation
 
 ### GitHub
 
 
-1.  Download the latest release version from [GitHub](https://github.com/Maaack/Sprout-Lands-Tilemap/releases/latest).  
-2.  Extract the contents of the archive.
-3.  Move the `addons/sprout_lands_tilemap` folder into your project's `addons/` folder.  
-4.  Open/Reload the project.  
+#   Download the latest release version from [GitHub](https://github.com/Maaack/Sprout-Lands-Tilemap/releases/latest).  
+#   Extract the contents of the archive.
+#   Move the `addons/sprout_lands_tilemap` folder into your project's `addons/` folder.  
+#   Open/Reload the project.  
 5.  Enable the plugin from the Project Settings > Plugins tab.  
     If it's enabled for the first time,
     1.  A dialogue window will appear asking to copy the example scenes out of `addons/`.
@@ -28,13 +28,13 @@ Start building worlds with the free [Sprout Lands Asset Pack](https://cupnooble.
 
 The example scene can be opened and worked in directly. If you'd rather start from scratch, here are the instructions.
 
-1. Start a new scene with a Node2D.  
+#  Start a new scene with a Node2D.  
 ![Clicking on 2D Scene](/addons/sprout_lands_tilemap/media/Usage_Screenshot_1.png)
-2. Instantiate a custom scene as a node.  
+#  Instantiate a custom scene as a node.  
 ![Instatiate a Custom Scene](/addons/sprout_lands_tilemap/media/Usage_Screenshot_2.png)
-3. Locate `SproutLandsTileMap.tscn` and open it. 
+#  Locate `SproutLandsTileMap.tscn` and open it. 
 ![Open Custom Scene](/addons/sprout_lands_tilemap/media/Usage_Screenshot_4.png)
-4. Confirm the new node is added and selected in the scene tree.
+#  Confirm the new node is added and selected in the scene tree.
 ![Confirm new node](/addons/sprout_lands_tilemap/media/Usage_Screenshot_5.png)
 5. Open the TileMap editor, (if it is not open already).  
 ![Selecting TileMap Editor](/addons/sprout_lands_tilemap/media/Usage_Screenshot_6.png)

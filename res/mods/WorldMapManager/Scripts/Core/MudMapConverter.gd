@@ -66,6 +66,9 @@ static func _create_base_node(id: String, map_info: Dictionary) -> Dictionary:
 	if map_info.main_road.has(id):
 		type = "road"
 		desc = "这是一条平整的主干道，通向城镇各处。"
+	elif map_info.get("secondary_roads",{}).has(id):
+		type = "secondary_road"
+		desc = "这是一条次要道路，连接着城镇的各个区域。"
 	elif map_info.edge.has(id):
 		type = "wall"
 		desc = "一堵高耸的金属墙壁挡住了去路。"
@@ -76,16 +79,21 @@ static func _create_base_node(id: String, map_info: Dictionary) -> Dictionary:
 		"description": desc,
 		"exits": {},
 		"attributes": {
-			"color": "#ffffff",
-			"is_safe_zone": false,
-			"terrain_cost": 1.0
+			#"color": "#ffffff",
+			#"is_safe_zone": false,
+			#"terrain_cost": 1.0
 		}
 	}
 
 ## 建立道路的全连通网络
 static func _connect_main_roads(rooms: Dictionary, map_info: Dictionary):
-	var roads = map_info.main_road
-	for r_id in roads:
+	# 处理主干道
+	var main_roads = map_info.main_road
+	
+	var center = map_info.get("center", {})
+	var c_id = "%d,%d" % [int(center.get("x",0)), int(center.get("y",0))]
+	
+	for r_id in main_roads:
 		if not rooms.has(r_id): continue
 		var pos = _str_to_vec(r_id)
 		
@@ -93,9 +101,24 @@ static func _connect_main_roads(rooms: Dictionary, map_info: Dictionary):
 			var target_pos = pos + DIRECTIONS[dir]
 			var target_id = "%d,%d" % [target_pos.x, target_pos.y]
 			
-			# 道路节点默认与相邻的道路连通
-			if roads.has(target_id) and rooms.has(target_id):
+			# 主干道与相邻的主干道或次要道路连通
+			if (main_roads.has(target_id) or (map_info.has("secondary_roads") and map_info.secondary_roads.has(target_id)) or target_id == c_id) and rooms.has(target_id):
 				rooms[r_id].exits[dir] = target_id
+	
+	# 处理次要道路
+	if map_info.has("secondary_roads"):
+		var secondary_roads = map_info.secondary_roads
+		for r_id in secondary_roads:
+			if not rooms.has(r_id): continue
+			var pos = _str_to_vec(r_id)
+			
+			for dir in DIRECTIONS:
+				var target_pos = pos + DIRECTIONS[dir]
+				var target_id = "%d,%d" % [target_pos.x, target_pos.y]
+				
+				# 次要道路与相邻的主干道或次要道路连通
+				if (main_roads.has(target_id) or secondary_roads.has(target_id)) and rooms.has(target_id):
+					rooms[r_id].exits[dir] = target_id
 
 # ---------------------------------------------------------
 # 内部处理核心逻辑
@@ -179,8 +202,8 @@ static func _generate_block_exits(rect: Rect2i, rooms: Dictionary, map_info: Dic
 				var pair = {"from": from_id, "to": to_id, "dir": dir_name}
 				all_valid_neighbors.append(pair)
 				
-				# 记录临街边
-				if map_info.main_road.has(to_id):
+				# 记录临街边（包括主干道和次要道路）
+				if map_info.main_road.has(to_id) or map_info.get("secondary_roads",{}).has(to_id):
 					if not street_facing_sides.has(dir_name):
 						street_facing_sides[dir_name] = []
 					street_facing_sides[dir_name].append(pair)
@@ -226,6 +249,16 @@ static func _process_special_points(rooms: Dictionary, map_info: Dictionary):
 		rooms[c_id].type = "center"
 		rooms[c_id].title = "城镇中心"
 		rooms[c_id].attributes["is_safe_zone"] = true
+			
+		var pos = _str_to_vec(c_id)
+		
+		for dir in DIRECTIONS:
+			var target_pos = pos + DIRECTIONS[dir]
+			var target_id = "%d,%d" % [target_pos.x, target_pos.y]
+			
+			# 次要道路与相邻的主干道或次要道路连通
+			if (map_info.get("main_road", {}).has(target_id) or map_info.get("secondary_roads", {}).has(target_id)) and rooms.has(target_id):
+				rooms[c_id].exits[dir] = target_id
 	
 	for g_id in map_info.get("gate", {}):
 		if rooms.has(g_id):

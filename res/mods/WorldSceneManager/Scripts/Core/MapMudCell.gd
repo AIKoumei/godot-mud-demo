@@ -3,10 +3,10 @@ class_name MapMudCell
 
 @onready var InfoLayer: Node2D = $InfoLayer
 @onready var MapUnit: Node2D = $MapUnit
-@onready var UnitIcon: Sprite2D = $MapUnit/Icon
+@onready var UnitIcon: TextureRect = $MapUnit/Icon
 
 @onready var MapTag: Node2D = $MapTag
-@onready var TagIcon: Sprite2D = $MapTag/Icon
+@onready var TagIcon: TextureRect = $MapTag/Icon
 
 
 # ---------------------------------------------------------

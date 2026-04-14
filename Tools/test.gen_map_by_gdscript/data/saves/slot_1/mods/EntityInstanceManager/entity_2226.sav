@@ -1,0 +1,21 @@
+{
+	"_source_mod": "EntityManager",
+	"attributes": {
+		"description": "这是一片丘陵。",
+		"encounter_id_list": [],
+		"height_level": 4,
+		"map_cell_type": "hill",
+		"map_position": [
+			4,
+			7
+		],
+		"passable": {
+
+		}
+	},
+	"entity_id": "map_cell_hill",
+	"entity_instance_id": "2226",
+	"entity_type": "hill",
+	"instance_id": "2226",
+	"type": "hill"
+}

@@ -122,19 +122,19 @@ godot-mud-demo/
 ## 系统工作流程
 
 ### 1. 游戏初始化
-1. **GameCore.gd** 初始化核心系统
-2. **ModManager** 加载所有启用的 mods
-3. **SceneManager** 准备初始场景
+#  **GameCore.gd** 初始化核心系统
+#  **ModManager** 加载所有启用的 mods
+#  **SceneManager** 准备初始场景
 
 ### 2. Mod 加载流程
 ```
 GameCore.gd → ModManager.gd → [ModEntry.gd 文件] → ModuleConfig.json
 ```
 
-1. **GameCore** 触发 mod 加载
-2. **ModManager** 扫描 mod 目录
-3. 每个 mod 的 **ModEntry.gd** 文件被执行
-4. **ModuleConfig.json** 定义 mod 元数据和依赖关系
+#  **GameCore** 触发 mod 加载
+#  **ModManager** 扫描 mod 目录
+#  每个 mod 的 **ModEntry.gd** 文件被执行
+#  **ModuleConfig.json** 定义 mod 元数据和依赖关系
 
 ### 3. 位置管理系统
 LocationManager 模块使用基于关系的层级结构处理游戏世界位置：
@@ -143,30 +143,30 @@ LocationManager 模块使用基于关系的层级结构处理游戏世界位置�
 Locations.json → LocationManager → Relationships → 位置树
 ```
 
-1. **Locations.json** 包含位置数据和关系
-2. **LocationManager** 加载并处理位置数据
-3. **Relationships** 定义父子连接
-4. **位置树** 用于导航和显示
+#  **Locations.json** 包含位置数据和关系
+#  **LocationManager** 加载并处理位置数据
+#  **Relationships** 定义父子连接
+#  **位置树** 用于导航和显示
 
 ### 4. 场景管理
 ```
 SceneManager → GameScenes → UIScenes → 场景过渡
 ```
 
-1. **SceneManager** 管理场景加载/卸载
-2. **GameScenes** 包含游戏环境
-3. **UIScenes** 处理用户界面元素
-4. **场景过渡** 提供平滑的场景切换
+#  **SceneManager** 管理场景加载/卸载
+#  **GameScenes** 包含游戏环境
+#  **UIScenes** 处理用户界面元素
+#  **场景过渡** 提供平滑的场景切换
 
 ### 5. 单位管理
 ```
 UnitManager → DefaultUnits → Units.json → 单位实例
 ```
 
-1. **UnitManager** 处理单位创建和管理
-2. **DefaultUnits** 提供基础单位定义
-3. **Units.json** 包含单位数据
-4. **单位实例** 在游戏中创建
+#  **UnitManager** 处理单位创建和管理
+#  **DefaultUnits** 提供基础单位定义
+#  **Units.json** 包含单位数据
+#  **单位实例** 在游戏中创建
 
 ## 关键特性
 
@@ -191,21 +191,21 @@ UnitManager → DefaultUnits → Units.json → 单位实例
 ## 使用指南
 
 ### 运行项目
-1. 在 Godot 引擎中打开项目
-2. 运行主场景 (`res/core/Scenes/GameScenes/main.tscn`)
-3. 游戏将初始化并加载所有启用的 mods
+#  在 Godot 引擎中打开项目
+#  运行主场景 (`res/core/Scenes/GameScenes/main.tscn`)
+#  游戏将初始化并加载所有启用的 mods
 
 ### 创建新 Mod
-1. 复制 `mod_template` 目录
-2. 将其重命名为你的 mod 名称
-3. 编辑 `ModuleConfig.json` 填写你的 mod 详情
-4. 在 `ModEntry.gd` 中实现你的 mod 逻辑
+#  复制 `mod_template` 目录
+#  将其重命名为你的 mod 名称
+#  编辑 `ModuleConfig.json` 填写你的 mod 详情
+#  在 `ModEntry.gd` 中实现你的 mod 逻辑
 5. 添加任何额外的资源或数据文件
 
 ### 位置管理
-1. 向 `Data/Locations.json` 添加新位置
-2. 在 `relationships` 部分定义关系
-3. 在代码中使用 LocationManager API 访问位置：
+#  向 `Data/Locations.json` 添加新位置
+#  在 `relationships` 部分定义关系
+#  在代码中使用 LocationManager API 访问位置：
    - `get_location(id)` - 通过 ID 获取位置
    - `get_location_children(id)` - 获取子位置
    - `add_relationship(parent_id, child_id)` - 添加新关系

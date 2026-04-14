@@ -34,5 +34,5 @@ func _on_back_button_pressed() -> void:
 
 
 func _on_new_game_button_pressed() -> void:
-	GameCore.Settings.GameSettings.WorldSeed = game_seed
+	GameCore.Settings.GameSettings.WorldSeed = int(node_option_game_seed.text)
 	GameCore.mod_manager.call_mod("DefaultGameScene", "change_scene", "WorldGenerateScene")

@@ -1,0 +1,135 @@
+{
+  "metadata": {
+    "version": "1.0.4",
+    "generated_at": "2026-02-22 00:00:00"
+  },
+  "data": {
+    "entity": {
+      "type": "entity",
+      "attributes": {
+      }
+    },
+    "map_node_ground": {
+      "type": "map_node",
+      "attributes": {
+        "map_node_type": "ground",
+        "passable": {
+          "has_action": {
+            "move": {
+              "action_id": "move"
+            },
+            "filter_id": {
+              "action_id": "action_id"
+            }
+          }
+        }
+      }
+    },
+    "map_node_gate": {
+      "type": "map_node",
+      "attributes": {
+        "map_node_type": "gate",
+        "passable": {
+          "has_action": {
+            "move": {
+              "action_id": "move"
+            },
+            "filter_id": {
+              "action_id": "action_id"
+            }
+          }
+        }
+      }
+    },
+    "map_node_wall": {
+      "type": "map_node",
+      "attributes": {
+        "map_node_type": "wall",
+        "passable": {
+          "has_action": {
+            "filter_id": {
+              "action_id": "action_id"
+            }
+          }
+        }
+      }
+    },
+    "map_node_road": {
+      "type": "map_node",
+      "attributes": {
+        "map_node_type": "road",
+        "passable": {
+          "has_action": {
+            "move": {
+              "action_id": "move"
+            },
+            "filter_id": {
+              "action_id": "action_id"
+            }
+          }
+        }
+      }
+    },
+    "map_node_building": {
+      "type": "map_node",
+      "attributes": {
+        "map_node_type": "building",
+        "passable": {
+          "has_action": {
+            "filter_id": {
+              "action_id": "action_id"
+            }
+          }
+        }
+      }
+    },
+    "map_node_glass": {
+      "type": "map_node",
+      "attributes": {
+        "map_node_type": "glass",
+        "passable": {
+          "has_action": {
+            "filter_id": {
+              "action_id": "action_id"
+            }
+          }
+        }
+      }
+    },
+    "map_node_water_surface": {
+      "type": "map_node",
+      "attributes": {
+        "map_node_type": "water surface",
+        "passable": {
+          "has_action": {
+            "filter_id": {
+              "action_id": "action_id"
+            }
+          }
+        }
+      }
+    },
+    "map_node_mountain": {
+      "type": "map_node",
+      "attributes": {
+        "map_node_type": "mountain",
+        "passable": {
+          "has_action": {
+            "filter_id": {
+              "action_id": "action_id"
+            }
+          }
+        }
+      }
+    },
+    "player": {
+      "type": "entity",
+      "attributes": {
+        "entity_type": "player",
+        "actions": {
+          "move": {}
+        }
+      }
+    }
+  }
+}

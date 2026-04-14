@@ -1,0 +1,25 @@
+{
+	"_source_mod": "EntityManager",
+	"attributes": {
+		"description": "这是一个默认的门墙。",
+		"encounter_id_list": [],
+		"map_cell_type": "gate_wall",
+		"map_position": [
+			11,
+			0
+		],
+		"passable": {
+			"false": {
+
+			}
+		},
+		"roles": [
+			"gate_wall"
+		]
+	},
+	"entity_id": "default_gate_wall",
+	"entity_instance_id": "1768",
+	"entity_type": "gate_wall",
+	"instance_id": "1768",
+	"type": "gate_wall"
+}

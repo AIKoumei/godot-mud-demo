@@ -1,0 +1,6622 @@
+{
+	"data": {
+		"blocks": {
+
+		},
+		"encounters": {
+
+		},
+		"map_id": "test_City",
+		"map_name": "test_City",
+		"map_nodes": [
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						0,
+						0
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的门墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "gate_wall",
+					"map_position": [
+						13,
+						0
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"gate_wall"
+					]
+				},
+				"entity_id": "default_gate_wall",
+				"entity_type": "gate_wall",
+				"type": "gate_wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						14,
+						0
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						0,
+						1
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						12,
+						1
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						18,
+						1
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						12,
+						2
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						18,
+						2
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						12,
+						3
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条次要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "secondary_road",
+					"map_position": [
+						13,
+						3
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_secondary_road",
+				"entity_type": "secondary_road",
+				"type": "secondary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条次要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "secondary_road",
+					"map_position": [
+						14,
+						3
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_secondary_road",
+				"entity_type": "secondary_road",
+				"type": "secondary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条次要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "secondary_road",
+					"map_position": [
+						15,
+						3
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_secondary_road",
+				"entity_type": "secondary_road",
+				"type": "secondary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条次要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "secondary_road",
+					"map_position": [
+						16,
+						3
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_secondary_road",
+				"entity_type": "secondary_road",
+				"type": "secondary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条次要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "secondary_road",
+					"map_position": [
+						17,
+						3
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_secondary_road",
+				"entity_type": "secondary_road",
+				"type": "secondary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						18,
+						3
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						19,
+						3
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						20,
+						3
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						21,
+						3
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						12,
+						4
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条次要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "secondary_road",
+					"map_position": [
+						18,
+						4
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_secondary_road",
+				"entity_type": "secondary_road",
+				"type": "secondary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						21,
+						4
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条次要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "secondary_road",
+					"map_position": [
+						6,
+						5
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_secondary_road",
+				"entity_type": "secondary_road",
+				"type": "secondary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条次要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "secondary_road",
+					"map_position": [
+						7,
+						5
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_secondary_road",
+				"entity_type": "secondary_road",
+				"type": "secondary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条次要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "secondary_road",
+					"map_position": [
+						8,
+						5
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_secondary_road",
+				"entity_type": "secondary_road",
+				"type": "secondary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条次要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "secondary_road",
+					"map_position": [
+						9,
+						5
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_secondary_road",
+				"entity_type": "secondary_road",
+				"type": "secondary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条次要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "secondary_road",
+					"map_position": [
+						10,
+						5
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_secondary_road",
+				"entity_type": "secondary_road",
+				"type": "secondary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条次要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "secondary_road",
+					"map_position": [
+						11,
+						5
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_secondary_road",
+				"entity_type": "secondary_road",
+				"type": "secondary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						12,
+						5
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条次要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "secondary_road",
+					"map_position": [
+						18,
+						5
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_secondary_road",
+				"entity_type": "secondary_road",
+				"type": "secondary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						21,
+						5
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						22,
+						5
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						23,
+						5
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条次要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "secondary_road",
+					"map_position": [
+						6,
+						6
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_secondary_road",
+				"entity_type": "secondary_road",
+				"type": "secondary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						12,
+						6
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条次要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "secondary_road",
+					"map_position": [
+						18,
+						6
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_secondary_road",
+				"entity_type": "secondary_road",
+				"type": "secondary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条次要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "secondary_road",
+					"map_position": [
+						6,
+						7
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_secondary_road",
+				"entity_type": "secondary_road",
+				"type": "secondary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						12,
+						7
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条次要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "secondary_road",
+					"map_position": [
+						18,
+						7
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_secondary_road",
+				"entity_type": "secondary_road",
+				"type": "secondary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条次要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "secondary_road",
+					"map_position": [
+						6,
+						8
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_secondary_road",
+				"entity_type": "secondary_road",
+				"type": "secondary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						12,
+						8
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条次要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "secondary_road",
+					"map_position": [
+						18,
+						8
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_secondary_road",
+				"entity_type": "secondary_road",
+				"type": "secondary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条次要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "secondary_road",
+					"map_position": [
+						6,
+						9
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_secondary_road",
+				"entity_type": "secondary_road",
+				"type": "secondary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						12,
+						9
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条次要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "secondary_road",
+					"map_position": [
+						13,
+						9
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_secondary_road",
+				"entity_type": "secondary_road",
+				"type": "secondary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条次要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "secondary_road",
+					"map_position": [
+						14,
+						9
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_secondary_road",
+				"entity_type": "secondary_road",
+				"type": "secondary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条次要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "secondary_road",
+					"map_position": [
+						15,
+						9
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_secondary_road",
+				"entity_type": "secondary_road",
+				"type": "secondary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条次要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "secondary_road",
+					"map_position": [
+						16,
+						9
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_secondary_road",
+				"entity_type": "secondary_road",
+				"type": "secondary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条次要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "secondary_road",
+					"map_position": [
+						17,
+						9
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_secondary_road",
+				"entity_type": "secondary_road",
+				"type": "secondary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条次要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "secondary_road",
+					"map_position": [
+						18,
+						9
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_secondary_road",
+				"entity_type": "secondary_road",
+				"type": "secondary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的门墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "gate_wall",
+					"map_position": [
+						0,
+						10
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"gate_wall"
+					]
+				},
+				"entity_id": "default_gate_wall",
+				"entity_type": "gate_wall",
+				"type": "gate_wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条次要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "secondary_road",
+					"map_position": [
+						6,
+						10
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_secondary_road",
+				"entity_type": "secondary_road",
+				"type": "secondary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						12,
+						10
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的门。",
+					"encounter_id_list": [],
+					"map_cell_type": "gate",
+					"map_position": [
+						0,
+						11
+					],
+					"passable": {
+
+					},
+					"portal": [],
+					"roles": [
+						"gate"
+					]
+				},
+				"entity_id": "default_gate",
+				"entity_type": "gate",
+				"type": "gate"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						1,
+						11
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						2,
+						11
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						3,
+						11
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						4,
+						11
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						5,
+						11
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						6,
+						11
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						7,
+						11
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						8,
+						11
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						9,
+						11
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						10,
+						11
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						11,
+						11
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						12,
+						11
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						13,
+						11
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						14,
+						11
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						15,
+						11
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						16,
+						11
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						17,
+						11
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						18,
+						11
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						19,
+						11
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						20,
+						11
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						21,
+						11
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						22,
+						11
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的门墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "gate_wall",
+					"map_position": [
+						0,
+						12
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"gate_wall"
+					]
+				},
+				"entity_id": "default_gate_wall",
+				"entity_type": "gate_wall",
+				"type": "gate_wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						12,
+						12
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						12,
+						13
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						23,
+						13
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						12,
+						14
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						23,
+						14
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						12,
+						15
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						22,
+						15
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						23,
+						15
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						4,
+						16
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						5,
+						16
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						6,
+						16
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						7,
+						16
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						8,
+						16
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						9,
+						16
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						12,
+						16
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						18,
+						16
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						19,
+						16
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						20,
+						16
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						22,
+						16
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						4,
+						17
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						9,
+						17
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						12,
+						17
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						18,
+						17
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						20,
+						17
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						21,
+						17
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						22,
+						17
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						4,
+						18
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						9,
+						18
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						12,
+						18
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						18,
+						18
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						4,
+						19
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						9,
+						19
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						12,
+						19
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						18,
+						19
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						0,
+						20
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						1,
+						20
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						2,
+						20
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						3,
+						20
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						4,
+						20
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						9,
+						20
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一条主要道路。",
+					"encounter_id_list": [],
+					"map_cell_type": "primary_road",
+					"map_position": [
+						12,
+						20
+					],
+					"passable": {
+
+					}
+				},
+				"entity_id": "map_cell_primary_road",
+				"entity_type": "primary_road",
+				"type": "primary_road"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						18,
+						20
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						9,
+						21
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						1,
+						0
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						1,
+						-1
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						2,
+						-1
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						3,
+						-1
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						4,
+						-1
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						5,
+						-1
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						6,
+						0
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						6,
+						-1
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						7,
+						0
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						8,
+						0
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						9,
+						0
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						10,
+						0
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的门墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "gate_wall",
+					"map_position": [
+						11,
+						0
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"gate_wall"
+					]
+				},
+				"entity_id": "default_gate_wall",
+				"entity_type": "gate_wall",
+				"type": "gate_wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的门。",
+					"encounter_id_list": [],
+					"map_cell_type": "gate",
+					"map_position": [
+						12,
+						0
+					],
+					"passable": {
+
+					},
+					"portal": [],
+					"roles": [
+						"gate"
+					]
+				},
+				"entity_id": "default_gate",
+				"entity_type": "gate",
+				"type": "gate"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						15,
+						0
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						16,
+						0
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						17,
+						0
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						18,
+						0
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						0,
+						2
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						0,
+						3
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						0,
+						4
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						0,
+						5
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						0,
+						6
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						23,
+						6
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						0,
+						7
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						23,
+						7
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						0,
+						8
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						23,
+						8
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						0,
+						9
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						23,
+						9
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的门墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "gate_wall",
+					"map_position": [
+						23,
+						10
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"gate_wall"
+					]
+				},
+				"entity_id": "default_gate_wall",
+				"entity_type": "gate_wall",
+				"type": "gate_wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的门。",
+					"encounter_id_list": [],
+					"map_cell_type": "gate",
+					"map_position": [
+						23,
+						11
+					],
+					"passable": {
+
+					},
+					"portal": [],
+					"roles": [
+						"gate"
+					]
+				},
+				"entity_id": "default_gate",
+				"entity_type": "gate",
+				"type": "gate"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的门墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "gate_wall",
+					"map_position": [
+						23,
+						12
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"gate_wall"
+					]
+				},
+				"entity_id": "default_gate_wall",
+				"entity_type": "gate_wall",
+				"type": "gate_wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						0,
+						13
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						0,
+						14
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						0,
+						15
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						-1,
+						15
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						-2,
+						15
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						-3,
+						15
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						-4,
+						15
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						-4,
+						16
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						-1,
+						17
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						-2,
+						17
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						-3,
+						17
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						-4,
+						17
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						0,
+						18
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						-1,
+						18
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						0,
+						19
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						10,
+						21
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的门墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "gate_wall",
+					"map_position": [
+						11,
+						21
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"gate_wall"
+					]
+				},
+				"entity_id": "default_gate_wall",
+				"entity_type": "gate_wall",
+				"type": "gate_wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的门。",
+					"encounter_id_list": [],
+					"map_cell_type": "gate",
+					"map_position": [
+						12,
+						21
+					],
+					"passable": {
+
+					},
+					"portal": [],
+					"roles": [
+						"gate"
+					]
+				},
+				"entity_id": "default_gate",
+				"entity_type": "gate",
+				"type": "gate"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的门墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "gate_wall",
+					"map_position": [
+						13,
+						21
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"gate_wall"
+					]
+				},
+				"entity_id": "default_gate_wall",
+				"entity_type": "gate_wall",
+				"type": "gate_wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						14,
+						21
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						15,
+						21
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						16,
+						21
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						17,
+						21
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			},
+			{
+				"_source_mod": "EntityManager",
+				"attributes": {
+					"description": "这是一个默认的墙。",
+					"encounter_id_list": [],
+					"map_cell_type": "wall",
+					"map_position": [
+						18,
+						21
+					],
+					"passable": {
+						"false": {
+
+						}
+					},
+					"roles": [
+						"wall"
+					]
+				},
+				"entity_id": "default_wall",
+				"entity_type": "wall",
+				"type": "wall"
+			}
+		],
+		"map_sub_type": "village",
+		"map_type": "town",
+		"name": "test_City",
+		"size": [
+			0,
+			0
+		]
+	},
+	"metadata": {
+		"config": {
+			"map_data": {
+				"all_walls": [
+					"0,0",
+					"14,0",
+					"0,1",
+					"18,1",
+					"18,2",
+					"18,3",
+					"19,3",
+					"20,3",
+					"21,3",
+					"21,4",
+					"21,5",
+					"22,5",
+					"23,5",
+					"23,13",
+					"23,14",
+					"22,15",
+					"23,15",
+					"4,16",
+					"5,16",
+					"6,16",
+					"7,16",
+					"8,16",
+					"9,16",
+					"18,16",
+					"19,16",
+					"20,16",
+					"22,16",
+					"4,17",
+					"9,17",
+					"18,17",
+					"20,17",
+					"21,17",
+					"22,17",
+					"4,18",
+					"9,18",
+					"18,18",
+					"4,19",
+					"9,19",
+					"18,19",
+					"0,20",
+					"1,20",
+					"2,20",
+					"3,20",
+					"4,20",
+					"9,20",
+					"18,20",
+					"9,21",
+					"1,0",
+					"1,-1",
+					"2,-1",
+					"3,-1",
+					"4,-1",
+					"5,-1",
+					"6,0",
+					"6,-1",
+					"7,0",
+					"8,0",
+					"9,0",
+					"10,0",
+					"15,0",
+					"16,0",
+					"17,0",
+					"18,0",
+					"0,2",
+					"0,3",
+					"0,4",
+					"0,5",
+					"0,6",
+					"23,6",
+					"0,7",
+					"23,7",
+					"0,8",
+					"23,8",
+					"0,9",
+					"23,9",
+					"0,13",
+					"0,14",
+					"0,15",
+					"-1,15",
+					"-2,15",
+					"-3,15",
+					"-4,15",
+					"-4,16",
+					"-1,17",
+					"-2,17",
+					"-3,17",
+					"-4,17",
+					"0,18",
+					"-1,18",
+					"0,19",
+					"10,21",
+					"14,21",
+					"15,21",
+					"16,21",
+					"17,21",
+					"18,21",
+					"11,0",
+					"13,0",
+					"11,21",
+					"13,21",
+					"0,10",
+					"0,12",
+					"23,10",
+					"23,12"
+				],
+				"blocks": {
+					"1": {
+						"nodes": [
+							"7,6",
+							"8,6",
+							"9,6",
+							"10,6",
+							"11,6",
+							"7,7",
+							"8,7",
+							"9,7",
+							"10,7",
+							"11,7",
+							"7,8",
+							"8,8",
+							"9,8",
+							"10,8",
+							"11,8",
+							"7,9",
+							"8,9",
+							"9,9",
+							"10,9",
+							"11,9",
+							"7,10",
+							"8,10",
+							"9,10",
+							"10,10",
+							"11,10"
+						],
+						"position": [
+							7,
+							6
+						],
+						"size": [
+							5,
+							5
+						]
+					},
+					"2": {
+						"nodes": [
+							"13,4",
+							"14,4",
+							"15,4",
+							"16,4",
+							"17,4",
+							"13,5",
+							"14,5",
+							"15,5",
+							"16,5",
+							"17,5",
+							"13,6",
+							"14,6",
+							"15,6",
+							"16,6",
+							"17,6",
+							"13,7",
+							"14,7",
+							"15,7",
+							"16,7",
+							"17,7",
+							"13,8",
+							"14,8",
+							"15,8",
+							"16,8",
+							"17,8"
+						],
+						"position": [
+							13,
+							4
+						],
+						"size": [
+							5,
+							5
+						]
+					}
+				},
+				"center": [
+					12,
+					11
+				],
+				"edges": [
+					"0,0",
+					"13,0",
+					"14,0",
+					"0,1",
+					"18,1",
+					"18,2",
+					"18,3",
+					"19,3",
+					"20,3",
+					"21,3",
+					"21,4",
+					"21,5",
+					"22,5",
+					"23,5",
+					"0,10",
+					"0,11",
+					"0,12",
+					"23,13",
+					"23,14",
+					"22,15",
+					"23,15",
+					"4,16",
+					"5,16",
+					"6,16",
+					"7,16",
+					"8,16",
+					"9,16",
+					"18,16",
+					"19,16",
+					"20,16",
+					"22,16",
+					"4,17",
+					"9,17",
+					"18,17",
+					"20,17",
+					"21,17",
+					"22,17",
+					"4,18",
+					"9,18",
+					"18,18",
+					"4,19",
+					"9,19",
+					"18,19",
+					"0,20",
+					"1,20",
+					"2,20",
+					"3,20",
+					"4,20",
+					"9,20",
+					"18,20",
+					"9,21",
+					"1,0",
+					"1,-1",
+					"2,-1",
+					"3,-1",
+					"4,-1",
+					"5,-1",
+					"6,0",
+					"6,-1",
+					"7,0",
+					"8,0",
+					"9,0",
+					"10,0",
+					"11,0",
+					"12,0",
+					"15,0",
+					"16,0",
+					"17,0",
+					"18,0",
+					"0,2",
+					"0,3",
+					"0,4",
+					"0,5",
+					"0,6",
+					"23,6",
+					"0,7",
+					"23,7",
+					"0,8",
+					"23,8",
+					"0,9",
+					"23,9",
+					"23,10",
+					"23,11",
+					"23,12",
+					"0,13",
+					"0,14",
+					"0,15",
+					"-1,15",
+					"-2,15",
+					"-3,15",
+					"-4,15",
+					"-4,16",
+					"-1,17",
+					"-2,17",
+					"-3,17",
+					"-4,17",
+					"0,18",
+					"-1,18",
+					"0,19",
+					"10,21",
+					"11,21",
+					"12,21",
+					"13,21",
+					"14,21",
+					"15,21",
+					"16,21",
+					"17,21",
+					"18,21"
+				],
+				"gate_walls": [
+					"11,0",
+					"13,0",
+					"11,21",
+					"13,21",
+					"0,10",
+					"0,12",
+					"23,10",
+					"23,12"
+				],
+				"gates": [
+					"12,0",
+					"12,21",
+					"0,11",
+					"23,11"
+				],
+				"mask": [
+					"0,0",
+					"13,0",
+					"14,0",
+					"0,1",
+					"1,1",
+					"2,1",
+					"3,1",
+					"4,1",
+					"5,1",
+					"6,1",
+					"7,1",
+					"8,1",
+					"9,1",
+					"10,1",
+					"11,1",
+					"12,1",
+					"13,1",
+					"14,1",
+					"15,1",
+					"16,1",
+					"17,1",
+					"18,1",
+					"1,2",
+					"2,2",
+					"3,2",
+					"4,2",
+					"5,2",
+					"6,2",
+					"7,2",
+					"8,2",
+					"9,2",
+					"10,2",
+					"11,2",
+					"12,2",
+					"13,2",
+					"14,2",
+					"15,2",
+					"16,2",
+					"17,2",
+					"18,2",
+					"1,3",
+					"2,3",
+					"3,3",
+					"4,3",
+					"5,3",
+					"6,3",
+					"7,3",
+					"8,3",
+					"9,3",
+					"10,3",
+					"11,3",
+					"12,3",
+					"13,3",
+					"14,3",
+					"15,3",
+					"16,3",
+					"17,3",
+					"18,3",
+					"19,3",
+					"20,3",
+					"21,3",
+					"1,4",
+					"2,4",
+					"3,4",
+					"4,4",
+					"5,4",
+					"6,4",
+					"7,4",
+					"8,4",
+					"9,4",
+					"10,4",
+					"11,4",
+					"12,4",
+					"13,4",
+					"14,4",
+					"15,4",
+					"16,4",
+					"17,4",
+					"18,4",
+					"19,4",
+					"20,4",
+					"21,4",
+					"1,5",
+					"2,5",
+					"3,5",
+					"4,5",
+					"5,5",
+					"6,5",
+					"7,5",
+					"8,5",
+					"9,5",
+					"10,5",
+					"11,5",
+					"12,5",
+					"13,5",
+					"14,5",
+					"15,5",
+					"16,5",
+					"17,5",
+					"18,5",
+					"19,5",
+					"20,5",
+					"21,5",
+					"22,5",
+					"23,5",
+					"1,6",
+					"2,6",
+					"3,6",
+					"4,6",
+					"5,6",
+					"6,6",
+					"7,6",
+					"8,6",
+					"9,6",
+					"10,6",
+					"11,6",
+					"12,6",
+					"13,6",
+					"14,6",
+					"15,6",
+					"16,6",
+					"17,6",
+					"18,6",
+					"19,6",
+					"20,6",
+					"21,6",
+					"22,6",
+					"1,7",
+					"2,7",
+					"3,7",
+					"4,7",
+					"5,7",
+					"6,7",
+					"7,7",
+					"8,7",
+					"9,7",
+					"10,7",
+					"11,7",
+					"12,7",
+					"13,7",
+					"14,7",
+					"15,7",
+					"16,7",
+					"17,7",
+					"18,7",
+					"19,7",
+					"20,7",
+					"21,7",
+					"22,7",
+					"1,8",
+					"2,8",
+					"3,8",
+					"4,8",
+					"5,8",
+					"6,8",
+					"7,8",
+					"8,8",
+					"9,8",
+					"10,8",
+					"11,8",
+					"12,8",
+					"13,8",
+					"14,8",
+					"15,8",
+					"16,8",
+					"17,8",
+					"18,8",
+					"19,8",
+					"20,8",
+					"21,8",
+					"22,8",
+					"1,9",
+					"2,9",
+					"3,9",
+					"4,9",
+					"5,9",
+					"6,9",
+					"7,9",
+					"8,9",
+					"9,9",
+					"10,9",
+					"11,9",
+					"12,9",
+					"13,9",
+					"14,9",
+					"15,9",
+					"16,9",
+					"17,9",
+					"18,9",
+					"19,9",
+					"20,9",
+					"21,9",
+					"22,9",
+					"0,10",
+					"1,10",
+					"2,10",
+					"3,10",
+					"4,10",
+					"5,10",
+					"6,10",
+					"7,10",
+					"8,10",
+					"9,10",
+					"10,10",
+					"11,10",
+					"12,10",
+					"13,10",
+					"14,10",
+					"15,10",
+					"16,10",
+					"17,10",
+					"18,10",
+					"19,10",
+					"20,10",
+					"21,10",
+					"22,10",
+					"0,11",
+					"1,11",
+					"2,11",
+					"3,11",
+					"4,11",
+					"5,11",
+					"6,11",
+					"7,11",
+					"8,11",
+					"9,11",
+					"10,11",
+					"11,11",
+					"12,11",
+					"13,11",
+					"14,11",
+					"15,11",
+					"16,11",
+					"17,11",
+					"18,11",
+					"19,11",
+					"20,11",
+					"21,11",
+					"22,11",
+					"0,12",
+					"1,12",
+					"2,12",
+					"3,12",
+					"4,12",
+					"5,12",
+					"6,12",
+					"7,12",
+					"8,12",
+					"9,12",
+					"10,12",
+					"11,12",
+					"12,12",
+					"13,12",
+					"14,12",
+					"15,12",
+					"16,12",
+					"17,12",
+					"18,12",
+					"19,12",
+					"20,12",
+					"21,12",
+					"22,12",
+					"1,13",
+					"2,13",
+					"3,13",
+					"4,13",
+					"5,13",
+					"6,13",
+					"7,13",
+					"8,13",
+					"9,13",
+					"10,13",
+					"11,13",
+					"12,13",
+					"13,13",
+					"14,13",
+					"15,13",
+					"16,13",
+					"17,13",
+					"18,13",
+					"19,13",
+					"20,13",
+					"21,13",
+					"22,13",
+					"23,13",
+					"1,14",
+					"2,14",
+					"3,14",
+					"4,14",
+					"5,14",
+					"6,14",
+					"7,14",
+					"8,14",
+					"9,14",
+					"10,14",
+					"11,14",
+					"12,14",
+					"13,14",
+					"14,14",
+					"15,14",
+					"16,14",
+					"17,14",
+					"18,14",
+					"19,14",
+					"20,14",
+					"21,14",
+					"22,14",
+					"23,14",
+					"1,15",
+					"2,15",
+					"3,15",
+					"4,15",
+					"5,15",
+					"6,15",
+					"7,15",
+					"8,15",
+					"9,15",
+					"10,15",
+					"11,15",
+					"12,15",
+					"13,15",
+					"14,15",
+					"15,15",
+					"16,15",
+					"17,15",
+					"18,15",
+					"19,15",
+					"20,15",
+					"21,15",
+					"22,15",
+					"23,15",
+					"1,16",
+					"2,16",
+					"3,16",
+					"4,16",
+					"5,16",
+					"6,16",
+					"7,16",
+					"8,16",
+					"9,16",
+					"10,16",
+					"11,16",
+					"12,16",
+					"13,16",
+					"14,16",
+					"15,16",
+					"16,16",
+					"17,16",
+					"18,16",
+					"19,16",
+					"20,16",
+					"21,16",
+					"22,16",
+					"1,17",
+					"2,17",
+					"3,17",
+					"4,17",
+					"9,17",
+					"10,17",
+					"11,17",
+					"12,17",
+					"13,17",
+					"14,17",
+					"15,17",
+					"16,17",
+					"17,17",
+					"18,17",
+					"20,17",
+					"21,17",
+					"22,17",
+					"1,18",
+					"2,18",
+					"3,18",
+					"4,18",
+					"9,18",
+					"10,18",
+					"11,18",
+					"12,18",
+					"13,18",
+					"14,18",
+					"15,18",
+					"16,18",
+					"17,18",
+					"18,18",
+					"1,19",
+					"2,19",
+					"3,19",
+					"4,19",
+					"9,19",
+					"10,19",
+					"11,19",
+					"12,19",
+					"13,19",
+					"14,19",
+					"15,19",
+					"16,19",
+					"17,19",
+					"18,19",
+					"0,20",
+					"1,20",
+					"2,20",
+					"3,20",
+					"4,20",
+					"9,20",
+					"10,20",
+					"11,20",
+					"12,20",
+					"13,20",
+					"14,20",
+					"15,20",
+					"16,20",
+					"17,20",
+					"18,20",
+					"9,21",
+					"1,0",
+					"1,-1",
+					"2,0",
+					"2,-1",
+					"3,0",
+					"3,-1",
+					"4,0",
+					"4,-1",
+					"5,0",
+					"5,-1",
+					"6,0",
+					"6,-1",
+					"7,0",
+					"8,0",
+					"9,0",
+					"10,0",
+					"11,0",
+					"12,0",
+					"15,0",
+					"16,0",
+					"17,0",
+					"18,0",
+					"0,2",
+					"0,3",
+					"0,4",
+					"0,5",
+					"0,6",
+					"23,6",
+					"0,7",
+					"23,7",
+					"0,8",
+					"23,8",
+					"0,9",
+					"23,9",
+					"23,10",
+					"23,11",
+					"23,12",
+					"0,13",
+					"0,14",
+					"0,15",
+					"-1,15",
+					"-2,15",
+					"-3,15",
+					"-4,15",
+					"0,16",
+					"-1,16",
+					"-2,16",
+					"-3,16",
+					"-4,16",
+					"0,17",
+					"-1,17",
+					"-2,17",
+					"-3,17",
+					"-4,17",
+					"0,18",
+					"-1,18",
+					"0,19",
+					"10,21",
+					"11,21",
+					"12,21",
+					"13,21",
+					"14,21",
+					"15,21",
+					"16,21",
+					"17,21",
+					"18,21"
+				],
+				"nodes": [
+					"0,0",
+					"13,0",
+					"14,0",
+					"0,1",
+					"1,1",
+					"2,1",
+					"3,1",
+					"4,1",
+					"5,1",
+					"6,1",
+					"7,1",
+					"8,1",
+					"9,1",
+					"10,1",
+					"11,1",
+					"12,1",
+					"13,1",
+					"14,1",
+					"15,1",
+					"16,1",
+					"17,1",
+					"18,1",
+					"1,2",
+					"2,2",
+					"3,2",
+					"4,2",
+					"5,2",
+					"6,2",
+					"7,2",
+					"8,2",
+					"9,2",
+					"10,2",
+					"11,2",
+					"12,2",
+					"13,2",
+					"14,2",
+					"15,2",
+					"16,2",
+					"17,2",
+					"18,2",
+					"1,3",
+					"2,3",
+					"3,3",
+					"4,3",
+					"5,3",
+					"6,3",
+					"7,3",
+					"8,3",
+					"9,3",
+					"10,3",
+					"11,3",
+					"12,3",
+					"13,3",
+					"14,3",
+					"15,3",
+					"16,3",
+					"17,3",
+					"18,3",
+					"19,3",
+					"20,3",
+					"21,3",
+					"1,4",
+					"2,4",
+					"3,4",
+					"4,4",
+					"5,4",
+					"6,4",
+					"7,4",
+					"8,4",
+					"9,4",
+					"10,4",
+					"11,4",
+					"12,4",
+					"13,4",
+					"14,4",
+					"15,4",
+					"16,4",
+					"17,4",
+					"18,4",
+					"19,4",
+					"20,4",
+					"21,4",
+					"1,5",
+					"2,5",
+					"3,5",
+					"4,5",
+					"5,5",
+					"6,5",
+					"7,5",
+					"8,5",
+					"9,5",
+					"10,5",
+					"11,5",
+					"12,5",
+					"13,5",
+					"14,5",
+					"15,5",
+					"16,5",
+					"17,5",
+					"18,5",
+					"19,5",
+					"20,5",
+					"21,5",
+					"22,5",
+					"23,5",
+					"1,6",
+					"2,6",
+					"3,6",
+					"4,6",
+					"5,6",
+					"6,6",
+					"7,6",
+					"8,6",
+					"9,6",
+					"10,6",
+					"11,6",
+					"12,6",
+					"13,6",
+					"14,6",
+					"15,6",
+					"16,6",
+					"17,6",
+					"18,6",
+					"19,6",
+					"20,6",
+					"21,6",
+					"22,6",
+					"1,7",
+					"2,7",
+					"3,7",
+					"4,7",
+					"5,7",
+					"6,7",
+					"7,7",
+					"8,7",
+					"9,7",
+					"10,7",
+					"11,7",
+					"12,7",
+					"13,7",
+					"14,7",
+					"15,7",
+					"16,7",
+					"17,7",
+					"18,7",
+					"19,7",
+					"20,7",
+					"21,7",
+					"22,7",
+					"1,8",
+					"2,8",
+					"3,8",
+					"4,8",
+					"5,8",
+					"6,8",
+					"7,8",
+					"8,8",
+					"9,8",
+					"10,8",
+					"11,8",
+					"12,8",
+					"13,8",
+					"14,8",
+					"15,8",
+					"16,8",
+					"17,8",
+					"18,8",
+					"19,8",
+					"20,8",
+					"21,8",
+					"22,8",
+					"1,9",
+					"2,9",
+					"3,9",
+					"4,9",
+					"5,9",
+					"6,9",
+					"7,9",
+					"8,9",
+					"9,9",
+					"10,9",
+					"11,9",
+					"12,9",
+					"13,9",
+					"14,9",
+					"15,9",
+					"16,9",
+					"17,9",
+					"18,9",
+					"19,9",
+					"20,9",
+					"21,9",
+					"22,9",
+					"0,10",
+					"1,10",
+					"2,10",
+					"3,10",
+					"4,10",
+					"5,10",
+					"6,10",
+					"7,10",
+					"8,10",
+					"9,10",
+					"10,10",
+					"11,10",
+					"12,10",
+					"13,10",
+					"14,10",
+					"15,10",
+					"16,10",
+					"17,10",
+					"18,10",
+					"19,10",
+					"20,10",
+					"21,10",
+					"22,10",
+					"0,11",
+					"1,11",
+					"2,11",
+					"3,11",
+					"4,11",
+					"5,11",
+					"6,11",
+					"7,11",
+					"8,11",
+					"9,11",
+					"10,11",
+					"11,11",
+					"12,11",
+					"13,11",
+					"14,11",
+					"15,11",
+					"16,11",
+					"17,11",
+					"18,11",
+					"19,11",
+					"20,11",
+					"21,11",
+					"22,11",
+					"0,12",
+					"1,12",
+					"2,12",
+					"3,12",
+					"4,12",
+					"5,12",
+					"6,12",
+					"7,12",
+					"8,12",
+					"9,12",
+					"10,12",
+					"11,12",
+					"12,12",
+					"13,12",
+					"14,12",
+					"15,12",
+					"16,12",
+					"17,12",
+					"18,12",
+					"19,12",
+					"20,12",
+					"21,12",
+					"22,12",
+					"1,13",
+					"2,13",
+					"3,13",
+					"4,13",
+					"5,13",
+					"6,13",
+					"7,13",
+					"8,13",
+					"9,13",
+					"10,13",
+					"11,13",
+					"12,13",
+					"13,13",
+					"14,13",
+					"15,13",
+					"16,13",
+					"17,13",
+					"18,13",
+					"19,13",
+					"20,13",
+					"21,13",
+					"22,13",
+					"23,13",
+					"1,14",
+					"2,14",
+					"3,14",
+					"4,14",
+					"5,14",
+					"6,14",
+					"7,14",
+					"8,14",
+					"9,14",
+					"10,14",
+					"11,14",
+					"12,14",
+					"13,14",
+					"14,14",
+					"15,14",
+					"16,14",
+					"17,14",
+					"18,14",
+					"19,14",
+					"20,14",
+					"21,14",
+					"22,14",
+					"23,14",
+					"1,15",
+					"2,15",
+					"3,15",
+					"4,15",
+					"5,15",
+					"6,15",
+					"7,15",
+					"8,15",
+					"9,15",
+					"10,15",
+					"11,15",
+					"12,15",
+					"13,15",
+					"14,15",
+					"15,15",
+					"16,15",
+					"17,15",
+					"18,15",
+					"19,15",
+					"20,15",
+					"21,15",
+					"22,15",
+					"23,15",
+					"1,16",
+					"2,16",
+					"3,16",
+					"4,16",
+					"5,16",
+					"6,16",
+					"7,16",
+					"8,16",
+					"9,16",
+					"10,16",
+					"11,16",
+					"12,16",
+					"13,16",
+					"14,16",
+					"15,16",
+					"16,16",
+					"17,16",
+					"18,16",
+					"19,16",
+					"20,16",
+					"21,16",
+					"22,16",
+					"1,17",
+					"2,17",
+					"3,17",
+					"4,17",
+					"9,17",
+					"10,17",
+					"11,17",
+					"12,17",
+					"13,17",
+					"14,17",
+					"15,17",
+					"16,17",
+					"17,17",
+					"18,17",
+					"20,17",
+					"21,17",
+					"22,17",
+					"1,18",
+					"2,18",
+					"3,18",
+					"4,18",
+					"9,18",
+					"10,18",
+					"11,18",
+					"12,18",
+					"13,18",
+					"14,18",
+					"15,18",
+					"16,18",
+					"17,18",
+					"18,18",
+					"1,19",
+					"2,19",
+					"3,19",
+					"4,19",
+					"9,19",
+					"10,19",
+					"11,19",
+					"12,19",
+					"13,19",
+					"14,19",
+					"15,19",
+					"16,19",
+					"17,19",
+					"18,19",
+					"0,20",
+					"1,20",
+					"2,20",
+					"3,20",
+					"4,20",
+					"9,20",
+					"10,20",
+					"11,20",
+					"12,20",
+					"13,20",
+					"14,20",
+					"15,20",
+					"16,20",
+					"17,20",
+					"18,20",
+					"9,21",
+					"1,0",
+					"1,-1",
+					"2,0",
+					"2,-1",
+					"3,0",
+					"3,-1",
+					"4,0",
+					"4,-1",
+					"5,0",
+					"5,-1",
+					"6,0",
+					"6,-1",
+					"7,0",
+					"8,0",
+					"9,0",
+					"10,0",
+					"11,0",
+					"12,0",
+					"15,0",
+					"16,0",
+					"17,0",
+					"18,0",
+					"0,2",
+					"0,3",
+					"0,4",
+					"0,5",
+					"0,6",
+					"23,6",
+					"0,7",
+					"23,7",
+					"0,8",
+					"23,8",
+					"0,9",
+					"23,9",
+					"23,10",
+					"23,11",
+					"23,12",
+					"0,13",
+					"0,14",
+					"0,15",
+					"-1,15",
+					"-2,15",
+					"-3,15",
+					"-4,15",
+					"0,16",
+					"-1,16",
+					"-2,16",
+					"-3,16",
+					"-4,16",
+					"0,17",
+					"-1,17",
+					"-2,17",
+					"-3,17",
+					"-4,17",
+					"0,18",
+					"-1,18",
+					"0,19",
+					"10,21",
+					"11,21",
+					"12,21",
+					"13,21",
+					"14,21",
+					"15,21",
+					"16,21",
+					"17,21",
+					"18,21"
+				],
+				"primary_road": [
+					"12,11",
+					"12,10",
+					"12,9",
+					"12,8",
+					"12,7",
+					"12,6",
+					"12,5",
+					"12,4",
+					"12,3",
+					"12,2",
+					"12,1",
+					"12,12",
+					"12,13",
+					"12,14",
+					"12,15",
+					"12,16",
+					"12,17",
+					"12,18",
+					"12,19",
+					"12,20",
+					"11,11",
+					"10,11",
+					"9,11",
+					"8,11",
+					"7,11",
+					"6,11",
+					"5,11",
+					"4,11",
+					"3,11",
+					"2,11",
+					"1,11",
+					"13,11",
+					"14,11",
+					"15,11",
+					"16,11",
+					"17,11",
+					"18,11",
+					"19,11",
+					"20,11",
+					"21,11",
+					"22,11"
+				],
+				"secondary_roads": [
+					"6,5",
+					"7,5",
+					"8,5",
+					"9,5",
+					"10,5",
+					"11,5",
+					"6,6",
+					"6,7",
+					"6,8",
+					"6,9",
+					"6,10",
+					"13,3",
+					"14,3",
+					"15,3",
+					"16,3",
+					"17,3",
+					"18,4",
+					"18,5",
+					"18,6",
+					"18,7",
+					"18,8",
+					"13,9",
+					"14,9",
+					"15,9",
+					"16,9",
+					"17,9",
+					"18,9"
+				],
+				"total_nodes": {
+					"-1,15": {
+						"type": "wall"
+					},
+					"-1,16": {
+						"type": "mask"
+					},
+					"-1,17": {
+						"type": "wall"
+					},
+					"-1,18": {
+						"type": "wall"
+					},
+					"-2,15": {
+						"type": "wall"
+					},
+					"-2,16": {
+						"type": "mask"
+					},
+					"-2,17": {
+						"type": "wall"
+					},
+					"-3,15": {
+						"type": "wall"
+					},
+					"-3,16": {
+						"type": "mask"
+					},
+					"-3,17": {
+						"type": "wall"
+					},
+					"-4,15": {
+						"type": "wall"
+					},
+					"-4,16": {
+						"type": "wall"
+					},
+					"-4,17": {
+						"type": "wall"
+					},
+					"0,0": {
+						"type": "wall"
+					},
+					"0,1": {
+						"type": "wall"
+					},
+					"0,10": {
+						"type": "gate_wall"
+					},
+					"0,11": {
+						"type": "gate"
+					},
+					"0,12": {
+						"type": "gate_wall"
+					},
+					"0,13": {
+						"type": "wall"
+					},
+					"0,14": {
+						"type": "wall"
+					},
+					"0,15": {
+						"type": "wall"
+					},
+					"0,16": {
+						"type": "mask"
+					},
+					"0,17": {
+						"type": "mask"
+					},
+					"0,18": {
+						"type": "wall"
+					},
+					"0,19": {
+						"type": "wall"
+					},
+					"0,2": {
+						"type": "wall"
+					},
+					"0,20": {
+						"type": "wall"
+					},
+					"0,3": {
+						"type": "wall"
+					},
+					"0,4": {
+						"type": "wall"
+					},
+					"0,5": {
+						"type": "wall"
+					},
+					"0,6": {
+						"type": "wall"
+					},
+					"0,7": {
+						"type": "wall"
+					},
+					"0,8": {
+						"type": "wall"
+					},
+					"0,9": {
+						"type": "wall"
+					},
+					"1,-1": {
+						"type": "wall"
+					},
+					"1,0": {
+						"type": "wall"
+					},
+					"1,1": {
+						"type": "mask"
+					},
+					"1,10": {
+						"type": "mask"
+					},
+					"1,11": {
+						"type": "primary_road"
+					},
+					"1,12": {
+						"type": "mask"
+					},
+					"1,13": {
+						"type": "mask"
+					},
+					"1,14": {
+						"type": "mask"
+					},
+					"1,15": {
+						"type": "mask"
+					},
+					"1,16": {
+						"type": "mask"
+					},
+					"1,17": {
+						"type": "mask"
+					},
+					"1,18": {
+						"type": "mask"
+					},
+					"1,19": {
+						"type": "mask"
+					},
+					"1,2": {
+						"type": "mask"
+					},
+					"1,20": {
+						"type": "wall"
+					},
+					"1,3": {
+						"type": "mask"
+					},
+					"1,4": {
+						"type": "mask"
+					},
+					"1,5": {
+						"type": "mask"
+					},
+					"1,6": {
+						"type": "mask"
+					},
+					"1,7": {
+						"type": "mask"
+					},
+					"1,8": {
+						"type": "mask"
+					},
+					"1,9": {
+						"type": "mask"
+					},
+					"10,0": {
+						"type": "wall"
+					},
+					"10,1": {
+						"type": "mask"
+					},
+					"10,10": {
+						"type": "mask"
+					},
+					"10,11": {
+						"type": "primary_road"
+					},
+					"10,12": {
+						"type": "mask"
+					},
+					"10,13": {
+						"type": "mask"
+					},
+					"10,14": {
+						"type": "mask"
+					},
+					"10,15": {
+						"type": "mask"
+					},
+					"10,16": {
+						"type": "mask"
+					},
+					"10,17": {
+						"type": "mask"
+					},
+					"10,18": {
+						"type": "mask"
+					},
+					"10,19": {
+						"type": "mask"
+					},
+					"10,2": {
+						"type": "mask"
+					},
+					"10,20": {
+						"type": "mask"
+					},
+					"10,21": {
+						"type": "wall"
+					},
+					"10,3": {
+						"type": "mask"
+					},
+					"10,4": {
+						"type": "mask"
+					},
+					"10,5": {
+						"type": "secondary_road"
+					},
+					"10,6": {
+						"type": "mask"
+					},
+					"10,7": {
+						"type": "mask"
+					},
+					"10,8": {
+						"type": "mask"
+					},
+					"10,9": {
+						"type": "mask"
+					},
+					"11,0": {
+						"type": "gate_wall"
+					},
+					"11,1": {
+						"type": "mask"
+					},
+					"11,10": {
+						"type": "mask"
+					},
+					"11,11": {
+						"type": "primary_road"
+					},
+					"11,12": {
+						"type": "mask"
+					},
+					"11,13": {
+						"type": "mask"
+					},
+					"11,14": {
+						"type": "mask"
+					},
+					"11,15": {
+						"type": "mask"
+					},
+					"11,16": {
+						"type": "mask"
+					},
+					"11,17": {
+						"type": "mask"
+					},
+					"11,18": {
+						"type": "mask"
+					},
+					"11,19": {
+						"type": "mask"
+					},
+					"11,2": {
+						"type": "mask"
+					},
+					"11,20": {
+						"type": "mask"
+					},
+					"11,21": {
+						"type": "gate_wall"
+					},
+					"11,3": {
+						"type": "mask"
+					},
+					"11,4": {
+						"type": "mask"
+					},
+					"11,5": {
+						"type": "secondary_road"
+					},
+					"11,6": {
+						"type": "mask"
+					},
+					"11,7": {
+						"type": "mask"
+					},
+					"11,8": {
+						"type": "mask"
+					},
+					"11,9": {
+						"type": "mask"
+					},
+					"12,0": {
+						"type": "gate"
+					},
+					"12,1": {
+						"type": "primary_road"
+					},
+					"12,10": {
+						"type": "primary_road"
+					},
+					"12,11": {
+						"type": "primary_road"
+					},
+					"12,12": {
+						"type": "primary_road"
+					},
+					"12,13": {
+						"type": "primary_road"
+					},
+					"12,14": {
+						"type": "primary_road"
+					},
+					"12,15": {
+						"type": "primary_road"
+					},
+					"12,16": {
+						"type": "primary_road"
+					},
+					"12,17": {
+						"type": "primary_road"
+					},
+					"12,18": {
+						"type": "primary_road"
+					},
+					"12,19": {
+						"type": "primary_road"
+					},
+					"12,2": {
+						"type": "primary_road"
+					},
+					"12,20": {
+						"type": "primary_road"
+					},
+					"12,21": {
+						"type": "gate"
+					},
+					"12,3": {
+						"type": "primary_road"
+					},
+					"12,4": {
+						"type": "primary_road"
+					},
+					"12,5": {
+						"type": "primary_road"
+					},
+					"12,6": {
+						"type": "primary_road"
+					},
+					"12,7": {
+						"type": "primary_road"
+					},
+					"12,8": {
+						"type": "primary_road"
+					},
+					"12,9": {
+						"type": "primary_road"
+					},
+					"13,0": {
+						"type": "gate_wall"
+					},
+					"13,1": {
+						"type": "mask"
+					},
+					"13,10": {
+						"type": "mask"
+					},
+					"13,11": {
+						"type": "primary_road"
+					},
+					"13,12": {
+						"type": "mask"
+					},
+					"13,13": {
+						"type": "mask"
+					},
+					"13,14": {
+						"type": "mask"
+					},
+					"13,15": {
+						"type": "mask"
+					},
+					"13,16": {
+						"type": "mask"
+					},
+					"13,17": {
+						"type": "mask"
+					},
+					"13,18": {
+						"type": "mask"
+					},
+					"13,19": {
+						"type": "mask"
+					},
+					"13,2": {
+						"type": "mask"
+					},
+					"13,20": {
+						"type": "mask"
+					},
+					"13,21": {
+						"type": "gate_wall"
+					},
+					"13,3": {
+						"type": "secondary_road"
+					},
+					"13,4": {
+						"type": "mask"
+					},
+					"13,5": {
+						"type": "mask"
+					},
+					"13,6": {
+						"type": "mask"
+					},
+					"13,7": {
+						"type": "mask"
+					},
+					"13,8": {
+						"type": "mask"
+					},
+					"13,9": {
+						"type": "secondary_road"
+					},
+					"14,0": {
+						"type": "wall"
+					},
+					"14,1": {
+						"type": "mask"
+					},
+					"14,10": {
+						"type": "mask"
+					},
+					"14,11": {
+						"type": "primary_road"
+					},
+					"14,12": {
+						"type": "mask"
+					},
+					"14,13": {
+						"type": "mask"
+					},
+					"14,14": {
+						"type": "mask"
+					},
+					"14,15": {
+						"type": "mask"
+					},
+					"14,16": {
+						"type": "mask"
+					},
+					"14,17": {
+						"type": "mask"
+					},
+					"14,18": {
+						"type": "mask"
+					},
+					"14,19": {
+						"type": "mask"
+					},
+					"14,2": {
+						"type": "mask"
+					},
+					"14,20": {
+						"type": "mask"
+					},
+					"14,21": {
+						"type": "wall"
+					},
+					"14,3": {
+						"type": "secondary_road"
+					},
+					"14,4": {
+						"type": "mask"
+					},
+					"14,5": {
+						"type": "mask"
+					},
+					"14,6": {
+						"type": "mask"
+					},
+					"14,7": {
+						"type": "mask"
+					},
+					"14,8": {
+						"type": "mask"
+					},
+					"14,9": {
+						"type": "secondary_road"
+					},
+					"15,0": {
+						"type": "wall"
+					},
+					"15,1": {
+						"type": "mask"
+					},
+					"15,10": {
+						"type": "mask"
+					},
+					"15,11": {
+						"type": "primary_road"
+					},
+					"15,12": {
+						"type": "mask"
+					},
+					"15,13": {
+						"type": "mask"
+					},
+					"15,14": {
+						"type": "mask"
+					},
+					"15,15": {
+						"type": "mask"
+					},
+					"15,16": {
+						"type": "mask"
+					},
+					"15,17": {
+						"type": "mask"
+					},
+					"15,18": {
+						"type": "mask"
+					},
+					"15,19": {
+						"type": "mask"
+					},
+					"15,2": {
+						"type": "mask"
+					},
+					"15,20": {
+						"type": "mask"
+					},
+					"15,21": {
+						"type": "wall"
+					},
+					"15,3": {
+						"type": "secondary_road"
+					},
+					"15,4": {
+						"type": "mask"
+					},
+					"15,5": {
+						"type": "mask"
+					},
+					"15,6": {
+						"type": "mask"
+					},
+					"15,7": {
+						"type": "mask"
+					},
+					"15,8": {
+						"type": "mask"
+					},
+					"15,9": {
+						"type": "secondary_road"
+					},
+					"16,0": {
+						"type": "wall"
+					},
+					"16,1": {
+						"type": "mask"
+					},
+					"16,10": {
+						"type": "mask"
+					},
+					"16,11": {
+						"type": "primary_road"
+					},
+					"16,12": {
+						"type": "mask"
+					},
+					"16,13": {
+						"type": "mask"
+					},
+					"16,14": {
+						"type": "mask"
+					},
+					"16,15": {
+						"type": "mask"
+					},
+					"16,16": {
+						"type": "mask"
+					},
+					"16,17": {
+						"type": "mask"
+					},
+					"16,18": {
+						"type": "mask"
+					},
+					"16,19": {
+						"type": "mask"
+					},
+					"16,2": {
+						"type": "mask"
+					},
+					"16,20": {
+						"type": "mask"
+					},
+					"16,21": {
+						"type": "wall"
+					},
+					"16,3": {
+						"type": "secondary_road"
+					},
+					"16,4": {
+						"type": "mask"
+					},
+					"16,5": {
+						"type": "mask"
+					},
+					"16,6": {
+						"type": "mask"
+					},
+					"16,7": {
+						"type": "mask"
+					},
+					"16,8": {
+						"type": "mask"
+					},
+					"16,9": {
+						"type": "secondary_road"
+					},
+					"17,0": {
+						"type": "wall"
+					},
+					"17,1": {
+						"type": "mask"
+					},
+					"17,10": {
+						"type": "mask"
+					},
+					"17,11": {
+						"type": "primary_road"
+					},
+					"17,12": {
+						"type": "mask"
+					},
+					"17,13": {
+						"type": "mask"
+					},
+					"17,14": {
+						"type": "mask"
+					},
+					"17,15": {
+						"type": "mask"
+					},
+					"17,16": {
+						"type": "mask"
+					},
+					"17,17": {
+						"type": "mask"
+					},
+					"17,18": {
+						"type": "mask"
+					},
+					"17,19": {
+						"type": "mask"
+					},
+					"17,2": {
+						"type": "mask"
+					},
+					"17,20": {
+						"type": "mask"
+					},
+					"17,21": {
+						"type": "wall"
+					},
+					"17,3": {
+						"type": "secondary_road"
+					},
+					"17,4": {
+						"type": "mask"
+					},
+					"17,5": {
+						"type": "mask"
+					},
+					"17,6": {
+						"type": "mask"
+					},
+					"17,7": {
+						"type": "mask"
+					},
+					"17,8": {
+						"type": "mask"
+					},
+					"17,9": {
+						"type": "secondary_road"
+					},
+					"18,0": {
+						"type": "wall"
+					},
+					"18,1": {
+						"type": "wall"
+					},
+					"18,10": {
+						"type": "mask"
+					},
+					"18,11": {
+						"type": "primary_road"
+					},
+					"18,12": {
+						"type": "mask"
+					},
+					"18,13": {
+						"type": "mask"
+					},
+					"18,14": {
+						"type": "mask"
+					},
+					"18,15": {
+						"type": "mask"
+					},
+					"18,16": {
+						"type": "wall"
+					},
+					"18,17": {
+						"type": "wall"
+					},
+					"18,18": {
+						"type": "wall"
+					},
+					"18,19": {
+						"type": "wall"
+					},
+					"18,2": {
+						"type": "wall"
+					},
+					"18,20": {
+						"type": "wall"
+					},
+					"18,21": {
+						"type": "wall"
+					},
+					"18,3": {
+						"type": "wall"
+					},
+					"18,4": {
+						"type": "secondary_road"
+					},
+					"18,5": {
+						"type": "secondary_road"
+					},
+					"18,6": {
+						"type": "secondary_road"
+					},
+					"18,7": {
+						"type": "secondary_road"
+					},
+					"18,8": {
+						"type": "secondary_road"
+					},
+					"18,9": {
+						"type": "secondary_road"
+					},
+					"19,10": {
+						"type": "mask"
+					},
+					"19,11": {
+						"type": "primary_road"
+					},
+					"19,12": {
+						"type": "mask"
+					},
+					"19,13": {
+						"type": "mask"
+					},
+					"19,14": {
+						"type": "mask"
+					},
+					"19,15": {
+						"type": "mask"
+					},
+					"19,16": {
+						"type": "wall"
+					},
+					"19,3": {
+						"type": "wall"
+					},
+					"19,4": {
+						"type": "mask"
+					},
+					"19,5": {
+						"type": "mask"
+					},
+					"19,6": {
+						"type": "mask"
+					},
+					"19,7": {
+						"type": "mask"
+					},
+					"19,8": {
+						"type": "mask"
+					},
+					"19,9": {
+						"type": "mask"
+					},
+					"2,-1": {
+						"type": "wall"
+					},
+					"2,0": {
+						"type": "mask"
+					},
+					"2,1": {
+						"type": "mask"
+					},
+					"2,10": {
+						"type": "mask"
+					},
+					"2,11": {
+						"type": "primary_road"
+					},
+					"2,12": {
+						"type": "mask"
+					},
+					"2,13": {
+						"type": "mask"
+					},
+					"2,14": {
+						"type": "mask"
+					},
+					"2,15": {
+						"type": "mask"
+					},
+					"2,16": {
+						"type": "mask"
+					},
+					"2,17": {
+						"type": "mask"
+					},
+					"2,18": {
+						"type": "mask"
+					},
+					"2,19": {
+						"type": "mask"
+					},
+					"2,2": {
+						"type": "mask"
+					},
+					"2,20": {
+						"type": "wall"
+					},
+					"2,3": {
+						"type": "mask"
+					},
+					"2,4": {
+						"type": "mask"
+					},
+					"2,5": {
+						"type": "mask"
+					},
+					"2,6": {
+						"type": "mask"
+					},
+					"2,7": {
+						"type": "mask"
+					},
+					"2,8": {
+						"type": "mask"
+					},
+					"2,9": {
+						"type": "mask"
+					},
+					"20,10": {
+						"type": "mask"
+					},
+					"20,11": {
+						"type": "primary_road"
+					},
+					"20,12": {
+						"type": "mask"
+					},
+					"20,13": {
+						"type": "mask"
+					},
+					"20,14": {
+						"type": "mask"
+					},
+					"20,15": {
+						"type": "mask"
+					},
+					"20,16": {
+						"type": "wall"
+					},
+					"20,17": {
+						"type": "wall"
+					},
+					"20,3": {
+						"type": "wall"
+					},
+					"20,4": {
+						"type": "mask"
+					},
+					"20,5": {
+						"type": "mask"
+					},
+					"20,6": {
+						"type": "mask"
+					},
+					"20,7": {
+						"type": "mask"
+					},
+					"20,8": {
+						"type": "mask"
+					},
+					"20,9": {
+						"type": "mask"
+					},
+					"21,10": {
+						"type": "mask"
+					},
+					"21,11": {
+						"type": "primary_road"
+					},
+					"21,12": {
+						"type": "mask"
+					},
+					"21,13": {
+						"type": "mask"
+					},
+					"21,14": {
+						"type": "mask"
+					},
+					"21,15": {
+						"type": "mask"
+					},
+					"21,16": {
+						"type": "mask"
+					},
+					"21,17": {
+						"type": "wall"
+					},
+					"21,3": {
+						"type": "wall"
+					},
+					"21,4": {
+						"type": "wall"
+					},
+					"21,5": {
+						"type": "wall"
+					},
+					"21,6": {
+						"type": "mask"
+					},
+					"21,7": {
+						"type": "mask"
+					},
+					"21,8": {
+						"type": "mask"
+					},
+					"21,9": {
+						"type": "mask"
+					},
+					"22,10": {
+						"type": "mask"
+					},
+					"22,11": {
+						"type": "primary_road"
+					},
+					"22,12": {
+						"type": "mask"
+					},
+					"22,13": {
+						"type": "mask"
+					},
+					"22,14": {
+						"type": "mask"
+					},
+					"22,15": {
+						"type": "wall"
+					},
+					"22,16": {
+						"type": "wall"
+					},
+					"22,17": {
+						"type": "wall"
+					},
+					"22,5": {
+						"type": "wall"
+					},
+					"22,6": {
+						"type": "mask"
+					},
+					"22,7": {
+						"type": "mask"
+					},
+					"22,8": {
+						"type": "mask"
+					},
+					"22,9": {
+						"type": "mask"
+					},
+					"23,10": {
+						"type": "gate_wall"
+					},
+					"23,11": {
+						"type": "gate"
+					},
+					"23,12": {
+						"type": "gate_wall"
+					},
+					"23,13": {
+						"type": "wall"
+					},
+					"23,14": {
+						"type": "wall"
+					},
+					"23,15": {
+						"type": "wall"
+					},
+					"23,5": {
+						"type": "wall"
+					},
+					"23,6": {
+						"type": "wall"
+					},
+					"23,7": {
+						"type": "wall"
+					},
+					"23,8": {
+						"type": "wall"
+					},
+					"23,9": {
+						"type": "wall"
+					},
+					"3,-1": {
+						"type": "wall"
+					},
+					"3,0": {
+						"type": "mask"
+					},
+					"3,1": {
+						"type": "mask"
+					},
+					"3,10": {
+						"type": "mask"
+					},
+					"3,11": {
+						"type": "primary_road"
+					},
+					"3,12": {
+						"type": "mask"
+					},
+					"3,13": {
+						"type": "mask"
+					},
+					"3,14": {
+						"type": "mask"
+					},
+					"3,15": {
+						"type": "mask"
+					},
+					"3,16": {
+						"type": "mask"
+					},
+					"3,17": {
+						"type": "mask"
+					},
+					"3,18": {
+						"type": "mask"
+					},
+					"3,19": {
+						"type": "mask"
+					},
+					"3,2": {
+						"type": "mask"
+					},
+					"3,20": {
+						"type": "wall"
+					},
+					"3,3": {
+						"type": "mask"
+					},
+					"3,4": {
+						"type": "mask"
+					},
+					"3,5": {
+						"type": "mask"
+					},
+					"3,6": {
+						"type": "mask"
+					},
+					"3,7": {
+						"type": "mask"
+					},
+					"3,8": {
+						"type": "mask"
+					},
+					"3,9": {
+						"type": "mask"
+					},
+					"4,-1": {
+						"type": "wall"
+					},
+					"4,0": {
+						"type": "mask"
+					},
+					"4,1": {
+						"type": "mask"
+					},
+					"4,10": {
+						"type": "mask"
+					},
+					"4,11": {
+						"type": "primary_road"
+					},
+					"4,12": {
+						"type": "mask"
+					},
+					"4,13": {
+						"type": "mask"
+					},
+					"4,14": {
+						"type": "mask"
+					},
+					"4,15": {
+						"type": "mask"
+					},
+					"4,16": {
+						"type": "wall"
+					},
+					"4,17": {
+						"type": "wall"
+					},
+					"4,18": {
+						"type": "wall"
+					},
+					"4,19": {
+						"type": "wall"
+					},
+					"4,2": {
+						"type": "mask"
+					},
+					"4,20": {
+						"type": "wall"
+					},
+					"4,3": {
+						"type": "mask"
+					},
+					"4,4": {
+						"type": "mask"
+					},
+					"4,5": {
+						"type": "mask"
+					},
+					"4,6": {
+						"type": "mask"
+					},
+					"4,7": {
+						"type": "mask"
+					},
+					"4,8": {
+						"type": "mask"
+					},
+					"4,9": {
+						"type": "mask"
+					},
+					"5,-1": {
+						"type": "wall"
+					},
+					"5,0": {
+						"type": "mask"
+					},
+					"5,1": {
+						"type": "mask"
+					},
+					"5,10": {
+						"type": "mask"
+					},
+					"5,11": {
+						"type": "primary_road"
+					},
+					"5,12": {
+						"type": "mask"
+					},
+					"5,13": {
+						"type": "mask"
+					},
+					"5,14": {
+						"type": "mask"
+					},
+					"5,15": {
+						"type": "mask"
+					},
+					"5,16": {
+						"type": "wall"
+					},
+					"5,2": {
+						"type": "mask"
+					},
+					"5,3": {
+						"type": "mask"
+					},
+					"5,4": {
+						"type": "mask"
+					},
+					"5,5": {
+						"type": "mask"
+					},
+					"5,6": {
+						"type": "mask"
+					},
+					"5,7": {
+						"type": "mask"
+					},
+					"5,8": {
+						"type": "mask"
+					},
+					"5,9": {
+						"type": "mask"
+					},
+					"6,-1": {
+						"type": "wall"
+					},
+					"6,0": {
+						"type": "wall"
+					},
+					"6,1": {
+						"type": "mask"
+					},
+					"6,10": {
+						"type": "secondary_road"
+					},
+					"6,11": {
+						"type": "primary_road"
+					},
+					"6,12": {
+						"type": "mask"
+					},
+					"6,13": {
+						"type": "mask"
+					},
+					"6,14": {
+						"type": "mask"
+					},
+					"6,15": {
+						"type": "mask"
+					},
+					"6,16": {
+						"type": "wall"
+					},
+					"6,2": {
+						"type": "mask"
+					},
+					"6,3": {
+						"type": "mask"
+					},
+					"6,4": {
+						"type": "mask"
+					},
+					"6,5": {
+						"type": "secondary_road"
+					},
+					"6,6": {
+						"type": "secondary_road"
+					},
+					"6,7": {
+						"type": "secondary_road"
+					},
+					"6,8": {
+						"type": "secondary_road"
+					},
+					"6,9": {
+						"type": "secondary_road"
+					},
+					"7,0": {
+						"type": "wall"
+					},
+					"7,1": {
+						"type": "mask"
+					},
+					"7,10": {
+						"type": "mask"
+					},
+					"7,11": {
+						"type": "primary_road"
+					},
+					"7,12": {
+						"type": "mask"
+					},
+					"7,13": {
+						"type": "mask"
+					},
+					"7,14": {
+						"type": "mask"
+					},
+					"7,15": {
+						"type": "mask"
+					},
+					"7,16": {
+						"type": "wall"
+					},
+					"7,2": {
+						"type": "mask"
+					},
+					"7,3": {
+						"type": "mask"
+					},
+					"7,4": {
+						"type": "mask"
+					},
+					"7,5": {
+						"type": "secondary_road"
+					},
+					"7,6": {
+						"type": "mask"
+					},
+					"7,7": {
+						"type": "mask"
+					},
+					"7,8": {
+						"type": "mask"
+					},
+					"7,9": {
+						"type": "mask"
+					},
+					"8,0": {
+						"type": "wall"
+					},
+					"8,1": {
+						"type": "mask"
+					},
+					"8,10": {
+						"type": "mask"
+					},
+					"8,11": {
+						"type": "primary_road"
+					},
+					"8,12": {
+						"type": "mask"
+					},
+					"8,13": {
+						"type": "mask"
+					},
+					"8,14": {
+						"type": "mask"
+					},
+					"8,15": {
+						"type": "mask"
+					},
+					"8,16": {
+						"type": "wall"
+					},
+					"8,2": {
+						"type": "mask"
+					},
+					"8,3": {
+						"type": "mask"
+					},
+					"8,4": {
+						"type": "mask"
+					},
+					"8,5": {
+						"type": "secondary_road"
+					},
+					"8,6": {
+						"type": "mask"
+					},
+					"8,7": {
+						"type": "mask"
+					},
+					"8,8": {
+						"type": "mask"
+					},
+					"8,9": {
+						"type": "mask"
+					},
+					"9,0": {
+						"type": "wall"
+					},
+					"9,1": {
+						"type": "mask"
+					},
+					"9,10": {
+						"type": "mask"
+					},
+					"9,11": {
+						"type": "primary_road"
+					},
+					"9,12": {
+						"type": "mask"
+					},
+					"9,13": {
+						"type": "mask"
+					},
+					"9,14": {
+						"type": "mask"
+					},
+					"9,15": {
+						"type": "mask"
+					},
+					"9,16": {
+						"type": "wall"
+					},
+					"9,17": {
+						"type": "wall"
+					},
+					"9,18": {
+						"type": "wall"
+					},
+					"9,19": {
+						"type": "wall"
+					},
+					"9,2": {
+						"type": "mask"
+					},
+					"9,20": {
+						"type": "wall"
+					},
+					"9,21": {
+						"type": "wall"
+					},
+					"9,3": {
+						"type": "mask"
+					},
+					"9,4": {
+						"type": "mask"
+					},
+					"9,5": {
+						"type": "secondary_road"
+					},
+					"9,6": {
+						"type": "mask"
+					},
+					"9,7": {
+						"type": "mask"
+					},
+					"9,8": {
+						"type": "mask"
+					},
+					"9,9": {
+						"type": "mask"
+					}
+				},
+				"walls": [
+					"0,0",
+					"14,0",
+					"0,1",
+					"18,1",
+					"18,2",
+					"18,3",
+					"19,3",
+					"20,3",
+					"21,3",
+					"21,4",
+					"21,5",
+					"22,5",
+					"23,5",
+					"23,13",
+					"23,14",
+					"22,15",
+					"23,15",
+					"4,16",
+					"5,16",
+					"6,16",
+					"7,16",
+					"8,16",
+					"9,16",
+					"18,16",
+					"19,16",
+					"20,16",
+					"22,16",
+					"4,17",
+					"9,17",
+					"18,17",
+					"20,17",
+					"21,17",
+					"22,17",
+					"4,18",
+					"9,18",
+					"18,18",
+					"4,19",
+					"9,19",
+					"18,19",
+					"0,20",
+					"1,20",
+					"2,20",
+					"3,20",
+					"4,20",
+					"9,20",
+					"18,20",
+					"9,21",
+					"1,0",
+					"1,-1",
+					"2,-1",
+					"3,-1",
+					"4,-1",
+					"5,-1",
+					"6,0",
+					"6,-1",
+					"7,0",
+					"8,0",
+					"9,0",
+					"10,0",
+					"15,0",
+					"16,0",
+					"17,0",
+					"18,0",
+					"0,2",
+					"0,3",
+					"0,4",
+					"0,5",
+					"0,6",
+					"23,6",
+					"0,7",
+					"23,7",
+					"0,8",
+					"23,8",
+					"0,9",
+					"23,9",
+					"0,13",
+					"0,14",
+					"0,15",
+					"-1,15",
+					"-2,15",
+					"-3,15",
+					"-4,15",
+					"-4,16",
+					"-1,17",
+					"-2,17",
+					"-3,17",
+					"-4,17",
+					"0,18",
+					"-1,18",
+					"0,19",
+					"10,21",
+					"14,21",
+					"15,21",
+					"16,21",
+					"17,21",
+					"18,21"
+				]
+			},
+			"name": "test_City"
+		},
+		"generate_at": "2026-03-16T12:33:33",
+		"version": "1.0.0"
+	}
+}
